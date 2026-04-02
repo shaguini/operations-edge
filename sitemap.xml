@@ -132,6 +132,13 @@
     <priority>0.9</priority>
   </url>
 
+  <url>
+    <loc>https://www.operationsedge.co.uk/guides/warehouse-hs-audit-guide.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Comparisons -->
   <url>
     <loc>https://www.operationsedge.co.uk/comparisons/connecteam-vs-rotacloud-uk-shift-scheduling.html</loc>

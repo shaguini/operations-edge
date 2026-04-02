@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Run a Warehouse H&S Audit (2026 UK Guide) | OperationsEdge</title>
+  <meta name="description" content="A practical guide to running warehouse health and safety audits for UK operations managers — what to cover, how often to audit, common failures, and how to go digital with SafetyCulture iAuditor.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operationsedge.co.uk/guides/warehouse-hs-audit-guide.html">
+
+  <meta property="og:title" content="How to Run a Warehouse H&S Audit (2026 UK Guide)">
+  <meta property="og:description" content="What a proper warehouse H&S audit covers, how often to run them, what gets missed most often, and how to go digital with SafetyCulture iAuditor.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.operationsedge.co.uk/guides/warehouse-hs-audit-guide.html">
+  <meta property="og:site_name" content="OperationsEdge">
+  <meta property="article:published_time" content="2026-04-02">
+  <meta property="article:modified_time" content="2026-04-02">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Run a Warehouse H&S Audit (2026 UK Guide)",
+    "description": "A practical guide to running warehouse health and safety audits for UK operations managers.",
+    "datePublished": "2026-04-02",
+    "dateModified": "2026-04-02",
+    "author": { "@type": "Organization", "name": "OperationsEdge" },
+    "publisher": { "@type": "Organization", "name": "OperationsEdge", "url": "https://www.operationsedge.co.uk" },
+    "mainEntityOfPage": "https://www.operationsedge.co.uk/guides/warehouse-hs-audit-guide.html"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <style>
+    .audit-categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .audit-category {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.25rem 1rem;
+    }
+    .audit-category h4 {
+      margin: 0 0 .5rem;
+      font-size: .95rem;
+      color: var(--brand);
+    }
+    .audit-category ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      font-size: .875rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .audit-step {
+      display: flex;
+      gap: 1.25rem;
+      margin-bottom: 1.75rem;
+      align-items: flex-start;
+    }
+    .audit-step-num {
+      flex-shrink: 0;
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 50%;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 700;
+      font-size: .95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: .1rem;
+    }
+    .audit-step-body h4 {
+      margin: 0 0 .4rem;
+      font-size: 1rem;
+    }
+    .audit-step-body p {
+      margin: 0;
+      font-size: .9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .9rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .comparison-table th {
+      background: var(--brand);
+      color: #fff;
+      padding: .65rem .9rem;
+      text-align: left;
+      font-weight: 600;
+    }
+    .comparison-table td {
+      padding: .65rem .9rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .comparison-table tr:nth-child(even) td {
+      background: var(--bg-alt);
+    }
+    .comparison-table .check { color: #16a34a; font-weight: 700; }
+    .comparison-table .cross { color: #dc2626; font-weight: 700; }
+    .frequency-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .frequency-item {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--brand);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+    }
+    .frequency-item .freq-label {
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--brand);
+      margin-bottom: .35rem;
+    }
+    .frequency-item h4 {
+      margin: 0 0 .35rem;
+      font-size: .95rem;
+    }
+    .frequency-item p {
+      margin: 0;
+      font-size: .825rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .warning-box {
+      background: #fff7ed;
+      border: 1px solid #fdba74;
+      border-left: 4px solid #ea580c;
+      border-radius: var(--radius);
+      padding: 1.1rem 1.25rem;
+      margin: 1.5rem 0;
+    }
+    .warning-box p {
+      margin: 0;
+      font-size: .9rem;
+      line-height: 1.6;
+    }
+    .warning-box strong { color: #9a3412; }
+    .callout-box {
+      background: var(--brand-light, #eff6ff);
+      border: 1px solid #bfdbfe;
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0;
+    }
+    .callout-box p { margin: 0; line-height: 1.6; }
+    .missed-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 2rem;
+    }
+    .missed-list li {
+      display: flex;
+      gap: .75rem;
+      padding: .75rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: .9rem;
+      line-height: 1.55;
+    }
+    .missed-list li:last-child { border-bottom: none; }
+    .missed-list .miss-icon {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: #fef2f2;
+      border: 1px solid #fca5a5;
+      color: #dc2626;
+      font-size: .7rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: .1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="site-logo"><img src="/assets/images/logo.svg" alt="OperationsEdge" style="display:block;height:52px;width:auto;max-height:52px;"></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav">
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/comparisons/">Comparisons</a></li>
+        <li><a href="/guides/" class="active">Guides</a></li>
+        <li><a href="/from-the-floor/">From the Floor</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/contact/" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/guides/">Guides</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Warehouse H&amp;S Audit Guide</span>
+      </div>
+      <div class="eyebrow">Operations Guide · Updated April 2026</div>
+      <h1>How to Run a Warehouse H&amp;S Audit (and Go Digital)</h1>
+      <p>What a proper warehouse health and safety audit covers, how often to run them, what operations teams most commonly miss — and how SafetyCulture iAuditor makes the whole process faster and more defensible.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-layout">
+
+        <main class="article-content">
+
+          <div class="article-meta">
+            <span>Published April 2026</span>
+            <span>12 min read</span>
+            <span>UK legislation current as of April 2026</span>
+          </div>
+
+          <p><strong>A warehouse H&S audit is not a box-ticking exercise — at least, it shouldn't be.</strong> Done properly, it's one of the most effective tools an operations manager has for finding real risk before it becomes an incident, near miss, or enforcement action. Done poorly — rushed, superficial, recorded on a paper form that gets filed and forgotten — it creates a false sense of compliance and leaves you exposed.</p>
+
+          <p>This guide is for UK operations managers who want to run audits that actually mean something. We cover what a warehouse audit should include, how often to run different types of audit, the things most teams miss, and how to move from paper-based processes to digital audits that are faster, more consistent, and far easier to act on.</p>
+
+          <div class="callout-box">
+            <p><strong>Legal context:</strong> UK employers with five or more employees are required to carry out suitable and sufficient risk assessments under the Management of Health and Safety at Work Regulations 1999. Regular H&S audits are a core mechanism for demonstrating that assessments are being monitored and reviewed, as required by the Health and Safety at Work Act 1974. This isn't optional — it's a legal obligation.</p>
+          </div>
+
+          <h2 id="what-a-warehouse-audit-covers">What a warehouse H&amp;S audit should cover</h2>
+          <p>A thorough warehouse audit isn't a single walkround — it's a structured review of multiple risk areas. Depending on your operation, your audit framework should cover most or all of the following categories.</p>
+
+          <div class="audit-categories">
+            <div class="audit-category">
+              <h4>Loading and unloading</h4>
+              <ul>
+                <li>Dock levellers and edge protection</li>
+                <li>Vehicle restraints and wheel chocks</li>
+                <li>Banksman procedures</li>
+                <li>Trailer stability before loading</li>
+                <li>Lighting at loading bays</li>
+              </ul>
+            </div>
+            <div class="audit-category">
+              <h4>Racking and storage</h4>
+              <ul>
+                <li>Racking inspections (SEMA-compliant)</li>
+                <li>Damage recording and repair tagging</li>
+                <li>Load notices displayed and observed</li>
+                <li>Safe stacking heights</li>
+                <li>Floor-level storage clearance</li>
+              </ul>
+            </div>
+            <div class="audit-category">
+              <h4>MHE and forklift operations</h4>
+              <ul>
+                <li>Pre-use checks completed and recorded</li>
+                <li>Operator licences (RTITB/ITSSAR) current</li>
+                <li>Pedestrian and MHE segregation</li>
+                <li>Speed restrictions in place</li>
+                <li>Battery charging area safety</li>
+              </ul>
+            </div>
+            <div class="audit-category">
+              <h4>Manual handling</h4>
+              <ul>
+                <li>Risk assessments in place for heavy loads</li>
+                <li>Mechanical aids available and used</li>
+                <li>Training records up to date</li>
+                <li>Awkward or repetitive handling tasks reviewed</li>
+              </ul>
+            </div>
+            <div class="audit-category">
+              <h4>Fire safety</h4>
+              <ul>
+                <li>Fire exits clear and signed</li>
+                <li>Fire extinguishers serviced and accessible</li>
+                <li>Sprinkler systems unobstructed</li>
+                <li>Hot work permit procedures</li>
+                <li>Evacuation drill records</li>
+              </ul>
+            </div>
+            <div class="audit-category">
+              <h4>PPE and welfare</h4>
+              <ul>
+                <li>PPE available, maintained, and worn</li>
+                <li>High-vis zones enforced</li>
+                <li>Welfare facilities: toilets, rest area, drinking water</li>
+                <li>First aid provision and trained aiders</li>
+                <li>Accident book / RIDDOR process</li>
+              </ul>
+            </div>
+            <div class="audit-category">
+              <h4>Electrical and equipment</h4>
+              <ul>
+                <li>PAT testing current</li>
+                <li>Cable management (no trailing leads)</li>
+                <li>Electrical panels unobstructed</li>
+                <li>Conveyor and machinery guards in place</li>
+              </ul>
+            </div>
+            <div class="audit-category">
+              <h4>Housekeeping and environment</h4>
+              <ul>
+                <li>Walkways clear and marked</li>
+                <li>Spill response kit accessible</li>
+                <li>Waste management and racking zone cleanliness</li>
+                <li>Lighting levels adequate throughout</li>
+                <li>Temperature monitoring (extremes)</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 id="how-often">How often should you audit?</h2>
+          <p>There's no single legally mandated frequency for warehouse H&S audits — but "suitable and sufficient" monitoring is required. In practice, most well-run warehouse operations use a layered approach.</p>
+
+          <div class="frequency-grid">
+            <div class="frequency-item">
+              <div class="freq-label">Daily</div>
+              <h4>Operational checks</h4>
+              <p>Pre-use MHE inspections, housekeeping walkrounds, loading bay readiness checks. These are short and task-specific — typically completed by team leaders.</p>
+            </div>
+            <div class="frequency-item">
+              <div class="freq-label">Weekly</div>
+              <h4>Section-level inspections</h4>
+              <p>Racking condition checks, fire exit and extinguisher inspections, PPE availability. Completed by supervisors or H&S reps.</p>
+            </div>
+            <div class="frequency-item">
+              <div class="freq-label">Monthly</div>
+              <h4>Full internal audit</h4>
+              <p>A structured walkthrough covering all categories above. Led by the operations or H&S manager. Findings logged, actions assigned with deadlines.</p>
+            </div>
+            <div class="frequency-item">
+              <div class="freq-label">Quarterly / Annual</div>
+              <h4>Third-party or formal audit</h4>
+              <p>External H&S consultant or NEBOSH-qualified internal auditor conducts a comprehensive review. Results documented formally and retained.</p>
+            </div>
+          </div>
+
+          <p>After incidents or near misses, an unscheduled audit of the relevant area is always good practice — and is often a requirement under your insurer's conditions.</p>
+
+          <h2 id="what-gets-missed">What warehouse audits most commonly miss</h2>
+          <p>After reviewing audit frameworks from dozens of UK warehouse and logistics operations, these are the areas that come up most often as gaps — either missed entirely or checked superficially.</p>
+
+          <ul class="missed-list">
+            <li>
+              <div class="miss-icon">!</div>
+              <div><strong>Racking damage that's been informally accepted.</strong> A damaged upright that's been there for months and "always been like that" stops being noticed. Racking inspections need to follow a structured SEMA-based checklist every time, not a casual look. Any amber or red findings should be tagged and either repaired or decommissioned — not monitored indefinitely.</div>
+            </li>
+            <li>
+              <div class="miss-icon">!</div>
+              <div><strong>Forklift licence expiry.</strong> RTITB and ITSSAR certificates expire, typically after three to five years. Many operations have at least one operator whose licence has lapsed — sometimes without either party realising. Check every operator's licence annually and set calendar reminders for renewals.</div>
+            </li>
+            <li>
+              <div class="miss-icon">!</div>
+              <div><strong>Emergency lighting not tested.</strong> Battery-backed emergency lighting must be tested monthly (brief function test) and annually (full discharge test). The monthly test rarely makes it onto audit checklists. When it does, it's often checked as "present" rather than "tested."</div>
+            </li>
+            <li>
+              <div class="miss-icon">!</div>
+              <div><strong>Manual handling risk assessments for new processes.</strong> Risk assessments are done once at setup and then rarely revisited. When product profiles change — different pallet configurations, new SKUs with different weights, seasonal volume changes — the manual handling risk often changes too. Review whenever the work changes, not just on a calendar cycle.</div>
+            </li>
+            <li>
+              <div class="miss-icon">!</div>
+              <div><strong>Fire door integrity.</strong> Fire doors are often checked for clearance (nothing blocking them) but not for integrity — damaged seals, missing self-closers, wedges propped open for convenience. A fire door that won't close properly is not a fire door.</div>
+            </li>
+            <li>
+              <div class="miss-icon">!</div>
+              <div><strong>Agency and contractor induction evidence.</strong> Permanent staff tend to have induction records. Agency workers and contractors — particularly short-notice cover — frequently don't. If the HSE walks in after an incident involving a temp who started that morning, "they were shown around by the supervisor" is not a defensible position.</div>
+            </li>
+            <li>
+              <div class="miss-icon">!</div>
+              <div><strong>RIDDOR reporting gaps.</strong> Over-seven-day injuries, dangerous occurrences, and occupational diseases must be reported to the HSE under RIDDOR 2013. The most common failure is not the major incidents — it's the over-seven-day injuries that don't get reported because the manager wasn't sure whether it counted, or assumed HR had dealt with it.</div>
+            </li>
+          </ul>
+
+          <h2 id="how-to-run-an-audit">How to run a warehouse H&amp;S audit: step by step</h2>
+          <p>A structured audit process produces consistent, actionable results. Here's the approach that works in practice for UK warehouse operations.</p>
+
+          <div class="audit-step">
+            <div class="audit-step-num">1</div>
+            <div class="audit-step-body">
+              <h4>Schedule the audit and assign an auditor</h4>
+              <p>Audits should be scheduled in advance and conducted by someone with sufficient authority and knowledge — ideally not the person responsible for day-to-day operations in the area being audited. Unannounced spot checks have a role alongside scheduled audits, but your formal monthly audit should be planned.</p>
+            </div>
+          </div>
+
+          <div class="audit-step">
+            <div class="audit-step-num">2</div>
+            <div class="audit-step-body">
+              <h4>Use a structured checklist</h4>
+              <p>Don't rely on memory or a generic template downloaded from a generic site. Your checklist should reflect your specific operation — the types of MHE you run, your racking configuration, your product profile, and your regulatory obligations. A good checklist prompts the auditor with specific questions, not vague categories.</p>
+            </div>
+          </div>
+
+          <div class="audit-step">
+            <div class="audit-step-num">3</div>
+            <div class="audit-step-body">
+              <h4>Walk the floor — don't audit from a desk</h4>
+              <p>This sounds obvious, but it's surprisingly common for audits to be completed partly or wholly from memory, or from a site manager's verbal report. Physical observation is required. Talk to the people doing the work, not just their manager. The team often know exactly where the risks are.</p>
+            </div>
+          </div>
+
+          <div class="audit-step">
+            <div class="audit-step-num">4</div>
+            <div class="audit-step-body">
+              <h4>Record findings with evidence</h4>
+              <p>Each finding should be logged with: a description of the issue, location, severity (immediate risk vs. advisory), photographic evidence where relevant, and the relevant legal standard or internal procedure it relates to. "Racking damaged — bay 12, upright B2, amber classification, SEMA guide reference" is a finding. "Racking looks OK" is not.</p>
+            </div>
+          </div>
+
+          <div class="audit-step">
+            <div class="audit-step-num">5</div>
+            <div class="audit-step-body">
+              <h4>Assign actions with owners and deadlines</h4>
+              <p>Every finding needs a named owner and a realistic deadline. Immediate risks (red findings) should be rectified or controlled before the working day ends. Advisory items should be tracked through to closure. An audit that produces a list of findings with no assigned actions is an administrative document, not a safety improvement tool.</p>
+            </div>
+          </div>
+
+          <div class="audit-step">
+            <div class="audit-step-num">6</div>
+            <div class="audit-step-body">
+              <h4>Close out and retain records</h4>
+              <p>Confirm actions have been completed, sign off the audit, and retain the record. In the event of an HSE investigation, enforcement action, or civil claim, your audit records are your primary evidence of a functioning safety management system. Paper records get lost; digital records don't.</p>
+            </div>
+          </div>
+
+          <div class="audit-step">
+            <div class="audit-step-num">7</div>
+            <div class="audit-step-body">
+              <h4>Review trends over time</h4>
+              <p>Individual audits are useful. Audit data over six or twelve months is more powerful — it tells you whether the same issues keep recurring (a systemic problem) or whether your corrective actions are sticking. This is almost impossible to do with paper records; digital tools make it straightforward.</p>
+            </div>
+          </div>
+
+          <h2 id="paper-vs-digital">Paper vs digital: why it matters more than you think</h2>
+          <p>Paper-based audit processes are still the norm in many UK warehouses. They work — up to a point. The limitations become serious the moment you need to do anything beyond recording a snapshot.</p>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Capability</th>
+                <th>Paper</th>
+                <th>Digital (e.g. iAuditor)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Consistent question set every time</td>
+                <td><span class="cross">✗</span> Varies with handwriting and memory</td>
+                <td><span class="check">✓</span> Locked template, same questions every audit</td>
+              </tr>
+              <tr>
+                <td>Photo evidence attached to finding</td>
+                <td><span class="cross">✗</span> Separate camera, often not filed correctly</td>
+                <td><span class="check">✓</span> Photo taken in-app, attached to finding automatically</td>
+              </tr>
+              <tr>
+                <td>Actions assigned to named owner</td>
+                <td><span class="cross">✗</span> Separate email or verbal instruction needed</td>
+                <td><span class="check">✓</span> Action assigned in-app with due date and notifications</td>
+              </tr>
+              <tr>
+                <td>Action close-out tracked</td>
+                <td><span class="cross">✗</span> Manual follow-up required</td>
+                <td><span class="check">✓</span> Completion confirmed in-app; audit trail maintained</td>
+              </tr>
+              <tr>
+                <td>Trend analysis across audits</td>
+                <td><span class="cross">✗</span> Manual spreadsheet work required</td>
+                <td><span class="check">✓</span> Dashboards and reports generated automatically</td>
+              </tr>
+              <tr>
+                <td>Records retrievable quickly</td>
+                <td><span class="cross">✗</span> Filing cabinet or scan required</td>
+                <td><span class="check">✓</span> Searchable, cloud-stored, accessible on any device</td>
+              </tr>
+              <tr>
+                <td>Defensible in legal/HSE context</td>
+                <td>Possible if well-maintained</td>
+                <td><span class="check">✓</span> Timestamped, geotagged, immutable audit trail</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>The key difference is not just convenience — it's the quality of the audit trail. If the HSE investigates an incident and asks to see your audit history, a folder of handwritten forms is far less defensible than a timestamped, geotagged, photo-evidenced digital record. Courts and regulators are increasingly familiar with what good looks like.</p>
+
+          <h2 id="safetyculture">SafetyCulture iAuditor: the best digital audit tool for warehouse operations</h2>
+          <p>SafetyCulture (formerly known primarily by its product name iAuditor) is the most widely used digital audit platform in UK warehousing and logistics. It's used by operations ranging from small single-site warehouses to large 3PL providers with multiple distribution centres.</p>
+
+          <p>The core product is a mobile app — available on iOS and Android — that lets your team conduct audits on a tablet or phone, attach photos, assign actions, and generate professional PDF reports automatically at the end of each audit. Everything is stored in the cloud and accessible from a web dashboard.</p>
+
+          <h3>What SafetyCulture does well for warehouse H&amp;S</h3>
+          <ul>
+            <li><strong>Template library:</strong> SafetyCulture has a large library of pre-built audit templates, including SEMA racking inspection templates, fire safety checklists, and forklift pre-use inspection forms. You can use these as-is or adapt them for your operation.</li>
+            <li><strong>Scoring and severity:</strong> Findings can be scored automatically, and issues can be classified by severity — so your red-flag items are immediately visible at the top of the report, not buried in a list.</li>
+            <li><strong>Actions module:</strong> Findings generate actions that are assigned to named team members, with due dates and automatic reminders. The assignee gets a notification; you see when it's completed. No email chains, no spreadsheet tracking.</li>
+            <li><strong>Analytics dashboard:</strong> At site or group level, the dashboard shows audit completion rates, most frequent failure categories, and outstanding actions. This is where the operational intelligence comes from — not from individual audits, but from the pattern across them.</li>
+            <li><strong>Offline mode:</strong> Audits can be conducted without a data connection — useful in large cold stores or areas with poor signal — and sync automatically when connectivity is restored.</li>
+            <li><strong>Heads up:</strong> SafetyCulture also includes a sensor monitoring module for temperature, humidity, and air quality — which is useful for cold chain operations or environments with specific storage requirements.</li>
+          </ul>
+
+          <h3>What to be aware of</h3>
+          <ul>
+            <li><strong>Free plan is limited:</strong> SafetyCulture has a free tier, but it caps users and features. For a warehouse with multiple auditors and multiple sites, you'll quickly need a paid plan.</li>
+            <li><strong>Pricing scales with users:</strong> Costs are per-user, which can add up for larger teams. Make sure you're clear on who needs full auditor access versus read-only access to reports.</li>
+            <li><strong>It's a platform, not a magic wand:</strong> SafetyCulture makes it easy to conduct audits consistently — but you still need well-designed templates and managers who take findings seriously. The tool is only as good as the process behind it.</li>
+          </ul>
+
+          <div class="warning-box">
+            <p><strong>On digitising your audit process:</strong> Switching from paper to digital is not just a technology change — it's a process change. Make sure your templates are reviewed by someone with H&S knowledge before they go live, your team are trained on using the app, and your managers understand how to action findings in the system. A half-implemented digital process can be worse than a well-run paper one.</p>
+          </div>
+
+          <h3>Pricing</h3>
+          <p>SafetyCulture offers a free plan for small teams (up to 10 users, limited features). Paid plans start at approximately £19/user/month for the Premium tier, with enterprise pricing for larger organisations. A 30-day free trial is available on paid plans.</p>
+          <p><a href="https://safetyculture.com" rel="noopener noreferrer">Try SafetyCulture iAuditor free →</a></p>
+
+          <h2 id="getting-started">Getting started: a practical approach</h2>
+          <p>If you're currently running paper-based audits and want to improve your process — whether or not you go digital — here's a practical starting point:</p>
+
+          <ol>
+            <li><strong>Audit your audit.</strong> Pull your last three monthly audit records. Are the findings consistent? Are actions assigned? Are they closed out? If you can't tell, that's your first problem to solve.</li>
+            <li><strong>Build a checklist that reflects your operation.</strong> Don't use a generic template unchanged. Go through the categories in this guide, identify which apply to your site, and customise for your specific MHE, racking type, product profile, and regulatory obligations.</li>
+            <li><strong>Fix your action tracking first.</strong> Before worrying about digital tools, make sure every finding from every audit has a named owner and a deadline. This alone will improve your outcomes significantly.</li>
+            <li><strong>Trial digital tools on one audit type first.</strong> If you're moving to digital, start with one audit — weekly racking checks, for example — before migrating everything. Get comfortable with the tool before you depend on it.</li>
+            <li><strong>Use the data.</strong> Once you have a few months of digital audit data, look at the patterns. Which areas generate the most findings? Which corrective actions take longest to close? That's where to focus your management effort.</li>
+          </ol>
+
+          <div class="callout-box">
+            <p><strong>Free resource:</strong> We've put together a <a href="/resources/warehouse-hs-audit-checklist.html">Warehouse H&amp;S Audit Checklist</a> covering all the categories in this guide. It's available as a free download — use it as a starting point for your own audit template, whether you're working on paper or moving to a digital tool.</p>
+          </div>
+
+        </main>
+
+        <aside class="article-sidebar">
+          <div class="sidebar-card">
+            <h4>In this guide</h4>
+            <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;line-height:2;">
+              <li><a href="#what-a-warehouse-audit-covers">What a warehouse audit covers</a></li>
+              <li><a href="#how-often">How often to audit</a></li>
+              <li><a href="#what-gets-missed">What gets missed most</a></li>
+              <li><a href="#how-to-run-an-audit">How to run an audit</a></li>
+              <li><a href="#paper-vs-digital">Paper vs digital</a></li>
+              <li><a href="#safetyculture">SafetyCulture iAuditor</a></li>
+              <li><a href="#getting-started">Getting started</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card" style="margin-top:1.5rem;">
+            <h4>Free resource</h4>
+            <p style="font-size:.875rem;color:var(--text-muted);margin:.5rem 0 1rem;">Download our Warehouse H&amp;S Audit Checklist — covering all the categories in this guide, ready to adapt for your operation.</p>
+            <a href="/resources/warehouse-hs-audit-checklist.html" class="btn btn-brand" style="width:100%;text-align:center;display:block;">Get the Checklist</a>
+          </div>
+
+          <div class="sidebar-card" style="margin-top:1.5rem;background:var(--bg-alt);">
+            <h4>Try SafetyCulture free</h4>
+            <p style="font-size:.875rem;color:var(--text-muted);margin:.5rem 0 1rem;">30-day free trial. No credit card required. iOS and Android apps included.</p>
+            <a href="https://safetyculture.com" rel="noopener noreferrer" class="btn btn-outline" style="width:100%;text-align:center;display:block;font-size:.875rem;">SafetyCulture iAuditor →</a>
+          </div>
+
+          <div class="sidebar-card" style="margin-top:1.5rem;">
+            <h4>Related guides</h4>
+            <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;line-height:1.8;">
+              <li><a href="/guides/best-shift-scheduling-software-logistics-teams.html">Best Shift Scheduling Software</a></li>
+              <li><a href="/comparisons/connecteam-vs-rotacloud-uk-shift-scheduling.html">Connecteam vs Rotacloud</a></li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Operations<span>Edge</span></div>
+          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
+        </div>
+        <div>
+          <h4>Content</h4>
+          <ul class="footer-links">
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/comparisons/">Comparisons</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/from-the-floor/">From the Floor</a></li>
+            <li><a href="/resources/">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul class="footer-links">
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/affiliate-disclosure/">Disclosure</a></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OperationsEdge. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/affiliate-disclosure/">Disclosure</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
