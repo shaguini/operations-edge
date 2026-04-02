@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact OperationsEdge | Get in Touch</title>
+  <meta name="description" content="Get in touch with the OperationsEdge team. Questions about reviews, partnership enquiries, or suggesting a tool for us to review — we'd love to hear from you.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operationsedge.co.uk/contact/">
+  <meta property="og:title" content="Contact OperationsEdge">
+  <meta property="og:description" content="Get in touch with questions, partnership enquiries, or tool review suggestions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.operationsedge.co.uk/contact/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Schema.org ContactPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact OperationsEdge",
+    "url": "https://www.operationsedge.co.uk/contact/",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "OperationsEdge",
+      "email": "hello@operationsedge.co.uk",
+      "url": "https://www.operationsedge.co.uk"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="site-logo">Operations<span>Edge</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav">
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/comparisons/">Comparisons</a></li>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/contact/" class="nav-cta active">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Contact</div>
+      <h1>Get in Touch</h1>
+      <p>Questions about a review? Suggesting a tool? Partnership enquiry? We read every message and aim to respond within two working days.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:start;">
+
+        <!-- Contact Form -->
+        <div>
+          <h2 style="margin-bottom:.5rem;">Send us a message</h2>
+          <p style="color:var(--text-muted);margin-bottom:2rem;">Fill in the form below or email us directly at <a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></p>
+
+          <!-- Netlify form — works out of the box on Netlify -->
+          <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+            <div class="form-group">
+              <label for="name">Your name <span style="color:#dc2626;">*</span></label>
+              <input type="text" id="name" name="name" required placeholder="Jane Smith">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address <span style="color:#dc2626;">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="jane@yourcompany.co.uk">
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company / Organisation</label>
+              <input type="text" id="company" name="company" placeholder="Acme Logistics Ltd">
+            </div>
+
+            <div class="form-group">
+              <label for="enquiry">What's your enquiry about? <span style="color:#dc2626;">*</span></label>
+              <select id="enquiry" name="enquiry" required>
+                <option value="" disabled selected>Please select...</option>
+                <option value="review-question">Question about a review</option>
+                <option value="suggest-tool">Suggest a tool for review</option>
+                <option value="partnership">Partnership / affiliate enquiry</option>
+                <option value="press">Press / media</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your message <span style="color:#dc2626;">*</span></label>
+              <textarea id="message" name="message" required placeholder="Tell us what you'd like to know..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label style="display:flex;align-items:flex-start;gap:.6rem;cursor:pointer;font-weight:400;">
+                <input type="checkbox" name="newsletter" style="width:auto;margin-top:.2rem;">
+                <span style="font-size:.875rem;color:var(--text-muted);">Subscribe me to the Ops Edge newsletter (new reviews, guides and ops advice)</span>
+              </label>
+            </div>
+
+            <p style="font-size:.8rem;color:var(--text-muted);margin-bottom:1.25rem;">By submitting this form you agree to us storing your details to respond to your enquiry. We won't share your data with third parties. See our <a href="/privacy-policy/">Privacy Policy</a>.</p>
+
+            <button type="submit" class="btn btn-brand" style="width:100%;justify-content:center;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <div class="sidebar-box">
+            <h4>Direct contact</h4>
+            <p style="font-size:.9rem;color:var(--text-muted);margin-bottom:.75rem;">Prefer email? Reach us directly:</p>
+            <a href="mailto:hello@operationsedge.co.uk" style="font-weight:600;font-size:.95rem;word-break:break-all;">hello@operationsedge.co.uk</a>
+            <hr style="border:none;border-top:1px solid var(--border);margin:1.25rem 0;">
+            <p style="font-size:.85rem;color:var(--text-muted);">We aim to respond within <strong>2 working days</strong>.</p>
+          </div>
+
+          <div class="sidebar-box">
+            <h4>Common enquiries</h4>
+            <ul class="toc-list">
+              <li><a href="/reviews/">Browse all tool reviews</a></li>
+              <li><a href="/comparisons/">View comparison guides</a></li>
+              <li><a href="/affiliate-disclosure/">Affiliate &amp; partnership info</a></li>
+              <li><a href="/guides/">Read practical guides</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box" style="background:var(--brand-light);border-color:#c5ddf0;">
+            <h4 style="color:var(--brand);">Suggest a tool</h4>
+            <p style="font-size:.875rem;color:var(--text-muted);">Is there a SaaS tool you'd like us to review? Let us know via the form and we'll add it to our review pipeline. We prioritise tools popular with UK operations teams.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Operations<span>Edge</span></div>
+          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
+          <p class="text-sm" style="color:rgba(255,255,255,.4);">hello@operationsedge.co.uk</p>
+        </div>
+        <div>
+          <h4>Reviews</h4>
+          <ul class="footer-links">
+            <li><a href="/reviews/">All Reviews</a></li>
+            <li><a href="/comparisons/">Comparisons</a></li>
+            <li><a href="/guides/">Guides</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul class="footer-links">
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OperationsEdge. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

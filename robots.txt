@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow admin or build paths (none currently, but good practice)
+Disallow: /admin/
+Disallow: /.netlify/
+
+Sitemap: https://www.operationsedge.co.uk/sitemap.xml
