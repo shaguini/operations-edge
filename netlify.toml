@@ -49,6 +49,30 @@
   to   = "/affiliate-disclosure/"
   status = 301
 
+# Redirects for /posts/ → /from-the-floor/ (section rename)
+[[redirects]]
+  from = "/posts/how-we-improved-picking-efficiency.html"
+  to   = "/from-the-floor/how-we-improved-picking-efficiency.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/posts/"
+  to   = "/from-the-floor/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/posts"
+  to   = "/from-the-floor/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/from-the-floor"
+  to   = "/from-the-floor/"
+  status = 301
+
 # Custom 404 page (create /404.html when ready)
 # [[redirects]]
 #   from = "/*"
