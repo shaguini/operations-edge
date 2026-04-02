@@ -79,6 +79,13 @@
     <priority>0.4</priority>
   </url>
 
+  <url>
+    <loc>https://www.operationsedge.co.uk/disclaimer/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
   <!-- Review articles -->
   <url>
     <loc>https://www.operationsedge.co.uk/reviews/best-wms-software-uk-warehouses-2026.html</loc>

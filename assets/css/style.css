@@ -612,3 +612,62 @@ body.keyboard-nav select:focus {
 /* --- Review filter pills active state (managed by site.js) --- */
 .filter-pills { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
 .filter-pills .btn { transition: all .15s; }
+
+/* --- Author bio (end of articles) --- */
+.author-bio {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin: 2.5rem 0 0;
+}
+.author-bio-avatar {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--border);
+}
+.author-bio-text { flex: 1; }
+.author-bio-text strong { display: block; font-size: .95rem; color: var(--text); margin-bottom: .25rem; }
+.author-bio-text strong a { color: var(--text); font-weight: 700; }
+.author-bio-text strong a:hover { color: var(--brand); }
+.author-bio-text p { margin: 0; font-size: .875rem; color: var(--text-muted); line-height: 1.6; }
+@media (max-width: 480px) {
+  .author-bio { flex-direction: column; }
+}
+
+/* --- About page: author profile card --- */
+.author-profile {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 0 0 2.5rem;
+}
+.author-profile-photo {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid var(--brand-light);
+}
+.author-profile-text { flex: 1; }
+.author-profile-text h3 { margin: 0 0 .35rem; font-size: 1.2rem; }
+.author-profile-text .author-title { color: var(--brand); font-weight: 600; font-size: .9rem; margin: 0 0 .75rem; }
+.author-profile-text p { margin: 0 0 .6rem; font-size: .9rem; color: var(--text-muted); line-height: 1.65; }
+.author-profile-text p:last-child { margin: 0; }
+@media (max-width: 540px) {
+  .author-profile { flex-direction: column; align-items: center; text-align: center; }
+  .author-profile-photo { width: 110px; height: 110px; }
+}

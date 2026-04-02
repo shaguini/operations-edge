@@ -49,6 +49,11 @@
   to   = "/affiliate-disclosure/"
   status = 301
 
+[[redirects]]
+  from = "/disclaimer"
+  to   = "/disclaimer/"
+  status = 301
+
 # Redirects for /posts/ → /from-the-floor/ (section rename)
 [[redirects]]
   from = "/posts/how-we-improved-picking-efficiency.html"
