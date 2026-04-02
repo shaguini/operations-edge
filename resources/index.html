@@ -95,10 +95,13 @@
         <div class="eyebrow">Get notified</div>
         <h3>Resources drop first to subscribers</h3>
         <p style="color:var(--text-muted);max-width:480px;margin:.75rem auto 1.5rem;">Sign up to the Ops Edge newsletter and we'll send you new resources as soon as they're available.</p>
-        <form style="display:flex;gap:.75rem;max-width:400px;margin:0 auto;flex-wrap:wrap;justify-content:center;" onsubmit="return false;">
-          <input type="email" placeholder="your@email.co.uk" style="flex:1;min-width:200px;padding:.7rem 1rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.95rem;outline:none;">
+        <form style="display:flex;gap:.75rem;max-width:400px;margin:0 auto;flex-wrap:wrap;justify-content:center;" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="newsletter">
+          <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
+          <input type="email" name="email" placeholder="your@email.co.uk" style="flex:1;min-width:200px;padding:.7rem 1rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.95rem;outline:none;" required>
           <button type="submit" class="btn btn-brand">Notify Me</button>
         </form>
+        <p class="newsletter-success">You're on the list — thanks for subscribing.</p>
       </div>
     </div>
   </section>

@@ -54,6 +54,11 @@
   to   = "/disclaimer/"
   status = 301
 
+[[redirects]]
+  from = "/about"
+  to   = "/about/"
+  status = 301
+
 # Redirects for /posts/ → /from-the-floor/ (section rename)
 [[redirects]]
   from = "/posts/how-we-improved-picking-efficiency.html"
@@ -83,11 +88,6 @@
   from = "/*"
   to   = "/404.html"
   status = 404
-
-[[redirects]]
-  from = "/about"
-  to   = "/about/"
-  status = 301
 
 # Security headers
 [[headers]]
