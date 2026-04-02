@@ -87,13 +87,12 @@ p  { margin-bottom: 1rem; }
 }
 
 .site-logo {
-  font-size: 1.3rem;
-  font-weight: 800;
-  color: var(--brand);
-  letter-spacing: -.5px;
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  flex-shrink: 0;
 }
-.site-logo span { color: var(--accent); }
+.site-logo img { display: block; height: 48px; width: auto; }
 
 .site-nav { display: flex; align-items: center; gap: 2rem; list-style: none; }
 .site-nav a {
