@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Improved Picking Efficiency by 21% in 12 Months | OperationsEdge</title>
+  <meta name="description" content="A real-world warehouse case study covering the process changes, shift analysis and measurement approach that delivered a 21% improvement in picking efficiency. Practical insights for operations managers.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operationsedge.co.uk/posts/how-we-improved-picking-efficiency.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How We Improved Picking Efficiency by 21% in 12 Months">
+  <meta property="og:description" content="Real-world warehouse case study. Process changes and measurement approach that drove 21% LPH improvement.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.operationsedge.co.uk/posts/how-we-improved-picking-efficiency.html">
+  <meta property="og:site_name" content="OperationsEdge">
+  <meta property="article:published_time" content="2026-04-01">
+  <meta property="article:modified_time" content="2026-04-01">
+  <meta property="article:section" content="Operations Guides">
+  <meta property="article:tag" content="Picking Efficiency, Warehouse Operations, Case Study, LPH">
+
+  <!-- Schema.org Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How We Improved Picking Efficiency by 21% in 12 Months",
+    "description": "A real-world warehouse case study covering the process changes, shift analysis and measurement approach that delivered a 21% improvement in picking efficiency.",
+    "datePublished": "2026-04-01",
+    "dateModified": "2026-04-01",
+    "author": {
+      "@type": "Person",
+      "name": "OperationsEdge"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "OperationsEdge",
+      "url": "https://www.operationsedge.co.uk"
+    },
+    "mainEntityOfPage": "https://www.operationsedge.co.uk/posts/how-we-improved-picking-efficiency.html"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .key-results {
+      background: linear-gradient(135deg, #0f3d65, var(--brand));
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 2rem 2.5rem;
+      margin: 2rem 0;
+    }
+    .key-results h3 { color: #fff; margin-bottom: 1.25rem; font-size: 1rem; text-transform: uppercase; letter-spacing: .08em; }
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .result-item {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+    }
+    .result-number { font-size: 1.9rem; font-weight: 800; line-height: 1; margin-bottom: .25rem; color: #f4a41b; }
+    .result-label { font-size: .825rem; color: rgba(255,255,255,.85); }
+
+    .stats-block {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .stat-item {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1rem;
+    }
+    .stat-item .stat-num { font-size: 1.6rem; font-weight: 800; color: var(--brand); line-height: 1; margin-bottom: .35rem; }
+    .stat-item .stat-sub { font-size: .775rem; color: var(--text-muted); }
+
+    .tools-list { display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0; }
+    .tool-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+    }
+    .tool-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: .1rem; }
+    .tool-name { font-weight: 600; margin-bottom: .25rem; font-size: .95rem; }
+    .tool-desc { font-size: .875rem; color: var(--text-muted); }
+
+    .action-steps { counter-reset: steps; list-style: none; margin: 1.5rem 0; display: flex; flex-direction: column; gap: 1.25rem; }
+    .action-steps li {
+      counter-increment: steps;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .action-steps li::before {
+      content: counter(steps);
+      background: var(--brand);
+      color: #fff;
+      font-weight: 700;
+      font-size: .875rem;
+      min-width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: .1rem;
+    }
+    .action-step-title { font-weight: 600; margin-bottom: .3rem; }
+    .action-step-body { font-size: .9rem; color: var(--text-muted); }
+
+    @media (max-width: 600px) {
+      .results-grid { grid-template-columns: 1fr; }
+      .stats-block { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="site-logo">Operations<span>Edge</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav">
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/comparisons/">Comparisons</a></li>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/contact/" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===== ARTICLE HERO ===== -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/posts/">Operations Guides</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Picking Efficiency Case Study</span>
+      </div>
+      <div class="eyebrow">Operations Guides · Case Study · April 2026</div>
+      <h1>How We Improved Picking Efficiency by 21% in 12 Months</h1>
+      <p>A real-world case study from a pharmaceutical logistics operation — the process, the measurement and what actually moved the needle.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-layout">
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main class="article-content">
+
+          <div class="article-meta">
+            <span>📅 April 2026</span>
+            <span>⏱ 8 min read</span>
+            <span>🏷 Operations Guides</span>
+          </div>
+
+          <p>Most articles about warehouse efficiency talk in abstractions. <em>Optimise your slotting. Improve your pick paths. Invest in the right technology.</em></p>
+
+          <p>What they rarely show is the actual before and after. The specific numbers. The decisions that worked and the ones that didn't.</p>
+
+          <p>This is that article.</p>
+
+          <p>Over a 12-month period, a pharmaceutical logistics operation managing over 300,000 units dispatched daily to hundreds of pharmacy locations achieved a <strong>21% year-on-year improvement in lines picked per hour (LPH)</strong> — the core productivity metric for any pick operation.</p>
+
+          <p>This is how we did it.</p>
+
+          <!-- Key Results -->
+          <div class="key-results">
+            <h3>Key Results</h3>
+            <div class="results-grid">
+              <div class="result-item">
+                <div class="result-number">21%</div>
+                <div class="result-label">Improvement in team average LPH year-on-year</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">499</div>
+                <div class="result-label">Active hours saved across the measurement period</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">Late&gt;Early</div>
+                <div class="result-label">Late shift consistently outperforming early shift</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">+40%</div>
+                <div class="result-label">Top performers delivering above team average</div>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="why-lph">First, Why LPH Is the Right Metric</h2>
+          <p>Before covering what changed, it's worth explaining why lines picked per hour matters more than most metrics warehouse managers track.</p>
+
+          <p><strong>LPH is honest.</strong> It strips out variables like order complexity, product mix and staffing levels and gives you a single number that tells you how productive your operation actually is on any given day.</p>
+
+          <p>Total units picked is misleading — a day with lots of single-line orders looks very different to a day heavy with multi-line picks. LPH normalises for that. It tells you how efficiently your team is converting active time into output.</p>
+
+          <p>It is also the metric your team can directly influence. Unlike fill rates or despatch accuracy — which depend on upstream factors — LPH is a direct measure of operator effort, process design and working environment.</p>
+
+          <blockquote>If LPH is going up, something is working. If it is going down, something needs attention.</blockquote>
+
+          <h2 id="where-we-started">Where We Started</h2>
+          <p>At the start of the measurement period, the operation was running at a team average LPH that was functional but not exceptional. The distribution was wide — meaning there was a significant gap between top performers and the rest of the team.</p>
+
+          <p>That gap is actually a useful diagnostic. A wide LPH distribution tells you that the process is not the constraint. If process were the bottleneck, everyone would cluster around the same rate. A wide spread means individual behaviour, approach and habit are the variables — which is exactly the kind of problem you can solve <strong>without capital investment</strong>.</p>
+
+          <p>Three things stood out from the initial data analysis:</p>
+          <ul>
+            <li>Top performers were not being studied or replicated</li>
+            <li>Shift patterns were not being tracked against output</li>
+            <li>Station-level data was available but not being acted on</li>
+          </ul>
+          <p>These three gaps became the focus of the improvement work.</p>
+
+          <h2 id="what-changed">What We Changed</h2>
+
+          <h3 id="measurement">1. We Started Measuring What We Were Ignoring</h3>
+          <p>The WMS was generating daily pick reports but nobody was aggregating them systematically. Data existed. Insight did not.</p>
+
+          <p>The first step was building a consistent measurement framework — pulling daily LPH data per operator, per shift and per station, and tracking it over time rather than looking at single-day snapshots.</p>
+
+          <p>This alone changed the conversation. When team leaders could see weekly and monthly trends rather than yesterday's numbers, the discussions became more strategic and less reactive.</p>
+
+          <p>Tools like <a href="https://www.smartsheet.com" rel="noopener noreferrer">Smartsheet</a> can automate this kind of data aggregation if your WMS exports to CSV or Excel, saving significant manual processing time each week.</p>
+
+          <h3 id="shift-analysis">2. We Analysed Shift Performance Separately</h3>
+          <p>One of the most actionable findings came from splitting LPH data by shift rather than looking at the team as a whole.</p>
+
+          <p>The late shift was consistently outperforming early shift on LPH. Not marginally — consistently and significantly.</p>
+
+          <p>This raised an immediate question: why?</p>
+
+          <p>The answer, after investigating, came down to a combination of factors. Late shift had developed stronger peer accountability norms. Pick station allocation was more consistent on late shift. And crucially, late shift had less management intervention during peak pick periods — operators were less interrupted.</p>
+
+          <p>This finding directly informed how we structured early shift operations. Reducing unnecessary interruptions during peak pick windows and tightening station allocation consistency drove measurable improvement within weeks.</p>
+
+          <h3 id="top-performers">3. We Identified and Replicated Top Performer Behaviours</h3>
+          <p>The top performers — consistently delivering 40% or more above team average — were not working harder. They were working differently.</p>
+
+          <p>Observation time with top performers revealed consistent patterns that were not being taught or replicated across the team:</p>
+          <ul>
+            <li>More deliberate pick path discipline within their zone</li>
+            <li>Faster scanner handling and confirmation rhythm</li>
+            <li>Better management of their own replenishment timing to avoid dead time waiting for stock</li>
+          </ul>
+
+          <p>None of this required new equipment or systems. It required observation, documentation and deliberate coaching.</p>
+
+          <p>We used a structured buddy system pairing mid-performers with top performers for focused observation shifts. The LPH uplift in the mid-performer group was measurable within the first month.</p>
+
+          <p><a href="https://safetyculture.com" rel="noopener noreferrer">SafetyCulture's</a> checklist and observation tools are particularly useful for structuring these kinds of operator observation sessions — creating consistent frameworks that team leaders can use repeatedly without reinventing the process each time.</p>
+
+          <h3 id="visibility">4. We Made Performance Visible</h3>
+          <p>Perhaps the single highest-impact change was the simplest: making LPH data visible to the team in real time.</p>
+
+          <p>When operators can see their own performance relative to their own historical average — not ranked against colleagues, but tracked against their personal baseline — behaviour changes.</p>
+
+          <p>This is not about pressure or surveillance. It is about giving people the information they need to self-manage. Most operators, when they can see their own output clearly, want to improve it.</p>
+
+          <p>A simple daily performance board showing team average LPH, shift LPH and individual trend direction (up, down, stable) was enough to create the feedback loop that sustained improvement over time.</p>
+
+          <h2 id="the-numbers">The Numbers After 12 Months</h2>
+
+          <div class="stats-block">
+            <div class="stat-item">
+              <div class="stat-num">103</div>
+              <div class="stat-sub">LPH — start of period</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">125</div>
+              <div class="stat-sub">LPH — end of period</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">21.5%</div>
+              <div class="stat-sub">Overall LPH improvement</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">499 hrs</div>
+              <div class="stat-sub">Active hours saved</div>
+            </div>
+          </div>
+
+          <p>The improvement was not linear. The first two months showed modest gains as measurement frameworks bedded in. Months three to six showed the sharpest improvement as coaching and visibility changes took effect. Months seven to twelve showed consolidation and sustained performance at the new level.</p>
+
+          <p>This pattern — slow start, sharp middle, stable finish — is typical of behaviour-driven operational improvement. It is different to the pattern you see from technology-driven change, which tends to show immediate step-change followed by gradual decay if adoption is not sustained.</p>
+
+          <h2 id="tools">What Tools Actually Helped</h2>
+          <p>Being honest about technology: the improvement above was primarily driven by process change and people development, not software.</p>
+          <p>That said, the right tools made the process change faster and more sustainable. Here is what was genuinely useful:</p>
+
+          <div class="tools-list">
+            <div class="tool-item">
+              <div class="tool-icon">📊</div>
+              <div>
+                <div class="tool-name">WMS reporting exports</div>
+                <div class="tool-desc">The raw data source for all LPH analysis. Whatever WMS you are running, if it exports daily pick data you have everything you need to start.</div>
+              </div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon">📋</div>
+              <div>
+                <div class="tool-name">Excel / Google Sheets</div>
+                <div class="tool-desc">Unglamorous but effective for building the initial measurement framework. Pivot tables on daily export data give you operator LPH rankings, shift comparisons and trend lines without any additional software investment.</div>
+              </div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon">📈</div>
+              <div>
+                <div class="tool-name"><a href="https://www.smartsheet.com" rel="noopener noreferrer">Smartsheet</a></div>
+                <div class="tool-desc">Where Excel starts to struggle — particularly when you want real-time dashboards visible to team leaders without manual refresh — Smartsheet fills the gap. The ability to automate data pulls from shared sources and present live dashboards to multiple stakeholders is genuinely useful at scale.</div>
+              </div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon">✅</div>
+              <div>
+                <div class="tool-name"><a href="https://safetyculture.com" rel="noopener noreferrer">SafetyCulture (iAuditor)</a></div>
+                <div class="tool-desc">Used for structuring observation sessions and coaching checklists. The ability to build custom audit forms for operator observation — and track completion and trends over time — made the coaching programme more consistent and measurable.</div>
+              </div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon">📌</div>
+              <div>
+                <div class="tool-name"><a href="https://monday.com" rel="noopener noreferrer">Monday.com</a></div>
+                <div class="tool-desc">Useful for managing the improvement project itself — tracking action items, coaching session schedules and performance review cadences across team leaders. Less relevant to the day-to-day pick operation, more relevant to the management layer running the improvement programme.</div>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="action-steps">Three Things to Do This Week</h2>
+          <p>If you are running a pick operation and want to start moving your LPH numbers, here is the minimum viable starting point:</p>
+
+          <ol class="action-steps">
+            <li>
+              <div>
+                <div class="action-step-title">Pull your last 30 days of pick data by operator</div>
+                <div class="action-step-body">Build a simple pivot table showing average LPH per operator. Look at the spread. If it is wide, you have a behaviour and coaching opportunity. If it is narrow and low, you have a process or environment problem.</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="action-step-title">Split your data by shift</div>
+                <div class="action-step-body">If you run multiple shifts, compare LPH by shift for the same period. Any consistent difference is a signal worth investigating. The answer will tell you something specific about what is working and what is not.</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="action-step-title">Spend one hour observing your top performer</div>
+                <div class="action-step-body">Not to put them on a pedestal — to understand what they are doing differently. Write it down. It will become the foundation of your coaching framework.</div>
+              </div>
+            </li>
+          </ol>
+
+          <p>None of these require budget, software or sign-off. They require a spreadsheet and time.</p>
+
+          <h2 id="closing">Final Thought</h2>
+          <p>Picking efficiency improvement is not complicated. It is consistent measurement, honest analysis and disciplined follow-through on what the data tells you.</p>
+
+          <p>The 21% improvement documented here came from a team that was already working hard. The gain came from working smarter — with better information, clearer feedback and more deliberate skill development.</p>
+
+          <p>That is available to any operation willing to look at the data seriously.</p>
+
+          <!-- Author bio -->
+          <div style="background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;margin-top:2.5rem;display:flex;gap:1.25rem;align-items:flex-start;">
+            <div style="background:var(--brand);color:#fff;font-weight:800;font-size:1.1rem;min-width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">OE</div>
+            <div>
+              <div style="font-weight:600;margin-bottom:.3rem;">OperationsEdge</div>
+              <p style="font-size:.875rem;color:var(--text-muted);margin-bottom:0;">This case study is based on real operational experience managing a pharmaceutical logistics warehouse operation in the UK. All data has been anonymised. The author holds a Lean Six Sigma Yellow Belt and has 10+ years of experience in warehouse and operations management.</p>
+            </div>
+          </div>
+
+        </main>
+
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar">
+
+          <div class="sidebar-box">
+            <h4>Table of Contents</h4>
+            <ul class="toc-list">
+              <li><a href="#why-lph">Why LPH is the right metric</a></li>
+              <li><a href="#where-we-started">Where we started</a></li>
+              <li><a href="#what-changed">What we changed</a></li>
+              <li><a href="#measurement">1. Measuring the right things</a></li>
+              <li><a href="#shift-analysis">2. Shift-by-shift analysis</a></li>
+              <li><a href="#top-performers">3. Replicating top performers</a></li>
+              <li><a href="#visibility">4. Making performance visible</a></li>
+              <li><a href="#the-numbers">The numbers</a></li>
+              <li><a href="#tools">Tools that helped</a></li>
+              <li><a href="#action-steps">Three things to do this week</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box" style="background:var(--brand-light);border-color:#c5ddf0;">
+            <h4 style="color:var(--brand);">Key stat</h4>
+            <div style="font-size:2.5rem;font-weight:800;color:var(--brand);line-height:1;margin:.5rem 0 .25rem;">21%</div>
+            <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:0;">LPH improvement in 12 months — no new equipment, no capital spend.</p>
+          </div>
+
+          <div class="sidebar-box">
+            <h4>Related articles</h4>
+            <ul class="toc-list">
+              <li><a href="/reviews/best-wms-software-uk-warehouses-2026.html">Best WMS for UK Warehouses 2026</a></li>
+              <li><a href="/reviews/monday-com-warehouse-management-review.html">Monday.com: Honest Review</a></li>
+              <li><a href="/guides/best-shift-scheduling-software-logistics-teams.html">Best Shift Scheduling Software</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box" style="text-align:center;">
+            <h4 style="margin-bottom:.5rem;">Found this useful?</h4>
+            <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:1rem;">Get new case studies and ops guides in your inbox.</p>
+            <form onsubmit="return false;" style="display:flex;flex-direction:column;gap:.5rem;">
+              <input type="email" placeholder="your@email.co.uk" style="padding:.6rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.875rem;outline:none;width:100%;">
+              <button type="submit" class="btn btn-brand" style="width:100%;justify-content:center;font-size:.875rem;">Subscribe</button>
+            </form>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="newsletter-section">
+    <div class="container">
+      <div class="eyebrow">More like this</div>
+      <h2>Practical ops content, straight to your inbox</h2>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="your@email.co.uk" aria-label="Email address">
+        <button type="submit" class="btn btn-brand">Subscribe Free</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Operations<span>Edge</span></div>
+          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
+          <p class="text-sm" style="color:rgba(255,255,255,.4);">hello@operationsedge.co.uk</p>
+        </div>
+        <div>
+          <h4>Content</h4>
+          <ul class="footer-links">
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/comparisons/">Comparisons</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/posts/">Operations Guides</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Use</a></li>
+            <li><a href="/cookies/">Cookie Policy</a></li>
+            <li><a href="/affiliate-disclosure/">Disclosure</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="/contact/">Get in Touch</a></li>
+            <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OperationsEdge. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
+          <a href="/cookies/">Cookies</a>
+          <a href="/affiliate-disclosure/">Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
