@@ -124,6 +124,20 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.operationsedge.co.uk/resources/shift-scheduling-template.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.operationsedge.co.uk/resources/saas-procurement-checklist.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Guides -->
   <url>
     <loc>https://www.operationsedge.co.uk/guides/best-shift-scheduling-software-logistics-teams.html</loc>

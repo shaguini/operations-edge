@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaS Procurement Checklist for Operations Teams | Free UK Template | OperationsEdge</title>
+  <meta name="description" content="Free SaaS procurement checklist for UK operations managers. The questions to ask before you sign any software contract — pricing, security, integrations, GDPR, exit clauses and more.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operationsedge.co.uk/resources/saas-procurement-checklist.html">
+  <meta property="og:title" content="SaaS Procurement Checklist for Operations Teams — Free UK Template">
+  <meta property="og:description" content="The questions every UK operations manager should ask before committing to a new SaaS tool. Free, browser-based, printable.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.operationsedge.co.uk/resources/saas-procurement-checklist.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    /* ---- Header bar ---- */
+    .tool-header {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.75rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 1rem;
+    }
+    .tool-field label {
+      display: block;
+      font-size: .72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--text-muted);
+      margin-bottom: .3rem;
+    }
+    .tool-field input {
+      width: 100%;
+      padding: .5rem .75rem;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--font);
+      font-size: .9rem;
+      outline: none;
+      background: #fff;
+      transition: border-color .2s;
+    }
+    .tool-field input:focus { border-color: var(--brand); }
+
+    /* ---- Progress bar ---- */
+    .progress-bar-wrap {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+    .progress-bar-track {
+      flex: 1;
+      height: 8px;
+      background: var(--border);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: var(--brand);
+      border-radius: 99px;
+      transition: width .3s;
+    }
+    .progress-label {
+      font-size: .85rem;
+      font-weight: 600;
+      color: var(--brand);
+      white-space: nowrap;
+      min-width: 80px;
+      text-align: right;
+    }
+
+    /* ---- Section ---- */
+    .cl-section { margin-bottom: 2.25rem; }
+    .cl-section-title {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      background: var(--brand);
+      color: #fff;
+      padding: .7rem 1.25rem;
+      border-radius: var(--radius) var(--radius) 0 0;
+      font-size: .85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .cl-section-title .sec-count {
+      margin-left: auto;
+      font-size: .75rem;
+      font-weight: 400;
+      opacity: .85;
+    }
+
+    /* ---- Table ---- */
+    .cl-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      border: 1px solid var(--border);
+      border-top: none;
+    }
+    .cl-table th {
+      background: #f1f5f9;
+      padding: .5rem 1rem;
+      text-align: left;
+      font-size: .75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      border-bottom: 1px solid var(--border);
+    }
+    .cl-table th.status-col { text-align: center; width: 110px; }
+    .cl-table th.notes-col { width: 30%; }
+    .cl-table td {
+      padding: .65rem 1rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .cl-table tr:last-child td { border-bottom: none; }
+    .cl-table tr:nth-child(even) td { background: #fafbfc; }
+
+    .q-text { font-weight: 500; line-height: 1.45; margin-bottom: .2rem; }
+    .q-why { font-size: .78rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* Status select */
+    .status-select {
+      width: 100%;
+      padding: .35rem .5rem;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--font);
+      font-size: .8rem;
+      outline: none;
+      background: #fff;
+      cursor: pointer;
+      transition: border-color .2s;
+    }
+    .status-select:focus { border-color: var(--brand); }
+    .status-select.s-confirmed { background: #f0fdf4; border-color: #86efac; color: #166534; font-weight: 600; }
+    .status-select.s-outstanding { background: #fefce8; border-color: #fde047; color: #854d0e; font-weight: 600; }
+    .status-select.s-na { background: #f8fafc; border-color: #cbd5e1; color: #94a3b8; }
+    .status-select.s-concern { background: #fef2f2; border-color: #fca5a5; color: #991b1b; font-weight: 600; }
+
+    .notes-input {
+      width: 100%;
+      padding: .35rem .6rem;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--font);
+      font-size: .8rem;
+      outline: none;
+      resize: vertical;
+      min-height: 34px;
+      transition: border-color .2s;
+    }
+    .notes-input:focus { border-color: var(--brand); }
+
+    /* ---- Controls ---- */
+    .tool-controls {
+      display: flex;
+      gap: .75rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    /* ---- Summary box ---- */
+    .summary-box {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      text-align: center;
+    }
+    .summary-stat { }
+    .summary-stat .stat-val {
+      font-size: 1.75rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: .25rem;
+    }
+    .summary-stat .stat-label {
+      font-size: .75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .s-confirmed-val { color: #16a34a; }
+    .s-outstanding-val { color: #d97706; }
+    .s-concern-val { color: #dc2626; }
+
+    /* ---- Info ---- */
+    .info-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      font-size: .875rem;
+      line-height: 1.6;
+      margin-top: 1.75rem;
+    }
+    .info-box p { margin: 0 0 .5rem; }
+    .info-box p:last-child { margin: 0; }
+
+    /* ---- Print ---- */
+    @media print {
+      .site-header, .site-footer, .tool-controls, .no-print, nav, .page-hero { display: none !important; }
+      .status-select, .notes-input { border: 1px solid #ccc !important; background: #fff !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="site-logo"><img src="/assets/images/logo.svg" alt="OperationsEdge" style="display:block;height:52px;width:auto;max-height:52px;"></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav">
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/comparisons/">Comparisons</a></li>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/from-the-floor/">From the Floor</a></li>
+        <li><a href="/resources/" class="active">Resources</a></li>
+        <li><a href="/contact/" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/resources/">Resources</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>SaaS Procurement Checklist</span>
+      </div>
+      <div class="eyebrow">Free Checklist · Operations Teams</div>
+      <h1>SaaS Procurement Checklist for Operations Teams</h1>
+      <p>The questions to ask before you sign any software contract — covering pricing, security, data, integrations, GDPR compliance, and exit clauses. Use in-browser, mark off as you go, and print when done.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Header fields -->
+      <div class="tool-header">
+        <div class="tool-field">
+          <label>Software / Vendor being evaluated</label>
+          <input type="text" id="vendor-name" placeholder="e.g. Connecteam, Monday.com...">
+        </div>
+        <div class="tool-field">
+          <label>Evaluated by</label>
+          <input type="text" id="evaluator" placeholder="Your name">
+        </div>
+        <div class="tool-field">
+          <label>Date</label>
+          <input type="date" id="eval-date">
+        </div>
+      </div>
+
+      <!-- Progress -->
+      <div class="progress-bar-wrap no-print">
+        <div class="progress-bar-track"><div class="progress-bar-fill" id="progress-fill" style="width:0%"></div></div>
+        <div class="progress-label" id="progress-label">0 / 0 done</div>
+      </div>
+
+      <!-- Controls -->
+      <div class="tool-controls no-print">
+        <button class="btn btn-brand" style="font-size:.85rem;padding:.45rem 1rem;" onclick="window.print()">Print / Save PDF</button>
+        <button class="btn btn-outline" style="font-size:.85rem;padding:.45rem 1rem;" onclick="resetAll()">Reset checklist</button>
+      </div>
+
+      <!-- ===== SECTION 1: Pricing & Contracts ===== -->
+      <div class="cl-section">
+        <div class="cl-section-title">
+          <span>1. Pricing &amp; Contracts</span>
+          <span class="sec-count" id="sc-1"></span>
+        </div>
+        <table class="cl-table">
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th class="status-col">Status</th>
+              <th class="notes-col">Notes / Answer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="q-text">What is the total cost of ownership, including all users, modules, and add-ons you'll actually use?</div><div class="q-why">Quoted pricing is often the base tier. Implementation, training, premium integrations and additional user seats can double the real cost.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">Is pricing billed in GBP? If not, who bears the currency risk?</div><div class="q-why">Many SaaS tools price in USD. A 15% exchange rate shift can materially change the cost of a multi-year contract.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">What is the minimum contract term? Is there a monthly option?</div><div class="q-why">Annual contracts often offer a discount but lock you in. Monthly gives flexibility during implementation and if the tool doesn't deliver.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">What are the price escalation terms on renewal?</div><div class="q-why">Some vendors cap annual increases; others reprice at will. Understand what you're agreeing to in year two and beyond.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">Are there usage limits (API calls, storage, automations) that could trigger overage charges?</div><div class="q-why">Automation-heavy platforms in particular can hit limits at scale. Confirm what "unlimited" actually means in the contract.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ===== SECTION 2: Data, Security & GDPR ===== -->
+      <div class="cl-section">
+        <div class="cl-section-title">
+          <span>2. Data, Security &amp; GDPR</span>
+          <span class="sec-count" id="sc-2"></span>
+        </div>
+        <table class="cl-table">
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th class="status-col">Status</th>
+              <th class="notes-col">Notes / Answer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="q-text">Where is data stored? Is it held within the UK or EEA?</div><div class="q-why">Under UK GDPR, transfers outside the UK/EEA require additional legal safeguards. Many US vendors store data in the US by default.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">Is the vendor willing to sign a Data Processing Agreement (DPA) naming you as data controller?</div><div class="q-why">Required under UK GDPR if the vendor processes personal data on your behalf (e.g. employee data, shift records, contact details).</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">What security certifications does the vendor hold? (ISO 27001, SOC 2 Type II, Cyber Essentials Plus)</div><div class="q-why">Certifications demonstrate an independently verified security posture. Absence of any certification should prompt further questions.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">Does the vendor have a published SLA for uptime? What is the remediation process for downtime?</div><div class="q-why">99.9% uptime = ~8.7 hours downtime per year. For 24/7 warehouse operations, planned maintenance windows and incident response matter.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">What does the vendor do with your data in the event of a breach? What is their notification timeline?</div><div class="q-why">UK GDPR requires you to notify the ICO within 72 hours. You need to know the vendor's process to meet that obligation.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">Does the vendor use your data to train AI models? Can this be opted out of?</div><div class="q-why">Increasingly relevant as SaaS tools incorporate AI features. Worth clarifying in writing, especially if your data is commercially sensitive.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ===== SECTION 3: Implementation & Support ===== -->
+      <div class="cl-section">
+        <div class="cl-section-title">
+          <span>3. Implementation &amp; Support</span>
+          <span class="sec-count" id="sc-3"></span>
+        </div>
+        <table class="cl-table">
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th class="status-col">Status</th>
+              <th class="notes-col">Notes / Answer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="q-text">Is there an implementation or onboarding fee, and what does it include?</div><div class="q-why">Some vendors charge for onboarding that consists of a few Zoom calls. Understand exactly what resource you're getting.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">What is the support model and response time for your tier? Is there UK-hours support?</div><div class="q-why">24/7 support for a US-based team may mean limited UK-hours coverage. Critical for operations that run early/late or night shifts.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">How long does a typical implementation take for an operation like ours?</div><div class="q-why">Ask for customer examples similar to your size and sector. "A few days" often becomes weeks when you factor in data migration and change management.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">Is training included? How is it delivered, and for how many users?</div><div class="q-why">Training caps or limits often appear in small print. For frontline operations with high staff turnover, ongoing training access matters.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">Can you speak to two or three existing customers in a similar sector before signing?</div><div class="q-why">Vendor-provided references are always positive. Ask to speak to a customer who had implementation challenges to understand how the vendor responded.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ===== SECTION 4: Integrations ===== -->
+      <div class="cl-section">
+        <div class="cl-section-title">
+          <span>4. Integrations &amp; Technical Fit</span>
+          <span class="sec-count" id="sc-4"></span>
+        </div>
+        <table class="cl-table">
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th class="status-col">Status</th>
+              <th class="notes-col">Notes / Answer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="q-text">Does the tool integrate natively with your existing systems? (WMS, payroll, ERP, TMS)</div><div class="q-why">Integrations listed on a marketing page may be via Zapier or third-party middleware, not native. Confirm what "integration" means in practice and who maintains it.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">Is there a public API? What are the rate limits and authentication methods?</div><div class="q-why">Important if you have an in-house technical team or want to build custom automations. Rate limits affect what's feasible at volume.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">How is data migration handled? Can you import existing data (employees, historical records, open actions)?</div><div class="q-why">Starting from scratch is a significant burden. Understand what migration support is provided and in what format data needs to be supplied.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">What mobile device requirements are there? Is the app available on both iOS and Android?</div><div class="q-why">Frontline warehouse and logistics teams use a mix of devices. An iOS-only solution creates an immediate barrier for Android users.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ===== SECTION 5: Vendor Stability ===== -->
+      <div class="cl-section">
+        <div class="cl-section-title">
+          <span>5. Vendor Stability &amp; Roadmap</span>
+          <span class="sec-count" id="sc-5"></span>
+        </div>
+        <table class="cl-table">
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th class="status-col">Status</th>
+              <th class="notes-col">Notes / Answer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="q-text">Is the vendor profitable or well-funded? Are there any signals of financial instability?</div><div class="q-why">VC-backed SaaS companies can shut down or be acquired with little notice. For critical operational tools, vendor stability matters.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">What features are on the product roadmap in the next 12 months?</div><div class="q-why">Useful for understanding whether the platform is moving towards or away from your use case. Ask what has shipped in the last 12 months as a credibility check.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">How does the vendor handle sunset or deprecation of features you depend on?</div><div class="q-why">Features get retired. Understanding the advance notice and migration path prevents nasty surprises mid-contract.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ===== SECTION 6: Exit & Offboarding ===== -->
+      <div class="cl-section">
+        <div class="cl-section-title">
+          <span>6. Exit &amp; Offboarding</span>
+          <span class="sec-count" id="sc-6"></span>
+        </div>
+        <table class="cl-table">
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th class="status-col">Status</th>
+              <th class="notes-col">Notes / Answer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="q-text">Can you export all your data? In what format, and how long does it take?</div><div class="q-why">Data portability is a UK GDPR right. Some vendors make export genuinely difficult or time-limited. Clarify before you start importing data.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">What happens to your data after contract termination? When is it deleted?</div><div class="q-why">GDPR requires you to know how long data is retained after offboarding. Indefinite retention of employee data is a compliance risk.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="q-text">What are the early termination clauses? Is there a penalty for ending the contract before renewal?</div><div class="q-why">Annual contracts often include early exit penalties or require full-year payment on termination. Read this before signing.</div></td>
+              <td><select class="status-select" onchange="updateStatus(this); updateProgress()"><option value="">—</option><option value="confirmed">Confirmed</option><option value="outstanding">Outstanding</option><option value="concern">Concern</option><option value="na">N/A</option></select></td>
+              <td><textarea class="notes-input" rows="2" placeholder="Notes..."></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Summary -->
+      <div class="summary-box" id="summary-box">
+        <div class="summary-stat">
+          <div class="stat-val" id="sum-total">0</div>
+          <div class="stat-label">Total items</div>
+        </div>
+        <div class="summary-stat">
+          <div class="stat-val s-confirmed-val" id="sum-confirmed">0</div>
+          <div class="stat-label">Confirmed</div>
+        </div>
+        <div class="summary-stat">
+          <div class="stat-val s-outstanding-val" id="sum-outstanding">0</div>
+          <div class="stat-label">Outstanding</div>
+        </div>
+        <div class="summary-stat">
+          <div class="stat-val s-concern-val" id="sum-concern">0</div>
+          <div class="stat-label">Concerns</div>
+        </div>
+      </div>
+
+      <div class="info-box no-print" style="margin-top:1.5rem;">
+        <p><strong>How to use this checklist:</strong> Work through each question with your vendor before signing. Mark items as Confirmed (you have a satisfactory written answer), Outstanding (still to be resolved), Concern (answer raises a red flag), or N/A. Print the completed checklist as a record of due diligence.</p>
+        <p>Looking for specific tool comparisons? See our <a href="/comparisons/">comparison guides</a> for head-to-head breakdowns of the leading operations platforms, or browse our <a href="/reviews/">reviews</a> for in-depth individual assessments.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Operations<span>Edge</span></div>
+          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
+        </div>
+        <div>
+          <h4>Content</h4>
+          <ul class="footer-links">
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/comparisons/">Comparisons</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/from-the-floor/">From the Floor</a></li>
+            <li><a href="/resources/">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul class="footer-links">
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/affiliate-disclosure/">Disclosure</a></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OperationsEdge. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/affiliate-disclosure/">Disclosure</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set today's date
+    document.getElementById('eval-date').value = new Date().toISOString().slice(0,10);
+
+    function updateStatus(sel) {
+      sel.className = 'status-select';
+      if (sel.value) sel.classList.add('s-' + sel.value);
+    }
+
+    function updateProgress() {
+      const all = document.querySelectorAll('.status-select');
+      const done = [...all].filter(s => s.value !== '').length;
+      const total = all.length;
+      const pct = total ? Math.round(done / total * 100) : 0;
+      document.getElementById('progress-fill').style.width = pct + '%';
+      document.getElementById('progress-label').textContent = done + ' / ' + total + ' done';
+
+      // Summary counts
+      const confirmed  = [...all].filter(s => s.value === 'confirmed').length;
+      const outstanding = [...all].filter(s => s.value === 'outstanding').length;
+      const concern    = [...all].filter(s => s.value === 'concern').length;
+      document.getElementById('sum-total').textContent = total;
+      document.getElementById('sum-confirmed').textContent = confirmed;
+      document.getElementById('sum-outstanding').textContent = outstanding;
+      document.getElementById('sum-concern').textContent = concern;
+
+      // Per-section counts
+      for (let i = 1; i <= 6; i++) {
+        const sec = document.getElementById('sc-' + i);
+        if (!sec) continue;
+        const secSelects = sec.closest('.cl-section').querySelectorAll('.status-select');
+        const secDone = [...secSelects].filter(s => s.value !== '').length;
+        sec.textContent = secDone + ' / ' + secSelects.length;
+      }
+    }
+
+    function resetAll() {
+      if (!confirm('Reset all statuses and notes? This cannot be undone.')) return;
+      document.querySelectorAll('.status-select').forEach(s => { s.value = ''; s.className = 'status-select'; });
+      document.querySelectorAll('.notes-input').forEach(t => t.value = '');
+      updateProgress();
+    }
+
+    // Init
+    updateProgress();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Shift Schedule Template | Free UK Warehouse & Logistics Tool | OperationsEdge</title>
+  <meta name="description" content="Free weekly shift schedule template for UK warehouse and logistics teams. Assign shifts, track hours, flag overtime, and print to PDF. No sign-up required.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operationsedge.co.uk/resources/shift-scheduling-template.html">
+  <meta property="og:title" content="Weekly Shift Schedule Template — Free UK Warehouse Tool">
+  <meta property="og:description" content="Assign shifts, track weekly hours and flag overtime. Free, browser-based, print to PDF. No sign-up required.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.operationsedge.co.uk/resources/shift-scheduling-template.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    /* ---- Tool chrome ---- */
+    .tool-header {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+    .tool-field { flex: 1; min-width: 160px; }
+    .tool-field label {
+      display: block;
+      font-size: .72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--text-muted);
+      margin-bottom: .3rem;
+    }
+    .tool-field input, .tool-field select {
+      width: 100%;
+      padding: .5rem .75rem;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--font);
+      font-size: .9rem;
+      outline: none;
+      background: #fff;
+      transition: border-color .2s;
+    }
+    .tool-field input:focus, .tool-field select:focus { border-color: var(--brand); }
+
+    /* ---- Legend ---- */
+    .legend {
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+      align-items: center;
+      font-size: .8rem;
+    }
+    .legend-label { font-weight: 600; color: var(--text-muted); margin-right: .25rem; }
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .2rem .6rem;
+      font-size: .78rem;
+      font-weight: 600;
+    }
+    .swatch {
+      width: 12px; height: 12px;
+      border-radius: 3px;
+      display: inline-block;
+    }
+    .sw-E { background: #bfdbfe; }
+    .sw-L { background: #fde68a; }
+    .sw-N { background: #c4b5fd; }
+    .sw-D { background: #bbf7d0; }
+    .sw-X { background: #f1f5f9; border: 1px solid #cbd5e1; }
+    .sw-H { background: #fed7aa; }
+
+    /* ---- Rota grid ---- */
+    .rota-wrap { overflow-x: auto; }
+    .rota-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .82rem;
+      min-width: 780px;
+    }
+    .rota-table th {
+      background: var(--brand);
+      color: #fff;
+      padding: .55rem .5rem;
+      text-align: center;
+      font-weight: 700;
+      border: 1px solid rgba(255,255,255,.15);
+    }
+    .rota-table th.name-col { text-align: left; width: 150px; padding-left: .75rem; }
+    .rota-table th.hours-col { width: 68px; background: #0f4c81; }
+    .rota-table td {
+      border: 1px solid var(--border);
+      padding: 0;
+      vertical-align: middle;
+      text-align: center;
+    }
+    .rota-table td.name-cell {
+      padding: 0;
+      text-align: left;
+    }
+    .rota-table td.hours-cell {
+      font-weight: 700;
+      font-size: .85rem;
+      background: var(--bg-alt);
+    }
+    .rota-table td.hours-cell.over { color: #dc2626; }
+    .rota-table td.hours-cell.ok   { color: #16a34a; }
+
+    .name-input, .shift-input {
+      width: 100%;
+      height: 38px;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-family: var(--font);
+      font-size: .82rem;
+      text-align: center;
+      padding: 0 .35rem;
+    }
+    .name-input { text-align: left; padding-left: .75rem; font-weight: 500; }
+    .name-input::placeholder { color: #cbd5e1; font-weight: 400; }
+
+    .shift-cell { position: relative; }
+    .shift-input {
+      text-transform: uppercase;
+      font-weight: 700;
+      cursor: pointer;
+      caret-color: transparent;
+    }
+    .shift-input:focus { background: #eff6ff; }
+
+    /* Shift colour fills */
+    .shift-E { background: #bfdbfe !important; }
+    .shift-L { background: #fde68a !important; }
+    .shift-N { background: #c4b5fd !important; }
+    .shift-D { background: #bbf7d0 !important; }
+    .shift-X { background: #f1f5f9 !important; color: #94a3b8 !important; }
+    .shift-H { background: #fed7aa !important; }
+
+    /* Day-off / weekend cols */
+    .rota-table th.weekend { background: #0f4c81; }
+    .rota-table td.weekend-cell { background: #f8fafc; }
+
+    /* ---- Totals row ---- */
+    .rota-table tr.totals-row td {
+      background: #f1f5f9;
+      font-weight: 700;
+      font-size: .8rem;
+      padding: .4rem .5rem;
+      color: var(--text-muted);
+    }
+    .rota-table tr.totals-row td.total-label { text-align: left; padding-left: .75rem; }
+
+    /* ---- Controls ---- */
+    .tool-controls {
+      display: flex;
+      gap: .75rem;
+      margin: 1.25rem 0;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .tool-controls .ot-setting {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .85rem;
+      margin-left: auto;
+    }
+    .tool-controls .ot-setting label { font-weight: 500; color: var(--text-muted); }
+    .tool-controls .ot-setting input {
+      width: 56px;
+      padding: .4rem .5rem;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--font);
+      font-size: .85rem;
+      text-align: center;
+      outline: none;
+    }
+
+    /* ---- Notes ---- */
+    .notes-area {
+      margin-top: 1.5rem;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+    }
+    .notes-area label {
+      display: block;
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--text-muted);
+      margin-bottom: .5rem;
+    }
+    .notes-area textarea {
+      width: 100%;
+      min-height: 60px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--font);
+      font-size: .875rem;
+      padding: .6rem .75rem;
+      resize: vertical;
+      outline: none;
+      background: #fff;
+    }
+
+    /* ---- Info box ---- */
+    .info-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      font-size: .875rem;
+      line-height: 1.6;
+      margin-top: 1.5rem;
+    }
+    .info-box p { margin: 0 0 .5rem; }
+    .info-box p:last-child { margin: 0; }
+
+    /* ---- Print ---- */
+    @media print {
+      .site-header, .site-footer, .tool-controls .btn,
+      .no-print, nav, .page-hero { display: none !important; }
+      .rota-wrap { overflow: visible; }
+      .rota-table { min-width: unset; font-size: .75rem; }
+      .shift-input, .name-input { height: 26px; font-size: .75rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="site-logo"><img src="/assets/images/logo.svg" alt="OperationsEdge" style="display:block;height:52px;width:auto;max-height:52px;"></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav">
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/comparisons/">Comparisons</a></li>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/from-the-floor/">From the Floor</a></li>
+        <li><a href="/resources/" class="active">Resources</a></li>
+        <li><a href="/contact/" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/resources/">Resources</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Shift Schedule Template</span>
+      </div>
+      <div class="eyebrow">Free Template · Warehouse &amp; Logistics</div>
+      <h1>Weekly Shift Schedule Template</h1>
+      <p>Assign shifts, track weekly hours, and flag overtime — all in your browser. No sign-up required. Print to PDF when you're done.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Week header inputs -->
+      <div class="tool-header">
+        <div class="tool-field" style="flex:2;">
+          <label>Site / Location</label>
+          <input type="text" id="site-name" placeholder="e.g. Coventry DC">
+        </div>
+        <div class="tool-field">
+          <label>Week commencing</label>
+          <input type="date" id="week-start">
+        </div>
+        <div class="tool-field">
+          <label>Manager / Prepared by</label>
+          <input type="text" id="manager-name" placeholder="e.g. J. Smith">
+        </div>
+        <div class="tool-field">
+          <label>Department / Team</label>
+          <input type="text" id="dept-name" placeholder="e.g. Pick &amp; Pack">
+        </div>
+      </div>
+
+      <!-- Legend -->
+      <div class="legend">
+        <span class="legend-label">Shift codes:</span>
+        <span class="legend-item"><span class="swatch sw-E"></span>E — Early</span>
+        <span class="legend-item"><span class="swatch sw-L"></span>L — Late</span>
+        <span class="legend-item"><span class="swatch sw-N"></span>N — Night</span>
+        <span class="legend-item"><span class="swatch sw-D"></span>D — Day</span>
+        <span class="legend-item"><span class="swatch sw-H"></span>H — Holiday</span>
+        <span class="legend-item"><span class="swatch sw-X"></span>X — Off</span>
+        <span style="font-size:.78rem;color:var(--text-muted);margin-left:.5rem;">Or type any custom code</span>
+      </div>
+
+      <!-- Controls -->
+      <div class="tool-controls">
+        <button class="btn btn-outline no-print" style="font-size:.85rem;padding:.45rem 1rem;" onclick="addRow()">+ Add team member</button>
+        <button class="btn btn-outline no-print" style="font-size:.85rem;padding:.45rem 1rem;" onclick="clearAll()">Clear all</button>
+        <button class="btn btn-brand no-print" style="font-size:.85rem;padding:.45rem 1rem;" onclick="window.print()">Print / Save PDF</button>
+        <div class="ot-setting no-print">
+          <label for="ot-threshold">Overtime threshold (hrs/week):</label>
+          <input type="number" id="ot-threshold" value="48" min="1" max="80" onchange="recalcAll()">
+        </div>
+      </div>
+
+      <!-- Rota grid -->
+      <div class="rota-wrap">
+        <table class="rota-table" id="rota-table">
+          <thead>
+            <tr>
+              <th class="name-col">Name</th>
+              <th class="role-col" style="width:110px;text-align:left;padding-left:.5rem;">Role</th>
+              <th id="th-mon">Mon</th>
+              <th id="th-tue">Tue</th>
+              <th id="th-wed">Wed</th>
+              <th id="th-thu">Thu</th>
+              <th id="th-fri">Fri</th>
+              <th id="th-sat" class="weekend">Sat</th>
+              <th id="th-sun" class="weekend">Sun</th>
+              <th class="hours-col">Hrs</th>
+            </tr>
+          </thead>
+          <tbody id="rota-body">
+            <!-- JS populates rows -->
+          </tbody>
+          <tfoot>
+            <tr class="totals-row" id="totals-row">
+              <td class="total-label" colspan="2">Staff on shift</td>
+              <td id="tot-mon">—</td>
+              <td id="tot-tue">—</td>
+              <td id="tot-wed">—</td>
+              <td id="tot-thu">—</td>
+              <td id="tot-fri">—</td>
+              <td id="tot-sat">—</td>
+              <td id="tot-sun">—</td>
+              <td>—</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <!-- Notes -->
+      <div class="notes-area">
+        <label>Notes / Cover arrangements</label>
+        <textarea placeholder="e.g. Bank holiday cover, agency staff, site briefing notes..."></textarea>
+      </div>
+
+      <!-- Info box -->
+      <div class="info-box no-print">
+        <p><strong>How to use this template:</strong> Type a shift code into each cell — E (Early), L (Late), N (Night), D (Day), H (Holiday), X (Off) — or any custom code your operation uses. Hours are estimated automatically based on your shift definitions below. Weekly totals flag red when they exceed the overtime threshold (default: 48 hrs, the UK Working Time Regulations limit).</p>
+        <p><strong>Shift durations used for hour calculations:</strong> E = 8 hrs &nbsp;|&nbsp; L = 8 hrs &nbsp;|&nbsp; N = 10 hrs &nbsp;|&nbsp; D = 8 hrs &nbsp;|&nbsp; H = 0 hrs (leave) &nbsp;|&nbsp; X = 0 hrs. You can adjust these in the code or override manually.</p>
+        <p>Looking for dedicated scheduling software? See our <a href="/guides/best-shift-scheduling-software-logistics-teams.html">Best Shift Scheduling Software for Logistics Teams</a> guide, or compare <a href="/comparisons/connecteam-vs-rotacloud-uk-shift-scheduling.html">Connecteam vs Rotacloud</a>.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Operations<span>Edge</span></div>
+          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
+        </div>
+        <div>
+          <h4>Content</h4>
+          <ul class="footer-links">
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/comparisons/">Comparisons</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/from-the-floor/">From the Floor</a></li>
+            <li><a href="/resources/">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul class="footer-links">
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/affiliate-disclosure/">Disclosure</a></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OperationsEdge. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/affiliate-disclosure/">Disclosure</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Shift hour values
+    const SHIFT_HOURS = { E:8, L:8, N:10, D:8, H:0, X:0 };
+    const DAYS = ['mon','tue','wed','thu','fri','sat','sun'];
+    let rowCount = 0;
+
+    // Update column headers with dates when week-start changes
+    document.getElementById('week-start').addEventListener('change', function() {
+      const d = new Date(this.value);
+      if (isNaN(d)) return;
+      const dayNames = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+      const opts = { day: 'numeric', month: 'short' };
+      for (let i = 0; i < 7; i++) {
+        const day = new Date(d);
+        day.setDate(d.getDate() + i);
+        document.getElementById('th-' + DAYS[i]).innerHTML =
+          dayNames[i] + '<br><span style="font-weight:400;font-size:.7rem;opacity:.85;">' +
+          day.toLocaleDateString('en-GB', opts) + '</span>';
+      }
+    });
+    // Set default to current Monday
+    (function() {
+      const now = new Date();
+      const day = now.getDay();
+      const diff = (day === 0 ? -6 : 1 - day);
+      const mon = new Date(now);
+      mon.setDate(now.getDate() + diff);
+      document.getElementById('week-start').value = mon.toISOString().slice(0,10);
+      document.getElementById('week-start').dispatchEvent(new Event('change'));
+    })();
+
+    function addRow(name, role, shifts) {
+      rowCount++;
+      const id = rowCount;
+      const tbody = document.getElementById('rota-body');
+      const tr = document.createElement('tr');
+      tr.id = 'row-' + id;
+
+      // Name cell
+      let td = document.createElement('td');
+      td.className = 'name-cell';
+      td.innerHTML = `<input class="name-input" type="text" placeholder="Team member ${id}" value="${name||''}">`;
+      tr.appendChild(td);
+
+      // Role cell
+      td = document.createElement('td');
+      td.style.padding = '0';
+      td.innerHTML = `<input class="name-input" type="text" placeholder="Role" value="${role||''}" style="font-weight:400;color:var(--text-muted);">`;
+      tr.appendChild(td);
+
+      // Shift cells
+      DAYS.forEach((day, i) => {
+        td = document.createElement('td');
+        td.className = 'shift-cell' + (i >= 5 ? ' weekend-cell' : '');
+        const val = shifts ? (shifts[i] || '') : '';
+        td.innerHTML = `<input class="shift-input" maxlength="3" data-row="${id}" data-day="${day}" value="${val}" oninput="onShiftInput(this)">`;
+        tr.appendChild(td);
+      });
+
+      // Hours cell
+      td = document.createElement('td');
+      td.className = 'hours-cell';
+      td.id = 'hrs-' + id;
+      td.textContent = '—';
+      tr.appendChild(td);
+
+      tbody.appendChild(tr);
+      recalcRow(id);
+      recalcTotals();
+    }
+
+    function onShiftInput(el) {
+      const val = el.value.toUpperCase().trim();
+      el.value = val;
+      // Colour
+      el.className = 'shift-input' + (val ? ' shift-' + val : '');
+      recalcRow(parseInt(el.dataset.row));
+      recalcTotals();
+    }
+
+    function recalcRow(id) {
+      const row = document.getElementById('row-' + id);
+      if (!row) return;
+      let total = 0;
+      DAYS.forEach(day => {
+        const inp = row.querySelector(`[data-day="${day}"]`);
+        if (!inp) return;
+        const v = inp.value.toUpperCase().trim();
+        total += SHIFT_HOURS[v] || (v && !['X','H'].includes(v) ? 8 : 0);
+      });
+      const cell = document.getElementById('hrs-' + id);
+      const threshold = parseInt(document.getElementById('ot-threshold').value) || 48;
+      cell.textContent = total > 0 ? total : '—';
+      cell.className = 'hours-cell' + (total > threshold ? ' over' : total > 0 ? ' ok' : '');
+    }
+
+    function recalcTotals() {
+      const counts = {};
+      DAYS.forEach(d => counts[d] = 0);
+      document.querySelectorAll('.shift-input').forEach(inp => {
+        const v = inp.value.toUpperCase().trim();
+        if (v && v !== 'X' && v !== 'H') {
+          counts[inp.dataset.day]++;
+        }
+      });
+      DAYS.forEach(d => {
+        const el = document.getElementById('tot-' + d);
+        if (el) el.textContent = counts[d] > 0 ? counts[d] : '—';
+      });
+    }
+
+    function recalcAll() {
+      for (let i = 1; i <= rowCount; i++) recalcRow(i);
+    }
+
+    function clearAll() {
+      if (!confirm('Clear all data? This cannot be undone.')) return;
+      document.getElementById('rota-body').innerHTML = '';
+      rowCount = 0;
+      DAYS.forEach(d => {
+        const el = document.getElementById('tot-' + d);
+        if (el) el.textContent = '—';
+      });
+      initRows();
+    }
+
+    function initRows() {
+      const defaults = [
+        ['','Picker / Packer'],
+        ['','Picker / Packer'],
+        ['','Team Leader'],
+        ['','Forklift Operator'],
+        ['','Forklift Operator'],
+        ['','Goods In'],
+        ['','Despatch'],
+        ['','Despatch'],
+      ];
+      defaults.forEach(([n, r]) => addRow(n, r));
+    }
+
+    initRows();
+  </script>
+
+</body>
+</html>
