@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WMS Vendor Evaluation Scorecard | Free Template | OperationsEdge</title>
+  <meta name="description" content="Free WMS vendor evaluation scorecard for UK warehouse managers. Compare up to three warehouse management system vendors across features, pricing, support and implementation using a structured scoring framework.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operationsedge.co.uk/resources/wms-vendor-evaluation-scorecard.html">
+  <meta property="og:title" content="WMS Vendor Evaluation Scorecard — Free Template">
+  <meta property="og:description" content="Score and compare WMS vendors side by side. Free structured evaluation template for UK warehouse managers.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.operationsedge.co.uk/resources/wms-vendor-evaluation-scorecard.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    /* ---- Scorecard-specific styles ---- */
+    .scorecard-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      margin-bottom: 2.5rem;
+    }
+    .scorecard-table th {
+      background: var(--brand);
+      color: #fff;
+      padding: .7rem 1rem;
+      text-align: left;
+      font-weight: 600;
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .scorecard-table th.vendor-col {
+      text-align: center;
+      min-width: 130px;
+    }
+    .scorecard-table td {
+      padding: .65rem 1rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+    .scorecard-table tr:nth-child(even) td { background: var(--bg-alt); }
+    .scorecard-table .section-header-row td {
+      background: #dbeafe;
+      color: #1e40af;
+      font-weight: 700;
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: .5rem 1rem;
+      border-bottom: 1px solid #bfdbfe;
+    }
+    .scorecard-table .weight-cell {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: .8rem;
+    }
+    .scorecard-table .score-input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .25rem;
+    }
+    .scorecard-table input[type="number"] {
+      width: 54px;
+      padding: .35rem .4rem;
+      border: 1.5px solid var(--border);
+      border-radius: 6px;
+      font-size: .875rem;
+      font-family: var(--font);
+      text-align: center;
+      outline: none;
+      transition: border-color .2s;
+    }
+    .scorecard-table input[type="number"]:focus { border-color: var(--brand); }
+    .scorecard-table input[type="text"] {
+      width: 100%;
+      padding: .35rem .5rem;
+      border: 1.5px solid var(--border);
+      border-radius: 6px;
+      font-size: .8rem;
+      font-family: var(--font);
+      outline: none;
+      transition: border-color .2s;
+    }
+    .scorecard-table input[type="text"]:focus { border-color: var(--brand); }
+    .scorecard-table .total-row td {
+      font-weight: 700;
+      background: #f0fdf4;
+      border-top: 2px solid #86efac;
+    }
+    .scorecard-table .grand-total-row td {
+      font-weight: 800;
+      background: var(--brand);
+      color: #fff;
+      font-size: .95rem;
+    }
+    .scorecard-table .grand-total-row input[type="number"] {
+      background: rgba(255,255,255,.15);
+      border-color: rgba(255,255,255,.4);
+      color: #fff;
+      font-weight: 700;
+    }
+    .criteria-label { font-weight: 500; }
+    .criteria-desc { font-size: .78rem; color: var(--text-muted); margin-top: .15rem; }
+    .print-btn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--bg-alt); border: 1.5px solid var(--border);
+      color: var(--text); padding: .6rem 1.25rem; border-radius: var(--radius);
+      font-size: .875rem; font-weight: 500; cursor: pointer;
+      font-family: var(--font); transition: all .2s;
+    }
+    .print-btn:hover { border-color: var(--brand); color: var(--brand); }
+    .instructions-box {
+      background: var(--brand-light);
+      border: 1px solid #c5ddf0;
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .instructions-box ol { margin-left: 1.25rem; }
+    .instructions-box li { margin-bottom: .4rem; font-size: .9rem; color: var(--text-muted); }
+    .instructions-box strong { color: var(--text); }
+
+    @media print {
+      .site-header, .page-hero .eyebrow, footer, .newsletter-section,
+      .print-btn, .no-print { display: none !important; }
+      .scorecard-table input[type="number"],
+      .scorecard-table input[type="text"] {
+        border: 1px solid #ccc;
+        -webkit-appearance: none;
+      }
+      body { font-size: 12px; }
+      .section { padding: 1rem 0; }
+      h1 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header no-print">
+    <div class="container header-inner">
+      <a href="/" class="site-logo">Operations<span>Edge</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav">
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/comparisons/">Comparisons</a></li>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/resources/" class="active">Resources</a></li>
+        <li><a href="/contact/" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/resources/">Resources</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>WMS Vendor Evaluation Scorecard</span>
+      </div>
+      <div class="eyebrow">Free Template · Warehouse Management</div>
+      <h1>WMS Vendor Evaluation Scorecard</h1>
+      <p>Score and compare up to three WMS vendors side by side using a structured, weighted framework built for UK warehouse operations.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:2rem;">
+        <div>
+          <span class="tag">Free Resource</span>
+          <span class="tag">Printable</span>
+          <span class="tag">UK-Focused</span>
+        </div>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
+          <button class="print-btn" onclick="window.print()">🖨 Print / Save as PDF</button>
+        </div>
+      </div>
+
+      <div class="instructions-box">
+        <h3 style="margin-bottom:.75rem;font-size:1.05rem;">How to use this scorecard</h3>
+        <ol>
+          <li><strong>Enter vendor names</strong> in the three columns at the top of the table.</li>
+          <li><strong>Score each criterion</strong> from <strong>1 (poor)</strong> to <strong>5 (excellent)</strong> based on your demo, trial, and research.</li>
+          <li>Scores are automatically <strong>weighted</strong> — criteria marked with a higher weight count for more in the final total.</li>
+          <li>Use the <strong>Notes</strong> column to capture specific observations from demos or reference calls.</li>
+          <li>The <strong>Grand Total</strong> row at the bottom shows your weighted score out of 100 for each vendor.</li>
+          <li>Print or save as PDF for your records or to share with stakeholders.</li>
+        </ol>
+      </div>
+
+      <!-- Vendor Name Inputs -->
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:2rem;max-width:600px;">
+        <div>
+          <label style="font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);display:block;margin-bottom:.35rem;">Vendor 1</label>
+          <input type="text" id="v1name" placeholder="e.g. Linnworks" oninput="updateVendorNames()" style="width:100%;padding:.6rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.95rem;outline:none;">
+        </div>
+        <div>
+          <label style="font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);display:block;margin-bottom:.35rem;">Vendor 2</label>
+          <input type="text" id="v2name" placeholder="e.g. Mintsoft" oninput="updateVendorNames()" style="width:100%;padding:.6rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.95rem;outline:none;">
+        </div>
+        <div>
+          <label style="font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);display:block;margin-bottom:.35rem;">Vendor 3</label>
+          <input type="text" id="v3name" placeholder="e.g. Peoplevox" oninput="updateVendorNames()" style="width:100%;padding:.6rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.95rem;outline:none;">
+        </div>
+      </div>
+
+      <div style="overflow-x:auto;">
+        <table class="scorecard-table" id="scorecard">
+          <thead>
+            <tr>
+              <th style="width:30%;">Criterion</th>
+              <th style="width:7%;" class="weight-cell">Weight</th>
+              <th class="vendor-col" id="th-v1">Vendor 1</th>
+              <th class="vendor-col" id="th-v2">Vendor 2</th>
+              <th class="vendor-col" id="th-v3">Vendor 3</th>
+              <th style="width:20%;">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <!-- SECTION: CORE WMS FEATURES -->
+            <tr class="section-header-row"><td colspan="6">A — Core WMS Features (Max 25 pts)</td></tr>
+
+            <tr>
+              <td><div class="criteria-label">Stock management &amp; real-time inventory</div><div class="criteria-desc">Real-time stock levels, multi-location tracking, stock adjustment workflows</div></td>
+              <td class="weight-cell">×2</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+            <tr>
+              <td><div class="criteria-label">Goods-in / receiving</div><div class="criteria-desc">PO matching, barcode scanning, discrepancy logging, quarantine workflow</div></td>
+              <td class="weight-cell">×1.5</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+            <tr>
+              <td><div class="criteria-label">Pick, pack &amp; despatch</div><div class="criteria-desc">Pick path optimisation, wave/batch picking, packing rules, label printing</div></td>
+              <td class="weight-cell">×2</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+            <tr>
+              <td><div class="criteria-label">Returns / reverse logistics</div><div class="criteria-desc">RMA workflow, returns inspection, restock or quarantine logic</div></td>
+              <td class="weight-cell">×1</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+
+            <!-- SECTION: INTEGRATIONS -->
+            <tr class="section-header-row"><td colspan="6">B — Integrations (Max 20 pts)</td></tr>
+
+            <tr>
+              <td><div class="criteria-label">E-commerce &amp; marketplace integrations</div><div class="criteria-desc">Shopify, WooCommerce, Amazon UK, eBay, Etsy — native or well-supported</div></td>
+              <td class="weight-cell">×2</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+            <tr>
+              <td><div class="criteria-label">UK courier integrations</div><div class="criteria-desc">Royal Mail, DPD, Evri, DHL, UPS, FedEx, Parcelforce</div></td>
+              <td class="weight-cell">×2</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+            <tr>
+              <td><div class="criteria-label">Accounting &amp; ERP integration</div><div class="criteria-desc">Xero, QuickBooks, Sage 50/200, or your ERP system</div></td>
+              <td class="weight-cell">×1.5</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+            <tr>
+              <td><div class="criteria-label">API quality &amp; open integration</div><div class="criteria-desc">REST API availability, documentation quality, Zapier/Make support</div></td>
+              <td class="weight-cell">×1</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+
+            <!-- SECTION: USABILITY -->
+            <tr class="section-header-row"><td colspan="6">C — Usability &amp; Mobile (Max 15 pts)</td></tr>
+
+            <tr>
+              <td><div class="criteria-label">Ease of use for warehouse staff</div><div class="criteria-desc">Interface simplicity for pickers and GRN staff; minimal training required</div></td>
+              <td class="weight-cell">×1.5</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+            <tr>
+              <td><div class="criteria-label">Mobile &amp; handheld scanner support</div><div class="criteria-desc">iOS/Android app quality; compatibility with Zebra/Honeywell scanners</div></td>
+              <td class="weight-cell">×2</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+            <tr>
+              <td><div class="criteria-label">Reporting &amp; management dashboards</div><div class="criteria-desc">KPI dashboards, stock reports, pick rate reporting, custom report builder</div></td>
+              <td class="weight-cell">×1</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+
+            <!-- SECTION: IMPLEMENTATION & SUPPORT -->
+            <tr class="section-header-row"><td colspan="6">D — Implementation &amp; Support (Max 20 pts)</td></tr>
+
+            <tr>
+              <td><div class="criteria-label">Implementation timeline &amp; process</div><div class="criteria-desc">Realistic go-live timeline; quality of implementation methodology</div></td>
+              <td class="weight-cell">×1.5</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+            <tr>
+              <td><div class="criteria-label">Training &amp; onboarding quality</div><div class="criteria-desc">Quality of training materials, onboarding sessions, knowledge base</div></td>
+              <td class="weight-cell">×1.5</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+            <tr>
+              <td><div class="criteria-label">Ongoing support quality</div><div class="criteria-desc">UK support hours, response times, dedicated account manager</div></td>
+              <td class="weight-cell">×2</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+            <tr>
+              <td><div class="criteria-label">Vendor stability &amp; references</div><div class="criteria-desc">Company size, funding, UK customer references, Trustpilot/G2 reviews</div></td>
+              <td class="weight-cell">×1</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+
+            <!-- SECTION: COST -->
+            <tr class="section-header-row"><td colspan="6">E — Cost &amp; Contract (Max 20 pts)</td></tr>
+
+            <tr>
+              <td><div class="criteria-label">Year 1 total cost of ownership</div><div class="criteria-desc">Licence + implementation + training + hardware + integrations</div></td>
+              <td class="weight-cell">×2</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+            <tr>
+              <td><div class="criteria-label">Pricing transparency &amp; scalability</div><div class="criteria-desc">Clear pricing model; cost predictability as volumes grow</div></td>
+              <td class="weight-cell">×1.5</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+            <tr>
+              <td><div class="criteria-label">Contract terms &amp; exit flexibility</div><div class="criteria-desc">Minimum contract length, data export rights, cancellation terms</div></td>
+              <td class="weight-cell">×1.5</td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><div class="score-input"><input type="number" min="1" max="5" placeholder="1–5" oninput="calcTotals()"></div></td>
+              <td><input type="text" placeholder="Notes…"></td>
+            </tr>
+
+            <!-- GRAND TOTAL -->
+            <tr class="grand-total-row">
+              <td colspan="2"><strong>WEIGHTED GRAND TOTAL (out of 100)</strong></td>
+              <td style="text-align:center;"><strong id="total-v1">—</strong></td>
+              <td style="text-align:center;"><strong id="total-v2">—</strong></td>
+              <td style="text-align:center;"><strong id="total-v3">—</strong></td>
+              <td></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <!-- RECOMMENDATION BOX -->
+      <div style="background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;margin-bottom:3rem;">
+        <h3 style="margin-bottom:1rem;font-size:1rem;">Scoring Guide</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.75rem;">
+          <div style="padding:.75rem;background:var(--bg);border-radius:var(--radius);border:1px solid var(--border);text-align:center;">
+            <div style="font-size:1.4rem;font-weight:800;color:#dc2626;">1</div>
+            <div style="font-size:.8rem;color:var(--text-muted);">Poor — does not meet requirement</div>
+          </div>
+          <div style="padding:.75rem;background:var(--bg);border-radius:var(--radius);border:1px solid var(--border);text-align:center;">
+            <div style="font-size:1.4rem;font-weight:800;color:#f97316;">2</div>
+            <div style="font-size:.8rem;color:var(--text-muted);">Below average — partial fit</div>
+          </div>
+          <div style="padding:.75rem;background:var(--bg);border-radius:var(--radius);border:1px solid var(--border);text-align:center;">
+            <div style="font-size:1.4rem;font-weight:800;color:#eab308;">3</div>
+            <div style="font-size:.8rem;color:var(--text-muted);">Adequate — meets basic needs</div>
+          </div>
+          <div style="padding:.75rem;background:var(--bg);border-radius:var(--radius);border:1px solid var(--border);text-align:center;">
+            <div style="font-size:1.4rem;font-weight:800;color:#22c55e;">4</div>
+            <div style="font-size:.8rem;color:var(--text-muted);">Good — strong fit for requirement</div>
+          </div>
+          <div style="padding:.75rem;background:var(--bg);border-radius:var(--radius);border:1px solid var(--border);text-align:center;">
+            <div style="font-size:1.4rem;font-weight:800;color:var(--brand);">5</div>
+            <div style="font-size:.8rem;color:var(--text-muted);">Excellent — best in class</div>
+          </div>
+        </div>
+
+        <div style="margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--border);">
+          <h4 style="font-size:.9rem;margin-bottom:.5rem;">How to interpret your totals</h4>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.5rem;font-size:.875rem;">
+            <div><span style="color:var(--success);font-weight:700;">80–100:</span> Strong fit — proceed to reference calls</div>
+            <div><span style="color:#eab308;font-weight:700;">60–79:</span> Viable — negotiate on weak areas</div>
+            <div><span style="color:#f97316;font-weight:700;">40–59:</span> Borderline — consider alternatives</div>
+            <div><span style="color:#dc2626;font-weight:700;">Below 40:</span> Poor fit — do not proceed</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-bottom:2rem;" class="no-print">
+        <p style="color:var(--text-muted);margin-bottom:1rem;">Found this useful? See our full WMS review for UK mid-size warehouses.</p>
+        <a href="/reviews/best-wms-software-uk-warehouses-2026.html" class="btn btn-brand">Read the WMS Review →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer no-print">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Operations<span>Edge</span></div>
+          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
+          <p class="text-sm" style="color:rgba(255,255,255,.4);">hello@operationsedge.co.uk</p>
+        </div>
+        <div>
+          <h4>Reviews</h4>
+          <ul class="footer-links">
+            <li><a href="/reviews/">All Reviews</a></li>
+            <li><a href="/comparisons/">Comparisons</a></li>
+            <li><a href="/guides/">Guides</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul class="footer-links">
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OperationsEdge. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const weights = [2,1.5,2,1, 2,2,1.5,1, 1.5,2,1, 1.5,1.5,2,1, 2,1.5,1.5];
+    const maxScore = weights.reduce((a,w) => a + w*5, 0);
+
+    function calcTotals() {
+      const rows = document.querySelectorAll('.scorecard-table tbody input[type="number"]');
+      const v1=[],v2=[],v3=[];
+      let ri=0;
+      for(let i=0; i<rows.length; i+=3){
+        v1.push(parseFloat(rows[i].value)||0);
+        v2.push(parseFloat(rows[i+1].value)||0);
+        v3.push(parseFloat(rows[i+2].value)||0);
+      }
+      const score = (arr) => {
+        let s=0;
+        arr.forEach((v,i)=>{ s += v * weights[i]; });
+        return Math.round((s/maxScore)*100);
+      };
+      const t1=score(v1), t2=score(v2), t3=score(v3);
+      document.getElementById('total-v1').textContent = v1.some(x=>x>0) ? t1+'/100' : '—';
+      document.getElementById('total-v2').textContent = v2.some(x=>x>0) ? t2+'/100' : '—';
+      document.getElementById('total-v3').textContent = v3.some(x=>x>0) ? t3+'/100' : '—';
+    }
+
+    function updateVendorNames() {
+      const v1 = document.getElementById('v1name').value || 'Vendor 1';
+      const v2 = document.getElementById('v2name').value || 'Vendor 2';
+      const v3 = document.getElementById('v3name').value || 'Vendor 3';
+      document.getElementById('th-v1').textContent = v1;
+      document.getElementById('th-v2').textContent = v2;
+      document.getElementById('th-v3').textContent = v3;
+    }
+  </script>
+
+</body>
+</html>

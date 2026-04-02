@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warehouse H&amp;S Digital Audit Checklist | Free UK Template | OperationsEdge</title>
+  <meta name="description" content="Free warehouse health and safety audit checklist for UK operations managers. Aligned with the Health and Safety at Work Act 1974 and UK HSE guidance. Printable and digital-friendly.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operationsedge.co.uk/resources/warehouse-hs-audit-checklist.html">
+  <meta property="og:title" content="Warehouse H&amp;S Digital Audit Checklist — Free UK Template">
+  <meta property="og:description" content="Comprehensive UK warehouse health and safety checklist aligned with HSE guidance. Free, printable, digital-friendly.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.operationsedge.co.uk/resources/warehouse-hs-audit-checklist.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    /* ---- Checklist-specific styles ---- */
+    .audit-header-bar {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+    .audit-field label {
+      display: block;
+      font-size: .75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--text-muted);
+      margin-bottom: .3rem;
+    }
+    .audit-field input {
+      width: 100%;
+      padding: .55rem .75rem;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--font);
+      font-size: .9rem;
+      outline: none;
+      transition: border-color .2s;
+    }
+    .audit-field input:focus { border-color: var(--brand); }
+
+    .checklist-section { margin-bottom: 2.5rem; }
+    .checklist-section-title {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      background: var(--brand);
+      color: #fff;
+      padding: .7rem 1.25rem;
+      border-radius: var(--radius) var(--radius) 0 0;
+      font-size: .85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .checklist-section-title .section-icon { font-size: 1.1rem; }
+    .checklist-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .875rem;
+      border: 1px solid var(--border);
+      border-top: none;
+    }
+    .checklist-table th {
+      background: #f1f5f9;
+      padding: .55rem 1rem;
+      text-align: left;
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      border-bottom: 1px solid var(--border);
+    }
+    .checklist-table th.status-col { text-align: center; width: 90px; }
+    .checklist-table th.action-col { width: 25%; }
+    .checklist-table td {
+      padding: .65rem 1rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .checklist-table tr:last-child td { border-bottom: none; }
+    .checklist-table tr:nth-child(even) td { background: #fafbfc; }
+    .item-text { font-weight: 500; margin-bottom: .15rem; }
+    .item-ref { font-size: .75rem; color: var(--text-muted); }
+    .status-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .35rem;
+    }
+    .status-option {
+      display: flex;
+      align-items: center;
+      gap: .35rem;
+      cursor: pointer;
+      font-size: .8rem;
+      font-weight: 500;
+    }
+    .status-option input[type="radio"] { accent-color: var(--brand); cursor: pointer; }
+    .status-pass { color: #15803d; }
+    .status-fail { color: #b91c1c; }
+    .status-na   { color: var(--text-muted); }
+    .action-input {
+      width: 100%;
+      padding: .4rem .5rem;
+      border: 1.5px solid var(--border);
+      border-radius: 6px;
+      font-size: .8rem;
+      font-family: var(--font);
+      outline: none;
+      resize: vertical;
+      min-height: 42px;
+      transition: border-color .2s;
+    }
+    .action-input:focus { border-color: var(--brand); }
+
+    .summary-bar {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .summary-stat { text-align: center; }
+    .summary-num { font-size: 2rem; font-weight: 800; line-height: 1; margin-bottom: .2rem; }
+    .summary-label { font-size: .75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .06em; }
+    .num-pass { color: var(--success); }
+    .num-fail { color: #dc2626; }
+    .num-na   { color: var(--text-muted); }
+
+    .print-btn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--bg-alt); border: 1.5px solid var(--border);
+      color: var(--text); padding: .6rem 1.25rem; border-radius: var(--radius);
+      font-size: .875rem; font-weight: 500; cursor: pointer;
+      font-family: var(--font); transition: all .2s;
+    }
+    .print-btn:hover { border-color: var(--brand); color: var(--brand); }
+
+    .legal-note {
+      background: #fff8e1;
+      border: 1px solid #ffe082;
+      border-radius: var(--radius);
+      padding: .9rem 1.25rem;
+      font-size: .8rem;
+      color: #78610a;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 640px) {
+      .audit-header-bar { grid-template-columns: 1fr; }
+      .checklist-table { font-size: .8rem; }
+    }
+
+    @media print {
+      .site-header, footer, .newsletter-section, .print-btn, .no-print { display: none !important; }
+      .checklist-table .action-input { border: 1px solid #ccc; min-height: 30px; }
+      body { font-size: 11px; }
+      .section { padding: .5rem 0; }
+      .checklist-section { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header no-print">
+    <div class="container header-inner">
+      <a href="/" class="site-logo">Operations<span>Edge</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav">
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/comparisons/">Comparisons</a></li>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/resources/" class="active">Resources</a></li>
+        <li><a href="/contact/" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/resources/">Resources</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Warehouse H&amp;S Audit Checklist</span>
+      </div>
+      <div class="eyebrow">Free Template · Health &amp; Safety · UK</div>
+      <h1>Warehouse H&amp;S Digital Audit Checklist</h1>
+      <p>A comprehensive warehouse health and safety audit checklist aligned with UK HSE guidance and the Health and Safety at Work Act 1974. Complete digitally or print for your records.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem;" class="no-print">
+        <div>
+          <span class="tag">Free Resource</span>
+          <span class="tag">Printable</span>
+          <span class="tag">UK HSE Aligned</span>
+          <span class="tag">HSWA 1974</span>
+        </div>
+        <button class="print-btn" onclick="window.print()">🖨 Print / Save as PDF</button>
+      </div>
+
+      <div class="legal-note">
+        <strong>Important:</strong> This checklist is a practical aid for internal audits and does not constitute legal advice. It is not a substitute for a formal risk assessment under the Management of Health and Safety at Work Regulations 1999. Always consult a qualified H&amp;S professional for your specific premises and activities.
+      </div>
+
+      <!-- Audit Header -->
+      <div class="audit-header-bar">
+        <div class="audit-field">
+          <label>Site / Location</label>
+          <input type="text" placeholder="e.g. Unit 4, Northfield Industrial Estate">
+        </div>
+        <div class="audit-field">
+          <label>Date of Audit</label>
+          <input type="date">
+        </div>
+        <div class="audit-field">
+          <label>Auditor Name</label>
+          <input type="text" placeholder="Full name">
+        </div>
+        <div class="audit-field">
+          <label>Role / Job Title</label>
+          <input type="text" placeholder="e.g. Operations Manager">
+        </div>
+        <div class="audit-field">
+          <label>Next Review Date</label>
+          <input type="date">
+        </div>
+        <div class="audit-field">
+          <label>Audit Reference</label>
+          <input type="text" placeholder="e.g. WH-AUDIT-2026-04">
+        </div>
+      </div>
+
+      <!-- Live Summary -->
+      <div class="summary-bar no-print">
+        <div class="summary-stat"><div class="summary-num num-pass" id="count-pass">0</div><div class="summary-label">Pass</div></div>
+        <div class="summary-stat"><div class="summary-num num-fail" id="count-fail">0</div><div class="summary-label">Fail</div></div>
+        <div class="summary-stat"><div class="summary-num num-na" id="count-na">0</div><div class="summary-label">N/A</div></div>
+        <div style="flex:1;min-width:200px;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:.35rem;font-size:.8rem;font-weight:600;">
+            <span>Compliance score</span>
+            <span id="score-pct">—</span>
+          </div>
+          <div style="background:var(--border);border-radius:100px;height:10px;">
+            <div id="score-bar" style="background:var(--success);border-radius:100px;height:10px;width:0%;transition:width .4s;"></div>
+          </div>
+          <div style="font-size:.75rem;color:var(--text-muted);margin-top:.35rem;">(Pass ÷ Pass+Fail items with a response)</div>
+        </div>
+      </div>
+
+      <!-- ===== SECTION 1: FIRE SAFETY ===== -->
+      <div class="checklist-section">
+        <div class="checklist-section-title">
+          <span class="section-icon">🔥</span> Section 1 — Fire Safety
+        </div>
+        <table class="checklist-table">
+          <thead><tr>
+            <th>Item</th>
+            <th class="status-col">Pass / Fail / N/A</th>
+            <th class="action-col">Action Required / Notes</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="item-text">Fire risk assessment is current and reviewed within last 12 months</div><div class="item-ref">Regulatory Reform (Fire Safety) Order 2005, Art. 9</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="f1" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="f1" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="f1" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Fire exits are clearly marked, unobstructed and operational</div><div class="item-ref">RRFSO 2005, Art. 14</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="f2" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="f2" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="f2" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Fire extinguishers are in correct locations, in-date, and visually inspected</div><div class="item-ref">BS 5306-3; annual service record on site</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="f3" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="f3" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="f3" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Fire alarm system tested weekly; records maintained</div><div class="item-ref">BS 5839; RRFSO 2005</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="f4" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="f4" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="f4" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Fire evacuation procedure is displayed and staff have been drilled in last 12 months</div><div class="item-ref">RRFSO 2005, Art. 21</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="f5" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="f5" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="f5" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Flammable/hazardous materials stored correctly and away from ignition sources</div><div class="item-ref">DSEAR 2002; COSHH 2002</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="f6" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="f6" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="f6" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ===== SECTION 2: MANUAL HANDLING ===== -->
+      <div class="checklist-section">
+        <div class="checklist-section-title">
+          <span class="section-icon">🏋️</span> Section 2 — Manual Handling
+        </div>
+        <table class="checklist-table">
+          <thead><tr>
+            <th>Item</th>
+            <th class="status-col">Pass / Fail / N/A</th>
+            <th class="action-col">Action Required / Notes</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="item-text">Manual handling risk assessment completed and documented</div><div class="item-ref">Manual Handling Operations Regulations 1992</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="m1" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="m1" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="m1" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">All warehouse staff have received manual handling training (records on file)</div><div class="item-ref">MHOR 1992, Reg. 4</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="m2" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="m2" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="m2" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Mechanical aids (pallet trucks, sack trucks, lifts) available and in good repair</div><div class="item-ref">PUWER 1998</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="m3" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="m3" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="m3" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Maximum load weights are labelled on racking and shelving</div><div class="item-ref">PUWER 1998; HSWA 1974</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="m4" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="m4" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="m4" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ===== SECTION 3: FORKLIFT & MHE ===== -->
+      <div class="checklist-section">
+        <div class="checklist-section-title">
+          <span class="section-icon">🚜</span> Section 3 — Forklift Trucks &amp; Materials Handling Equipment (MHE)
+        </div>
+        <table class="checklist-table">
+          <thead><tr>
+            <th>Item</th>
+            <th class="status-col">Pass / Fail / N/A</th>
+            <th class="action-col">Action Required / Notes</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="item-text">All FLT operators hold a valid RTITB / ITSSAR licence for the truck type operated</div><div class="item-ref">PUWER 1998; HSE ACOP L117</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="flt1" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="flt1" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="flt1" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Pre-shift FLT checks completed and recorded daily</div><div class="item-ref">PUWER 1998, Reg. 6</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="flt2" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="flt2" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="flt1" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Pedestrian and FLT traffic segregated with clear markings and barriers</div><div class="item-ref">Workplace (H,S&amp;W) Regs 1992, Reg. 17</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="flt3" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="flt3" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="flt3" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">FLT LOLER thorough examination is current (every 12 months for mast/attachments)</div><div class="item-ref">LOLER 1998, Reg. 9</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="flt4" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="flt4" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="flt4" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Speed limits are posted and enforced within the warehouse</div><div class="item-ref">HSE ACOP L117</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="flt5" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="flt5" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="flt5" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ===== SECTION 4: RACKING & STORAGE ===== -->
+      <div class="checklist-section">
+        <div class="checklist-section-title">
+          <span class="section-icon">🗄️</span> Section 4 — Racking &amp; Storage
+        </div>
+        <table class="checklist-table">
+          <thead><tr>
+            <th>Item</th>
+            <th class="status-col">Pass / Fail / N/A</th>
+            <th class="action-col">Action Required / Notes</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="item-text">Racking inspected by a competent person in the last 12 months (SEMA-compliant)</div><div class="item-ref">PUWER 1998; HSE INDG271; SEMA CoP</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="r1" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="r1" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="r1" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Damaged racking is tagged, taken out of service and reported</div><div class="item-ref">SEMA CoP; PUWER 1998</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="r2" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="r2" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="r2" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Safe working load (SWL) is displayed on all racking bays</div><div class="item-ref">HSWA 1974; PUWER 1998</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="r3" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="r3" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="r3" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Racking is anchored to floor and free-standing where required</div><div class="item-ref">SEMA CoP</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="r4" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="r4" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="r4" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ===== SECTION 5: PPE ===== -->
+      <div class="checklist-section">
+        <div class="checklist-section-title">
+          <span class="section-icon">🦺</span> Section 5 — PPE &amp; Protective Clothing
+        </div>
+        <table class="checklist-table">
+          <thead><tr>
+            <th>Item</th>
+            <th class="status-col">Pass / Fail / N/A</th>
+            <th class="action-col">Action Required / Notes</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="item-text">PPE requirements identified via risk assessment and documented</div><div class="item-ref">PPE at Work Regulations 2022 (updated)</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="p1" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="p1" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="p1" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Safety footwear (steel-toecap) worn by all staff in operational areas</div><div class="item-ref">PPE at Work Regs 2022</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="p2" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="p2" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="p2" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Hi-visibility vests worn in FLT operating areas</div><div class="item-ref">PPE at Work Regs 2022; HSE ACOP L117</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="p3" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="p3" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="p3" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">PPE is stored correctly, inspected regularly and replaced when defective</div><div class="item-ref">PPE at Work Regs 2022, Reg. 7</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="p4" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="p4" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="p4" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ===== SECTION 6: HOUSEKEEPING ===== -->
+      <div class="checklist-section">
+        <div class="checklist-section-title">
+          <span class="section-icon">🧹</span> Section 6 — Housekeeping &amp; Workplace Conditions
+        </div>
+        <table class="checklist-table">
+          <thead><tr>
+            <th>Item</th>
+            <th class="status-col">Pass / Fail / N/A</th>
+            <th class="action-col">Action Required / Notes</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="item-text">Walkways and emergency routes are clear of obstructions at all times</div><div class="item-ref">Workplace (H,S&amp;W) Regs 1992, Reg. 12</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="h1" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="h1" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="h1" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Floors are clean, dry and free from trip hazards; spillage procedure in place</div><div class="item-ref">Workplace (H,S&amp;W) Regs 1992, Reg. 12</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="h2" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="h2" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="h2" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Adequate lighting in all operational areas and loading bays</div><div class="item-ref">Workplace (H,S&amp;W) Regs 1992, Reg. 8</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="h3" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="h3" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="h3" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Temperature is maintained at a reasonable level (min. 16°C for sedentary, 13°C for active work)</div><div class="item-ref">Workplace (H,S&amp;W) Regs 1992, Reg. 7</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="h4" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="h4" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="h4" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Welfare facilities (toilets, hand-washing, rest area) are available and maintained</div><div class="item-ref">Workplace (H,S&amp;W) Regs 1992, Regs 20–25</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="h5" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="h5" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="h5" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ===== SECTION 7: FIRST AID & INCIDENT REPORTING ===== -->
+      <div class="checklist-section">
+        <div class="checklist-section-title">
+          <span class="section-icon">🩺</span> Section 7 — First Aid &amp; Incident Reporting
+        </div>
+        <table class="checklist-table">
+          <thead><tr>
+            <th>Item</th>
+            <th class="status-col">Pass / Fail / N/A</th>
+            <th class="action-col">Action Required / Notes</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="item-text">Adequate number of trained first aiders for shift size; certificates current</div><div class="item-ref">Health and Safety (First Aid) Regs 1981</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="fa1" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="fa1" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="fa1" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">First aid boxes stocked, in-date and inspected monthly</div><div class="item-ref">H&amp;S (First Aid) Regs 1981</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="fa2" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="fa2" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="fa2" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Accident book (or digital equivalent) is maintained and accessible</div><div class="item-ref">RIDDOR 2013; Social Security Admin Act 1992</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="fa3" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="fa3" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="fa3" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">RIDDOR-reportable incidents reported to HSE within required timescales</div><div class="item-ref">RIDDOR 2013 (7-day injuries within 15 days)</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="fa4" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="fa4" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="fa4" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ===== SECTION 8: GENERAL COMPLIANCE ===== -->
+      <div class="checklist-section">
+        <div class="checklist-section-title">
+          <span class="section-icon">📋</span> Section 8 — General Compliance &amp; Documentation
+        </div>
+        <table class="checklist-table">
+          <thead><tr>
+            <th>Item</th>
+            <th class="status-col">Pass / Fail / N/A</th>
+            <th class="action-col">Action Required / Notes</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="item-text">Employer's Liability Insurance certificate displayed on premises</div><div class="item-ref">Employers' Liability (Compulsory Insurance) Act 1969</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="g1" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="g1" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="g1" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Health and Safety Law poster is displayed in a prominent location</div><div class="item-ref">HSWA 1974; Health and Safety Info for Employees Regs 1989</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="g2" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="g2" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="g2" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Written H&amp;S policy exists, signed by senior manager, and communicated to staff</div><div class="item-ref">HSWA 1974, s.2(3) — required for 5+ employees</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="g3" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="g3" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="g3" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Suitable and sufficient risk assessments exist for all significant workplace hazards</div><div class="item-ref">Management of H&amp;S at Work Regs 1999, Reg. 3</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="g4" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="g4" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="g4" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+            <tr>
+              <td><div class="item-text">Induction training records are held for all staff and contractors</div><div class="item-ref">HSWA 1974, s.2(2)(c)</div></td>
+              <td><div class="status-group">
+                <label class="status-option status-pass"><input type="radio" name="g5" value="pass" onchange="updateSummary()"> Pass</label>
+                <label class="status-option status-fail"><input type="radio" name="g5" value="fail" onchange="updateSummary()"> Fail</label>
+                <label class="status-option status-na"><input type="radio" name="g5" value="na" onchange="updateSummary()"> N/A</label>
+              </div></td>
+              <td><textarea class="action-input" placeholder="Action / notes…"></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Auditor sign-off -->
+      <div style="background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem 2rem;margin-bottom:2rem;">
+        <h3 style="font-size:1rem;margin-bottom:1rem;">Auditor Sign-Off &amp; Summary</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;">
+          <div class="audit-field">
+            <label>Overall Assessment</label>
+            <select style="width:100%;padding:.55rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.9rem;outline:none;">
+              <option value="">Select…</option>
+              <option>Satisfactory — no immediate action required</option>
+              <option>Satisfactory with observations — action within 30 days</option>
+              <option>Unsatisfactory — immediate remedial action required</option>
+              <option>Critical — stop work order / escalate immediately</option>
+            </select>
+          </div>
+          <div class="audit-field">
+            <label>Date of Next Audit</label>
+            <input type="date">
+          </div>
+        </div>
+        <div class="audit-field" style="margin-bottom:1rem;">
+          <label>Summary / Key Findings</label>
+          <textarea style="width:100%;padding:.6rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.9rem;outline:none;resize:vertical;min-height:80px;" placeholder="Summarise the main findings and any priority actions…"></textarea>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+          <div class="audit-field">
+            <label>Auditor Signature</label>
+            <input type="text" placeholder="Type full name as signature">
+          </div>
+          <div class="audit-field">
+            <label>Reviewed by (Manager)</label>
+            <input type="text" placeholder="Type full name as signature">
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-bottom:2rem;" class="no-print">
+        <p style="color:var(--text-muted);margin-bottom:1rem;">Looking for digital H&amp;S audit software? See our upcoming SafetyCulture review.</p>
+        <a href="/reviews/" class="btn btn-brand">Browse All Reviews →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer no-print">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Operations<span>Edge</span></div>
+          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
+          <p class="text-sm" style="color:rgba(255,255,255,.4);">hello@operationsedge.co.uk</p>
+        </div>
+        <div>
+          <h4>Reviews</h4>
+          <ul class="footer-links">
+            <li><a href="/reviews/">All Reviews</a></li>
+            <li><a href="/comparisons/">Comparisons</a></li>
+            <li><a href="/guides/">Guides</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul class="footer-links">
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OperationsEdge. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function updateSummary() {
+      let pass=0, fail=0, na=0;
+      document.querySelectorAll('input[type="radio"]:checked').forEach(r => {
+        if(r.value==='pass') pass++;
+        else if(r.value==='fail') fail++;
+        else if(r.value==='na') na++;
+      });
+      document.getElementById('count-pass').textContent = pass;
+      document.getElementById('count-fail').textContent = fail;
+      document.getElementById('count-na').textContent = na;
+      const total = pass + fail;
+      if(total > 0){
+        const pct = Math.round((pass/total)*100);
+        document.getElementById('score-pct').textContent = pct + '%';
+        document.getElementById('score-bar').style.width = pct + '%';
+        const bar = document.getElementById('score-bar');
+        bar.style.background = pct>=80 ? '#16a34a' : pct>=60 ? '#eab308' : '#dc2626';
+      } else {
+        document.getElementById('score-pct').textContent = '—';
+        document.getElementById('score-bar').style.width = '0%';
+      }
+    }
+  </script>
+
+</body>
+</html>
