@@ -559,3 +559,56 @@ p  { margin-bottom: 1rem; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .hero { padding: 3.5rem 0 3rem; }
 }
+
+/* --- Mobile nav top offset fix (header is 72px) --- */
+@media (max-width: 768px) {
+  .site-nav { top: 72px; }
+}
+
+/* --- Focus styles (keyboard navigation) --- */
+:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+/* Hide outlines for mouse users unless keyboard-nav is active */
+:focus:not(:focus-visible) { outline: none; }
+
+/* Keyboard-nav class added by site.js on Tab keypress */
+body.keyboard-nav a:focus,
+body.keyboard-nav button:focus,
+body.keyboard-nav input:focus,
+body.keyboard-nav textarea:focus,
+body.keyboard-nav select:focus {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/* --- Affiliate disclosure notice (in-article) --- */
+.affiliate-notice {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: var(--radius);
+  padding: .65rem 1rem;
+  font-size: .8rem;
+  color: #78610a;
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
+  line-height: 1.5;
+}
+.affiliate-notice a { color: #78610a; text-decoration: underline; }
+
+/* --- Newsletter success message --- */
+.newsletter-success {
+  display: none;
+  color: var(--brand);
+  font-weight: 600;
+  margin-top: .75rem;
+  font-size: .95rem;
+}
+
+/* --- Review filter pills active state (managed by site.js) --- */
+.filter-pills { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+.filter-pills .btn { transition: all .15s; }

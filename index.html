@@ -42,6 +42,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script defer data-domain="operationsedge.co.uk" src="https://plausible.io/js/script.outbound-links.js"></script>
 </head>
 <body>
 
@@ -85,20 +86,20 @@
     <div class="container">
       <div class="stats-grid">
         <div>
-          <div class="stat-num">50+</div>
-          <div class="stat-label">Tools Reviewed</div>
+          <div class="stat-num">0</div>
+          <div class="stat-label">Pay-to-Play Rankings</div>
         </div>
         <div>
-          <div class="stat-num">12</div>
-          <div class="stat-label">Categories Covered</div>
+          <div class="stat-num">5</div>
+          <div class="stat-label">Content Areas</div>
         </div>
         <div>
           <div class="stat-num">100%</div>
-          <div class="stat-label">Independent</div>
+          <div class="stat-label">Editorially Independent</div>
         </div>
         <div>
           <div class="stat-num">UK</div>
-          <div class="stat-label">Focused Advice</div>
+          <div class="stat-label">Focused &amp; GBP Priced</div>
         </div>
       </div>
     </div>
@@ -265,11 +266,14 @@
       <div class="eyebrow">Stay Sharp</div>
       <h2>The Ops Edge Newsletter</h2>
       <p style="color:var(--text-muted);max-width:500px;margin:.5rem auto 0;">New tool reviews, comparison guides and practical ops advice — straight to your inbox. No spam, unsubscribe any time.</p>
-      <form class="newsletter-form" onsubmit="return false;">
-        <input type="email" placeholder="your@email.co.uk" aria-label="Email address">
+      <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="newsletter">
+        <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
         <button type="submit" class="btn btn-brand">Subscribe</button>
       </form>
-      <p class="text-sm text-muted" style="margin-top:.75rem;">Join 2,000+ UK ops professionals</p>
+      <p class="newsletter-success">You're on the list — thanks for subscribing.</p>
+      <p class="text-sm text-muted" style="margin-top:.75rem;">For UK operations managers and logistics professionals. No spam.</p>
     </div>
   </div>
 
@@ -322,5 +326,6 @@
     </div>
   </footer>
 
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

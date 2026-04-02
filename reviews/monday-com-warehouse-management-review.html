@@ -46,6 +46,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script defer data-domain="operationsedge.co.uk" src="https://plausible.io/js/script.outbound-links.js"></script>
 </head>
 <body>
 
@@ -92,6 +93,11 @@
             <span>⏱ 16 min read</span>
             <span>⭐ Score: 4.1/5</span>
             <span>💷 From ~£9/user/month</span>
+          </div>
+
+          <div class="affiliate-notice" role="note">
+            <span aria-hidden="true">ℹ</span>
+            <span>Some links on this page may earn OperationsEdge a commission if you sign up via them. This does not affect our scores or editorial opinion. <a href="/affiliate-disclosure/">Read our disclosure policy.</a></span>
           </div>
 
           <!-- Rating summary -->
@@ -255,7 +261,7 @@
           <div class="cta-box">
             <h3>Try Monday.com free for 14 days</h3>
             <p>No credit card required. The free trial includes all Pro features so you can test it properly before committing.</p>
-            <a href="https://monday.com" rel="noopener noreferrer" class="btn btn-primary">Start Free Trial →</a>
+            <a href="https://monday.com" rel="sponsored noopener noreferrer" class="btn btn-primary">Start Free Trial →</a>
           </div>
 
 
@@ -287,7 +293,7 @@
           <div class="sidebar-box" style="background:var(--brand-light);border-color:#c5ddf0;text-align:center;">
             <h4 style="color:var(--brand);margin-bottom:.5rem;">Try Monday.com</h4>
             <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:1rem;">14-day free trial, all Pro features included.</p>
-            <a href="https://monday.com" rel="noopener noreferrer" class="btn btn-brand" style="width:100%;justify-content:center;">Start Free Trial</a>
+            <a href="https://monday.com" rel="sponsored noopener noreferrer" class="btn btn-brand" style="width:100%;justify-content:center;">Start Free Trial</a>
           </div>
 
           <div class="sidebar-box">
@@ -323,10 +329,13 @@
     <div class="container">
       <div class="eyebrow">Stay Up to Date</div>
       <h2>New reviews and ops guides straight to your inbox</h2>
-      <form class="newsletter-form" onsubmit="return false;">
-        <input type="email" placeholder="your@email.co.uk" aria-label="Email address">
+      <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="newsletter">
+        <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
         <button type="submit" class="btn btn-brand">Subscribe Free</button>
       </form>
+      <p class="newsletter-success">You're on the list — thanks for subscribing.</p>
     </div>
   </div>
 
@@ -371,5 +380,6 @@
     </div>
   </footer>
 
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

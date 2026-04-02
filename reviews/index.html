@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script defer data-domain="operationsedge.co.uk" src="https://plausible.io/js/script.outbound-links.js"></script>
 </head>
 <body>
 
@@ -48,19 +49,19 @@
   <section class="section">
     <div class="container">
 
-      <!-- Filter Pills -->
-      <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2.5rem;">
-        <a href="/reviews/" class="btn btn-brand" style="padding:.4rem 1rem;font-size:.85rem;">All</a>
-        <a href="/reviews/?cat=wms" class="btn btn-outline" style="padding:.4rem 1rem;font-size:.85rem;">WMS</a>
-        <a href="/reviews/?cat=project" class="btn btn-outline" style="padding:.4rem 1rem;font-size:.85rem;">Project Management</a>
-        <a href="/reviews/?cat=workforce" class="btn btn-outline" style="padding:.4rem 1rem;font-size:.85rem;">Workforce</a>
-        <a href="/reviews/?cat=safety" class="btn btn-outline" style="padding:.4rem 1rem;font-size:.85rem;">Safety</a>
-        <a href="/reviews/?cat=automation" class="btn btn-outline" style="padding:.4rem 1rem;font-size:.85rem;">Automation</a>
+      <!-- Filter Pills — active state managed by site.js -->
+      <div class="filter-pills">
+        <a href="/reviews/" class="btn btn-brand" data-filter-cat="" style="padding:.4rem 1rem;font-size:.85rem;">All</a>
+        <a href="/reviews/?cat=wms" class="btn btn-outline" data-filter-cat="wms" style="padding:.4rem 1rem;font-size:.85rem;">WMS</a>
+        <a href="/reviews/?cat=project" class="btn btn-outline" data-filter-cat="project" style="padding:.4rem 1rem;font-size:.85rem;">Project Management</a>
+        <a href="/reviews/?cat=workforce" class="btn btn-outline" data-filter-cat="workforce" style="padding:.4rem 1rem;font-size:.85rem;">Workforce</a>
+        <a href="/reviews/?cat=safety" class="btn btn-outline" data-filter-cat="safety" style="padding:.4rem 1rem;font-size:.85rem;">Safety</a>
+        <a href="/reviews/?cat=automation" class="btn btn-outline" data-filter-cat="automation" style="padding:.4rem 1rem;font-size:.85rem;">Automation</a>
       </div>
 
-      <div class="card-grid">
+      <div class="card-grid" id="reviews-grid">
 
-        <article class="card">
+        <article class="card" data-cat="wms">
           <div class="card-label">WMS Roundup</div>
           <div class="rating">
             <span class="stars">★★★★★</span>
@@ -74,7 +75,7 @@
           <a href="/reviews/best-wms-software-uk-warehouses-2026.html" class="btn btn-outline" style="padding:.45rem 1rem;font-size:.875rem;">Read Review</a>
         </article>
 
-        <article class="card">
+        <article class="card" data-cat="project">
           <div class="card-label">Honest Review</div>
           <div class="rating">
             <span class="stars">★★★★☆</span>
@@ -88,7 +89,7 @@
           <a href="/reviews/monday-com-warehouse-management-review.html" class="btn btn-outline" style="padding:.45rem 1rem;font-size:.875rem;">Read Review</a>
         </article>
 
-        <article class="card">
+        <article class="card" data-cat="safety">
           <div class="card-label">Honest Review</div>
           <div class="rating">
             <span class="stars">★★★★½</span>
@@ -102,7 +103,7 @@
           <a href="/reviews/safetyculture-iauditor-review.html" class="btn btn-outline" style="padding:.45rem 1rem;font-size:.875rem;">Read Review</a>
         </article>
 
-        <article class="card" style="opacity:.7;">
+        <article class="card" data-cat="project" style="opacity:.7;">
           <div class="card-label">Coming Soon</div>
           <h3>Smartsheet for Operations Teams</h3>
           <p>How Smartsheet stacks up as an operations management platform for UK teams — review in progress.</p>
@@ -112,7 +113,7 @@
           <span class="btn btn-outline" style="padding:.45rem 1rem;font-size:.875rem;opacity:.5;pointer-events:none;">Coming Soon</span>
         </article>
 
-        <article class="card" style="opacity:.7;">
+        <article class="card" data-cat="workforce" style="opacity:.7;">
           <div class="card-label">Coming Soon</div>
           <h3>Connecteam Review: Workforce Management</h3>
           <p>Scheduling, time tracking and team comms for shift-based ops — Connecteam put to the test.</p>
@@ -122,7 +123,7 @@
           <span class="btn btn-outline" style="padding:.45rem 1rem;font-size:.875rem;opacity:.5;pointer-events:none;">Coming Soon</span>
         </article>
 
-        <article class="card" style="opacity:.7;">
+        <article class="card" data-cat="automation" style="opacity:.7;">
           <div class="card-label">Coming Soon</div>
           <h3>Zapier for Operations Automation</h3>
           <p>Automating repetitive operations workflows with Zapier — what works, what doesn't and what it costs.</p>
@@ -141,10 +142,13 @@
       <div class="eyebrow">New Reviews Weekly</div>
       <h2>Get notified when new reviews go live</h2>
       <p style="color:var(--text-muted);max-width:500px;margin:.5rem auto 0;">Subscribe and we'll send you new reviews, comparisons and ops guides as they're published.</p>
-      <form class="newsletter-form" onsubmit="return false;">
-        <input type="email" placeholder="your@email.co.uk" aria-label="Email address">
+      <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="newsletter">
+        <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
         <button type="submit" class="btn btn-brand">Subscribe</button>
       </form>
+      <p class="newsletter-success">You're on the list — thanks for subscribing.</p>
     </div>
   </div>
 
@@ -195,5 +199,6 @@
     </div>
   </footer>
 
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

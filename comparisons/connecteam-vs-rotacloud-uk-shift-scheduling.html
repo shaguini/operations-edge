@@ -150,6 +150,7 @@
       .tool-overview { grid-template-columns: 1fr; }
     }
   </style>
+  <script defer data-domain="operationsedge.co.uk" src="https://plausible.io/js/script.outbound-links.js"></script>
 </head>
 <body>
 
@@ -197,6 +198,11 @@
             <span>🏷 Shift Scheduling</span>
           </div>
 
+          <div class="affiliate-notice" role="note">
+            <span aria-hidden="true">ℹ</span>
+            <span>Some links on this page may earn OperationsEdge a commission if you sign up via them. This does not affect our scores or editorial opinion. <a href="/affiliate-disclosure/">Read our disclosure policy.</a></span>
+          </div>
+
           <p>Connecteam and Rotacloud are two of the most frequently considered shift scheduling tools for UK warehouse and logistics managers. Both handle the core job — building rotas, tracking time, managing annual leave — but they approach it very differently.</p>
 
           <p>Connecteam is a broad workforce management platform. Rotacloud is a focused UK-native scheduling tool. Which is right depends almost entirely on what your operation actually needs.</p>
@@ -210,14 +216,14 @@
               <div class="verdict-card-name">Connecteam</div>
               <div class="verdict-card-best">Best all-in-one platform</div>
               <p class="verdict-card-summary">The stronger choice for most UK logistics and warehouse operations. Combines scheduling, time tracking, team communications and task management in one app — plus a genuinely useful free tier.</p>
-              <a href="https://connecteam.com" rel="noopener noreferrer" class="btn btn-brand">Try Free →</a>
+              <a href="https://connecteam.com" rel="sponsored noopener noreferrer" class="btn btn-brand">Try Free →</a>
             </div>
             <div class="verdict-card">
               <div class="verdict-card-label">Best specialist option</div>
               <div class="verdict-card-name">Rotacloud</div>
               <div class="verdict-card-best">Best UK-native scheduling</div>
               <p class="verdict-card-summary">The better choice if you want pure scheduling with excellent UK payroll support and local customer service. Simpler, cleaner and UK-native from day one.</p>
-              <a href="https://rotacloud.com" rel="noopener noreferrer" class="btn btn-outline">Try Rotacloud →</a>
+              <a href="https://rotacloud.com" rel="sponsored noopener noreferrer" class="btn btn-outline">Try Rotacloud →</a>
             </div>
           </div>
 
@@ -406,7 +412,7 @@
           </div>
 
           <p><strong>Best for:</strong> UK logistics and warehouse teams that want scheduling, communications and task management in one app — particularly those with deskless or mobile workers.</p>
-          <p><a href="https://connecteam.com" rel="noopener noreferrer">Try Connecteam free (up to 10 users) →</a></p>
+          <p><a href="https://connecteam.com" rel="sponsored noopener noreferrer">Try Connecteam free (up to 10 users) →</a></p>
 
           <h2 id="rotacloud-detail">Rotacloud in Depth</h2>
 
@@ -440,7 +446,7 @@
           </div>
 
           <p><strong>Best for:</strong> UK operations that want a clean, focused scheduling and leave management tool with excellent UK payroll support and local customer service — and are happy to use separate tools for communications.</p>
-          <p><a href="https://rotacloud.com" rel="noopener noreferrer">Try Rotacloud →</a></p>
+          <p><a href="https://rotacloud.com" rel="sponsored noopener noreferrer">Try Rotacloud →</a></p>
 
           <h2 id="which-to-choose">Which Should You Choose?</h2>
 
@@ -491,12 +497,12 @@
             <div style="background:var(--brand-light);border:1px solid #c5ddf0;border-radius:var(--radius-lg);padding:1.5rem;text-align:center;">
               <div style="font-weight:700;margin-bottom:.4rem;">Connecteam</div>
               <div style="font-size:.8rem;color:var(--text-muted);margin-bottom:1rem;">Free up to 10 users</div>
-              <a href="https://connecteam.com" rel="noopener noreferrer" class="btn btn-brand" style="width:100%;justify-content:center;font-size:.875rem;">Try Free →</a>
+              <a href="https://connecteam.com" rel="sponsored noopener noreferrer" class="btn btn-brand" style="width:100%;justify-content:center;font-size:.875rem;">Try Free →</a>
             </div>
             <div style="background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;">
               <div style="font-weight:700;margin-bottom:.4rem;">Rotacloud</div>
               <div style="font-size:.8rem;color:var(--text-muted);margin-bottom:1rem;">UK-native, from £1/user/month</div>
-              <a href="https://rotacloud.com" rel="noopener noreferrer" class="btn btn-outline" style="width:100%;justify-content:center;font-size:.875rem;">Try Rotacloud →</a>
+              <a href="https://rotacloud.com" rel="sponsored noopener noreferrer" class="btn btn-outline" style="width:100%;justify-content:center;font-size:.875rem;">Try Rotacloud →</a>
             </div>
           </div>
 
@@ -509,7 +515,7 @@
             <h4 style="color:var(--brand);">Our Pick</h4>
             <p style="font-size:.875rem;font-weight:600;margin-bottom:.25rem;">Connecteam</p>
             <p style="font-size:.8rem;color:var(--text-muted);margin-bottom:1rem;">Best all-in-one for most UK logistics teams. Free for up to 10 users.</p>
-            <a href="https://connecteam.com" rel="noopener noreferrer" class="btn btn-brand" style="width:100%;justify-content:center;font-size:.875rem;">Try Free →</a>
+            <a href="https://connecteam.com" rel="sponsored noopener noreferrer" class="btn btn-brand" style="width:100%;justify-content:center;font-size:.875rem;">Try Free →</a>
           </div>
 
           <div class="sidebar-box">
@@ -551,10 +557,13 @@
     <div class="container">
       <div class="eyebrow">Stay informed</div>
       <h2>New comparisons and reviews in your inbox</h2>
-      <form class="newsletter-form" onsubmit="return false;">
-        <input type="email" placeholder="your@email.co.uk" aria-label="Email address">
+      <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="newsletter">
+        <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
         <button type="submit" class="btn btn-brand">Subscribe Free</button>
       </form>
+      <p class="newsletter-success">You're on the list — thanks for subscribing.</p>
     </div>
   </div>
 
@@ -605,5 +614,6 @@
     </div>
   </footer>
 
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

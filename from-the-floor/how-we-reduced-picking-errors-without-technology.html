@@ -214,6 +214,7 @@
       .fishbone-grid { grid-template-columns: 1fr 1fr; }
     }
   </style>
+  <script defer data-domain="operationsedge.co.uk" src="https://plausible.io/js/script.outbound-links.js"></script>
 </head>
 <body>
 
@@ -607,6 +608,7 @@
               <input type="email" placeholder="your@email.co.uk" style="padding:.6rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.875rem;outline:none;width:100%;">
               <button type="submit" class="btn btn-brand" style="width:100%;justify-content:center;font-size:.875rem;">Subscribe</button>
             </form>
+      <p class="newsletter-success">You're on the list — thanks for subscribing.</p>
           </div>
 
         </aside>
@@ -619,10 +621,13 @@
     <div class="container">
       <div class="eyebrow">More like this</div>
       <h2>Practical ops content, straight to your inbox</h2>
-      <form class="newsletter-form" onsubmit="return false;">
-        <input type="email" placeholder="your@email.co.uk" aria-label="Email address">
+      <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="newsletter">
+        <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
         <button type="submit" class="btn btn-brand">Subscribe Free</button>
       </form>
+      <p class="newsletter-success">You're on the list — thanks for subscribing.</p>
     </div>
   </div>
 
@@ -673,5 +678,6 @@
     </div>
   </footer>
 
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

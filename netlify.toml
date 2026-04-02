@@ -73,11 +73,16 @@
   to   = "/from-the-floor/"
   status = 301
 
-# Custom 404 page (create /404.html when ready)
-# [[redirects]]
-#   from = "/*"
-#   to   = "/404.html"
-#   status = 404
+# Custom 404 page
+[[redirects]]
+  from = "/*"
+  to   = "/404.html"
+  status = 404
+
+[[redirects]]
+  from = "/about"
+  to   = "/about/"
+  status = 301
 
 # Security headers
 [[headers]]
