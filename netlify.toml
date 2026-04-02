@@ -1,22 +1,13 @@
 [build]
   publish = "."
 
-# Redirect www to non-www (or vice versa — adjust to match your DNS setup)
-# Uncomment ONE of the following blocks:
-
-# Option A: Redirect naked domain → www
-# [[redirects]]
-#   from = "https://operationsedge.co.uk/*"
-#   to   = "https://www.operationsedge.co.uk/:splat"
-#   status = 301
-#   force = true
-
-# Option B: Redirect www → naked domain
-# [[redirects]]
-#   from = "https://www.operationsedge.co.uk/*"
-#   to   = "https://operationsedge.co.uk/:splat"
-#   status = 301
-#   force = true
+# Canonical domain: always serve on www, redirect naked → www
+# This must match the primary domain set in Netlify dashboard (www.operationsedge.co.uk)
+[[redirects]]
+  from   = "https://operationsedge.co.uk/*"
+  to     = "https://www.operationsedge.co.uk/:splat"
+  status = 301
+  force  = true
 
 # Clean URLs: serve /reviews/ for /reviews/index.html etc.
 [[redirects]]
