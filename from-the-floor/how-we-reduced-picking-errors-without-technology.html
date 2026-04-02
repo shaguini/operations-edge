@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Reduced Warehouse Picking Errors Without New Technology | OperationsEdge</title>
+  <meta name="description" content="A real-world UK warehouse case study on reducing picking errors without technology investment — the observation, error categorisation and coaching approach that improved warehouse picking accuracy across all shifts.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operationsedge.co.uk/from-the-floor/how-we-reduced-picking-errors-without-technology.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How We Reduced Warehouse Picking Errors Without New Technology">
+  <meta property="og:description" content="Real-world UK warehouse case study. Error categorisation, spatial mapping and operator coaching that reduced picking errors across all shifts — no new technology required.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.operationsedge.co.uk/from-the-floor/how-we-reduced-picking-errors-without-technology.html">
+  <meta property="og:site_name" content="OperationsEdge">
+  <meta property="article:published_time" content="2026-04-02">
+  <meta property="article:modified_time" content="2026-04-02">
+  <meta property="article:section" content="Operations Guides">
+  <meta property="article:tag" content="Picking Accuracy, Warehouse Picking Errors, Order Accuracy, Warehouse Process Improvement, Case Study">
+
+  <!-- Schema.org Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How We Reduced Warehouse Picking Errors Without New Technology",
+    "description": "A real-world UK warehouse case study on reducing picking errors without technology investment — the observation, error categorisation and coaching approach that improved warehouse picking accuracy across all shifts.",
+    "datePublished": "2026-04-02",
+    "dateModified": "2026-04-02",
+    "author": {
+      "@type": "Person",
+      "name": "OperationsEdge"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "OperationsEdge",
+      "url": "https://www.operationsedge.co.uk"
+    },
+    "mainEntityOfPage": "https://www.operationsedge.co.uk/from-the-floor/how-we-reduced-picking-errors-without-technology.html"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .key-results {
+      background: linear-gradient(135deg, #0f3d65, var(--brand));
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 2rem 2.5rem;
+      margin: 2rem 0;
+    }
+    .key-results h3 { color: #fff; margin-bottom: 1.25rem; font-size: 1rem; text-transform: uppercase; letter-spacing: .08em; }
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .result-item {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+    }
+    .result-number { font-size: 1.9rem; font-weight: 800; line-height: 1; margin-bottom: .25rem; color: #f4a41b; }
+    .result-label { font-size: .825rem; color: rgba(255,255,255,.85); }
+
+    .distinction-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .distinction-item {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+    }
+    .distinction-item.highlight {
+      background: var(--brand-light);
+      border-color: #c5ddf0;
+    }
+    .distinction-item strong {
+      display: block;
+      margin-bottom: .4rem;
+      font-size: .9rem;
+    }
+    .distinction-item p {
+      font-size: .875rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    .summary-box {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--brand);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+      margin: 1.5rem 0;
+    }
+    .summary-box h4 { margin-bottom: .75rem; font-size: 1rem; }
+    .summary-box ul { margin-bottom: 0; }
+    .summary-box li { font-size: .9rem; margin-bottom: .4rem; }
+
+    .tools-list { display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0; }
+    .tool-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+    }
+    .tool-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: .1rem; }
+    .tool-name { font-weight: 600; margin-bottom: .25rem; font-size: .95rem; }
+    .tool-desc { font-size: .875rem; color: var(--text-muted); }
+
+    .action-steps { counter-reset: steps; list-style: none; margin: 1.5rem 0; display: flex; flex-direction: column; gap: 1.25rem; }
+    .action-steps li {
+      counter-increment: steps;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .action-steps li::before {
+      content: counter(steps);
+      background: var(--brand);
+      color: #fff;
+      font-weight: 700;
+      font-size: .875rem;
+      min-width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: .1rem;
+    }
+    .action-step-title { font-weight: 600; margin-bottom: .3rem; }
+    .action-step-body { font-size: .9rem; color: var(--text-muted); }
+
+    @media (max-width: 600px) {
+      .results-grid { grid-template-columns: 1fr; }
+      .distinction-box { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="site-logo">Operations<span>Edge</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav">
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/comparisons/">Comparisons</a></li>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/from-the-floor/" class="active">From the Floor</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/contact/" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===== ARTICLE HERO ===== -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/from-the-floor/">From the Floor</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Picking Accuracy Case Study</span>
+      </div>
+      <div class="eyebrow">Operations Guides · Case Study · April 2026</div>
+      <h1>How We Reduced Warehouse Picking Errors Without New Technology</h1>
+      <p>A real-world case study from a high-volume UK pharmaceutical warehouse — the observation, error categorisation and process discipline that improved warehouse picking accuracy across all shifts, with no new systems and no capital investment.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-layout">
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main class="article-content">
+
+          <div class="article-meta">
+            <span>📅 April 2026</span>
+            <span>⏱ 8 min read</span>
+            <span>🏷 Operations Guides</span>
+          </div>
+
+          <p>Most discussions about improving warehouse picking accuracy default to technology.</p>
+
+          <p>Better scanners. Automation. Voice picking. System upgrades.</p>
+
+          <p>What gets overlooked is that many picking errors are not system problems. They are behaviour, visibility, and process discipline problems.</p>
+
+          <p>This case study shows how a high-volume pharmaceutical warehouse operation reduced picking errors significantly without introducing new systems or major capital investment.</p>
+
+          <!-- Key Results -->
+          <div class="key-results">
+            <h3>Key Results</h3>
+            <div class="results-grid">
+              <div class="result-item">
+                <div class="result-number">All shifts</div>
+                <div class="result-label">Picking errors reduced consistently across all shifts</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">Zero</div>
+                <div class="result-label">New technology or capital investment required</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">6 changes</div>
+                <div class="result-label">Process and behaviour changes that drove improvement</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">Behaviour-led</div>
+                <div class="result-label">Root cause in process discipline, not system failure</div>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="consistent-not-random">The Problem: Errors Were Consistent — Not Random</h2>
+
+          <p>At first glance, the operation appeared stable.</p>
+
+          <p>Picking error rates were not catastrophic. Service levels were acceptable. Nothing was obviously broken.</p>
+
+          <p>But when you looked closer, a pattern emerged. Errors were repeating in the same product ranges, concentrated among specific operators, and more frequent during certain shifts.</p>
+
+          <p>This is an important distinction that changes how you approach the problem entirely.</p>
+
+          <div class="distinction-box">
+            <div class="distinction-item">
+              <strong>Random errors</strong>
+              <p>Suggest system instability. Spread evenly across operators, shifts and products. Hard to predict or prevent.</p>
+            </div>
+            <div class="distinction-item highlight">
+              <strong>Consistent errors</strong>
+              <p>Point to something far more fixable — process, behaviour and environment. Concentrated and predictable. Addressable without new technology.</p>
+            </div>
+          </div>
+
+          <p>Consistent picking errors mean the problem is knowable. And if it is knowable, it is fixable.</p>
+
+          <h2 id="where-it-goes-wrong">Where Most Warehouses Go Wrong</h2>
+
+          <p>The default response to warehouse picking errors is usually one of two things: retrain everyone, or add more checks.</p>
+
+          <p>Neither approach solves the root problem.</p>
+
+          <p>Retraining without specificity wastes time. Additional checks slow the pick operation and often just move the error downstream — catching it later rather than preventing it.</p>
+
+          <p>If you want to reduce warehouse picking errors, you need to understand exactly where and why they are happening before you do anything else. The intervention has to match the root cause.</p>
+
+          <h2 id="what-changed">What We Changed</h2>
+
+          <h3 id="error-types">1. We Stopped Treating Errors as One Category</h3>
+
+          <p>Instead of tracking "picking errors" as a single metric, we broke them down by type:</p>
+          <ul>
+            <li>Wrong item picked</li>
+            <li>Wrong quantity</li>
+            <li>Missed item</li>
+            <li>Location errors</li>
+          </ul>
+
+          <p>This immediately changed the level of insight available.</p>
+
+          <p>Each error type has a different root cause:</p>
+          <ul>
+            <li><strong>Wrong item</strong> — identification or attention issue</li>
+            <li><strong>Wrong quantity</strong> — process rhythm or confirmation issue</li>
+            <li><strong>Missed item</strong> — pick path or visual flow problem</li>
+            <li><strong>Location error</strong> — labelling, signage or slotting issue</li>
+          </ul>
+
+          <p>Once categorised, patterns became obvious within days. The same breakdown that had looked like a general "accuracy problem" revealed itself as two specific issues accounting for the majority of errors — each with a clear, targeted fix.</p>
+
+          <h3 id="error-mapping">2. We Mapped Errors to Location and Product</h3>
+
+          <p>Error reports already existed in the WMS, but they were not being analysed spatially. By mapping picking errors to specific locations, product types and picking zones, we identified hotspots — areas where errors occurred disproportionately.</p>
+
+          <p>In one case, a small group of similar-looking products stored in close proximity was responsible for a significant share of wrong-item warehouse picking errors. The fix was not training. It was layout and visual differentiation — separating the lookalike products and improving location signage for that zone.</p>
+
+          <p>That single environmental change eliminated a category of error that had been recurring for months.</p>
+
+          <blockquote>If errors cluster in specific locations, the problem is not people. The problem is the environment those people are working in.</blockquote>
+
+          <h3 id="observation">3. We Observed, Not Just Analysed</h3>
+
+          <p>Instead of relying on reports alone, we spent time on the floor observing pick activity directly.</p>
+
+          <p>This revealed things the data alone could not show:</p>
+          <ul>
+            <li>Operators skipping the final barcode confirmation step under time pressure</li>
+            <li>Inconsistent use of check digits across the team</li>
+            <li>Small but significant variations in how different operators approached identical pick tasks</li>
+          </ul>
+
+          <p>Top performers had built micro-habits that reduced picking error risk without slowing them down. They were doing the same job differently in ways that were barely visible unless you were watching specifically for them.</p>
+
+          <p>These behaviours were not documented, not taught, and not replicated anywhere else on the team.</p>
+
+          <h3 id="standardised">4. We Standardised What Top Performers Were Doing</h3>
+
+          <p>Once we understood what high-accuracy operators were doing differently, we turned it into a simple, repeatable framework applicable to the whole team:</p>
+          <ul>
+            <li>Consistent scan-confirm rhythm — no skipping the confirmation step regardless of pace</li>
+            <li>Mandatory visual check before confirmation, not just scanner acknowledgement</li>
+            <li>Clear handling rules for lookalike products — slow down, double-check, confirm product description not just barcode</li>
+          </ul>
+
+          <p>This was introduced through short, focused warehouse coaching sessions — not generic retraining. The difference was specificity: operators were shown exactly which behaviours to change and why, with reference to the error data that motivated each change.</p>
+
+          <p>The improvement was immediate in the coached group.</p>
+
+          <h3 id="visibility">5. We Made Picking Accuracy Visible — Without Creating Pressure</h3>
+
+          <p>One of the most effective changes was making warehouse picking accuracy visible at the individual level — but framed correctly.</p>
+
+          <p>Instead of ranking operators against each other — which creates defensive behaviour and resentment — we tracked:</p>
+          <ul>
+            <li>Individual accuracy trend over time</li>
+            <li>Personal best performance periods</li>
+            <li>Week-on-week improvement direction</li>
+          </ul>
+
+          <p>This shifted the focus from comparison to self-improvement. When operators could see their own accuracy trend moving in the right direction, it became self-reinforcing.</p>
+
+          <p>Operators started correcting their own behaviours without being prompted. The data became a tool they used rather than a metric used against them.</p>
+
+          <h3 id="environment">6. We Fixed the Environment Issues That Were Being Ignored</h3>
+
+          <p>Some picking errors had nothing to do with people. They came directly from the environment:</p>
+          <ul>
+            <li>Poor lighting in specific aisles making label reading difficult</li>
+            <li>Worn or unclear location labels on high-turnover pick faces</li>
+            <li>Overcrowded pick faces where products were difficult to physically separate</li>
+          </ul>
+
+          <p>These issues are easy to overlook precisely because they become "normal." They have always been like that. Nobody flags them as problems because they are just the way things are.</p>
+
+          <p>Fixing them — most of which required nothing more than better labels, repositioned lighting or minor slotting adjustments — had a disproportionate impact on picking accuracy in the affected zones.</p>
+
+          <h2 id="what-made-difference">What Actually Made the Difference</h2>
+
+          <p>The biggest improvement did not come from any single change. It came from combining all six:</p>
+
+          <div class="summary-box">
+            <h4>The six changes that drove warehouse picking accuracy improvement</h4>
+            <ul>
+              <li><strong>Better error visibility</strong> — moving from raw error counts to categorised, spatial analysis</li>
+              <li><strong>Clear categorisation</strong> — understanding which error type was driving which part of the problem</li>
+              <li><strong>Targeted observation</strong> — finding what top performers were doing that others were not</li>
+              <li><strong>Behaviour standardisation</strong> — turning top-performer habits into a taught, repeatable process</li>
+              <li><strong>Performance visibility</strong> — framing accuracy as personal improvement, not team ranking</li>
+              <li><strong>Small environmental fixes</strong> — removing the physical conditions that were generating errors regardless of behaviour</li>
+            </ul>
+          </div>
+
+          <p>None of these required new systems. All of them required honest analysis of what was actually driving the error rate.</p>
+
+          <h2 id="results">The Results</h2>
+
+          <p>Over the following months:</p>
+          <ul>
+            <li>Picking errors reduced significantly across all shifts</li>
+            <li>High-error zones stabilised after layout and labelling adjustments</li>
+            <li>Operator accuracy became more consistent across the team</li>
+          </ul>
+
+          <p>More importantly, the operation moved from <em>reacting to errors</em> to <em>understanding and preventing them</em>. The team had a framework for diagnosing future accuracy issues rather than just a set of fixes that would degrade over time without the analytical infrastructure to support them.</p>
+
+          <h2 id="tools">Tools That Helped (Without Driving the Change)</h2>
+
+          <p>The improvement was not technology-led — but a few tools made the process faster and more consistent. Here is what was genuinely useful:</p>
+
+          <div class="tools-list">
+            <div class="tool-item">
+              <div class="tool-icon">📊</div>
+              <div>
+                <div class="tool-name">WMS error reports</div>
+                <div class="tool-desc">The raw data source for all error analysis. If your system can export per-operator and per-location error data, you already have everything you need to start the categorisation and mapping work. No additional software is required at this stage.</div>
+              </div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon">📋</div>
+              <div>
+                <div class="tool-name">Excel / Google Sheets</div>
+                <div class="tool-desc">Error categorisation and cluster analysis. A pivot table breaking errors down by type, by zone and by operator is the single most useful analytical output you can produce. It does not require warehouse analytics software — it requires structured thinking about the data you already have.</div>
+              </div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon">✅</div>
+              <div>
+                <div class="tool-name"><a href="https://safetyculture.com" rel="noopener noreferrer">SafetyCulture (iAuditor)</a></div>
+                <div class="tool-desc">Used for both structured floor observation sessions and operator coaching checklists. Building a custom observation form for pick accuracy — covering confirmation habits, scan discipline and lookalike product handling — gave team leaders a repeatable, consistent framework for coaching sessions that did not vary by team leader.</div>
+              </div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon">📌</div>
+              <div>
+                <div class="tool-name">Simple visual accuracy boards</div>
+                <div class="tool-desc">A physical or digital board showing accuracy trends by shift and by zone — without naming individual operators publicly — created team-level accountability. Visible data changes behaviour. The simpler and more prominent the display, the more consistently it worked.</div>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="action-steps">Three Things to Do This Week</h2>
+
+          <p>If you want to reduce warehouse picking errors in your operation, start here — before any briefings, before any coaching, before any process changes:</p>
+
+          <ol class="action-steps">
+            <li>
+              <div>
+                <div class="action-step-title">Break your errors into categories</div>
+                <div class="action-step-body">Stop treating all picking errors as the same problem. Pull your last 30 days of error data and split it into wrong item, wrong quantity, missed item and location errors. The category with the highest share tells you where to focus first — and points directly to the type of root cause you are dealing with.</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="action-step-title">Identify your top three error locations</div>
+                <div class="action-step-body">Map your errors to specific zones and locations. If they cluster — and they almost certainly will — you do not have a general accuracy problem. You have specific, addressable conditions. Walk those locations before doing anything else. Check labelling, adjacencies and lighting. The environment often explains what the data cannot.</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="action-step-title">Observe your best operator for one hour</div>
+                <div class="action-step-body">Accuracy leaves patterns. Top performers have habits that reduce picking error risk — habits that are not taught and not replicated across the team. Write down exactly what they are doing differently: pick path approach, confirmation rhythm, how they handle lookalike products. That documentation becomes the foundation of your coaching framework.</div>
+              </div>
+            </li>
+          </ol>
+
+          <p>None of these require budget, software or sign-off. They require a spreadsheet, a walk-around and an hour on the floor.</p>
+
+          <h2 id="closing">Picking Accuracy Improves When You Understand the Problem First</h2>
+
+          <p>Warehouse picking accuracy does not improve through pressure or technology alone.</p>
+
+          <p>It improves when you understand the interaction between process, behaviour and environment — and address each one specifically rather than applying generic fixes to a problem you have not properly diagnosed.</p>
+
+          <p>Most warehouses already have the data they need to do this. Very few are using it systematically.</p>
+
+          <p>The operation in this case study was not exceptional. It had the same WMS, the same team structure and the same pressures as most UK warehouse operations. The difference was choosing to look at the error data seriously, categorise what it was showing, and act on what it revealed rather than reaching for the familiar responses of blanket retraining or additional checking.</p>
+
+          <p>That approach is available to any pick operation willing to start with the data.</p>
+
+          <!-- Author bio -->
+          <div style="background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;margin-top:2.5rem;display:flex;gap:1.25rem;align-items:flex-start;">
+            <div style="background:var(--brand);color:#fff;font-weight:800;font-size:1.1rem;min-width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">OE</div>
+            <div>
+              <div style="font-weight:600;margin-bottom:.3rem;">OperationsEdge</div>
+              <p style="font-size:.875rem;color:var(--text-muted);margin-bottom:0;">This case study is based on real operational experience managing a pharmaceutical logistics warehouse operation in the UK. All data has been anonymised. The author holds a Lean Six Sigma Yellow Belt and has 10+ years of experience in warehouse and operations management.</p>
+            </div>
+          </div>
+
+        </main>
+
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar">
+
+          <div class="sidebar-box">
+            <h4>Table of Contents</h4>
+            <ul class="toc-list">
+              <li><a href="#consistent-not-random">Consistent vs random errors</a></li>
+              <li><a href="#where-it-goes-wrong">Where most warehouses go wrong</a></li>
+              <li><a href="#what-changed">What we changed</a></li>
+              <li><a href="#error-types">1. Error categorisation</a></li>
+              <li><a href="#error-mapping">2. Mapping to location &amp; product</a></li>
+              <li><a href="#observation">3. Observation, not just analysis</a></li>
+              <li><a href="#standardised">4. Standardising top performers</a></li>
+              <li><a href="#visibility">5. Making accuracy visible</a></li>
+              <li><a href="#environment">6. Fixing the environment</a></li>
+              <li><a href="#results">The results</a></li>
+              <li><a href="#tools">Tools that helped</a></li>
+              <li><a href="#action-steps">Three things to do this week</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box" style="background:var(--brand-light);border-color:#c5ddf0;">
+            <h4 style="color:var(--brand);">Key principle</h4>
+            <div style="font-size:1.3rem;font-weight:800;color:var(--brand);line-height:1.3;margin:.5rem 0 .5rem;">Consistent errors are fixable errors.</div>
+            <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:0;">If picking errors repeat in the same locations and with the same operators, the problem is not random. It is specific. And specific problems have specific fixes.</p>
+          </div>
+
+          <div class="sidebar-box">
+            <h4>Related articles</h4>
+            <ul class="toc-list">
+              <li><a href="/from-the-floor/how-we-improved-picking-efficiency.html">How We Improved Picking Efficiency by 21%</a></li>
+              <li><a href="/reviews/best-wms-software-uk-warehouses-2026.html">Best WMS for UK Warehouses 2026</a></li>
+              <li><a href="/resources/wms-vendor-evaluation-scorecard.html">WMS Vendor Evaluation Scorecard</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box" style="text-align:center;">
+            <h4 style="margin-bottom:.5rem;">Found this useful?</h4>
+            <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:1rem;">Get new case studies and ops guides in your inbox.</p>
+            <form onsubmit="return false;" style="display:flex;flex-direction:column;gap:.5rem;">
+              <input type="email" placeholder="your@email.co.uk" style="padding:.6rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.875rem;outline:none;width:100%;">
+              <button type="submit" class="btn btn-brand" style="width:100%;justify-content:center;font-size:.875rem;">Subscribe</button>
+            </form>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="newsletter-section">
+    <div class="container">
+      <div class="eyebrow">More like this</div>
+      <h2>Practical ops content, straight to your inbox</h2>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="your@email.co.uk" aria-label="Email address">
+        <button type="submit" class="btn btn-brand">Subscribe Free</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Operations<span>Edge</span></div>
+          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
+          <p class="text-sm" style="color:rgba(255,255,255,.4);">hello@operationsedge.co.uk</p>
+        </div>
+        <div>
+          <h4>Content</h4>
+          <ul class="footer-links">
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/comparisons/">Comparisons</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/from-the-floor/">From the Floor</a></li>
+            <li><a href="/resources/">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Use</a></li>
+            <li><a href="/cookies/">Cookie Policy</a></li>
+            <li><a href="/affiliate-disclosure/">Disclosure</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="/contact/">Get in Touch</a></li>
+            <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OperationsEdge. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
+          <a href="/cookies/">Cookies</a>
+          <a href="/affiliate-disclosure/">Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
