@@ -17,10 +17,38 @@
   </url>
 
   <url>
-    <loc>https://www.operationsedge.co.uk/comparisons/</loc>
-    <lastmod>2026-04-02</lastmod>
+    <loc>https://www.operationsedge.co.uk/solutions/</loc>
+    <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.operationsedge.co.uk/solutions/reduce-picking-errors/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.operationsedge.co.uk/solutions/improve-warehouse-efficiency/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.operationsedge.co.uk/solutions/warehouse-kpi-reporting/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.operationsedge.co.uk/solutions/team-performance-management/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <url>
@@ -174,19 +202,5 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Comparisons -->
-  <url>
-    <loc>https://www.operationsedge.co.uk/comparisons/connecteam-vs-rotacloud-uk-shift-scheduling.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.operationsedge.co.uk/comparisons/monday-com-vs-smartsheet-uk-operations.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
 
 </urlset>

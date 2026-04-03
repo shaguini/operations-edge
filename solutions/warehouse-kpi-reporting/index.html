@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warehouse KPIs and Operational Reporting | OperationsEdge</title>
+  <meta name="description" content="The warehouse KPIs that actually matter, how to set them up without expensive software, and which tools make reporting sustainable. Practical, UK-focused guidance.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operationsedge.co.uk/solutions/warehouse-kpi-reporting/">
+  <meta property="og:title" content="Warehouse KPIs and Operational Reporting | OperationsEdge">
+  <meta property="og:description" content="The KPIs that matter, how to measure them, and the tools that make ongoing warehouse reporting sustainable.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.operationsedge.co.uk/solutions/warehouse-kpi-reporting/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Warehouse KPIs and Operational Reporting",
+    "description": "The warehouse KPIs that actually matter, how to set them up, and which tools make reporting sustainable.",
+    "datePublished": "2026-04-03",
+    "dateModified": "2026-04-03",
+    "author": { "@type": "Person", "name": "Paulo Gomes", "url": "https://www.operationsedge.co.uk/about/" },
+    "publisher": { "@type": "Organization", "name": "OperationsEdge", "url": "https://www.operationsedge.co.uk" },
+    "mainEntityOfPage": "https://www.operationsedge.co.uk/solutions/warehouse-kpi-reporting/"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .comparison-table { width:100%; border-collapse:collapse; font-size:.875rem; margin:1.5rem 0 2rem; }
+    .comparison-table th { background:var(--brand); color:#fff; padding:.65rem 1rem; text-align:left; font-weight:600; }
+    .comparison-table th:first-child { width:28%; }
+    .comparison-table td { padding:.65rem 1rem; border-bottom:1px solid var(--border); vertical-align:top; line-height:1.5; }
+    .comparison-table tr:nth-child(even) td { background:var(--bg-alt); }
+    .check { color:#16a34a; font-weight:700; }
+    .partial { color:#d97706; font-weight:700; }
+    .cross { color:#dc2626; font-weight:700; }
+    .kpi-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1.5rem 0; }
+    .kpi-card { background:var(--bg-alt); border:1px solid var(--border); border-radius:var(--radius-lg); padding:1.25rem 1.5rem; }
+    .kpi-card h4 { font-size:.9rem; color:var(--brand); margin-bottom:.4rem; font-weight:700; }
+    .kpi-card p { font-size:.85rem; color:var(--text-muted); margin:0; line-height:1.6; }
+    @media (max-width:640px) { .kpi-grid { grid-template-columns:1fr; } }
+  </style>
+  <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
+  <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="site-logo"><img src="/assets/images/logo.svg" alt="OperationsEdge" style="display:block;height:52px;width:auto;max-height:52px;"></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav">
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/solutions/" class="active">Solutions</a></li>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/from-the-floor/">From the Floor</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/contact/" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/solutions/">Solutions</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Warehouse KPI &amp; Reporting</span>
+      </div>
+      <div class="eyebrow">Solutions · KPIs &amp; Reporting</div>
+      <h1>Warehouse KPIs and Operational Reporting</h1>
+      <p>Most warehouse operations have data. Few have a reliable way to capture, present, and act on it consistently. This page covers the metrics that matter, how to build a sustainable reporting rhythm, and which tools genuinely help.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-layout">
+
+        <main class="article-content">
+
+          <div class="article-meta">
+            <span>📅 April 2026</span>
+            <span>⏱ 8 min read</span>
+            <span>🏷 KPIs &amp; Reporting</span>
+          </div>
+
+          <h2>Why warehouse reporting usually fails</h2>
+          <p>KPI reporting fails in warehouse environments for a small set of recurring reasons:</p>
+          <ul>
+            <li><strong>No defined KPIs</strong> — reporting can't be built before the metrics are agreed. Many operations skip this step and go straight to building dashboards</li>
+            <li><strong>Data lives in too many places</strong> — metrics spread across WMS reports, spreadsheets, manual tally sheets, and shift handover notes, with no single source of truth</li>
+            <li><strong>Reporting frequency is too low</strong> — monthly reporting is too infrequent to drive operational decisions. Weekly is the minimum; daily visibility of key throughput metrics is better</li>
+            <li><strong>KPIs that measure the wrong things</strong> — output-only metrics that ignore quality create pressure to pick faster without maintaining accuracy</li>
+            <li><strong>Reports that managers don't trust or understand</strong> — if your team doesn't believe the numbers or can't see how to act on them, the report becomes a compliance exercise</li>
+          </ul>
+
+          <h2>The KPIs that actually matter</h2>
+
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <h4>Lines Picked Per Hour (LPH)</h4>
+              <p>Core throughput metric. Simple to calculate, comparable over time, meaningful to pickers. Measure daily, review weekly.</p>
+            </div>
+            <div class="kpi-card">
+              <h4>Order / Pick Accuracy %</h4>
+              <p>Quality metric. Calculated as correct picks ÷ total picks. Must be paired with LPH to avoid optimising one at the expense of the other.</p>
+            </div>
+            <div class="kpi-card">
+              <h4>Despatch Compliance %</h4>
+              <p>Orders despatched on time against committed SLA. Critical for customer-facing operations and useful for identifying upstream bottlenecks.</p>
+            </div>
+            <div class="kpi-card">
+              <h4>Returns Rate</h4>
+              <p>Downstream quality signal — returns due to wrong item, wrong quantity, or damage. Often correlated with pick accuracy but can surface separate issues.</p>
+            </div>
+            <div class="kpi-card">
+              <h4>Replenishment Cycle Time</h4>
+              <p>Time between a pick location becoming empty and being replenished. High cycle times disrupt pick flow and create idle time — often invisible without explicit tracking.</p>
+            </div>
+            <div class="kpi-card">
+              <h4>Staff Utilisation %</h4>
+              <p>Actual productive time as a proportion of scheduled time. Useful for identifying where breaks in pick flow (waiting, querying, searching) are costing throughput.</p>
+            </div>
+          </div>
+
+          <p>Start with three or four of these — not all six. A small number of consistently measured metrics is more useful than a comprehensive dashboard that nobody uses.</p>
+
+          <h2>What works in practice</h2>
+
+          <h3>1. Define before you build</h3>
+          <p>Agree on the three or four metrics you'll track before building any report or dashboard. For each metric, define: how it's calculated, where the data comes from, who's responsible for it, and how frequently it'll be reviewed. This avoids building the wrong thing and rebuilding it later.</p>
+
+          <h3>2. Build a weekly reporting rhythm</h3>
+          <p>Weekly is the right frequency for most warehouse KPIs. Daily operational data feeds into it, but the review conversation happens weekly — ideally in a brief team meeting where the numbers are visible and discussed, not just emailed.</p>
+
+          <h3>3. Make KPIs visible to the team</h3>
+          <p>Printing or displaying the weekly summary on the warehouse floor — LPH, accuracy %, any notable trends — is one of the highest-impact low-tech interventions available. Pickers who can see the team's performance data engage with it differently than those who are managed from a report they never see.</p>
+
+          <h3>4. Use simple tools before complex ones</h3>
+          <p>A well-structured spreadsheet reviewed consistently every week delivers more operational value than a complex dashboard that takes three months to implement and is out of date by the time it's live. Build the reporting discipline first, then automate it.</p>
+
+          <h2>Monday.com vs Smartsheet for KPI reporting</h2>
+          <p>Both are popular with operations teams for building KPI dashboards outside a WMS. Here's how they compare specifically for warehouse reporting use cases:</p>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Monday.com</th>
+                <th>Smartsheet</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Dashboard visualisation</strong></td>
+                <td>Strong — visual boards, charts, status indicators built in</td>
+                <td>Good — conditional formatting, but less visual by default</td>
+              </tr>
+              <tr>
+                <td><strong>Manual data entry</strong></td>
+                <td><span class="check">Easy</span> — intuitive for non-technical users</td>
+                <td><span class="check">Easy</span> — spreadsheet-familiar interface</td>
+              </tr>
+              <tr>
+                <td><strong>Formulae and calculations</strong></td>
+                <td><span class="partial">Limited</span> — some formula support but less powerful than Smartsheet</td>
+                <td><span class="check">Strong</span> — full Excel-style formulae, cross-sheet references</td>
+              </tr>
+              <tr>
+                <td><strong>UK pricing (per user/month)</strong></td>
+                <td>From ~£9/user/month (Basic); dashboard features from Pro (~£16)</td>
+                <td>From ~£7/user/month (Pro); Enterprise pricing on request</td>
+              </tr>
+              <tr>
+                <td><strong>Free tier</strong></td>
+                <td><span class="partial">Yes</span> — up to 2 users, very limited</td>
+                <td><span class="cross">No</span> — free trial only</td>
+              </tr>
+              <tr>
+                <td><strong>API / integrations</strong></td>
+                <td>Good API; connects to many tools via Zapier / Make</td>
+                <td>Good API; stronger native integrations with enterprise tools</td>
+              </tr>
+              <tr>
+                <td><strong>Best for</strong></td>
+                <td>Teams who want visual dashboards with minimal setup</td>
+                <td>Teams comfortable with spreadsheet logic who need structured data</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p><strong>Verdict:</strong> For warehouse KPI reporting, Smartsheet's formula capability is more useful if your metrics require calculation across data sets. Monday.com is better if your priority is a dashboard that non-technical managers will check daily without needing to dig into the data themselves. Both are capable — the right choice depends on your team's existing habits.</p>
+
+          <div style="background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;margin-top:2.5rem;">
+            <h3 style="margin-bottom:.75rem;">Related reading</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.6rem;">
+              <li>→ <a href="/from-the-floor/how-we-improved-picking-efficiency.html">Case study: Measurement framework that drove a 21% LPH improvement</a></li>
+              <li>→ <a href="/reviews/monday-com-warehouse-management-review.html">Review: Monday.com for warehouse management</a></li>
+              <li>→ <a href="/solutions/improve-warehouse-efficiency/">Solution: Improving warehouse picking efficiency</a></li>
+              <li>→ <a href="/solutions/reduce-picking-errors/">Solution: Reducing picking errors</a></li>
+            </ul>
+          </div>
+
+        </main>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h4>On this page</h4>
+            <ul class="toc-list">
+              <li><a href="#why-fails">Why reporting usually fails</a></li>
+              <li><a href="#kpis">KPIs that matter</a></li>
+              <li><a href="#what-works">What works in practice</a></li>
+              <li><a href="#tools">Monday.com vs Smartsheet</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>Solutions</h4>
+            <ul class="toc-list">
+              <li><a href="/solutions/">All Solutions</a></li>
+              <li><a href="/solutions/reduce-picking-errors/">↳ Reduce Picking Errors</a></li>
+              <li><a href="/solutions/improve-warehouse-efficiency/">↳ Improve Efficiency</a></li>
+              <li><a href="/solutions/warehouse-kpi-reporting/" style="color:var(--brand);font-weight:600;">↳ KPI &amp; Reporting</a></li>
+              <li><a href="/solutions/team-performance-management/">↳ Team Management</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>Free resource</h4>
+            <p style="font-size:.875rem;color:var(--text-muted);margin-bottom:1rem;">Download our WMS vendor evaluation scorecard — a structured framework for comparing warehouse management systems.</p>
+            <a href="/resources/wms-vendor-evaluation-scorecard.html" class="btn btn-outline" style="padding:.5rem 1rem;font-size:.85rem;width:100%;justify-content:center;">Open Scorecard</a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Operations<span>Edge</span></div>
+          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
+          <p class="text-sm" style="color:rgba(255,255,255,.4);margin-top:.5rem;">Content is based on personal experience and anonymised operational data. Views expressed are solely those of the author.</p>
+        </div>
+        <div>
+          <h4>Content</h4>
+          <ul class="footer-links">
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/solutions/">Solutions</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/from-the-floor/">From the Floor</a></li>
+            <li><a href="/resources/">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+            <li><a href="/cookies/">Cookie Policy</a></li>
+            <li><a href="/affiliate-disclosure/">Disclosure</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="/contact/">Get in Touch</a></li>
+            <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OperationsEdge. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="/cookies/">Cookies</a>
+          <a href="/affiliate-disclosure/">Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

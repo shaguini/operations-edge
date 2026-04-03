@@ -17,7 +17,17 @@
 
 [[redirects]]
   from = "/comparisons"
-  to   = "/comparisons/"
+  to   = "/solutions/"
+  status = 301
+
+[[redirects]]
+  from = "/comparisons/"
+  to   = "/solutions/"
+  status = 301
+
+[[redirects]]
+  from = "/solutions"
+  to   = "/solutions/"
   status = 301
 
 [[redirects]]
