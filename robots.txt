@@ -1,7 +1,10 @@
 User-agent: *
 Allow: /
 
-# Disallow admin or build paths (none currently, but good practice)
+# Deprecated section — content moved to /solutions/
+Disallow: /comparisons/
+
+# Build/admin paths
 Disallow: /admin/
 Disallow: /.netlify/
 
