@@ -885,13 +885,22 @@ footer h4      { color: rgba(255,255,255,.9); font-size: .825rem; font-weight: 6
 
 /* --- Page Hero (interior pages) --- */
 .page-hero {
-  background: var(--bg-alt);
-  border-bottom: 1px solid var(--border);
-  padding: 3.5rem 0 3rem;
+  background: var(--dark);
+  padding: 5rem 0 4.5rem;
+  position: relative;
+  overflow: hidden;
 }
-.page-hero .eyebrow { margin-bottom: .4rem; }
-.page-hero h1  { margin-bottom: .65rem; }
-.page-hero p   { color: var(--text-muted); font-size: 1.05rem; max-width: 640px; }
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(27,96,157,.35) 0%, transparent 70%);
+  pointer-events: none;
+}
+.page-hero .container { position: relative; }
+.page-hero .eyebrow { margin-bottom: .4rem; color: rgba(255,255,255,.55); }
+.page-hero h1  { margin-bottom: .65rem; color: #fff; font-size: clamp(1.9rem, 4.5vw, 3.25rem); }
+.page-hero p   { color: rgba(255,255,255,.65); font-size: 1.05rem; max-width: 640px; }
 
 /* --- Contact Form --- */
 .contact-form { max-width: 600px; }
