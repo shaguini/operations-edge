@@ -40,7 +40,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
   <!-- Privacy-friendly analytics by Plausible -->
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
@@ -51,7 +51,7 @@
   <!-- ===== HEADER ===== -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="/" class="site-logo"><img src="/assets/images/logo.svg" alt="OperationsEdge" style="display:block;height:52px;width:auto;max-height:52px;"></a>
+      <a href="/" class="site-logo"><img src="/assets/images/logo.svg" alt="OperationsEdge" style="display:block;height:48px;width:auto;max-height:48px;"></a>
       <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
         <span></span><span></span><span></span>
       </button>
@@ -69,37 +69,37 @@
   <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="container">
-      <div class="hero-badges">
+      <div class="hero-badges" data-reveal>
         <span class="badge">UK-Focused</span>
         <span class="badge">Independent Reviews</span>
-        <span class="badge">Trusted by Ops Managers</span>
+        <span class="badge">Operator-Led</span>
       </div>
-      <h1>The right software makes<br>your operation run better.</h1>
-      <p>We review and compare SaaS tools for UK operations managers, warehouse managers and logistics professionals — so you can cut through the noise and make confident decisions.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-        <a href="/reviews/" class="btn btn-primary">Browse Reviews</a>
-        <a href="/comparisons/" class="btn btn-secondary">Compare Tools</a>
+      <h1 data-reveal data-reveal-delay="1">The right software makes<br>your operation run better.</h1>
+      <p data-reveal data-reveal-delay="2">We review and compare SaaS tools for UK operations managers, warehouse managers and logistics professionals — so you can cut through the noise and make confident decisions.</p>
+      <div class="hero-actions" data-reveal data-reveal-delay="3">
+        <a href="/reviews/" class="btn btn-brand">Browse Reviews</a>
+        <a href="/comparisons/" class="btn btn-outline">Compare Tools</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== STATS BAR ===== -->
+  <!-- ===== STATS BAR (dark) ===== -->
   <div class="stats-bar">
     <div class="container">
       <div class="stats-grid">
-        <div>
+        <div data-reveal>
           <div class="stat-num">0</div>
           <div class="stat-label">Pay-to-Play Rankings</div>
         </div>
-        <div>
+        <div data-reveal data-reveal-delay="1">
           <div class="stat-num">5</div>
           <div class="stat-label">Content Areas</div>
         </div>
-        <div>
+        <div data-reveal data-reveal-delay="2">
           <div class="stat-num">100%</div>
           <div class="stat-label">Editorially Independent</div>
         </div>
-        <div>
+        <div data-reveal data-reveal-delay="3">
           <div class="stat-num">UK</div>
           <div class="stat-label">Focused &amp; GBP Priced</div>
         </div>
@@ -110,102 +110,102 @@
   <!-- ===== CATEGORIES ===== -->
   <section class="section">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header" data-reveal>
         <div class="eyebrow">Browse by Category</div>
         <h2>Find tools that solve your biggest ops challenges</h2>
         <p>From warehouse management to team scheduling, we cover the SaaS platforms that matter most to UK operations teams.</p>
       </div>
       <div class="card-grid">
 
-        <a href="/reviews/?cat=wms" class="card" style="text-decoration:none;color:inherit;">
+        <a href="/reviews/?cat=wms" class="card" style="text-decoration:none;color:inherit;" data-reveal>
           <div class="cat-icon">📦</div>
           <div class="card-label">Warehouse</div>
           <h3>WMS &amp; Inventory Software</h3>
           <p>Warehouse management systems, stock control, and inventory tracking tools for growing UK warehouses.</p>
-          <span class="tag">WMS</span><span class="tag">Inventory</span><span class="tag">Stock Control</span>
+          <div><span class="tag">WMS</span><span class="tag">Inventory</span><span class="tag">Stock Control</span></div>
         </a>
 
-        <a href="/reviews/?cat=project" class="card" style="text-decoration:none;color:inherit;">
+        <a href="/reviews/?cat=project" class="card" style="text-decoration:none;color:inherit;" data-reveal data-reveal-delay="1">
           <div class="cat-icon">📋</div>
           <div class="card-label">Project Management</div>
           <h3>Project &amp; Task Management</h3>
           <p>Tools like Monday.com and Smartsheet to keep cross-functional operations projects on track.</p>
-          <span class="tag">Monday.com</span><span class="tag">Smartsheet</span><span class="tag">Tasks</span>
+          <div><span class="tag">Monday.com</span><span class="tag">Smartsheet</span><span class="tag">Tasks</span></div>
         </a>
 
-        <a href="/reviews/?cat=workforce" class="card" style="text-decoration:none;color:inherit;">
+        <a href="/reviews/?cat=workforce" class="card" style="text-decoration:none;color:inherit;" data-reveal data-reveal-delay="2">
           <div class="cat-icon">👥</div>
           <div class="card-label">Workforce</div>
           <h3>Workforce &amp; Shift Scheduling</h3>
           <p>Scheduling, time tracking and team communication tools for shift-based logistics operations.</p>
-          <span class="tag">Scheduling</span><span class="tag">Connecteam</span><span class="tag">Shifts</span>
+          <div><span class="tag">Scheduling</span><span class="tag">Connecteam</span><span class="tag">Shifts</span></div>
         </a>
 
-        <a href="/reviews/?cat=safety" class="card" style="text-decoration:none;color:inherit;">
+        <a href="/reviews/?cat=safety" class="card" style="text-decoration:none;color:inherit;" data-reveal>
           <div class="cat-icon">⚠️</div>
           <div class="card-label">Safety &amp; Compliance</div>
           <h3>Health, Safety &amp; Compliance</h3>
           <p>Digital checklists, audits, incident reporting, and compliance management — including SafetyCulture.</p>
-          <span class="tag">SafetyCulture</span><span class="tag">H&amp;S</span><span class="tag">Audits</span>
+          <div><span class="tag">SafetyCulture</span><span class="tag">H&amp;S</span><span class="tag">Audits</span></div>
         </a>
 
-        <a href="/reviews/?cat=automation" class="card" style="text-decoration:none;color:inherit;">
+        <a href="/reviews/?cat=automation" class="card" style="text-decoration:none;color:inherit;" data-reveal data-reveal-delay="1">
           <div class="cat-icon">⚡</div>
           <div class="card-label">Automation</div>
           <h3>Process Automation &amp; Integration</h3>
           <p>Connect your ops stack and automate repetitive workflows with tools like Zapier and Make.</p>
-          <span class="tag">Zapier</span><span class="tag">Automation</span><span class="tag">Integration</span>
+          <div><span class="tag">Zapier</span><span class="tag">Automation</span><span class="tag">Integration</span></div>
         </a>
 
-        <a href="/reviews/?cat=transport" class="card" style="text-decoration:none;color:inherit;">
+        <a href="/reviews/?cat=transport" class="card" style="text-decoration:none;color:inherit;" data-reveal data-reveal-delay="2">
           <div class="cat-icon">🚚</div>
           <div class="card-label">Transport &amp; Logistics</div>
           <h3>TMS &amp; Fleet Management</h3>
           <p>Transport management, route planning, and fleet tracking for UK distribution and logistics teams.</p>
-          <span class="tag">TMS</span><span class="tag">Fleet</span><span class="tag">Routing</span>
+          <div><span class="tag">TMS</span><span class="tag">Fleet</span><span class="tag">Routing</span></div>
         </a>
 
       </div>
     </div>
   </section>
 
-  <!-- ===== FEATURED ARTICLES ===== -->
-  <section class="section" style="background:var(--bg-alt);border-top:1px solid var(--border);">
+  <!-- ===== FEATURED ARTICLES (dark section) ===== -->
+  <section class="section section-dark">
     <div class="container">
-      <div class="section-header">
-        <div class="eyebrow">Latest Reviews &amp; Guides</div>
+      <div class="section-header section-header--dark" data-reveal>
+        <div class="eyebrow eyebrow-white">Latest Reviews &amp; Guides</div>
         <h2>Recent content for operations professionals</h2>
         <p>Practical, in-depth reviews written by people who understand UK warehouse and logistics operations.</p>
       </div>
       <div class="card-grid">
 
-        <article class="card">
+        <article class="card-white" data-reveal>
           <div class="card-label">WMS Review</div>
-          <h3><a href="/reviews/best-wms-software-uk-warehouses-2026.html" style="color:inherit;">Best WMS Software for Mid-Size UK Warehouses 2026</a></h3>
-          <p>A hands-on comparison of the top warehouse management systems for UK operations with 1–10 warehouse staff, covering cost, integrations and UK compliance.</p>
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;">
-            <span class="text-sm text-muted">Updated April 2026</span>
-            <a href="/reviews/best-wms-software-uk-warehouses-2026.html" class="btn btn-outline" style="padding:.4rem .9rem;font-size:.85rem;">Read More</a>
+          <h3 style="margin-bottom:.65rem;"><a href="/reviews/best-wms-software-uk-warehouses-2026.html" style="color:inherit;text-decoration:none;">Best WMS Software for Mid-Size UK Warehouses 2026</a></h3>
+          <p style="color:var(--text-muted);font-size:.925rem;margin-bottom:1.5rem;line-height:1.6;">A hands-on comparison of the top warehouse management systems for UK operations with 1–10 warehouse staff, covering cost, integrations and UK compliance.</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-size:.8rem;color:var(--text-muted);">Updated April 2026</span>
+            <a href="/reviews/best-wms-software-uk-warehouses-2026.html" class="btn btn-outline" style="padding:.4rem 1rem;font-size:.825rem;">Read More</a>
           </div>
         </article>
 
-        <article class="card">
+        <article class="card-white" data-reveal data-reveal-delay="1">
           <div class="card-label">Honest Review</div>
-          <h3><a href="/reviews/monday-com-warehouse-management-review.html" style="color:inherit;">Monday.com for Warehouse Management: Honest Review</a></h3>
-          <p>Can a project management tool really handle warehouse operations? We put Monday.com through its paces in a real UK warehouse environment and give you the honest verdict.</p>
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;">
-            <span class="text-sm text-muted">Updated April 2026</span>
-            <a href="/reviews/monday-com-warehouse-management-review.html" class="btn btn-outline" style="padding:.4rem .9rem;font-size:.85rem;">Read More</a>
+          <h3 style="margin-bottom:.65rem;"><a href="/reviews/monday-com-warehouse-management-review.html" style="color:inherit;text-decoration:none;">Monday.com for Warehouse Management: Honest Review</a></h3>
+          <p style="color:var(--text-muted);font-size:.925rem;margin-bottom:1.5rem;line-height:1.6;">Can a project management tool really handle warehouse operations? We put Monday.com through its paces in a real UK warehouse environment and give you the honest verdict.</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-size:.8rem;color:var(--text-muted);">Updated April 2026</span>
+            <a href="/reviews/monday-com-warehouse-management-review.html" class="btn btn-outline" style="padding:.4rem 1rem;font-size:.825rem;">Read More</a>
           </div>
         </article>
 
-        <article class="card">
+        <article class="card-white" data-reveal data-reveal-delay="2">
           <div class="card-label">Comparison Guide</div>
-          <h3><a href="/guides/best-shift-scheduling-software-logistics-teams.html" style="color:inherit;">Best Shift Scheduling Software for Logistics Teams</a></h3>
-          <p>Comparing the top shift scheduling platforms — Connecteam, Rotacloud, Deputy, and more — to help UK logistics managers find the right fit for their team structure.</p>
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;">
-            <span class="text-sm text-muted">Updated April 2026</span>
-            <a href="/guides/best-shift-scheduling-software-logistics-teams.html" class="btn btn-outline" style="padding:.4rem .9rem;font-size:.85rem;">Read More</a>
+          <h3 style="margin-bottom:.65rem;"><a href="/guides/best-shift-scheduling-software-logistics-teams.html" style="color:inherit;text-decoration:none;">Best Shift Scheduling Software for Logistics Teams</a></h3>
+          <p style="color:var(--text-muted);font-size:.925rem;margin-bottom:1.5rem;line-height:1.6;">Comparing the top shift scheduling platforms — Connecteam, Rotacloud, Deputy, and more — to help UK logistics managers find the right fit for their team structure.</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-size:.8rem;color:var(--text-muted);">Updated April 2026</span>
+            <a href="/guides/best-shift-scheduling-software-logistics-teams.html" class="btn btn-outline" style="padding:.4rem 1rem;font-size:.825rem;">Read More</a>
           </div>
         </article>
 
@@ -216,45 +216,57 @@
   <!-- ===== VALUE PROP ===== -->
   <section class="section">
     <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
-        <div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;">
+        <div data-reveal>
           <div class="eyebrow">Why OperationsEdge?</div>
-          <h2>Reviews from people who've actually managed operations</h2>
-          <p style="color:var(--text-muted);margin:1rem 0 1.5rem;">Most software review sites are written by tech journalists. We're different. Our reviews are written by operations managers who have used these tools on the warehouse floor, in distribution centres and across logistics networks — in the UK.</p>
-          <ul style="list-style:none;display:flex;flex-direction:column;gap:.75rem;">
-            <li style="display:flex;align-items:flex-start;gap:.75rem;">
-              <span style="color:var(--success);font-size:1.1rem;margin-top:.1rem;">✓</span>
+          <h2 style="margin-bottom:1rem;">Reviews from people who've actually managed operations</h2>
+          <p style="color:var(--text-muted);margin-bottom:2rem;line-height:1.7;">Most software review sites are written by tech journalists. We're different. Our reviews are written by operations managers who have used these tools on the warehouse floor, in distribution centres and across logistics networks — in the UK.</p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:1rem;margin-bottom:2.5rem;">
+            <li style="display:flex;align-items:flex-start;gap:.85rem;">
+              <span style="color:var(--success);font-size:1rem;margin-top:.15rem;flex-shrink:0;">✓</span>
               <div><strong>Honest assessments</strong> — we flag the cons as well as the pros</div>
             </li>
-            <li style="display:flex;align-items:flex-start;gap:.75rem;">
-              <span style="color:var(--success);font-size:1.1rem;margin-top:.1rem;">✓</span>
+            <li style="display:flex;align-items:flex-start;gap:.85rem;">
+              <span style="color:var(--success);font-size:1rem;margin-top:.15rem;flex-shrink:0;">✓</span>
               <div><strong>UK-specific context</strong> — pricing in GBP, UK compliance, UK support hours</div>
             </li>
-            <li style="display:flex;align-items:flex-start;gap:.75rem;">
-              <span style="color:var(--success);font-size:1.1rem;margin-top:.1rem;">✓</span>
-              <div><strong>Transparent about how we work</strong> — we're always clear about our editorial process and relationships</div>
+            <li style="display:flex;align-items:flex-start;gap:.85rem;">
+              <span style="color:var(--success);font-size:1rem;margin-top:.15rem;flex-shrink:0;">✓</span>
+              <div><strong>Transparent about how we work</strong> — always clear about our editorial process and relationships</div>
             </li>
-            <li style="display:flex;align-items:flex-start;gap:.75rem;">
-              <span style="color:var(--success);font-size:1.1rem;margin-top:.1rem;">✓</span>
+            <li style="display:flex;align-items:flex-start;gap:.85rem;">
+              <span style="color:var(--success);font-size:1rem;margin-top:.15rem;flex-shrink:0;">✓</span>
               <div><strong>Regularly updated</strong> — pricing and features change; we keep up</div>
             </li>
           </ul>
-          <a href="/about/" class="btn btn-brand" style="margin-top:2rem;">About Our Approach</a>
+          <a href="/about/" class="btn btn-brand">About Our Approach</a>
         </div>
-        <div style="background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-lg);padding:2rem;">
-          <h4 style="margin-bottom:1.5rem;">Our editorial standards</h4>
-          <div style="display:flex;flex-direction:column;gap:1rem;">
-            <div style="display:flex;gap:1rem;align-items:flex-start;">
-              <div style="background:var(--brand-light);color:var(--brand);width:36px;height:36px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">1</div>
-              <div><strong>Real-world testing</strong><br><span class="text-sm text-muted">We test tools in actual operations contexts, not just demos</span></div>
-            </div>
-            <div style="display:flex;gap:1rem;align-items:flex-start;">
-              <div style="background:var(--brand-light);color:var(--brand);width:36px;height:36px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">2</div>
-              <div><strong>Structured scoring</strong><br><span class="text-sm text-muted">Every review uses the same criteria so you can compare fairly</span></div>
-            </div>
-            <div style="display:flex;gap:1rem;align-items:flex-start;">
-              <div style="background:var(--brand-light);color:var(--brand);width:36px;height:36px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">3</div>
-              <div><strong>No pay-to-play rankings</strong><br><span class="text-sm text-muted">Commercial relationships never dictate our scores or verdicts</span></div>
+
+        <div data-reveal data-reveal-delay="2">
+          <div style="background:var(--bg-alt);border-radius:var(--radius-xl);padding:2.5rem;">
+            <h4 style="margin-bottom:2rem;font-size:1rem;letter-spacing:-.01em;">Our editorial standards</h4>
+            <div style="display:flex;flex-direction:column;gap:1.5rem;">
+              <div style="display:flex;gap:1.25rem;align-items:flex-start;">
+                <div style="background:#fff;border:1px solid var(--border);color:var(--brand);width:40px;height:40px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;flex-shrink:0;box-shadow:var(--shadow-sm);">1</div>
+                <div>
+                  <strong style="display:block;margin-bottom:.2rem;font-size:.95rem;">Real-world testing</strong>
+                  <span style="font-size:.875rem;color:var(--text-muted);">We test tools in actual operations contexts, not just demos</span>
+                </div>
+              </div>
+              <div style="display:flex;gap:1.25rem;align-items:flex-start;">
+                <div style="background:#fff;border:1px solid var(--border);color:var(--brand);width:40px;height:40px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;flex-shrink:0;box-shadow:var(--shadow-sm);">2</div>
+                <div>
+                  <strong style="display:block;margin-bottom:.2rem;font-size:.95rem;">Structured scoring</strong>
+                  <span style="font-size:.875rem;color:var(--text-muted);">Every review uses the same criteria so you can compare fairly</span>
+                </div>
+              </div>
+              <div style="display:flex;gap:1.25rem;align-items:flex-start;">
+                <div style="background:#fff;border:1px solid var(--border);color:var(--brand);width:40px;height:40px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;flex-shrink:0;box-shadow:var(--shadow-sm);">3</div>
+                <div>
+                  <strong style="display:block;margin-bottom:.2rem;font-size:.95rem;">No pay-to-play rankings</strong>
+                  <span style="font-size:.875rem;color:var(--text-muted);">Commercial relationships never dictate our scores or verdicts</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -265,17 +277,17 @@
   <!-- ===== NEWSLETTER ===== -->
   <div class="newsletter-section">
     <div class="container">
-      <div class="eyebrow">Stay Sharp</div>
-      <h2>The Ops Edge Newsletter</h2>
-      <p style="color:var(--text-muted);max-width:500px;margin:.5rem auto 0;">New tool reviews, comparison guides and practical ops advice — straight to your inbox. No spam, unsubscribe any time.</p>
-      <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <div class="eyebrow eyebrow-white" data-reveal>Stay Sharp</div>
+      <h2 data-reveal data-reveal-delay="1">The Ops Edge Newsletter</h2>
+      <p style="color:rgba(255,255,255,.65);max-width:500px;margin:.5rem auto 0;line-height:1.65;" data-reveal data-reveal-delay="2">New tool reviews, comparison guides and practical ops advice — straight to your inbox. No spam, unsubscribe any time.</p>
+      <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-reveal data-reveal-delay="3">
         <input type="hidden" name="form-name" value="newsletter">
         <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
         <input type="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
-        <button type="submit" class="btn btn-brand">Subscribe</button>
+        <button type="submit" class="btn btn-brand" style="background:#fff;color:var(--brand);border-color:#fff;">Subscribe</button>
       </form>
       <p class="newsletter-success">You're on the list — thanks for subscribing.</p>
-      <p class="text-sm text-muted" style="margin-top:.75rem;">For UK operations managers and logistics professionals. No spam.</p>
+      <p style="font-size:.8rem;color:rgba(255,255,255,.4);margin-top:.75rem;">For UK operations managers and logistics professionals. No spam.</p>
     </div>
   </div>
 
@@ -286,7 +298,7 @@
         <div>
           <div class="footer-brand">Operations<span>Edge</span></div>
           <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
-          <p class="text-sm" style="color:rgba(255,255,255,.4);margin-top:.5rem;">Content is based on personal experience and anonymised operational data. Views expressed are solely those of the author.</p>
+          <p class="text-sm" style="color:rgba(255,255,255,.3);margin-top:.5rem;">Content is based on personal experience and anonymised operational data. Views expressed are solely those of the author.</p>
         </div>
         <div>
           <h4>Content</h4>
