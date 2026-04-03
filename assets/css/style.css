@@ -607,6 +607,34 @@ p  { margin-bottom: 1rem; }
 }
 .eyebrow-white { color: rgba(255,255,255,.55); }
 
+/* --- Responsive Layout Utilities --- */
+/* Used instead of inline grids so they collapse on mobile */
+.two-col-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 4rem;
+  align-items: start;
+}
+.three-col-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.featured-article-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+}
+/* The stat/number callout on the right of featured articles — hidden on mobile */
+.featured-article-stat { text-align: center; min-width: 120px; }
+
 /* --- Article Layout --- */
 .article-layout {
   display: grid;
@@ -1042,6 +1070,16 @@ footer h4      { color: rgba(255,255,255,.9); font-size: .825rem; font-weight: 6
   .section { padding: 4rem 0; }
   .section-lg { padding: 5rem 0; }
   .newsletter-section { padding: 4rem 0; }
+  /* Layout utilities collapse to single column */
+  .two-col-content { grid-template-columns: 1fr; gap: 3rem; }
+  .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .three-col-features { grid-template-columns: 1fr; gap: 1.5rem; }
+  .featured-article-grid { grid-template-columns: 1fr; }
+  .featured-article-stat { display: none; }
+  /* Page hero tighter on mobile */
+  .page-hero { padding: 3rem 0 2.5rem; }
+  /* Newsletter input full-width stack */
+  .newsletter-form input { min-width: 100%; }
   /* Bento collapses to 2-col */
   .bento-grid {
     grid-template-columns: 1fr 1fr;
