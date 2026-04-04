@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Planned Peak Labour and Onboarded 10 Agency Staff Without Losing Control | OperationsEdge</title>
+  <meta name="description" content="A real-world UK warehouse case study on forecasting peak labour, comparing agency cost vs budget, selecting temporary staff support, and structuring induction and training for 10 new starters.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operationsedge.co.uk/from-the-floor/how-we-planned-peak-labour-and-onboarded-10-agency-staff.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How We Planned Peak Labour and Onboarded 10 Agency Staff Without Losing Control">
+  <meta property="og:description" content="Real-world UK warehouse case study on forecasting peak labour, comparing agency options, and preparing induction and training for 10 new starters.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.operationsedge.co.uk/from-the-floor/how-we-planned-peak-labour-and-onboarded-10-agency-staff.html">
+  <meta property="og:site_name" content="OperationsEdge">
+  <meta property="article:published_time" content="2026-04-03">
+  <meta property="article:modified_time" content="2026-04-03">
+  <meta property="article:section" content="From the Floor">
+  <meta property="article:tag" content="Agency Staff, Warehouse Induction, Temporary Workers, Workforce Management, Operations Case Study">
+
+  <!-- Schema.org Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How We Planned Peak Labour and Onboarded 10 Agency Staff Without Losing Control",
+    "description": "A real-world UK warehouse case study on forecasting peak labour, comparing agency cost vs budget, selecting temporary staff support, and structuring induction and training for 10 new starters.",
+    "datePublished": "2026-04-03",
+    "dateModified": "2026-04-03",
+    "author": {
+      "@type": "Person",
+      "name": "Paulo Gomes",
+      "url": "https://www.operationsedge.co.uk/about/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "OperationsEdge",
+      "url": "https://www.operationsedge.co.uk"
+    },
+    "mainEntityOfPage": "https://www.operationsedge.co.uk/from-the-floor/how-we-planned-peak-labour-and-onboarded-10-agency-staff.html"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .key-results {
+      background: linear-gradient(135deg, #0f3d65, var(--brand));
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 2rem 2.5rem;
+      margin: 2rem 0;
+    }
+    .key-results h3 { color: #fff; margin-bottom: 1.25rem; font-size: 1rem; text-transform: uppercase; letter-spacing: .08em; }
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .result-item {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+    }
+    .result-number { font-size: 1.9rem; font-weight: 800; line-height: 1; margin-bottom: .25rem; color: #f4a41b; }
+    .result-label { font-size: .825rem; color: rgba(255,255,255,.85); }
+
+    .timeline {
+      position: relative;
+      margin: 2rem 0;
+      padding-left: 2rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: .6rem;
+      top: .5rem;
+      bottom: .5rem;
+      width: 2px;
+      background: var(--brand);
+      opacity: .25;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.5rem;
+      top: .45rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--brand);
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px var(--brand);
+    }
+    .timeline-time {
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--brand);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: .3rem;
+    }
+    .timeline-title { font-weight: 600; font-size: .95rem; margin-bottom: .3rem; }
+    .timeline-body { font-size: .875rem; color: var(--text-muted); }
+
+    .track-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    .track-card {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+    }
+    .track-card h4 {
+      font-size: .85rem;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--brand);
+      margin-bottom: .75rem;
+    }
+    .track-card ul { margin: 0; padding-left: 1.25rem; }
+    .track-card li { font-size: .875rem; color: var(--text-muted); margin-bottom: .4rem; }
+
+    .warning-box {
+      background: #fff8e1;
+      border-left: 4px solid #f4a41b;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      font-size: .9rem;
+    }
+    .warning-box strong { color: #b45309; display: block; margin-bottom: .3rem; }
+
+    .what-went-wrong {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .issue-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1rem;
+      align-items: flex-start;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+    }
+    .issue-tag {
+      background: #fef2f2;
+      color: #b91c1c;
+      border: 1px solid #fca5a5;
+      border-radius: 4px;
+      font-size: .75rem;
+      font-weight: 700;
+      padding: .2rem .5rem;
+      white-space: nowrap;
+      align-self: flex-start;
+      margin-top: .1rem;
+    }
+    .issue-content .issue-title { font-weight: 600; font-size: .9rem; margin-bottom: .25rem; }
+    .issue-content p { font-size: .875rem; color: var(--text-muted); margin: 0; }
+
+    @media (max-width: 768px) {
+      .results-grid { grid-template-columns: 1fr; }
+      .track-grid { grid-template-columns: 1fr; }
+      .issue-item { grid-template-columns: 1fr; }
+    }
+  </style>
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
+  <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="site-logo"><img src="/assets/images/logo.svg" alt="OperationsEdge" style="display:block;height:52px;width:auto;max-height:52px;"></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav">
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/solutions/">Solutions</a></li>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/from-the-floor/" class="active">From the Floor</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/contact/" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===== ARTICLE HERO ===== -->
+  <div class="page-hero" style="background-image: linear-gradient(rgba(9,19,31,0.78) 0%, rgba(9,19,31,0.88) 100%), url('/assets/images/hero-graphic.png'); background-size: cover; background-position: center center;">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/from-the-floor/">From the Floor</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Agency Labour Planning Case Study</span>
+      </div>
+      <div class="eyebrow">From the Floor · Case Study · April 2026</div>
+      <h1>How We Planned Peak Labour and Onboarded 10 Agency Staff Without Losing Control</h1>
+      <p>A practical look at how we forecasted a peak-period labour gap, compared agency cost against budget, selected temporary support, and prepared induction and training so 10 new starters could contribute without destabilising the operation.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-layout">
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main class="article-content">
+
+          <div class="article-meta">
+            <span>📅 April 2026</span>
+            <span>⏱ 7 min read</span>
+            <span>🏷 From the Floor</span>
+          </div>
+
+          <p>Peak periods don’t usually become difficult because the volume increase is a surprise. They become difficult because the operation sees the volume coming, but doesn’t prepare the labour, supervision, training, and onboarding plan early enough to absorb it properly.</p>
+
+          <p>That was the real challenge in this case. Forecasts were showing that the workload would increase, and it was clear that the permanent team alone would not be enough to carry the peak comfortably without putting pressure on service, productivity, and leadership control on the floor.</p>
+
+          <p>The task was not just to “get agency workers in”. It was to estimate how much extra labour was needed, speak to multiple agencies, compare cost against the available budget, decide which option was realistic, and then prepare the induction and training structure so 10 new starters could add capacity rather than create confusion.</p>
+
+          <p>This article is about that full chain of work: forecasting the labour gap, planning the agency intake, getting the onboarding basics ready, and building a day-one training approach that allowed temporary workers to start contributing in controlled tasks without pulling the operation apart.</p>
+
+          <p>It is intentionally written from the operational side, not as an HR theory piece, because the practical risk in a warehouse peak is not only whether people arrive. It is whether they can be inducted, trained, supervised, and used in a way that genuinely protects throughput and quality.</p>
+
+          <!-- Key Results -->
+          <div class="key-results">
+            <h3>What This Plan Needed to Solve</h3>
+            <div class="results-grid">
+              <div class="result-item">
+                <div class="result-number">10</div>
+                <div class="result-label">Agency workers needed to support the forecasted peak workload</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">Multi</div>
+                <div class="result-label">Agencies contacted so labour availability, rates, and conditions could be compared</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">£ vs Plan</div>
+                <div class="result-label">Agency labour cost assessed against the budget and the operational risk of under-resourcing</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">Day 1</div>
+                <div class="result-label">Induction, task allocation, and buddy support prepared before the intake started</div>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="the-night-before">Before the Peak: Forecasting the Labour Gap and Agency Cost</h2>
+
+          <p>The starting point was the workload forecast. The signal was not just “it’s going to be busy”, but a visible increase in expected volume that would put pressure on the floor if we tried to absorb the peak with the existing team and overtime alone. Once that became clear, the first question was how many additional people were actually needed and for how long, rather than defaulting to a rough number and hoping the floor could absorb the rest.</p>
+
+          <p>That meant looking at expected workload, the capacity of the existing team, where the bottlenecks were likely to appear, and which activities temporary workers could realistically support after training. There is no point paying for extra headcount if those people are dropped into tasks where the learning curve is too high for the time window you have.</p>
+
+          <p>Once the labour need was clear enough, I contacted multiple agencies to understand who could supply the numbers, what the hourly cost looked like, what notice period they needed, and whether they were likely to provide people with relevant warehouse experience or simply whoever was available. In practice, that meant comparing not only the quoted rate, but also whether the agency could realistically support the full peak period with a stable pool of workers rather than constantly rotating new faces through the site.</p>
+
+          <p>The budget piece mattered here. Agency labour can protect the operation during a peak, but if the plan is not costed properly, it becomes very easy to overspend while still failing to get the productivity lift you expected. So the decision had to balance the total weekly labour cost of those extra shifts against the operational risk of running too lean, pushing overtime too hard, or missing service expectations if we cut the intake too far just to stay under budget.</p>
+
+          <p>That is an important point for warehouse managers: this kind of decision is not just a staffing admin task. It is an operational trade-off between cost, service risk, and how quickly temporary labour can be made productive.</p>
+
+          <h2 id="the-morning">Preparing the Intake: What Needed to Be Ready Before Day One</h2>
+
+          <p>Once the agency support was agreed, the next problem was day-one execution. Bringing in 10 new people at once can become inefficient very quickly if the operation is not ready with induction, PPE checks, task assignment, and floor-level support.</p>
+
+          <p>The preparation had to cover four things in particular.</p>
+
+          <div class="track-grid">
+            <div class="track-card">
+              <h4>Induction and H&amp;S</h4>
+              <ul>
+                <li>Who was leading induction</li>
+                <li>Which documents and site rules needed to be covered</li>
+                <li>Emergency procedures and reporting lines</li>
+                <li>Manual handling and PPE expectations</li>
+                <li>How sign-off would be recorded and checked</li>
+              </ul>
+            </div>
+            <div class="track-card">
+              <h4>Floor Training and Allocation</h4>
+              <ul>
+                <li>Which areas were suitable for new starters first</li>
+                <li>Which permanent operators could act as buddies</li>
+                <li>What the first-shift training sequence should look like</li>
+                <li>How much independence new starters should have initially</li>
+                <li>When supervisors should step in if a pairing was not working</li>
+              </ul>
+            </div>
+          </div>
+
+          <p>The key principle was that day one should not rely on improvisation. If supervisors are still deciding who goes where after the new starters arrive, the operation loses time immediately and the permanent team ends up absorbing the confusion.</p>
+
+          <p>So the plan had to define in advance where agency workers would start, who would support them, and what “good enough to start contributing safely” looked like for the first shift.</p>
+
+          <h2 id="the-induction-wall">Day-One Induction: What You Cannot Skip</h2>
+
+          <p>There is a temptation, under pressure, to compress induction to the bare minimum. Don't.</p>
+
+          <p>Not because of a theoretical compliance obligation, but because shortcuts taken during induction are exactly the kind of thing that can create safety exposure, confusion over site rules, and gaps in your training records later in the shift.</p>
+
+          <p>The non-negotiable items are:</p>
+
+          <ul>
+            <li><strong>Emergency exit locations and muster point</strong> — walk them, don't just point at the poster</li>
+            <li><strong>Manual handling sign-off</strong> — dated, witnessed, filed immediately</li>
+            <li><strong>PPE confirmation</strong> — they have it, it fits, they're wearing it</li>
+            <li><strong>Site rules acknowledgement</strong> — especially phone use, restricted areas and break procedures</li>
+            <li><strong>Reporting line</strong> — who do they speak to if something is wrong? They need a name, not a job title</li>
+          </ul>
+
+          <p>Everything else — detailed process training, system walkthroughs, local work standards, and productivity expectations — should then move into structured floor training. The induction room is for the non-negotiables that protect people physically and protect the business from avoidable compliance failures.</p>
+
+          <div class="warning-box">
+            <strong>Language considerations</strong>
+            If there is a reasonable chance that some agency workers may have limited English, a picture-based version of the emergency exit and manual handling briefing can help keep the induction clear without slowing the group down or singling anyone out. This is worth preparing before the peak, not improvising on day one.
+          </div>
+
+          <h2 id="the-buddy-system">Training and Ramp-Up: Making the New Starters Useful During the Peak</h2>
+
+          <p>One of the biggest risks with agency labour is assuming that once people have been inducted, the headcount problem is solved. In reality, headcount only becomes useful capacity if the training and task allocation are designed properly.</p>
+
+          <p>The ramp-up approach needed to do three things.</p>
+
+          <ul>
+            <li><strong>Start with controlled tasks first</strong> — place new starters in simpler, repeatable work areas where the process is easier to explain and the cost of mistakes is lower while they learn the site layout and workflow.</li>
+            <li><strong>Use experienced operators as buddies</strong> — not just to “watch” new starters, but to model the right way of working, explain local rules, and help them understand exceptions.</li>
+            <li><strong>Monitor readiness before increasing independence</strong> — the objective is not to push someone into full-speed work too early, because preventable errors during a peak can create more rework than the extra labour is meant to solve.</li>
+          </ul>
+
+          <p>It also matters to brief the buddies properly. In practical terms, that means deciding which experienced operators can support training, being clear that their own output may dip while they are coaching, and giving them a route to escalate quickly if a new starter is struggling or has been placed in the wrong task. If a permanent operator is suddenly expected to train someone while still being judged as though nothing changed in their own workload, there is a good chance they will rush the explanation or become frustrated. That weakens the training and creates the wrong dynamic from the start.</p>
+
+          <p>From a leadership point of view, that means temporary labour planning should include not only the agency cost, but also the supervision capacity and productivity impact on the permanent team while new starters are being trained.</p>
+
+          <h2 id="what-went-wrong">Where This Can Go Wrong If the Planning Is Weak</h2>
+
+          <p>This kind of intake can fail in predictable ways if the preparation is weak. The main risks are usually in four areas.</p>
+
+          <div class="what-went-wrong">
+            <div class="issue-item">
+              <span class="issue-tag">Budget</span>
+              <div class="issue-content">
+                <div class="issue-title">Paying for headcount without getting usable productivity</div>
+                <p>If agency numbers are approved but the training plan is weak, you can spend the budget and still fail to gain the capacity you expected. Fix: match the labour request to specific tasks and define how new starters will be ramped into those tasks.</p>
+              </div>
+            </div>
+            <div class="issue-item">
+              <span class="issue-tag">Agency Fit</span>
+              <div class="issue-content">
+                <div class="issue-title">Choosing the cheapest agency option without checking operational suitability</div>
+                <p>An attractive rate is not always the best decision if the agency cannot supply people reliably or if the workers arriving have no realistic match to the role. Fix: compare cost, availability, and likely fit together, not price in isolation.</p>
+              </div>
+            </div>
+            <div class="issue-item">
+              <span class="issue-tag">Induction</span>
+              <div class="issue-content">
+                <div class="issue-title">Treating day-one induction as paperwork instead of operational preparation</div>
+                <p>If the induction is rushed or inconsistent, people may technically be “onboarded” while still being unclear about safety, rules, escalation, or how the work should be done. Fix: keep a clear induction checklist and make sure the handover from induction to floor training is deliberate.</p>
+              </div>
+            </div>
+            <div class="issue-item">
+              <span class="issue-tag">Supervision</span>
+              <div class="issue-content">
+                <div class="issue-title">Overloading permanent staff who are expected to train while maintaining normal output</div>
+                <p>If the buddy system is not planned properly, you create frustration on both sides: the new starter gets poor support and the experienced operator feels their own performance is being penalised. Fix: brief buddies in advance, choose the right people, and account for the training load.</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="the-result-that-matters">The Result That Actually Matters: Useful Capacity During the Peak</h2>
+
+          <p>For me, the real test of this kind of agency labour plan is not just whether the number of people requested arrives on site. It is whether those people become useful capacity quickly enough to support the peak without generating disproportionate supervision, quality issues, or operational friction.</p>
+
+          <p>That means looking beyond the day-one headcount and asking questions like:</p>
+
+          <ul>
+            <li>Did the temporary workers reach a level where they could contribute in the tasks assigned to them?</li>
+            <li>Did the permanent team remain in control, or did supervision become a bottleneck?</li>
+            <li>Did the operation protect safety, process discipline, and quality while absorbing the extra labour?</li>
+            <li>Did the agency cost feel justified by the support the team gained during the peak period?</li>
+          </ul>
+
+          <p>That last question matters. A lower agency rate is not automatically a better outcome if weak onboarding means the operation spends the peak constantly retraining, correcting errors, or relying on supervisors to cover gaps. Done properly, induction and training are not only a compliance step. They are part of cost control and capacity planning.</p>
+
+          <h2 id="what-to-do-differently">What We Would Do Differently</h2>
+
+          <p>Three things are especially worth building into this kind of plan.</p>
+
+          <p><strong>Start the agency conversations early enough.</strong> If the forecast is already pointing to a peak, delaying the labour conversation reduces your options and weakens your ability to compare rates, availability, and worker profile properly.</p>
+
+          <p><strong>Build a more explicit training pathway.</strong> Instead of treating day one as “induction, then straight into the operation”, define which tasks new starters should learn first, what support they get, and what the progression looks like over the first few shifts.</p>
+
+          <p><strong>Tighten induction recordkeeping.</strong> Paper induction sheets can work, but digital sign-off makes records easier to search, audit, and control if the process is stable enough to support it. <a href="/reviews/safetyculture-iauditor-review.html">SafetyCulture</a> is one option if you want a more structured digital checklist and audit trail.</p>
+
+          <h2 id="if-you-take-one-thing">If You Take One Thing From This</h2>
+
+          <p>The main lesson is that agency labour works best when the whole chain is managed as one operational system: forecast the workload, estimate the labour gap, compare agency options against budget, define the onboarding plan, and build a practical training route so temporary workers can contribute without overloading the permanent team.</p>
+
+          <p>If any part of that chain is weak, it tends to show up later as avoidable cost, supervision pressure, or inconsistent performance during the exact period when the operation can least afford it.</p>
+
+          <hr>
+
+          <p><em>Workforce management tools like <a href="/solutions/team-performance-management/">Connecteam</a> can digitise the induction process and track compliance — worth exploring once you've got the process right on paper first. See also: <a href="/guides/best-shift-scheduling-software-logistics-teams.html">shift scheduling guide for logistics teams</a> and <a href="/solutions/team-performance-management/">team performance management tools</a>.</em></p>
+
+        </main>
+
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="article-sidebar">
+
+          <div class="sidebar-card">
+            <h4>In this article</h4>
+            <ul class="toc-list">
+              <li><a href="#the-night-before">Forecasting and budget</a></li>
+              <li><a href="#the-morning">Preparing the intake</a></li>
+              <li><a href="#the-induction-wall">Day-one induction</a></li>
+              <li><a href="#the-buddy-system">Training and ramp-up</a></li>
+              <li><a href="#what-went-wrong">Planning risks</a></li>
+              <li><a href="#the-result-that-matters">Useful peak capacity</a></li>
+              <li><a href="#what-to-do-differently">What to do differently</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card" style="background:var(--brand);color:#fff;border-color:transparent;">
+            <h4 style="color:#fff;">Managing a flexible workforce?</h4>
+            <p style="color:rgba(255,255,255,.8);font-size:.875rem;">See our comparison of team management tools for warehouse and logistics operations — including scheduling, task management and mobile communication.</p>
+            <a href="/solutions/team-performance-management/" class="btn" style="background:#fff;color:var(--brand);margin-top:.75rem;display:inline-block;padding:.5rem 1.1rem;font-size:.875rem;">See Team Management Tools</a>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>Related reading</h4>
+            <ul class="toc-list">
+              <li><a href="/solutions/team-performance-management/">Team performance management</a></li>
+              <li><a href="/guides/best-shift-scheduling-software-logistics-teams.html">Best shift scheduling software</a></li>
+              <li><a href="/reviews/safetyculture-iauditor-review.html">SafetyCulture iAuditor review</a></li>
+              <li><a href="/from-the-floor/how-we-improved-picking-efficiency.html">Picking efficiency case study</a></li>
+            </ul>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Operations<span>Edge</span></div>
+          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
+          <p class="text-sm" style="color:rgba(255,255,255,.4);margin-top:.5rem;">Content is based on personal experience and anonymised operational data. Views expressed are solely those of the author.</p>
+        </div>
+        <div>
+          <h4>Content</h4>
+          <ul class="footer-links">
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/solutions/">Solutions</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/from-the-floor/">From the Floor</a></li>
+            <li><a href="/resources/">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+            <li><a href="/cookies/">Cookie Policy</a></li>
+            <li><a href="/affiliate-disclosure/">Disclosure</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="/contact/">Get in Touch</a></li>
+            <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OperationsEdge. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="/cookies/">Cookies</a>
+          <a href="/affiliate-disclosure/">Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
