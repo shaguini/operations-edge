@@ -35,6 +35,30 @@
     .hero p { color: rgba(255,255,255,.72); }
     .hero-eyebrow { color: rgba(255,255,255,.55); }
     .hero::before { opacity: 0; }
+
+    /* Stats bar — brand blue numbers, blue accent rule */
+    .stat-num { color: var(--brand); }
+    .stats-bar { border-top: 1px solid rgba(27,96,157,.25); }
+    .stat-label { color: rgba(255,255,255,.38); letter-spacing: .14em; }
+
+    /* Bento category code badge — replaces emoji */
+    .bento-code {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      padding: .28rem .6rem;
+      border: 1.5px solid currentColor;
+      border-radius: 2px;
+      display: inline-block;
+      margin-bottom: auto;
+      opacity: .55;
+      line-height: 1.6;
+    }
+    /* On dark/blue tiles the code badge uses white */
+    .bento-dark .bento-code,
+    .bento-blue .bento-code { opacity: .5; }
   </style>
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
   <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
@@ -110,7 +134,7 @@
 
         <!-- Feature tile: WMS — dark, spans 2 rows -->
         <a href="/reviews/?cat=wms" class="bento-tile bento-feature bento-dark" data-reveal>
-          <span class="bento-icon">📦</span>
+          <span class="bento-code">WMS</span>
           <div>
             <p class="bento-cat">Warehouse</p>
             <h3>WMS &amp; Inventory Software</h3>
@@ -120,7 +144,7 @@
 
         <!-- Solutions — light -->
         <a href="/solutions/" class="bento-tile bento-light" data-reveal data-reveal-delay="1">
-          <span class="bento-icon">🎯</span>
+          <span class="bento-code">OPS</span>
           <div>
             <p class="bento-cat" style="color:var(--text-muted);">Problem-based</p>
             <h3>Solutions by Challenge</h3>
@@ -130,7 +154,7 @@
 
         <!-- H&S — brand blue -->
         <a href="/reviews/?cat=safety" class="bento-tile bento-blue" data-reveal data-reveal-delay="2">
-          <span class="bento-icon">⚠️</span>
+          <span class="bento-code">H+S</span>
           <div>
             <p class="bento-cat">Safety &amp; Compliance</p>
             <h3>Health, Safety &amp; Compliance</h3>
@@ -140,7 +164,7 @@
 
         <!-- Workforce — muted -->
         <a href="/reviews/?cat=workforce" class="bento-tile bento-muted" data-reveal>
-          <span class="bento-icon">👥</span>
+          <span class="bento-code">WFM</span>
           <div>
             <p class="bento-cat" style="color:var(--text-muted);">Workforce</p>
             <h3>Shift Scheduling</h3>
@@ -150,7 +174,7 @@
 
         <!-- Automation — dark -->
         <a href="/reviews/?cat=automation" class="bento-tile bento-dark" data-reveal data-reveal-delay="1">
-          <span class="bento-icon">⚡</span>
+          <span class="bento-code">AUT</span>
           <div>
             <p class="bento-cat">Automation</p>
             <h3>Process Automation</h3>
@@ -160,7 +184,7 @@
 
         <!-- Transport — accent -->
         <a href="/reviews/?cat=transport" class="bento-tile bento-accent" data-reveal data-reveal-delay="2">
-          <span class="bento-icon">🚚</span>
+          <span class="bento-code">TMS</span>
           <div>
             <p class="bento-cat" style="color:var(--brand);">Transport &amp; Logistics</p>
             <h3 style="color:var(--dark);">TMS &amp; Fleet</h3>
