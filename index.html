@@ -52,6 +52,7 @@
       border: 1.5px solid currentColor;
       border-radius: 2px;
       display: inline-block;
+      align-self: flex-start;
       margin-bottom: auto;
       opacity: .55;
       line-height: 1.6;
@@ -59,6 +60,8 @@
     /* On dark/blue tiles the code badge uses white */
     .bento-dark .bento-code,
     .bento-blue .bento-code { opacity: .5; }
+    /* Equal-size grid — all tiles same height */
+    .bento-grid { grid-template-rows: 280px 280px; }
   </style>
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
   <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
@@ -133,7 +136,7 @@
       <div class="bento-grid">
 
         <!-- Feature tile: WMS — dark, spans 2 rows -->
-        <a href="/reviews/?cat=wms" class="bento-tile bento-feature bento-dark" data-reveal>
+        <a href="/reviews/?cat=wms" class="bento-tile bento-dark" data-reveal>
           <span class="bento-code">WMS</span>
           <div>
             <p class="bento-cat">Warehouse</p>
