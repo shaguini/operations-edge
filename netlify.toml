@@ -62,6 +62,12 @@
 
 # Redirects for /posts/ → /from-the-floor/ (section rename)
 [[redirects]]
+  from = "/from-the-floor/how-we-onboarded-10-agency-staff-in-24-hours.html"
+  to   = "/from-the-floor/how-we-planned-peak-labour-and-onboarded-10-agency-staff.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/posts/how-we-improved-picking-efficiency.html"
   to   = "/from-the-floor/how-we-improved-picking-efficiency.html"
   status = 301
