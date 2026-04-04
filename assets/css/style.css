@@ -926,9 +926,12 @@ footer h4      { color: rgba(255,255,255,.9); font-size: .825rem; font-weight: 6
   pointer-events: none;
 }
 .page-hero .container { position: relative; }
-.page-hero .eyebrow { margin-bottom: .4rem; color: rgba(255,255,255,.55); }
-.page-hero h1  { margin-bottom: .65rem; color: #fff; font-size: clamp(1.9rem, 4.5vw, 3.25rem); }
-.page-hero p   { color: rgba(255,255,255,.65); font-size: 1.05rem; max-width: 640px; }
+.page-hero .eyebrow { margin-bottom: .4rem; color: rgba(255,255,255,.55) !important; }
+.page-hero h1  { margin-bottom: .65rem; color: #fff !important; font-size: clamp(1.9rem, 4.5vw, 3.25rem); }
+.page-hero p   { color: rgba(255,255,255,.65) !important; font-size: 1.05rem; max-width: 640px; }
+.page-hero .breadcrumb,
+.page-hero .breadcrumb a { color: rgba(255,255,255,.45) !important; }
+.page-hero .breadcrumb-sep { color: rgba(255,255,255,.2) !important; }
 
 /* --- Contact Form --- */
 .contact-form { max-width: 600px; }
