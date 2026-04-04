@@ -41,7 +41,7 @@
     .stats-bar { border-top: 1px solid rgba(27,96,157,.25); }
     .stat-label { color: rgba(255,255,255,.38); letter-spacing: .14em; }
 
-    /* Bento category code badge — replaces emoji */
+    /* Bento category code badge — replaces emoji, brand blue */
     .bento-code {
       font-family: 'Courier New', Courier, monospace;
       font-size: .65rem;
@@ -49,19 +49,29 @@
       letter-spacing: .2em;
       text-transform: uppercase;
       padding: .28rem .6rem;
-      border: 1.5px solid currentColor;
+      border: 1.5px solid rgba(27,96,157,.65);
       border-radius: 2px;
       display: inline-block;
       align-self: flex-start;
       margin-bottom: auto;
-      opacity: .55;
+      color: #1B609D;
       line-height: 1.6;
     }
-    /* On dark/blue tiles the code badge uses white */
-    .bento-dark .bento-code,
-    .bento-blue .bento-code { opacity: .5; }
+    /* All bento tiles — unified dark navy, brand blue border */
+    .bento-tile {
+      background: #0B1C2C !important;
+      border: 1px solid rgba(27,96,157,.22) !important;
+    }
+    .bento-tile .bento-cat { color: rgba(255,255,255,.38) !important; }
+    .bento-tile h3 { color: #fff !important; }
+    .bento-tile p { color: rgba(255,255,255,.55) !important; }
+    .bento-tile:hover { border-color: rgba(27,96,157,.5) !important; }
     /* Equal-size grid — all tiles same height */
     .bento-grid { grid-template-rows: 280px 280px; }
+    /* Unify all dark section backgrounds to hero navy */
+    .stats-bar { background: #09131F; }
+    .section-categories { background: #09131F; }
+    .section-dark { background: #09131F !important; }
   </style>
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
   <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
@@ -126,11 +136,11 @@
   </div>
 
   <!-- CATEGORIES — bento tile grid -->
-  <section class="section" style="background:#fff;">
+  <section class="section section-categories" id="categories">
     <div class="container">
-      <div class="section-header" data-reveal>
-        <div class="eyebrow">Browse by Category</div>
-        <h2>Guides, case studies and tools for every part of your operation</h2>
+      <div class="section-header section-header--dark" data-reveal>
+        <div class="eyebrow eyebrow-white">Browse by Category</div>
+        <h2 style="color:#fff;">Guides, case studies and tools for every part of your operation</h2>
       </div>
 
       <div class="bento-grid">
@@ -149,9 +159,9 @@
         <a href="/solutions/" class="bento-tile bento-light" data-reveal data-reveal-delay="1">
           <span class="bento-code">OPS</span>
           <div>
-            <p class="bento-cat" style="color:var(--text-muted);">Problem-based</p>
+            <p class="bento-cat">Problem-based</p>
             <h3>Solutions by Challenge</h3>
-            <p style="color:var(--text-muted);">Find tools and approaches based on the problem you're actually trying to solve.</p>
+            <p>Find tools and approaches based on the problem you're actually trying to solve.</p>
           </div>
         </a>
 
@@ -169,9 +179,9 @@
         <a href="/reviews/?cat=workforce" class="bento-tile bento-muted" data-reveal>
           <span class="bento-code">WFM</span>
           <div>
-            <p class="bento-cat" style="color:var(--text-muted);">Workforce</p>
+            <p class="bento-cat">Workforce</p>
             <h3>Shift Scheduling</h3>
-            <p style="color:var(--text-muted);">Scheduling, time tracking, and team comms for shift-based logistics.</p>
+            <p>Scheduling, time tracking, and team comms for shift-based logistics.</p>
           </div>
         </a>
 
@@ -189,9 +199,9 @@
         <a href="/reviews/?cat=transport" class="bento-tile bento-accent" data-reveal data-reveal-delay="2">
           <span class="bento-code">TMS</span>
           <div>
-            <p class="bento-cat" style="color:var(--brand);">Transport &amp; Logistics</p>
-            <h3 style="color:var(--dark);">TMS &amp; Fleet</h3>
-            <p style="color:var(--text-muted);">Route planning and fleet tracking for UK distribution teams.</p>
+            <p class="bento-cat">Transport &amp; Logistics</p>
+            <h3>TMS &amp; Fleet</h3>
+            <p>Route planning and fleet tracking for UK distribution teams.</p>
           </div>
         </a>
 
@@ -269,10 +279,10 @@
 
         <div data-reveal data-reveal-delay="2">
           <div style="display:flex;flex-direction:column;gap:1rem;">
-            <div style="background:var(--dark);border-radius:var(--radius-xl);padding:2rem;color:#fff;">
-              <div style="font-size:1.75rem;font-weight:700;letter-spacing:-0.04em;color:#fff;margin-bottom:.35rem;">01</div>
-              <strong style="display:block;font-size:1rem;margin-bottom:.4rem;color:#fff;">Real operational experience</strong>
-              <span style="font-size:.875rem;color:rgba(255,255,255,.55);">10+ years managing UK warehouse and logistics operations</span>
+            <div style="background:var(--bg-alt);border-radius:var(--radius-xl);padding:2rem;">
+              <div style="font-size:1.75rem;font-weight:700;letter-spacing:-0.04em;color:var(--brand);margin-bottom:.35rem;">01</div>
+              <strong style="display:block;font-size:1rem;margin-bottom:.4rem;">Real operational experience</strong>
+              <span style="font-size:.875rem;color:var(--text-muted);">10+ years managing UK warehouse and logistics operations</span>
             </div>
             <div style="background:var(--bg-alt);border-radius:var(--radius-xl);padding:2rem;">
               <div style="font-size:1.75rem;font-weight:700;letter-spacing:-0.04em;color:var(--brand);margin-bottom:.35rem;">02</div>
