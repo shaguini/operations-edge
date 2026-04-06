@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Build a Warehouse Shift Schedule Plan | OperationsEdge</title>
+  <meta name="description" content="A practical, step-by-step guide to building a shift schedule plan for UK warehouse and logistics teams — covering shift patterns, WTR compliance, absence cover, and the right tools.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operationsedge.co.uk/solutions/shift-schedule-planning/">
+  <meta property="og:title" content="How to Build a Warehouse Shift Schedule Plan | OperationsEdge">
+  <meta property="og:description" content="Step-by-step: how to build a shift schedule that covers your operation, complies with UK WTR, and doesn't collapse when someone calls in sick.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.operationsedge.co.uk/solutions/shift-schedule-planning/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Build a Warehouse Shift Schedule Plan",
+    "description": "A practical step-by-step guide to building a shift schedule plan for UK warehouse and logistics operations.",
+    "datePublished": "2026-04-06",
+    "dateModified": "2026-04-06",
+    "author": { "@type": "Person", "name": "Paulo Gomes", "url": "https://www.operationsedge.co.uk/about/" },
+    "publisher": { "@type": "Organization", "name": "OperationsEdge", "url": "https://www.operationsedge.co.uk" },
+    "mainEntityOfPage": "https://www.operationsedge.co.uk/solutions/shift-schedule-planning/"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .step-block { counter-reset: step-counter; }
+    .step { display:flex; gap:1.5rem; margin-bottom:2.5rem; align-items:flex-start; }
+    .step-num { background:var(--brand); color:#fff; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:1rem; flex-shrink:0; margin-top:.2rem; }
+    .step-body { flex:1; }
+    .step-body h3 { margin-top:0; margin-bottom:.5rem; font-size:1.1rem; }
+    .callout { background:var(--bg-alt); border-left:4px solid var(--brand); border-radius:0 var(--radius) var(--radius) 0; padding:1.1rem 1.4rem; margin:1.75rem 0; }
+    .callout strong { display:block; margin-bottom:.35rem; color:var(--brand); font-size:.875rem; text-transform:uppercase; letter-spacing:.04em; }
+    .tool-compare { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem; margin:1.5rem 0 2rem; }
+    .tool-card { background:var(--bg-alt); border:1px solid var(--border); border-radius:var(--radius-lg); padding:1.25rem 1.5rem; }
+    .tool-card h4 { font-size:.875rem; font-weight:700; margin-bottom:.35rem; color:var(--heading); }
+    .tool-card .tool-label { font-size:.75rem; text-transform:uppercase; letter-spacing:.05em; color:var(--brand); font-weight:600; margin-bottom:.6rem; display:block; }
+    .tool-card p { font-size:.85rem; color:var(--text-muted); margin:0; line-height:1.6; }
+    @media (max-width:720px) { .tool-compare { grid-template-columns:1fr; } }
+    .wtr-box { background:#f0f7ff; border:1px solid #c5ddf0; border-radius:var(--radius-lg); padding:1.5rem 1.75rem; margin:1.75rem 0; }
+    .wtr-box h4 { color:var(--brand); margin-top:0; margin-bottom:.75rem; }
+    .wtr-box ul { margin:0; padding-left:1.25rem; }
+    .wtr-box li { font-size:.9rem; margin-bottom:.4rem; line-height:1.6; }
+  </style>
+  <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
+  <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="site-logo"><img src="/assets/images/logo.svg" alt="OperationsEdge" style="display:block;height:52px;width:auto;max-height:52px;"></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav">
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/solutions/" class="active">Solutions</a></li>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/from-the-floor/">From the Floor</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/contact/" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-hero" style="background-image: linear-gradient(rgba(9,19,31,0.78) 0%, rgba(9,19,31,0.88) 100%), url('/assets/images/hero-graphic.png'); background-size: cover; background-position: center center;">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/solutions/">Solutions</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Shift Schedule Planning</span>
+      </div>
+      <div class="eyebrow">Solutions · Workforce</div>
+      <h1>How to Build a Shift Schedule Plan That Works</h1>
+      <p>Most warehouse rotas are built reactively — filled in on a Thursday for next week, missing coverage gaps until they become a problem. This page covers how to build a schedule plan properly: from operational requirements to shift patterns, WTR compliance, and what to do when it breaks down.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-layout">
+
+        <main class="article-content">
+
+          <div class="article-meta">
+            <span>📅 April 2026</span>
+            <span>⏱ 10 min read</span>
+            <span>🏷 Scheduling &amp; Workforce</span>
+          </div>
+
+          <h2 id="problem">Why most warehouse rotas fail</h2>
+          <p>The most common scheduling failure mode isn't the wrong software — it's no structure. Rotas built week-to-week, filled in around whoever's available and whoever's off, with no consistent pattern and no forward visibility. Staff don't know what they're working until a few days before. Supervisors spend hours every week rebuilding the same rota from scratch.</p>
+
+          <p>The result is avoidable: higher absence rates (people who can't plan around shifts disengage), overtime that eats into margin, and a permanent sense that the operation is just about holding together.</p>
+
+          <p>Building a proper shift schedule plan — one your team can rely on and your managers can maintain without heroics — requires getting five things right:</p>
+          <ol>
+            <li>Understanding your actual operational requirements</li>
+            <li>Choosing the right shift patterns</li>
+            <li>Building the base rota</li>
+            <li>Applying UK legal constraints</li>
+            <li>Planning for absence and flex</li>
+          </ol>
+
+          <div class="step-block">
+
+            <h2 id="step1">Step 1: Establish your operational requirements</h2>
+            <div class="step">
+              <div class="step-num">1</div>
+              <div class="step-body">
+                <p>Before you touch a rota, you need to know what the operation actually requires — not headcount, but hours of cover broken down by period and activity. Start with:</p>
+                <ul>
+                  <li><strong>Operating hours</strong> — when does the warehouse need to be staffed, and which hours are optional vs essential</li>
+                  <li><strong>Volume patterns</strong> — which days and time windows are highest-volume (Monday mornings, pre-weekend, pre-bank holiday peaks)</li>
+                  <li><strong>Activity types</strong> — receiving, pick, pack and despatch often have different staffing needs and can't all peak at the same time</li>
+                  <li><strong>Minimum viable cover</strong> — the fewest people needed on each shift for safe, functional operations (this is your floor; everything above it is optimisation)</li>
+                  <li><strong>Skill dependencies</strong> — are there tasks that can only be done by certain people (FLT licence, dangerous goods, returns processing)?</li>
+                </ul>
+                <p>This doesn't need to be a formal analysis. A simple grid — time of day across the top, day of week down the side, with estimated headcount requirements in each cell — is enough to start from.</p>
+              </div>
+            </div>
+
+            <h2 id="step2">Step 2: Choose your shift patterns</h2>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div class="step-body">
+                <p>Shift patterns define the structure of the rota — when people work, how long for, and how shifts rotate. Choose patterns that match your operational hours and are sustainable for your workforce.</p>
+
+                <p><strong>Common patterns in UK warehouse and logistics operations:</strong></p>
+                <ul>
+                  <li><strong>Fixed early/late (5-day)</strong> — two fixed shifts per day, no nights, typical for 6am–10pm operations. Easiest to manage and recruit for; hard to flex for volume peaks.</li>
+                  <li><strong>Rotating early/late</strong> — staff rotate between shifts on a fixed cycle (e.g. 2 weeks early, 2 weeks late). More equitable than fixed patterns; reduces fatigue from permanent lates/nights.</li>
+                  <li><strong>Continental (4-on-4-off)</strong> — 12-hour shifts, alternating blocks. Common in 24-hour operations. High hours when on, but long breaks between. WTR compliance needs active monitoring.</li>
+                  <li><strong>Day-only with weekend rotation</strong> — straight day shifts, with weekend cover provided by a rotating group. Works well for operations with reduced but not zero weekend volume.</li>
+                  <li><strong>Annualised hours</strong> — total contracted hours spread across the year, with flex built in for peaks and troughs. Requires robust tracking but can eliminate peak overtime costs.</li>
+                </ul>
+
+                <div class="callout">
+                  <strong>Practical note</strong>
+                  Recruiting for nights is harder than for days, and agency fill rates for nights are typically lower. If you're considering 24-hour operations for the first time, model your agency spend for nights separately — it's usually higher than anticipated.
+                </div>
+
+                <p>Choose patterns that match your operational hours with a degree of overlap between shifts. The overlap is where handovers happen — which is when information gets transferred and problems get caught before they compound.</p>
+              </div>
+            </div>
+
+            <h2 id="step3">Step 3: Build the base rota</h2>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div class="step-body">
+                <p>The base rota is the repeating skeleton of the schedule — the pattern that rolls forward week by week, before exceptions, holidays and absence are layered in. Getting it right saves time every week and makes the schedule predictable for staff.</p>
+
+                <p><strong>How to build it:</strong></p>
+                <ol>
+                  <li>List every role and the number of people needed per shift</li>
+                  <li>Assign people to shift patterns first — not to specific shifts. (Who's on early rotation? Who's on nights?)</li>
+                  <li>Build one full cycle of the base rota (one week for fixed patterns, the full rotation period for rotating patterns)</li>
+                  <li>Check cover at every hour across the operating day — look for gaps, not just headcount totals</li>
+                  <li>Check that skill dependencies are covered on each shift (FLT, first aider, team leader minimum)</li>
+                  <li>Once the base works, use it as the repeating template going forward</li>
+                </ol>
+
+                <p>The base rota should cover roughly 80–85% of your typical week. The remainder is handled by flex, agency, and adjusted headcount for peaks. If the base rota requires your core team at full stretch every week, you don't have enough staff — no amount of scheduling fixes that.</p>
+              </div>
+            </div>
+
+            <h2 id="step4">Step 4: Apply UK legal requirements</h2>
+            <div class="step">
+              <div class="step-num">4</div>
+              <div class="step-body">
+                <p>Once you have a base rota, check it against UK Working Time Regulations (WTR 1998). These aren't guidelines — they're legal minimums that apply to all workers, including agency staff supplied through an agency.</p>
+
+                <div class="wtr-box">
+                  <h4>Working Time Regulations: key limits for warehouse scheduling</h4>
+                  <ul>
+                    <li><strong>Maximum 48-hour average working week</strong> — averaged over a 17-week reference period. Workers can opt out in writing, but the opt-out must be genuinely voluntary.</li>
+                    <li><strong>11 hours minimum rest between shifts</strong> — this is the most commonly breached rule in warehouse operations. A late shift ending at 10pm cannot be followed by an early shift starting before 9am.</li>
+                    <li><strong>24 hours uninterrupted rest per 7-day period</strong> (or 48 hours per 14-day period) — this applies even for part-time and flexible workers.</li>
+                    <li><strong>20-minute rest break after 6 hours of work</strong> — must be uninterrupted; working lunches at a picking station do not count.</li>
+                    <li><strong>Night workers: maximum 8-hour average per night</strong> — averaged over 17 weeks. Night work is defined as at least 3 hours regularly worked between 11pm and 6am.</li>
+                    <li><strong>Night workers involving special hazards or heavy physical strain</strong> — absolute 8-hour limit per shift, not averaged.</li>
+                    <li><strong>Young workers (16–17):</strong> stricter limits apply — 8-hour max per day, no nights (with exceptions), 30-min break after 4.5 hours.</li>
+                  </ul>
+                </div>
+
+                <p>Run your base rota through these checks before publishing it. Common failures: early/late rotations that violate the 11-hour rest rule, and double-weekend shifts that push workers past the 6-day stretch.</p>
+
+                <p><strong>Bank holidays:</strong> UK bank holidays are not automatically paid leave under WTR — entitlement depends on the employment contract. However, your schedule plan needs to account for them. Decide your approach in advance: operate as normal (with enhanced pay or TOIL), reduced ops, or closed. Building bank holiday cover into the rota template avoids last-minute scrambles.</p>
+              </div>
+            </div>
+
+            <h2 id="step5">Step 5: Plan for absence and flex</h2>
+            <div class="step">
+              <div class="step-num">5</div>
+              <div class="step-body">
+                <p>No rota survives first contact with a Monday morning intact. Your schedule plan needs to include a clear, agreed approach to three types of disruption:</p>
+
+                <p><strong>Unplanned absence (sickness, no-shows)</strong></p>
+                <ul>
+                  <li>Define a cover hierarchy before the day it's needed: who gets called first, second, third</li>
+                  <li>Maintain a bank of hours-flexible workers or agency contacts who can fill at short notice</li>
+                  <li>Track absence by person and pattern — persistent short-term absence usually has an identifiable cause</li>
+                </ul>
+
+                <p><strong>Planned leave (annual leave, parental leave, medical)</strong></p>
+                <ul>
+                  <li>Set and communicate a leave request lead time (minimum 2 weeks for standard leave; more for peak periods)</li>
+                  <li>Cap the number of people off per shift during peak months and communicate these blackout windows at the start of the leave year</li>
+                  <li>Track leave entitlements in the same system as the rota — managing leave in a separate spreadsheet creates errors</li>
+                </ul>
+
+                <p><strong>Volume peaks and surge demand</strong></p>
+                <ul>
+                  <li>Identify your peak periods 8–12 weeks ahead where possible — sales data, despatch history, and commercial forecasts all contribute</li>
+                  <li>Agree your flex levers in advance: overtime (and at what premium), agency top-up, shift extensions, weekend specials</li>
+                  <li>Budget for peak agency spend before the peak, not during it</li>
+                </ul>
+
+                <div class="callout">
+                  <strong>Rule of thumb</strong>
+                  A warehouse that runs at 100% headcount on a normal week will consistently fail on a bad week. Build for 80–85% of operational need with your core team, and plan your flex layer for the rest. If you don't have enough flex capacity, the answer is more core headcount or a standing agency arrangement — not a better rota.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <h2 id="tools">Tools: Excel, template, or software?</h2>
+          <p>The right tool depends on your operation size and complexity. Here's an honest breakdown:</p>
+
+          <div class="tool-compare">
+            <div class="tool-card">
+              <span class="tool-label">Best for: up to ~10 staff</span>
+              <h4>Spreadsheet (Excel / Google Sheets)</h4>
+              <p>Low cost, fully flexible, no setup. The main failure mode is when it lives on one person's laptop and becomes unmaintainable. If you go this route, keep it simple — a grid that everyone can read, not a macro-heavy masterpiece.</p>
+            </div>
+            <div class="tool-card">
+              <span class="tool-label">Best for: 10–30 staff</span>
+              <h4>Scheduling template</h4>
+              <p>A structured, browser-based template that calculates hours, flags overtime, and can be printed or exported. Lower overhead than software; more structured than a blank spreadsheet. A good starting point for operations that aren't ready for a paid tool.</p>
+            </div>
+            <div class="tool-card">
+              <span class="tool-label">Best for: 30+ staff or multi-site</span>
+              <h4>Dedicated scheduling software</h4>
+              <p>Connecteam, Rotacloud, and Deputy all handle the complexity that spreadsheets can't — shift notifications, mobile clock-in, payroll export, WTR compliance alerts. The cost is justified once managing the rota is taking more than 3–4 hours per week.</p>
+            </div>
+          </div>
+
+          <p>See our <a href="/guides/best-shift-scheduling-software-logistics-teams.html">guide to the best shift scheduling software for UK logistics teams</a> for a full comparison of Connecteam, Rotacloud, and Deputy at different operation sizes.</p>
+
+          <h2 id="common-mistakes">Common mistakes that undermine a good rota</h2>
+          <ul>
+            <li><strong>Publishing rotas too late.</strong> If staff don't know their shifts until the week before, they'll disengage, make their own plans, and take absence. Publish at least two weeks ahead; four is better.</li>
+            <li><strong>Building the rota around who's available, not what's needed.</strong> Start from operational requirements. Fill the rota structure, then allocate people to it — not the other way round.</li>
+            <li><strong>No documented shift patterns.</strong> If the rota logic only exists in one manager's head, every holiday becomes a crisis. Write the patterns down, even if only in a shared document.</li>
+            <li><strong>Ignoring the 11-hour rest rule.</strong> Particularly common where an early and late shift share a team. Check transition days explicitly — not just the standard running week.</li>
+            <li><strong>Not accounting for overtime creep.</strong> Small amounts of authorised overtime every week compound quickly. Track actual hours against contracted hours monthly, not just weekly.</li>
+            <li><strong>Treating agency as a last resort.</strong> Agency labour is most expensive and least effective when called the night before. If agency is part of your operating model, plan the agency hours as part of the base rota — not as emergency fill.</li>
+          </ul>
+
+          <div style="background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;margin-top:2.5rem;">
+            <h3 style="margin-bottom:.75rem;">Related reading</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.6rem;">
+              <li>→ <a href="/guides/best-shift-scheduling-software-logistics-teams.html">Guide: Best shift scheduling software for UK logistics teams</a></li>
+              <li>→ <a href="/solutions/team-performance-management/">Solution: Team performance and workforce management</a></li>
+              <li>→ <a href="/solutions/warehouse-kpi-reporting/">Solution: Warehouse KPI and reporting</a></li>
+              <li>→ <a href="/resources/shift-scheduling-template.html">Free resource: Weekly shift schedule template</a></li>
+            </ul>
+          </div>
+
+        </main>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h4>On this page</h4>
+            <ul class="toc-list">
+              <li><a href="#problem">Why most rotas fail</a></li>
+              <li><a href="#step1">Step 1: Operational requirements</a></li>
+              <li><a href="#step2">Step 2: Shift patterns</a></li>
+              <li><a href="#step3">Step 3: Build the base rota</a></li>
+              <li><a href="#step4">Step 4: WTR compliance</a></li>
+              <li><a href="#step5">Step 5: Absence and flex</a></li>
+              <li><a href="#tools">Tools comparison</a></li>
+              <li><a href="#common-mistakes">Common mistakes</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>Solutions</h4>
+            <ul class="toc-list">
+              <li><a href="/solutions/">All Solutions</a></li>
+              <li><a href="/solutions/reduce-picking-errors/">↳ Reduce Picking Errors</a></li>
+              <li><a href="/solutions/improve-warehouse-efficiency/">↳ Improve Efficiency</a></li>
+              <li><a href="/solutions/warehouse-kpi-reporting/">↳ KPI &amp; Reporting</a></li>
+              <li><a href="/solutions/team-performance-management/">↳ Team Management</a></li>
+              <li><a href="/solutions/shift-schedule-planning/" style="color:var(--brand);font-weight:600;">↳ Shift Schedule Planning</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>Free resource</h4>
+            <p style="font-size:.875rem;color:var(--text-muted);margin-bottom:1rem;">Use our browser-based shift schedule template — assign shifts, calculate weekly hours, and flag overtime automatically.</p>
+            <a href="/resources/shift-scheduling-template.html" class="btn btn-outline" style="padding:.5rem 1rem;font-size:.85rem;width:100%;justify-content:center;">Open Template</a>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>Key WTR limits</h4>
+            <ul style="font-size:.8rem;color:var(--text-muted);padding-left:1.1rem;margin:0;line-height:1.8;">
+              <li>Max 48hr avg working week</li>
+              <li>Min 11hr rest between shifts</li>
+              <li>Min 24hr rest per 7 days</li>
+              <li>20-min break after 6hr</li>
+              <li>Night workers: max 8hr avg</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Author bio -->
+  <div class="container" style="padding-top:0;padding-bottom:0;">
+    <div class="author-bio">
+      <img
+        src="/assets/images/paulo-gomes-avatar.jpg"
+        alt="Paulo Gomes warehouse manager and operations specialist"
+        class="author-bio-avatar"
+        loading="lazy"
+        width="64"
+        height="64"
+      >
+      <div class="author-bio-text">
+        <strong><a href="/about/">Paulo Gomes</a></strong>
+        <p>Warehouse manager with over 10 years of experience in UK logistics and pharmaceutical operations, specialising in warehouse efficiency, shift scheduling, and process improvement.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="newsletter-section">
+    <div class="container">
+      <div class="eyebrow">Stay Up to Date</div>
+      <h2>New guides and solutions straight to your inbox</h2>
+      <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="newsletter">
+        <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
+        <button type="submit" class="btn btn-brand">Subscribe Free</button>
+      </form>
+      <p class="newsletter-success">You're on the list — thanks for subscribing.</p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Operations<span>Edge</span></div>
+          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
+          <p class="text-sm" style="color:rgba(255,255,255,.4);margin-top:.5rem;">Content is based on personal experience and anonymised operational data. Views expressed are solely those of the author.</p>
+        </div>
+        <div>
+          <h4>Content</h4>
+          <ul class="footer-links">
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/solutions/">Solutions</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/from-the-floor/">From the Floor</a></li>
+            <li><a href="/resources/">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+            <li><a href="/cookies/">Cookie Policy</a></li>
+            <li><a href="/affiliate-disclosure/">Disclosure</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="/contact/">Get in Touch</a></li>
+            <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OperationsEdge. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="/cookies/">Cookies</a>
+          <a href="/affiliate-disclosure/">Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
