@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Fixed a Broken Absence Culture (Without Making Half the Team Go Formal) | OperationsEdge</title>
+  <meta name="description" content="A real warehouse case study on bringing absence rates down from 20% to under 3% in 8 months — without Bradford Factor, without mass formal proceedings, and without losing the team's trust.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operationsedge.co.uk/from-the-floor/how-we-fixed-warehouse-absence-culture.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How We Fixed a Broken Absence Culture (Without Making Half the Team Go Formal)">
+  <meta property="og:description" content="A real warehouse case study on bringing absence rates from 20% to under 3% in 8 months — fair, consistent and without mass disciplinary action.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.operationsedge.co.uk/from-the-floor/how-we-fixed-warehouse-absence-culture.html">
+  <meta property="og:site_name" content="OperationsEdge">
+  <meta property="article:published_time" content="2026-04-17">
+  <meta property="article:modified_time" content="2026-04-17">
+  <meta property="article:section" content="From the Floor">
+  <meta property="article:tag" content="Absence Management, People Management, Warehouse Culture, HR Operations, UK Logistics">
+
+  <!-- Schema.org Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How We Fixed a Broken Absence Culture (Without Making Half the Team Go Formal)",
+    "description": "A real warehouse case study on bringing absence rates from 20% to under 3% in 8 months — fair, consistent and without mass disciplinary action.",
+    "datePublished": "2026-04-17",
+    "dateModified": "2026-04-17",
+    "author": {
+      "@type": "Person",
+      "name": "Paulo Gomes",
+      "url": "https://www.operationsedge.co.uk/about/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "OperationsEdge",
+      "url": "https://www.operationsedge.co.uk"
+    },
+    "mainEntityOfPage": "https://www.operationsedge.co.uk/from-the-floor/how-we-fixed-warehouse-absence-culture.html"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .key-results {
+      background: linear-gradient(135deg, #0f3d65, var(--brand));
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 2rem 2.5rem;
+      margin: 2rem 0;
+    }
+    .key-results h3 { color: #fff; margin-bottom: 1.25rem; font-size: 1rem; text-transform: uppercase; letter-spacing: .08em; }
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .result-item {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+    }
+    .result-number { font-size: 1.9rem; font-weight: 800; line-height: 1; margin-bottom: .25rem; color: #f4a41b; }
+    .result-label { font-size: .825rem; color: rgba(255,255,255,.85); }
+
+    .timeline {
+      position: relative;
+      margin: 2rem 0;
+      padding-left: 2rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: .6rem;
+      top: .5rem;
+      bottom: .5rem;
+      width: 2px;
+      background: var(--brand);
+      opacity: .25;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.5rem;
+      top: .45rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--brand);
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px var(--brand);
+    }
+    .timeline-time {
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--brand);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: .3rem;
+    }
+    .timeline-title { font-weight: 600; font-size: .95rem; margin-bottom: .3rem; }
+    .timeline-body { font-size: .875rem; color: var(--text-muted); }
+
+    .track-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    .track-card {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+    }
+    .track-card h4 {
+      font-size: .85rem;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--brand);
+      margin-bottom: .75rem;
+    }
+    .track-card ul { margin: 0; padding-left: 1.25rem; }
+    .track-card li { font-size: .875rem; color: var(--text-muted); margin-bottom: .4rem; }
+
+    .warning-box {
+      background: #fff8e1;
+      border-left: 4px solid #f4a41b;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      font-size: .9rem;
+    }
+    .warning-box strong { color: #b45309; display: block; margin-bottom: .3rem; }
+
+    .distinction-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .distinction-card {
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      font-size: .875rem;
+    }
+    .distinction-card h4 { font-size: .85rem; margin-bottom: .5rem; }
+    .distinction-card ul { margin: 0; padding-left: 1.1rem; color: var(--text-muted); line-height: 1.8; }
+    .distinction-yes { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .distinction-yes h4 { color: #16a34a; }
+    .distinction-no { background: #fef2f2; border: 1px solid #fecaca; }
+    .distinction-no h4 { color: #dc2626; }
+
+    .action-steps { list-style: none; padding: 0; counter-reset: steps; margin: 1.5rem 0; }
+    .action-steps li {
+      counter-increment: steps;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1rem;
+      padding: .9rem 0;
+      border-bottom: 1px solid var(--border);
+      align-items: flex-start;
+    }
+    .action-steps li:last-child { border-bottom: none; }
+    .action-steps li::before {
+      content: counter(steps);
+      background: var(--brand);
+      color: #fff;
+      font-size: .8rem;
+      font-weight: 700;
+      width: 1.75rem;
+      height: 1.75rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: .1rem;
+    }
+    .action-steps .step-title { font-weight: 600; font-size: .9rem; margin-bottom: .25rem; }
+    .action-steps p { font-size: .875rem; color: var(--text-muted); margin: 0; }
+
+    @media (max-width: 768px) {
+      .results-grid { grid-template-columns: 1fr; }
+      .track-grid { grid-template-columns: 1fr; }
+      .distinction-box { grid-template-columns: 1fr; }
+    }
+  </style>
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
+  <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="site-logo"><img src="/assets/images/logo.svg" alt="OperationsEdge" style="display:block;height:52px;width:auto;max-height:52px;"></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav">
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/solutions/">Solutions</a></li>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/from-the-floor/" class="active">From the Floor</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/contact/" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-hero" style="background-image: linear-gradient(rgba(9,19,31,0.78) 0%, rgba(9,19,31,0.88) 100%), url('/assets/images/hero-graphic.png'); background-size: cover; background-position: center center;">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/from-the-floor/">From the Floor</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Absence Culture Case Study</span>
+      </div>
+      <div class="eyebrow">From the Floor · Case Study · April 2026</div>
+      <h1>How We Fixed a Broken Absence Culture (Without Making Half the Team Go Formal)</h1>
+      <p>Absence rates at 20%, no process, no consistency, and a team culture where calling in sick had no visible consequence. Here is how we brought it under 3% in 8 months — without triggering formal proceedings against half the workforce, and without losing the trust of the people who were already doing the right thing.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-layout">
+
+        <main class="article-content">
+
+          <div class="article-meta">
+            <span>📅 April 2026</span>
+            <span>⏱ 8 min read</span>
+            <span>🏷 From the Floor</span>
+          </div>
+
+          <p>Absence management is one of those topics that every warehouse manager has to deal with eventually, but that very few operations handle well from the start. The problem is usually not that managers don't know absence is high. The problem is that there is no consistent process, so nothing happens, and the culture quietly develops around that gap.</p>
+
+          <p>That was the situation when I started in this role. There was no return-to-work interview process. Absence was not being tracked in any meaningful way. Different managers were handling it differently — some having conversations, some not. And the result, over time, was a culture where calling in sick for any reason, on any shift, carried no practical consequence and required no follow-up.</p>
+
+          <p>The absence rate was around 20%. That is not a difficult situation to improve in isolation. It is a difficult situation to improve fairly — because if 20% of your team is above the threshold for formal action, you cannot open formal proceedings against 20% of the team at once. You will not have the management capacity, you will not get the outcome you are looking for, and you will create an adversarial dynamic that makes everything worse.</p>
+
+          <p>This is what we did instead.</p>
+
+          <!-- Key Results -->
+          <div class="key-results">
+            <h3>What Changed Over 8 Months</h3>
+            <div class="results-grid">
+              <div class="result-item">
+                <div class="result-number">~20%</div>
+                <div class="result-label">Absence rate when we started — no process, no tracking, no consistency</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">&lt;3%</div>
+                <div class="result-label">Absence rate 8 months later, before the company-wide policy was even implemented</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">Every</div>
+                <div class="result-label">Return-to-work interview held — no exceptions, regardless of absence length</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">Sustained</div>
+                <div class="result-label">Company-wide policy rolled out to lock in the cultural change we had already made</div>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="what-i-walked-into">What I Walked Into</h2>
+
+          <p>The picture was consistent when I started: reliable people covering for absent colleagues, management spending time chasing cover rather than managing operations, and an informal understanding across the floor that absence was effectively self-managed. Not in a dishonest way — most people were genuinely unwell when they called in. But there was no signal to the team that absence patterns were being watched or that there would be a conversation when someone returned. So the threshold for what constituted an acceptable reason to be absent had drifted significantly.</p>
+
+          <p>The people with good attendance records were the ones carrying the weight. They were being asked to flex shift patterns, pick up additional tasks, and cover roles they had not been asked to cover before — without any visible acknowledgement that their reliability was part of what was holding the floor together. That breeds resentment quietly, and left unchecked, it eventually affects the behaviour of people who previously had no absence issues.</p>
+
+          <p>The other challenge was the scale. At around 20% absence, applying the Bradford Factor — the standard scoring system that weights frequency of absence — would have flagged roughly half the team for formal action. That is not a viable starting point. Formal proceedings take management time, create tension, and require HR involvement that the operation simply did not have capacity to sustain across that number of people simultaneously. If you try to formalise half your workforce at once, you will lose most of those cases, damage relationships across the operation, and probably not improve your absence rate at all.</p>
+
+          <div class="warning-box">
+            <strong>Why we didn't use Bradford Factor as the trigger</strong>
+            Bradford Factor works well as an ongoing monitoring tool once a baseline of consistent process is established. In a situation where there is no existing process at all and absence rates are very high, applying Bradford Factor immediately forces you into formal proceedings with a large proportion of the team at once — which is operationally unmanageable and legally risky if the process has not been applied consistently historically. We needed a different starting threshold.
+          </div>
+
+          <h2 id="the-diagnostic">Getting the Numbers First</h2>
+
+          <p>Before changing anything, I pulled whatever absence data existed — timesheets, sick day records, manager notes — and calculated the team average. That number became the dividing line: anyone above the team average was in the cohort for formal process. Anyone at or below was managed through return-to-work conversations only.</p>
+
+          <p>This approach had several advantages over a fixed Bradford Factor threshold. First, it was defensible — you are comparing each individual to the team, not to an external benchmark that has never been applied in this operation. Second, it was proportionate — in a team where 20% absence is the norm, a fixed threshold would still catch everyone, whereas the average threshold creates a manageable group. Third, it was dynamic — as the average improved over time, the threshold tightened naturally.</p>
+
+          <p>It also gave us the data to have honest conversations. When you can sit down with someone and show them their absence record alongside the team picture, the conversation changes. It moves from "you've been off a lot" — which people can dismiss — to "here's where you sit relative to your colleagues" — which is much harder to argue with.</p>
+
+          <h2 id="what-we-introduced">What We Actually Introduced</h2>
+
+          <p>The intervention had four components, introduced together so the process felt complete from the start.</p>
+
+          <div class="track-grid">
+            <div class="track-card">
+              <h4>Return-to-Work Interviews</h4>
+              <ul>
+                <li>Every return, every absence, no exceptions</li>
+                <li>Short, structured conversation — not a tribunal</li>
+                <li>Five consistent questions: reason, wellbeing, barriers to attendance, any support needed, and acknowledgement of the absence record</li>
+                <li>Documented and signed by both parties</li>
+                <li>Managers briefed to conduct them consistently, not to use them as pressure</li>
+              </ul>
+            </div>
+            <div class="track-card">
+              <h4>Absence Tracking Made Visible</h4>
+              <ul>
+                <li>Centralised absence log updated after every RTW interview</li>
+                <li>Managers had access to their team's records at all times</li>
+                <li>Patterns became visible — recurring Mondays, specific shift patterns, pre-holiday clusters</li>
+                <li>Data available for any formal or welfare conversation without having to chase records</li>
+              </ul>
+            </div>
+            <div class="track-card">
+              <h4>Formal Process for Above-Average</h4>
+              <ul>
+                <li>Anyone above the team average entered the formal absence management process</li>
+                <li>First stage: documented informal meeting with targets and review date</li>
+                <li>Consistent across the cohort — no exceptions based on seniority or relationship</li>
+                <li>HR informed from the start so the process was defensible</li>
+              </ul>
+            </div>
+            <div class="track-card">
+              <h4>Welfare Meetings for Ongoing Conditions</h4>
+              <ul>
+                <li>Triggered by recurring absences linked to a disclosed health condition</li>
+                <li>Purpose: understand the condition and adjust duties or shifts to reduce the need for absence</li>
+                <li>Not a disciplinary route — a support route</li>
+                <li>Adjustments documented and reviewed regularly</li>
+                <li>Occupational health referral where appropriate</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 id="welfare-meetings">Welfare Meetings: The Part That Gets Missed</h2>
+
+          <p>The welfare meeting is the piece most absence management frameworks either skip or handle badly. It matters because not all absence is avoidance. Some of your team will have underlying health conditions — physical or mental — that are genuinely driving their absence record, and treating those cases the same as someone who simply finds it easy to call in sick will not produce the right outcome for either party.</p>
+
+          <p>A welfare meeting is not a disciplinary conversation dressed up with a different name. Its purpose is to understand what is driving the absence and to find practical adjustments that make regular attendance more achievable — lighter duties during a recovery period, a temporary shift change to accommodate a medical appointment schedule, adjusted responsibilities during a flare-up of a chronic condition.</p>
+
+          <div class="distinction-box">
+            <div class="distinction-card distinction-yes">
+              <h4>What a welfare meeting is</h4>
+              <ul>
+                <li>A confidential, supportive conversation</li>
+                <li>Focused on understanding the health situation</li>
+                <li>Aimed at practical adjustments: duties, hours, environment</li>
+                <li>A record of what support was offered and agreed</li>
+                <li>A regular review to check if adjustments are working</li>
+              </ul>
+            </div>
+            <div class="distinction-card distinction-no">
+              <h4>What a welfare meeting is not</h4>
+              <ul>
+                <li>A way to pressure someone back to full duties before they are ready</li>
+                <li>A substitute for the formal absence process</li>
+                <li>An informal warning with a different label</li>
+                <li>A one-off conversation with no follow-up</li>
+                <li>Something only HR can lead</li>
+              </ul>
+            </div>
+          </div>
+
+          <p>In practice, a welfare meeting often produces a better outcome than formal process for cases where a health condition is the root cause. Someone with a chronic condition who has their duties adjusted in a way that reduces their symptom exposure will attend more consistently than someone who is put through a formal process and still faces the same barriers on every shift.</p>
+
+          <p>It also matters from an Equality Act perspective. Persistent health-related absence can relate to a disability as defined under the Act, and an employer who has made no reasonable adjustments before moving to formal action is in a weaker legal position than one who has documented a genuine attempt to support the individual. The welfare meeting creates that record.</p>
+
+          <h2 id="the-team-reaction">How the Team Responded</h2>
+
+          <p>The reaction was mixed in a predictable way. People with high absence records were suspicious — they could see something had changed and some pushed back, particularly in the early RTW conversations. The framing of the interview mattered here. It had to be clearly positioned as a consistent process that applied to everyone, not as a targeted intervention aimed at specific people. The moment a return-to-work interview felt like a personal accusation, it generated resistance. When it felt like an administrative step that everyone went through, people accepted it.</p>
+
+          <p>The people with strong attendance records were relieved. That is the word several of them used in the weeks that followed — relieved. Not because they wanted colleagues to be disciplined, but because they had been watching the imbalance for a long time and it had been frustrating. The introduction of a consistent process meant that someone returning after their fifth absence of the year had to at least acknowledge that, rather than walking back on to the floor as if nothing had happened.</p>
+
+          <p>The broader cultural shift came from visibility. Word moved around the floor relatively quickly that absences were being tracked and that a return-to-work conversation was now a certainty, not a maybe. That alone changed the calculation for people who might have previously called in on a difficult morning without a clear medical reason. It did not make everyone suddenly present — that was never the point — but it raised the floor meaningfully and it did so without a single confrontational interaction.</p>
+
+          <h2 id="the-timeline">How the 8 Months Unfolded</h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-time">Weeks 1–2</div>
+              <div class="timeline-title">Data audit and process design</div>
+              <div class="timeline-body">Pulled absence records, calculated team average, designed the RTW template, briefed managers on how to conduct interviews consistently. Nothing communicated to the team yet.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">Week 3</div>
+              <div class="timeline-title">Process announced and first interviews conducted</div>
+              <div class="timeline-body">Team briefed that return-to-work interviews would now happen for every absence without exception. First cohort of above-average individuals identified for formal stage one conversations.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">Months 1–3</div>
+              <div class="timeline-title">Formal process running, welfare meetings identified</div>
+              <div class="timeline-body">Consistent RTW interviews being conducted across all managers. Formal stage one meetings underway for above-average cohort. Welfare meeting cases identified from recurring health-related absences and actioned separately.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">Months 3–6</div>
+              <div class="timeline-title">Cultural shift begins</div>
+              <div class="timeline-body">Absence rate declining noticeably. Word on the floor that absences are being monitored and followed up consistently. Some above-average cases improving; a small number progressing to stage two formal. Welfare cases producing visible improvements in attendance through adjusted duties.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">Months 6–8</div>
+              <div class="timeline-title">Absence rate reaches below 3%</div>
+              <div class="timeline-body">The cultural baseline has shifted. RTW interviews are routine and expected — there is no longer any pushback. Reliable staff are getting recognition rather than just additional burden. Company-wide policy announced, which formalised and sustained everything already in place.</div>
+            </div>
+          </div>
+
+          <h2 id="the-company-policy">When the Company Policy Arrived</h2>
+
+          <p>About six months into the process, the company announced a standardised absence management policy that would apply across all sites. For most operations, a policy rollout like that is the starting point. For us, it was a consolidation of something that already existed on the floor.</p>
+
+          <p>That ordering mattered. The cultural shift had already happened before the policy made it official. Staff were not encountering a new policy as a change to their routine — they were encountering a formal document that described what had already become normal. That is a much easier implementation than the reverse: issuing a policy and then trying to build the process and culture around it afterwards.</p>
+
+          <p>The policy also gave the process institutional backing that helped sustain it through management changes. When a new manager joins a team that already has an embedded absence process, they inherit a working system. When a policy exists but no culture has been built around it, the process tends to decay the moment a manager leaves.</p>
+
+          <h2 id="what-to-do-this-week">Three Things to Do This Week</h2>
+
+          <ol class="action-steps">
+            <li>
+              <div>
+                <div class="step-title">Pull your last 6 months of absence data and calculate your team average</div>
+                <p>Even a rough spreadsheet — names, number of absences, total days — is enough to start. The team average becomes your working threshold. Anyone above it is your starting cohort for the formal process. You do not need a sophisticated system to do this, just the data and a few minutes.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="step-title">Write a one-page RTW interview template and use it for every return from today</div>
+                <p>Five questions is enough: What was the reason for the absence? How are you feeling now? Is there anything that made coming in today difficult that we should be aware of? Is there any support you need? And an acknowledgement of the absence record to date. Keep it short. The point is consistency, not interrogation.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="step-title">Identify 2–3 people in your above-average cohort and schedule a welfare conversation</div>
+                <p>Not a disciplinary — a conversation. Particularly if their absences follow a pattern that suggests a health condition might be involved. Ask what is going on, whether there is anything you can adjust to make consistent attendance more achievable, and document what was discussed and agreed. That conversation changes the dynamic more quickly than almost anything else you can do.</p>
+              </div>
+            </li>
+          </ol>
+
+          <hr>
+
+          <p><em>Managing shift cover across an operation with variable attendance is significantly easier when your scheduling tool gives you real-time visibility of who is in and who is not. <a href="/reviews/connecteam-review-workforce-management-uk.html">Connecteam</a> and <a href="/reviews/deputy-review-warehouse-logistics-uk.html">Deputy</a> both handle this well for warehouse and logistics teams. See also: <a href="/solutions/team-performance-management/">team performance management tools</a> and <a href="/from-the-floor/how-we-planned-peak-labour-and-onboarded-10-agency-staff.html">how we planned peak labour with agency staff</a>.</em></p>
+
+        </main>
+
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="article-sidebar">
+
+          <div class="sidebar-card">
+            <h4>In this article</h4>
+            <ul class="toc-list">
+              <li><a href="#what-i-walked-into">What I walked into</a></li>
+              <li><a href="#the-diagnostic">Getting the numbers</a></li>
+              <li><a href="#what-we-introduced">What we introduced</a></li>
+              <li><a href="#welfare-meetings">Welfare meetings</a></li>
+              <li><a href="#the-team-reaction">How the team responded</a></li>
+              <li><a href="#the-timeline">How the 8 months unfolded</a></li>
+              <li><a href="#the-company-policy">When the policy arrived</a></li>
+              <li><a href="#what-to-do-this-week">3 things to do this week</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card" style="background:var(--brand);color:#fff;border-color:transparent;">
+            <h4 style="color:#fff;">The key number</h4>
+            <div style="font-size:2.8rem;font-weight:800;color:#f4a41b;line-height:1;margin:.5rem 0 .25rem;">~20% → &lt;3%</div>
+            <p style="color:rgba(255,255,255,.8);font-size:.875rem;margin:0;">Absence rate reduction over 8 months — before the company-wide policy was implemented.</p>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>Related reading</h4>
+            <ul class="toc-list">
+              <li><a href="/solutions/team-performance-management/">Team performance management tools</a></li>
+              <li><a href="/reviews/connecteam-review-workforce-management-uk.html">Connecteam Review</a></li>
+              <li><a href="/reviews/deputy-review-warehouse-logistics-uk.html">Deputy Review</a></li>
+              <li><a href="/from-the-floor/how-we-planned-peak-labour-and-onboarded-10-agency-staff.html">Peak labour &amp; agency onboarding</a></li>
+              <li><a href="/from-the-floor/how-we-improved-picking-efficiency.html">Picking efficiency case study</a></li>
+            </ul>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Author bio -->
+  <div class="container" style="padding-top:0;padding-bottom:2rem;">
+    <div class="author-bio">
+      <img
+        src="/assets/images/paulo-gomes-avatar.jpg"
+        alt="Paulo Gomes warehouse manager and operations specialist"
+        class="author-bio-avatar"
+        loading="lazy"
+        width="64"
+        height="64"
+      >
+      <div class="author-bio-text">
+        <strong><a href="/about/">Paulo Gomes</a></strong>
+        <p>Warehouse manager with over 10 years of experience in UK logistics and pharmaceutical operations, specialising in warehouse efficiency, picking accuracy, and process improvement.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Operations<span>Edge</span></div>
+          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
+          <p class="text-sm" style="color:rgba(255,255,255,.4);margin-top:.5rem;">Content is based on personal experience and anonymised operational data. Views expressed are solely those of the author.</p>
+        </div>
+        <div>
+          <h4>Content</h4>
+          <ul class="footer-links">
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/solutions/">Solutions</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/from-the-floor/">From the Floor</a></li>
+            <li><a href="/resources/">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+            <li><a href="/cookies/">Cookie Policy</a></li>
+            <li><a href="/affiliate-disclosure/">Disclosure</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="/contact/">Get in Touch</a></li>
+            <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OperationsEdge. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="/cookies/">Cookies</a>
+          <a href="/affiliate-disclosure/">Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
