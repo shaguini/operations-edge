@@ -1,0 +1,18 @@
+<svg width="280" height="80" viewBox="0 0 280 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon Mark -->
+  <rect x="0" y="30" width="8" height="18" rx="2" fill="#1B609D" opacity="0.55"/>
+  <rect x="12" y="22" width="8" height="26" rx="2" fill="#1B609D" opacity="0.75"/>
+  <rect x="24" y="12" width="8" height="36" rx="2" fill="#3a8fd0"/>
+  <rect x="36" y="6" width="8" height="42" rx="2" fill="#5fa9e0"/>
+  <!-- Trend line -->
+  <polyline points="4,34 16,26 28,16 40,8" fill="none" stroke="#f0a500" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Peak dot -->
+  <circle cx="40" cy="8" r="3.5" fill="#f0a500"/>
+  <!-- Wordmark -->
+  <text x="58" y="28" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" letter-spacing="-0.5">Operations</text>
+  <text x="58" y="52" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" letter-spacing="-0.5">Edge</text>
+  <!-- Gold accent underline -->
+  <rect x="58" y="57" width="54" height="3" rx="1.5" fill="#f0a500"/>
+  <!-- Tagline -->
+  <text x="58" y="74" fill="#a8bfcc" font-family="'Courier New', Courier, monospace" font-size="8" letter-spacing="2">OPERATIONSEDGE.CO.UK</text>
+</svg>
