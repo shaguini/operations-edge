@@ -15,19 +15,60 @@
   <meta property="og:url" content="https://www.operationsedge.co.uk/reviews/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <!-- Privacy-friendly analytics by Plausible -->
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
   <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
   <style>
-    /* page-hero text fix */
-    .page-hero .eyebrow { color: rgba(255,255,255,.55) !important; }
-    .page-hero h1 { color: #fff !important; }
-    .page-hero p { color: rgba(255,255,255,.65) !important; }
-    .page-hero .breadcrumb, .page-hero .breadcrumb a { color: rgba(255,255,255,.45) !important; }
-    .page-hero .breadcrumb-sep { color: rgba(255,255,255,.2) !important; }
+    /* Hero text — CSS-driven reveal (no IO needed for above-fold) */
+    .page-hero [data-reveal] { animation: heroReveal .7s cubic-bezier(.22,1,.36,1) forwards; }
+    .page-hero [data-reveal-delay="1"] { animation-delay: .15s; opacity: 0; }
+    .page-hero [data-reveal-delay="2"] { animation-delay: .30s; opacity: 0; }
+    @keyframes heroReveal {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    /* Snappier scroll-reveal */
+    [data-reveal] {
+      opacity: 0; transform: translateY(14px);
+      transition: opacity .55s cubic-bezier(.22,1,.36,1), transform .55s cubic-bezier(.22,1,.36,1);
+    }
+    [data-reveal].visible { opacity: 1; transform: none; }
+    [data-reveal-delay="1"] { transition-delay: .08s; }
+    [data-reveal-delay="2"] { transition-delay: .16s; }
+    [data-reveal-delay="3"] { transition-delay: .24s; }
+
+    /* Card — shimmer sweep + snappier hover */
+    .card {
+      transition: transform .45s cubic-bezier(.22,1,.36,1),
+                  box-shadow .45s cubic-bezier(.22,1,.36,1),
+                  border-color .3s !important;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::after {
+      content: '';
+      position: absolute; top: 0; left: -120%;
+      width: 60%; height: 100%;
+      background: linear-gradient(100deg, transparent 35%,
+        color-mix(in oklch, var(--brand) 20%, transparent) 50%, transparent 65%);
+      transition: left .9s cubic-bezier(.22,1,.36,1);
+      pointer-events: none;
+    }
+    .card:hover::after { left: 130%; }
+    .card:hover {
+      transform: translateY(-4px) !important;
+      border-color: color-mix(in oklch, var(--brand) 35%, transparent) !important;
+    }
+
+    /* Filter pills — subtle lift on hover */
+    .filter-pills a {
+      transition: transform .2s cubic-bezier(.22,1,.36,1), background .2s, border-color .2s !important;
+    }
+    .filter-pills a:hover { transform: translateY(-1px); }
   </style>
 </head>
 <body>
@@ -50,11 +91,11 @@
   </header>
 <main>
 
-  <div class="page-hero">
+  <div class="page-hero" data-hero-variant="bars">
     <div class="container">
-      <div class="eyebrow">Reviews</div>
-      <h1>Tool Reviews for Operations Professionals</h1>
-      <p>Honest, in-depth reviews of SaaS tools tested and rated by UK operations managers. No fluff, no pay-to-play — just practical assessments.</p>
+      <div class="eyebrow" data-reveal>Reviews</div>
+      <h1 data-reveal data-reveal-delay="1">Tool Reviews for Operations Professionals</h1>
+      <p data-reveal data-reveal-delay="2">Honest, in-depth reviews of SaaS tools tested and rated by UK operations managers. No fluff, no pay-to-play — just practical assessments.</p>
     </div>
   </div>
 
@@ -71,10 +112,10 @@
         <a href="/reviews/?cat=automation" class="btn btn-outline" data-filter-cat="automation" style="padding:.4rem 1rem;font-size:.85rem;">Automation</a>
       </div>
 
-      <div class="card-grid" id="reviews-grid" data-reveal>
+      <div class="card-grid" id="reviews-grid">
 
         <article class="card" data-cat="wms" data-reveal>
-          <div class="card-label" data-reveal>WMS Roundup</div>
+          <div class="card-label">WMS Roundup</div>
           <div class="rating">
             <span class="stars">★★★★★</span>
             <span class="rating-num">Editor's Pick</span>
@@ -88,7 +129,7 @@
         </article>
 
         <article class="card" data-cat="project" data-reveal>
-          <div class="card-label" data-reveal>Honest Review</div>
+          <div class="card-label">Honest Review</div>
           <div class="rating">
             <span class="stars">★★★★☆</span>
             <span class="rating-num">4.1/5</span>
@@ -102,7 +143,7 @@
         </article>
 
         <article class="card" data-cat="safety" data-reveal>
-          <div class="card-label" data-reveal>Honest Review</div>
+          <div class="card-label">Honest Review</div>
           <div class="rating">
             <span class="stars">★★★★½</span>
             <span class="rating-num">4.4/5</span>
@@ -116,7 +157,7 @@
         </article>
 
         <article class="card" data-cat="project" data-reveal>
-          <div class="card-label" data-reveal>Honest Review</div>
+          <div class="card-label">Honest Review</div>
           <div class="rating">
             <span class="stars">★★★★☆</span>
             <span class="rating-num">3.9/5</span>
@@ -130,7 +171,7 @@
         </article>
 
         <article class="card" data-cat="workforce" data-reveal>
-          <div class="card-label" data-reveal>Honest Review</div>
+          <div class="card-label">Honest Review</div>
           <div class="rating">
             <span class="stars">★★★★½</span>
             <span class="rating-num">4.3/5</span>
@@ -144,7 +185,7 @@
         </article>
 
         <article class="card" data-cat="workforce" data-reveal>
-          <div class="card-label" data-reveal>Honest Review</div>
+          <div class="card-label">Honest Review</div>
           <div class="rating">
             <span class="stars">★★★★½</span>
             <span class="rating-num">4.2/5</span>
@@ -158,7 +199,7 @@
         </article>
 
         <article class="card" data-cat="automation" data-reveal>
-          <div class="card-label" data-reveal>Honest Review</div>
+          <div class="card-label">Honest Review</div>
           <div class="rating">
             <span class="stars">★★★★☆</span>
             <span class="rating-num">4.1/5</span>
@@ -240,5 +281,6 @@
   </footer>
 
   <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/page-hero-animation.js" defer></script>
 </body>
 </html>
