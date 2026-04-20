@@ -15,19 +15,26 @@
   <meta property="og:url" content="https://www.operationsedge.co.uk/guides/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <!-- Privacy-friendly analytics by Plausible -->
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
   <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
   <style>
-    /* page-hero text fix */
-    .page-hero .eyebrow { color: rgba(255,255,255,.55) !important; }
-    .page-hero h1 { color: #fff !important; }
-    .page-hero p { color: rgba(255,255,255,.65) !important; }
-    .page-hero .breadcrumb, .page-hero .breadcrumb a { color: rgba(255,255,255,.45) !important; }
-    .page-hero .breadcrumb-sep { color: rgba(255,255,255,.2) !important; }
+    .page-hero [data-reveal] { animation: heroReveal .7s cubic-bezier(.22,1,.36,1) forwards; }
+    .page-hero [data-reveal-delay="1"] { animation-delay: .15s; opacity: 0; }
+    .page-hero [data-reveal-delay="2"] { animation-delay: .30s; opacity: 0; }
+    @keyframes heroReveal { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    [data-reveal] { opacity: 0; transform: translateY(14px); transition: opacity .55s cubic-bezier(.22,1,.36,1), transform .55s cubic-bezier(.22,1,.36,1); }
+    [data-reveal].visible { opacity: 1; transform: none; }
+    [data-reveal-delay="1"] { transition-delay: .08s; }
+    [data-reveal-delay="2"] { transition-delay: .16s; }
+    [data-reveal-delay="3"] { transition-delay: .24s; }
+    .card { transition: transform .45s cubic-bezier(.22,1,.36,1), box-shadow .45s cubic-bezier(.22,1,.36,1), border-color .3s !important; position: relative; overflow: hidden; }
+    .card::after { content: ''; position: absolute; top: 0; left: -120%; width: 60%; height: 100%; background: linear-gradient(100deg, transparent 35%, color-mix(in oklch, var(--brand) 20%, transparent) 50%, transparent 65%); transition: left .9s cubic-bezier(.22,1,.36,1); pointer-events: none; }
+    .card:hover::after { left: 130%; }
+    .card:hover { transform: translateY(-4px) !important; border-color: color-mix(in oklch, var(--brand) 35%, transparent) !important; }
   </style>
 </head>
 <body>
@@ -50,20 +57,20 @@
   </header>
 <main>
 
-  <div class="page-hero">
+  <div class="page-hero" data-hero-variant="flow">
     <div class="container">
-      <div class="eyebrow">Guides</div>
-      <h1>Practical Guides for UK Operations Managers</h1>
-      <p>In-depth guides covering software selection, team management, process improvement, and building more efficient warehouse and logistics operations.</p>
+      <div class="eyebrow" data-reveal>Guides</div>
+      <h1 data-reveal data-reveal-delay="1">Practical Guides for UK Operations Managers</h1>
+      <p data-reveal data-reveal-delay="2">In-depth guides covering software selection, team management, process improvement, and building more efficient warehouse and logistics operations.</p>
     </div>
   </div>
 
   <section class="section">
     <div class="container">
-      <div class="card-grid" data-reveal>
+      <div class="card-grid">
 
         <article class="card" data-reveal>
-          <div class="card-label" data-reveal>Buyer's Guide</div>
+          <div class="card-label">Buyer's Guide</div>
           <h3><a href="/guides/best-shift-scheduling-software-logistics-teams.html" style="color:inherit;">Best Shift Scheduling Software for Logistics Teams</a></h3>
           <p>Compare the top shift scheduling platforms for UK logistics and warehouse operations — with pricing, key features and honest verdicts.</p>
           <div style="margin-bottom:1rem;">
@@ -73,7 +80,7 @@
         </article>
 
         <article class="card" data-reveal>
-          <div class="card-label" data-reveal>Operations Guide</div>
+          <div class="card-label">Operations Guide</div>
           <h3><a href="/guides/warehouse-hs-audit-guide.html" style="color:inherit;">How to Run a Warehouse H&amp;S Audit (and Go Digital)</a></h3>
           <p>What a proper warehouse health and safety audit covers, how often to run them, what gets missed most often — and how to replace paper checklists with digital audits using SafetyCulture iAuditor.</p>
           <div style="margin-bottom:1rem;">
@@ -83,7 +90,7 @@
         </article>
 
         <article class="card" data-reveal>
-          <div class="card-label" data-reveal>Buyer's Guide</div>
+          <div class="card-label">Buyer's Guide</div>
           <h3><a href="/guides/how-to-choose-a-wms-uk-warehouses.html" style="color:inherit;">How to Choose a WMS: A Buyer's Guide for UK Operations</a></h3>
           <p>What to look for, what questions to ask vendors, and how to avoid costly mistakes when selecting a warehouse management system — written from the floor up.</p>
           <div style="margin-bottom:1rem;">
@@ -93,7 +100,7 @@
         </article>
 
         <article class="card" data-reveal>
-          <div class="card-label" data-reveal>Operations Guide</div>
+          <div class="card-label">Operations Guide</div>
           <h3><a href="/guides/automating-operations-stack-zapier.html" style="color:inherit;">Automating Your Operations Stack with Zapier</a></h3>
           <p>A step-by-step guide to connecting your ops tools and eliminating manual data entry — real automation examples for warehouse and logistics teams, no coding required.</p>
           <div style="margin-bottom:1rem;">
@@ -103,7 +110,7 @@
         </article>
 
         <div class="card" style="opacity:.65;" data-reveal>
-          <div class="card-label" data-reveal>Coming Soon</div>
+          <div class="card-label">Coming Soon</div>
           <h3>Digital H&amp;S Checklists: Getting Started with SafetyCulture</h3>
           <p>How to replace paper-based health and safety processes with digital checklists and audits using SafetyCulture iAuditor.</p>
           <span class="tag">SafetyCulture</span><span class="tag">H&amp;S</span>
@@ -163,5 +170,6 @@
   </footer>
 
   <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/page-hero-animation.js" defer></script>
 </body>
 </html>

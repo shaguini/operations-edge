@@ -15,12 +15,27 @@
   <meta property="og:url" content="https://www.operationsedge.co.uk/comparisons/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <!-- Privacy-friendly analytics by Plausible -->
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
   <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
+  <style>
+    .page-hero [data-reveal] { animation: heroReveal .7s cubic-bezier(.22,1,.36,1) forwards; }
+    .page-hero [data-reveal-delay="1"] { animation-delay: .15s; opacity: 0; }
+    .page-hero [data-reveal-delay="2"] { animation-delay: .30s; opacity: 0; }
+    @keyframes heroReveal { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    [data-reveal] { opacity: 0; transform: translateY(14px); transition: opacity .55s cubic-bezier(.22,1,.36,1), transform .55s cubic-bezier(.22,1,.36,1); }
+    [data-reveal].visible { opacity: 1; transform: none; }
+    [data-reveal-delay="1"] { transition-delay: .08s; }
+    [data-reveal-delay="2"] { transition-delay: .16s; }
+    .card { transition: transform .45s cubic-bezier(.22,1,.36,1), box-shadow .45s cubic-bezier(.22,1,.36,1), border-color .3s !important; position: relative; overflow: hidden; }
+    .card::after { content: ''; position: absolute; top: 0; left: -120%; width: 60%; height: 100%; background: linear-gradient(100deg, transparent 35%, color-mix(in oklch, var(--brand) 20%, transparent) 50%, transparent 65%); transition: left .9s cubic-bezier(.22,1,.36,1); pointer-events: none; }
+    .card:hover::after { left: 130%; }
+    .card:hover { transform: translateY(-4px) !important; border-color: color-mix(in oklch, var(--brand) 35%, transparent) !important; }
+    .vs-badge { position: absolute; top: 1rem; right: 1rem; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: var(--brand); color: #fff; font-family: 'JetBrains Mono', monospace; font-size: .65rem; font-weight: 700; letter-spacing: .05em; opacity: .85; }
+  </style>
 </head>
 <body>
 
@@ -49,46 +64,48 @@
     </div>
   </div>
 
-  <div class="page-hero">
+  <div class="page-hero" data-hero-variant="grid">
     <div class="container">
-      <div class="eyebrow">Comparisons</div>
-      <h1>Head-to-Head Tool Comparisons</h1>
-      <p>When you've narrowed it down to two or three platforms, our comparison guides help you make the final call — with pricing, features and real-world pros/cons.</p>
+      <div class="eyebrow" data-reveal>Comparisons</div>
+      <h1 data-reveal data-reveal-delay="1">Head-to-Head Tool Comparisons</h1>
+      <p data-reveal data-reveal-delay="2">When you've narrowed it down to two or three platforms, our comparison guides help you make the final call — with pricing, features and real-world pros/cons.</p>
     </div>
   </div>
 
   <section class="section">
     <div class="container">
-      <div class="section-header section-header--left">
+      <div class="section-header section-header--left" data-reveal>
         <div class="eyebrow">Comparison Guides</div>
         <h2>Head-to-Head Comparisons</h2>
         <p>We're building out a full library of head-to-head comparisons. More coming soon.</p>
       </div>
 
-      <div class="card-grid" data-reveal>
+      <div class="card-grid">
         <div class="card" data-reveal>
-          <div class="card-label" data-reveal>Shift Scheduling</div>
+          <span class="vs-badge">VS</span>
+          <div class="card-label">Shift Scheduling</div>
           <h3><a href="/comparisons/connecteam-vs-rotacloud-uk-shift-scheduling.html" style="color:inherit;text-decoration:none;">Connecteam vs Rotacloud (2026): UK Warehouse &amp; Logistics</a></h3>
           <p>Which shift scheduling platform is the better fit for UK warehouse and logistics teams? We compare features, pricing, and real-world usability side by side.</p>
           <span class="tag">Connecteam</span><span class="tag">Rotacloud</span>
           <div style="margin-top:1.25rem;"><a href="/comparisons/connecteam-vs-rotacloud-uk-shift-scheduling.html" class="btn btn-brand" style="font-size:.85rem;padding:.5rem 1rem;">Read Comparison</a></div>
         </div>
-        <div class="card" data-reveal>
-          <div class="card-label" data-reveal>Operations Management</div>
+        <div class="card" data-reveal data-reveal-delay="1">
+          <span class="vs-badge">VS</span>
+          <div class="card-label">Operations Management</div>
           <h3><a href="/comparisons/monday-com-vs-smartsheet-uk-operations.html" style="color:inherit;text-decoration:none;">Monday.com vs Smartsheet (2026): UK Operations Teams</a></h3>
           <p>Which work management platform is the better fit for UK operations teams? We compare features, pricing, and real-world usability side by side.</p>
           <span class="tag">Monday.com</span><span class="tag">Smartsheet</span>
           <div style="margin-top:1.25rem;"><a href="/comparisons/monday-com-vs-smartsheet-uk-operations.html" class="btn btn-brand" style="font-size:.85rem;padding:.5rem 1rem;">Read Comparison</a></div>
         </div>
-        <div class="card" style="opacity:.65;" data-reveal>
-          <div class="card-label" data-reveal>Coming Soon</div>
+        <div class="card" style="opacity:.65;" data-reveal data-reveal-delay="2">
+          <div class="card-label">Coming Soon</div>
           <h3>Zapier vs Make: Ops Automation</h3>
           <p>Automate your operations workflows — which tool offers the best value for non-technical ops managers?</p>
           <span class="tag">Zapier</span><span class="tag">Make</span>
         </div>
       </div>
 
-      <div style="text-align:center;margin-top:3rem;padding:2.5rem;background:var(--bg-alt);border-radius:var(--radius-lg);border:1px solid var(--border);">
+      <div data-reveal style="text-align:center;margin-top:3rem;padding:2.5rem;background:var(--bg-alt);border-radius:var(--radius-lg);border:1px solid var(--border);">
         <h3>Request a comparison</h3>
         <p style="color:var(--text-muted);max-width:480px;margin:.75rem auto 1.5rem;">Is there a specific comparison you need? Let us know which tools you're deciding between and we'll prioritise it.</p>
         <a href="/contact/" class="btn btn-brand">Get in Touch</a>
@@ -146,5 +163,6 @@
   </footer>
 
   <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/page-hero-animation.js" defer></script>
 </body>
 </html>

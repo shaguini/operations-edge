@@ -15,14 +15,30 @@
   <meta property="og:url" content="https://www.operationsedge.co.uk/contact/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
-    /* page-hero text fix */
-    .page-hero .eyebrow { color: rgba(255,255,255,.55) !important; }
-    .page-hero h1 { color: #fff !important; }
-    .page-hero p { color: rgba(255,255,255,.65) !important; }
+    .page-hero [data-reveal] { animation: heroReveal .7s cubic-bezier(.22,1,.36,1) forwards; }
+    .page-hero [data-reveal-delay="1"] { animation-delay: .15s; opacity: 0; }
+    .page-hero [data-reveal-delay="2"] { animation-delay: .30s; opacity: 0; }
+    @keyframes heroReveal { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    [data-reveal] { opacity: 0; transform: translateY(14px); transition: opacity .55s cubic-bezier(.22,1,.36,1), transform .55s cubic-bezier(.22,1,.36,1); }
+    [data-reveal].visible { opacity: 1; transform: none; }
+    [data-reveal-delay="1"] { transition-delay: .08s; }
+    [data-reveal-delay="2"] { transition-delay: .16s; }
+    .sidebar-box { transition: transform .4s cubic-bezier(.22,1,.36,1), border-color .3s; }
+    .sidebar-box:hover { transform: translateY(-3px); border-color: color-mix(in oklch, var(--brand) 30%, transparent); }
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list li { padding: .35rem 0; }
+    .toc-list a { color: var(--text); text-decoration: none; font-size: .9rem; display: inline-flex; align-items: center; gap: .5rem; transition: color .2s, transform .2s; }
+    .toc-list a:hover { color: var(--brand); transform: translateX(2px); }
+    .ping-dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; display: inline-block; position: relative; }
+    .ping-dot::after { content: ''; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid #22c55e; animation: pingRing calc(2s / var(--ops-speed, 1)) ease-out infinite; }
+    @keyframes pingRing { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(2.4); opacity: 0; } }
+    .submit-btn { position: relative; overflow: hidden; }
+    .submit-btn::before { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(100deg, transparent, rgba(255,255,255,.28), transparent); transition: left .6s; }
+    .submit-btn:hover::before { left: 150%; }
   </style>
 
   <!-- Schema.org ContactPage -->
@@ -64,11 +80,11 @@
   </header>
 <main>
 
-  <div class="page-hero">
+  <div class="page-hero" data-hero-variant="flow">
     <div class="container">
-      <div class="eyebrow">Contact</div>
-      <h1>Get in Touch</h1>
-      <p>Questions about a review? Suggesting a tool? Partnership enquiry? We read every message and aim to respond within two working days.</p>
+      <div class="eyebrow" data-reveal>Contact</div>
+      <h1 data-reveal data-reveal-delay="1">Get in Touch</h1>
+      <p data-reveal data-reveal-delay="2">Questions about a review? Suggesting a tool? Partnership enquiry? We read every message and aim to respond within two working days.</p>
     </div>
   </div>
 
@@ -82,7 +98,7 @@
           <p style="color:var(--text-muted);margin-bottom:2rem;">Fill in the form below or email us directly at <a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></p>
 
           <!-- Netlify form — works out of the box on Netlify -->
-          <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <form class="contact-form" data-reveal name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact">
             <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
 
@@ -127,21 +143,21 @@
 
             <p style="font-size:.8rem;color:var(--text-muted);margin-bottom:1.25rem;">By submitting this form you agree to us storing your details to respond to your enquiry. We won't share your data with third parties. See our <a href="/privacy-policy/">Privacy Policy</a>.</p>
 
-            <button type="submit" class="btn btn-brand" style="width:100%;justify-content:center;">Send Message</button>
+            <button type="submit" class="btn btn-brand submit-btn" style="width:100%;justify-content:center;">Send Message</button>
           </form>
         </div>
 
         <!-- Contact Info -->
         <div>
-          <div class="sidebar-box">
-            <h4>Direct contact</h4>
+          <div class="sidebar-box" data-reveal>
+            <h4><span class="ping-dot" style="margin-right:.5rem;"></span>Direct contact</h4>
             <p style="font-size:.9rem;color:var(--text-muted);margin-bottom:.75rem;">Prefer email? Reach us directly:</p>
             <a href="mailto:hello@operationsedge.co.uk" style="font-weight:600;font-size:.95rem;word-break:break-all;">hello@operationsedge.co.uk</a>
             <hr style="border:none;border-top:1px solid var(--border);margin:1.25rem 0;">
             <p style="font-size:.85rem;color:var(--text-muted);">We aim to respond within <strong>2 working days</strong>.</p>
           </div>
 
-          <div class="sidebar-box">
+          <div class="sidebar-box" data-reveal data-reveal-delay="1">
             <h4>Common enquiries</h4>
             <ul class="toc-list">
               <li><a href="/reviews/">Browse all tool reviews</a></li>
@@ -152,7 +168,7 @@
             </ul>
           </div>
 
-          <div class="sidebar-box" style="background:var(--brand-light);border-color:#c5ddf0;">
+          <div class="sidebar-box" data-reveal data-reveal-delay="2" style="background:var(--brand-light);border-color:#c5ddf0;">
             <h4 style="color:var(--brand);">Suggest a tool</h4>
             <p style="font-size:.875rem;color:var(--text-muted);">Is there a SaaS tool you'd like us to review? Let us know via the form and we'll add it to our review pipeline. We prioritise tools popular with UK operations teams.</p>
           </div>
@@ -212,5 +228,7 @@
   </footer>
 
   <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/page-hero-animation.js" defer></script>
+  <script>(function(){ function sync(){ document.documentElement.style.setProperty('--ops-speed', window.__opsSpeed||1); } setInterval(sync, 400); sync(); })();</script>
 </body>
 </html>
