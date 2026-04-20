@@ -36,32 +36,107 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
-    .methodology-step {
-      display: flex;
-      gap: 1.25rem;
-      margin-bottom: 1.75rem;
-      align-items: flex-start;
+    /* Hero text — CSS-driven reveal (no IO needed for above-fold content) */
+    .page-hero [data-reveal] {
+      animation: heroReveal .7s cubic-bezier(.22,1,.36,1) forwards;
     }
+    .page-hero [data-reveal-delay="1"] { animation-delay: .15s; opacity: 0; }
+    .page-hero [data-reveal-delay="2"] { animation-delay: .30s; opacity: 0; }
+    @keyframes heroReveal {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    /* Snappier reveal for rest of page */
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity .55s cubic-bezier(.22,1,.36,1), transform .55s cubic-bezier(.22,1,.36,1);
+    }
+    [data-reveal].visible { opacity: 1; transform: none; }
+    [data-reveal-delay="1"] { transition-delay: .08s; }
+    [data-reveal-delay="2"] { transition-delay: .16s; }
+
+    /* Author profile card — radial brand highlight */
+    .author-profile {
+      position: relative;
+      overflow: hidden;
+    }
+    .author-profile::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 10% 20%, color-mix(in oklch, var(--brand) 8%, transparent), transparent 40%);
+      pointer-events: none;
+    }
+
+    /* Credential tags — mono font, card style, lift on hover */
+    .credential-tag {
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .02em;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      padding: .25rem .7rem;
+      color: var(--text);
+      display: inline-block;
+      transition: transform .25s cubic-bezier(.22,1,.36,1), border-color .25s, color .25s;
+    }
+    .credential-tag:hover {
+      transform: translateY(-2px);
+      border-color: var(--brand);
+      color: var(--brand);
+    }
+
+    /* Methodology steps — grid layout + pulsing ring on number */
+    .methodology-step {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 1.25rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+      margin-bottom: 0;
+    }
+    .methodology-step:last-of-type { border-bottom: none; }
     .methodology-step-num {
-      flex-shrink: 0;
-      width: 2.25rem;
-      height: 2.25rem;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
-      background: var(--brand);
-      color: #fff;
+      background: color-mix(in oklch, var(--brand) 12%, var(--bg));
+      color: var(--brand);
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
       font-weight: 700;
-      font-size: .95rem;
+      font-size: .9rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: .1rem;
+      position: relative;
+      flex-shrink: 0;
+      margin-top: 0;
+    }
+    .methodology-step-num::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 1px solid color-mix(in oklch, var(--brand) 30%, transparent);
+      animation: pulseRing calc(2.4s / var(--ops-speed, 1)) ease-out infinite;
+    }
+    @keyframes pulseRing {
+      0%   { transform: scale(1);   opacity: .7; }
+      100% { transform: scale(1.6); opacity: 0;  }
     }
     .methodology-step-body h4 { margin: 0 0 .4rem; font-size: 1rem; }
-    .methodology-step-body p { margin: 0; font-size: .9rem; color: var(--text-muted); line-height: 1.6; }
+    .methodology-step-body p  { margin: 0; font-size: .9rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* Principle cards — left-border reveal on hover */
     .principle-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -69,22 +144,28 @@
       margin: 1.5rem 0 2rem;
     }
     .principle-card {
-      background: var(--bg-alt);
+      background: var(--bg);
       border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.25rem;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform .4s cubic-bezier(.22,1,.36,1), border-color .3s;
     }
+    .principle-card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      background: var(--brand);
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform .45s cubic-bezier(.22,1,.36,1);
+    }
+    .principle-card:hover { transform: translateY(-3px); border-color: color-mix(in oklch, var(--brand) 35%, transparent); }
+    .principle-card:hover::before { transform: scaleY(1); }
     .principle-card h4 { margin: 0 0 .5rem; font-size: .95rem; color: var(--brand); }
-    .principle-card p { margin: 0; font-size: .85rem; color: var(--text-muted); line-height: 1.55; }
-    .credential-tags { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .75rem; }
-    .credential-tag {
-      background: var(--brand-light);
-      color: var(--brand);
-      font-size: .775rem;
-      font-weight: 600;
-      padding: .2rem .65rem;
-      border-radius: 100px;
-    }
+    .principle-card p  { margin: 0; font-size: .85rem; color: var(--text-muted); line-height: 1.55; }
   </style>
   <!-- Privacy-friendly analytics by Plausible -->
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
@@ -109,16 +190,16 @@
     </div>
   </header>
 
-  <div class="page-hero">
+  <div class="page-hero" data-hero-variant="constellation">
     <div class="container">
       <div class="breadcrumb">
         <a href="/">Home</a>
         <span class="breadcrumb-sep">›</span>
         <span>About</span>
       </div>
-      <div class="eyebrow">About OperationsEdge</div>
-      <h1>Written from the Floor Up</h1>
-      <p>OperationsEdge is written by a working warehouse manager — not a tech journalist. Here's who's behind the content and how the site works.</p>
+      <div class="eyebrow" data-reveal>About OperationsEdge</div>
+      <h1 data-reveal data-reveal-delay="1">Written from the Floor Up</h1>
+      <p data-reveal data-reveal-delay="2">OperationsEdge is written by a working warehouse manager — not a tech journalist. Here's who's behind the content and how the site works.</p>
     </div>
   </div>
 
@@ -129,7 +210,7 @@
         <main class="article-content">
 
           <!-- Author profile -->
-          <div class="author-profile">
+          <div class="author-profile" data-reveal>
             <picture>
               <source srcset="/assets/images/paulo-gomes.webp" type="image/webp">
               <img
@@ -156,7 +237,7 @@
             </div>
           </div>
 
-          <h2 id="what-i-cover">What this site covers</h2>
+          <h2 id="what-i-cover" data-reveal>What this site covers</h2>
           <p>OperationsEdge is an independent review and resource site for UK operations managers, warehouse managers, and logistics professionals. I cover the SaaS tools that operations teams actually use — warehouse management systems, workforce scheduling platforms, H&amp;S audit tools, project management software, and more.</p>
 
           <p>I write five types of content:</p>
@@ -170,14 +251,14 @@
 
           <p>I focus specifically on the UK operations context — which means UK pricing in GBP, UK compliance obligations (HMRC, HSE, UK GDPR, WTR), UK support hours, and UK-specific integrations. A tool that works well for US logistics teams but falls short on UK payroll integration or RIDDOR reporting isn't a good tool for my readers.</p>
 
-          <h2 id="experience">Background and experience</h2>
+          <h2 id="experience" data-reveal>Background and experience</h2>
           <p>My career has been in operational roles — I've managed teams, pick operations, inbound and outbound flows, and shift patterns across high-volume warehouse environments. The bulk of my operational experience is in pharmaceutical and healthcare distribution, where accuracy, compliance, and chain-of-custody requirements are non-negotiable.</p>
 
           <p>That background shapes how I review tools. I'm not benchmarking a WMS against a theoretical ideal — I'm asking whether it would actually work in a busy pick-face, whether the mobile app survives shift-level use, and whether the reporting gives you anything useful when something goes wrong at 3am.</p>
 
           <p>The case studies and "From the Floor" pieces are drawn from real operational situations I've worked through — anonymised where appropriate, but grounded in things that actually happened. I'm not writing thought leadership. I'm writing about what worked, what didn't, and why.</p>
 
-          <h2 id="editorial-methodology">How I review tools</h2>
+          <h2 id="editorial-methodology" data-reveal>How I review tools</h2>
 
           <div class="methodology-step">
             <div class="methodology-step-num">1</div>
@@ -219,14 +300,14 @@
             </div>
           </div>
 
-          <h2 id="editorial-independence">Editorial independence</h2>
+          <h2 id="editorial-independence" data-reveal>Editorial independence</h2>
           <p>My editorial opinions aren't for sale. Vendors cannot pay to receive a positive review, a higher score, or a "Best Pick" designation. I have never published a paid review and won't do so.</p>
 
           <p>This site currently has no active affiliate arrangements. All vendor links are standard editorial links — I don't earn commission when you click them. I intend to apply to affiliate programmes in the future; when that happens, it will be disclosed in the relevant articles before any affiliate links go live, and I maintain an <a href="/affiliate-disclosure/">affiliate disclosure page</a> that will be kept current.</p>
 
           <p>Where a tool doesn't have an affiliate programme, I'll still review it if it's relevant and worth covering. Affiliate status won't determine what I recommend. Where I have concerns about a tool — cost, missing features, poor UK support — I'll say so plainly.</p>
 
-          <h2 id="our-principles">Editorial principles</h2>
+          <h2 id="our-principles" data-reveal>Editorial principles</h2>
 
           <div class="principle-grid">
             <div class="principle-card">
@@ -359,5 +440,14 @@
   </footer>
 
   <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/page-hero-animation.js" defer></script>
+  <script>
+    /* Sync --ops-speed CSS var so pulseRing animation tracks speed changes */
+    (function () {
+      function sync() { document.documentElement.style.setProperty('--ops-speed', window.__opsSpeed || 1); }
+      sync();
+      setInterval(sync, 400);
+    }());
+  </script>
 </body>
 </html>
