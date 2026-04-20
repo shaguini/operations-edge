@@ -93,23 +93,41 @@
     /* ===========================================================
        Bento — richer hover (cursor-anchored grid + sweep)
        =========================================================== */
-    .bento-code {
-      font-family: 'JetBrains Mono', 'Courier New', monospace;
-      font-size: .65rem;
-      font-weight: 500;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-      padding: .28rem .6rem;
-      border: 1.5px solid color-mix(in oklch, var(--brand) 65%, transparent);
-      border-radius: 2px;
-      display: inline-block;
+    /* Bento category glyph */
+    .bento-glyph {
+      width: 56px;
+      height: 56px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-sm, 6px);
+      background: color-mix(in oklch, var(--brand) 14%, transparent);
+      border: 1px solid color-mix(in oklch, var(--brand) 35%, transparent);
+      color: var(--brand);
       align-self: flex-start;
       margin-bottom: auto;
-      color: var(--brand);
-      line-height: 1.6;
       position: relative;
       overflow: hidden;
+      transition: background .4s cubic-bezier(.22,1,.36,1), border-color .4s, transform .5s cubic-bezier(.22,1,.36,1);
     }
+    .bento-glyph svg { width: 30px; height: 30px; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; fill: none; overflow: visible; }
+    .bento-glyph svg * { transition: transform .55s cubic-bezier(.34,1.56,.64,1), opacity .4s, stroke-dashoffset .7s cubic-bezier(.22,1,.36,1); transform-origin: 50% 50%; transform-box: fill-box; }
+    .bento-tile:hover .bento-glyph { background: color-mix(in oklch, var(--brand) 28%, transparent); border-color: color-mix(in oklch, var(--brand) 70%, transparent); transform: rotate(-3deg) scale(1.04); }
+    /* Per-category hover micro-animations */
+    .bento-tile:hover .g-wms [data-box="top"] { transform: translateY(-3px); }
+    .bento-tile:hover .g-wms [data-pulse] { stroke-dasharray: 4 2; animation: gDash .9s linear infinite; }
+    .bento-tile:hover .g-sol [data-ring] { transform: scale(1.12); }
+    .bento-tile:hover .g-sol [data-dot] { transform: scale(1.35); }
+    .bento-tile:hover .g-hs [data-tick] { stroke-dashoffset: 0; }
+    .g-hs [data-tick] { stroke-dasharray: 18; stroke-dashoffset: 18; }
+    .bento-tile:hover .g-wfm [data-hand] { transform: rotate(60deg); }
+    .bento-tile:hover .g-aut [data-link] { stroke-dasharray: 4 3; animation: gDash .8s linear infinite; }
+    .bento-tile:hover .g-aut [data-node="a"] { transform: translateX(-1px); }
+    .bento-tile:hover .g-aut [data-node="b"] { transform: translateX(1px); }
+    .bento-tile:hover .g-tms [data-wheel] { animation: gSpin 1.2s linear infinite; }
+    @keyframes gDash { to { stroke-dashoffset: -12; } }
+    @keyframes gSpin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { .bento-glyph, .bento-glyph svg * { transition: none !important; animation: none !important; transform: none !important; } }
     .bento-tile {
       background: #0B1C2C !important;
       border: 1px solid color-mix(in oklch, var(--brand) 22%, transparent) !important;
@@ -295,7 +313,7 @@
 
         <!-- Feature tile: WMS — dark, spans 2 rows -->
         <a href="/reviews/?cat=wms" class="bento-tile bento-dark" data-reveal>
-          <span class="bento-code">WMS</span>
+          <span class="bento-glyph" aria-hidden="true"><svg class="g-wms" viewBox="0 0 32 32"><rect data-box="bot" x="4" y="20" width="10" height="8" rx="1"/><rect x="18" y="20" width="10" height="8" rx="1"/><rect data-box="top" x="11" y="10" width="10" height="8" rx="1"/><path data-pulse d="M16 6 L16 2"/></svg></span>
           <div>
             <p class="bento-cat">Warehouse</p>
             <h3>WMS &amp; Inventory Software</h3>
@@ -305,7 +323,7 @@
 
         <!-- Solutions — light -->
         <a href="/solutions/" class="bento-tile bento-light" data-reveal data-reveal-delay="1">
-          <span class="bento-code">OPS</span>
+          <span class="bento-glyph" aria-hidden="true"><svg class="g-sol" viewBox="0 0 32 32"><circle data-ring cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="6"/><circle data-dot cx="16" cy="16" r="2" fill="currentColor" stroke="none"/><path d="M16 2 L16 6 M16 26 L16 30 M2 16 L6 16 M26 16 L30 16"/></svg></span>
           <div>
             <p class="bento-cat">Problem-based</p>
             <h3>Solutions by Challenge</h3>
@@ -315,7 +333,7 @@
 
         <!-- H&S — brand blue -->
         <a href="/reviews/?cat=safety" class="bento-tile bento-blue" data-reveal data-reveal-delay="2">
-          <span class="bento-code">H+S</span>
+          <span class="bento-glyph" aria-hidden="true"><svg class="g-hs" viewBox="0 0 32 32"><path d="M16 3 L27 7 V17 C27 22 22 27 16 29 C10 27 5 22 5 17 V7 Z"/><path data-tick d="M11 16 L15 20 L22 12"/></svg></span>
           <div>
             <p class="bento-cat">Safety &amp; Compliance</p>
             <h3>Health, Safety &amp; Compliance</h3>
@@ -325,7 +343,7 @@
 
         <!-- Workforce — muted -->
         <a href="/reviews/?cat=workforce" class="bento-tile bento-muted" data-reveal>
-          <span class="bento-code">WFM</span>
+          <span class="bento-glyph" aria-hidden="true"><svg class="g-wfm" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><g data-hand><path d="M16 16 L16 8"/></g><path d="M16 16 L22 19"/><circle cx="16" cy="16" r="1.6" fill="currentColor" stroke="none"/></svg></span>
           <div>
             <p class="bento-cat">Workforce</p>
             <h3>Shift Scheduling</h3>
@@ -335,7 +353,7 @@
 
         <!-- Automation — dark -->
         <a href="/reviews/?cat=automation" class="bento-tile bento-dark" data-reveal data-reveal-delay="1">
-          <span class="bento-code">AUT</span>
+          <span class="bento-glyph" aria-hidden="true"><svg class="g-aut" viewBox="0 0 32 32"><circle data-node="a" cx="7" cy="16" r="3"/><circle data-node="b" cx="25" cy="16" r="3"/><path data-link d="M10 16 L22 16"/><path d="M14 11 L18 16 L14 21"/></svg></span>
           <div>
             <p class="bento-cat">Automation</p>
             <h3>Process Automation</h3>
@@ -345,7 +363,7 @@
 
         <!-- Transport — accent -->
         <a href="/reviews/?cat=transport" class="bento-tile bento-accent" data-reveal data-reveal-delay="2">
-          <span class="bento-code">TMS</span>
+          <span class="bento-glyph" aria-hidden="true"><svg class="g-tms" viewBox="0 0 32 32"><rect x="3" y="10" width="15" height="10" rx="1"/><path d="M18 13 H24 L28 17 V20 H18 Z"/><circle data-wheel cx="9" cy="22" r="2.5"/><circle data-wheel cx="22" cy="22" r="2.5"/></svg></span>
           <div>
             <p class="bento-cat">Transport &amp; Logistics</p>
             <h3>TMS &amp; Fleet</h3>
