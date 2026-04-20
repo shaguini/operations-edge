@@ -26,52 +26,154 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
-    /* Hero text overrides — graphic is dark so we flip to white */
+    /* ===========================================================
+       Hero — live SVG "Floor Intelligence" replaces the .webp
+       background. Text layers on top, flipped to white.
+       =========================================================== */
+    .hero {
+      background: var(--dark-deep);
+      background-image: none;
+      overflow: hidden;
+    }
+    .hero::before { opacity: 0; }
     .hero h1 { color: #fff; }
     .hero p { color: rgba(255,255,255,.72); }
     .hero-eyebrow { color: rgba(255,255,255,.55); }
-    .hero::before { opacity: 0; }
 
-    /* Stats bar — brand blue numbers, blue accent rule */
-    .stat-num { color: var(--brand); }
-    .stats-bar { border-top: 1px solid rgba(27,96,157,.25); }
-    .stat-label { color: rgba(255,255,255,.38); letter-spacing: .14em; }
+    .hero-stage {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .hero-stage svg { width: 100%; height: 100%; display: block; }
+    .hero .container { position: relative; z-index: 2; }
 
-    /* Bento category code badge — replaces emoji, brand blue */
+    /* Vignette so the type reads against the live graphic */
+    .hero-vignette {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 60% 70% at 50% 55%,
+          color-mix(in oklch, var(--dark-deep) 55%, transparent) 0%,
+          transparent 75%);
+    }
+
+    /* Snappier reveal cascade — overrides the slower default */
+    [data-reveal] {
+      transform: translateY(14px);
+      transition:
+        opacity .55s cubic-bezier(.22,1,.36,1),
+        transform .55s cubic-bezier(.22,1,.36,1);
+    }
+    [data-reveal-delay="1"] { transition-delay: .08s; }
+    [data-reveal-delay="2"] { transition-delay: .16s; }
+    [data-reveal-delay="3"] { transition-delay: .24s; }
+    [data-reveal-delay="4"] { transition-delay: .32s; }
+    [data-reveal-delay="5"] { transition-delay: .40s; }
+
+    /* Stats — count-up numerals */
+    .stat-num {
+      color: var(--brand);
+      font-variant-numeric: tabular-nums;
+      display: inline-block;
+      transform-origin: 50% 100%;
+    }
+    .stats-bar { border-top: 1px solid color-mix(in oklch, var(--brand) 25%, transparent); background: var(--dark-deep); }
+    .stat-label { color: rgba(255,255,255,.62); letter-spacing: .14em; }
+    .section-categories { background: var(--dark-deep); }
+    .section-dark { background: var(--dark-deep) !important; }
+
+    /* ===========================================================
+       Bento — richer hover (cursor-anchored grid + sweep)
+       =========================================================== */
     .bento-code {
-      font-family: 'Courier New', Courier, monospace;
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
       font-size: .65rem;
-      font-weight: 700;
+      font-weight: 500;
       letter-spacing: .2em;
       text-transform: uppercase;
       padding: .28rem .6rem;
-      border: 1.5px solid rgba(27,96,157,.65);
+      border: 1.5px solid color-mix(in oklch, var(--brand) 65%, transparent);
       border-radius: 2px;
       display: inline-block;
       align-self: flex-start;
       margin-bottom: auto;
-      color: #1B609D;
+      color: var(--brand);
       line-height: 1.6;
+      position: relative;
+      overflow: hidden;
     }
-    /* All bento tiles — unified dark navy, brand blue border */
     .bento-tile {
       background: #0B1C2C !important;
-      border: 1px solid rgba(27,96,157,.22) !important;
+      border: 1px solid color-mix(in oklch, var(--brand) 22%, transparent) !important;
+      position: relative;
+      overflow: hidden;
+      transition:
+        transform .45s cubic-bezier(.22,1,.36,1),
+        border-color .45s cubic-bezier(.22,1,.36,1),
+        box-shadow .45s cubic-bezier(.22,1,.36,1) !important;
     }
     .bento-tile .bento-cat { color: rgba(255,255,255,.38) !important; }
-    .bento-tile h3 { color: #fff !important; }
-    .bento-tile p { color: rgba(255,255,255,.55) !important; }
-    .bento-tile:hover { border-color: rgba(27,96,157,.5) !important; }
-    /* Equal-size grid — all tiles same height */
-    .bento-grid { grid-template-rows: 280px 280px; }
-    /* Unify all dark section backgrounds to hero navy */
-    .stats-bar { background: #09131F; }
-    .section-categories { background: #09131F; }
-    .section-dark { background: #09131F !important; }
+    .bento-tile h3 { color: #fff !important; transition: transform .45s cubic-bezier(.22,1,.36,1); }
+    .bento-tile p { color: rgba(255,255,255,.55) !important; transition: color .3s; }
+    .bento-tile:hover {
+      border-color: color-mix(in oklch, var(--brand) 70%, transparent) !important;
+      box-shadow: 0 10px 40px color-mix(in oklch, var(--brand) 25%, transparent);
+      transform: translateY(-4px);
+    }
+    .bento-tile:hover p { color: rgba(255,255,255,.75) !important; }
+    .bento-tile:hover h3 { transform: translateX(3px); }
+
+    /* Faint grid print revealed at cursor on hover */
+    .bento-tile::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(to right, color-mix(in oklch, var(--brand) 18%, transparent) 1px, transparent 1px),
+        linear-gradient(to bottom, color-mix(in oklch, var(--brand) 18%, transparent) 1px, transparent 1px);
+      background-size: 28px 28px;
+      opacity: 0;
+      transition: opacity .45s cubic-bezier(.22,1,.36,1);
+      mask-image: radial-gradient(ellipse at var(--mx,50%) var(--my,50%),
+        black 0%, transparent 60%);
+      -webkit-mask-image: radial-gradient(ellipse at var(--mx,50%) var(--my,50%),
+        black 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .bento-tile:hover::before { opacity: .8; }
+
+    /* Sweep highlight that crosses the tile on hover */
+    .bento-tile::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -120%;
+      width: 60%; height: 100%;
+      background: linear-gradient(100deg, transparent 35%,
+        color-mix(in oklch, var(--brand) 35%, transparent) 50%, transparent 65%);
+      transition: left .9s cubic-bezier(.22,1,.36,1);
+      pointer-events: none;
+    }
+    .bento-tile:hover::after { left: 130%; }
+
+    /* Editorial card hovers — snappier lift */
+    .editorial-feature,
+    .editorial-card {
+      transition: transform .45s cubic-bezier(.22,1,.36,1),
+                  background .3s, border-color .3s, box-shadow .45s cubic-bezier(.22,1,.36,1);
+    }
+    .editorial-feature:hover,
+    .editorial-card:hover {
+      transform: translateY(-3px);
+      border-color: color-mix(in oklch, var(--brand) 35%, rgba(255,255,255,.08));
+    }
   </style>
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
   <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
@@ -95,9 +197,55 @@
       </ul>
     </div>
   </header>
+<main>
 
-  <!-- HERO — full viewport, cinematic scale -->
-  <section class="hero" style="background-image: url('/assets/images/hero-graphic.png'); background-size: cover; background-position: center center;">
+  <!-- HERO — full viewport, live SVG "Floor Intelligence" -->
+  <section class="hero">
+    <div class="hero-stage" aria-hidden="true">
+      <svg id="heroSvg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="flowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#1B609D" stop-opacity="0.45"/>
+            <stop offset="55%" stop-color="#4A9BD4" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#9FC9EE" stop-opacity="1"/>
+          </linearGradient>
+          <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="#1B609D" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#4A9BD4" stop-opacity="0.95"/>
+          </linearGradient>
+          <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#9FC9EE" stop-opacity="0.9"/>
+            <stop offset="40%" stop-color="#4A9BD4" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#1B609D" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+          </filter>
+          <clipPath id="heroClip">
+            <rect x="0" y="0" width="1920" height="1080"/>
+          </clipPath>
+        </defs>
+
+        <rect width="1920" height="1080" fill="#050E18"/>
+        <g id="fineGrid" opacity="0"></g>
+        <g id="bayGrid" transform="translate(40, 80)"></g>
+        <g id="flowPath"></g>
+        <g id="barChart" transform="translate(1200, 0)"></g>
+        <g id="notation" fill="#4A9BD4" opacity="0" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="1.2">
+          <text x="30" y="28" opacity="0.55">S // OE / F.01 — SECTOR A</text>
+          <text x="1890" y="28" text-anchor="end" opacity="0.55">R / V.4 / 2026.Q2</text>
+          <text x="30" y="1065" opacity="0.55">ROTATION · B02 · INTEL/FLOOR · LAYER 04</text>
+          <text x="1890" y="1065" text-anchor="end" opacity="0.55">PEAK 00:07:14.92</text>
+        </g>
+        <g id="scanLine" clip-path="url(#heroClip)" opacity="0">
+          <rect id="scanLineRect" x="0" y="0" width="1920" height="2"
+            fill="url(#flowGrad)" opacity="0.35"/>
+        </g>
+        <g id="flowPulses"></g>
+      </svg>
+    </div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+
     <div class="container">
       <p class="hero-eyebrow" data-reveal>Independent · Operator-led · UK-focused</p>
       <h1 data-reveal data-reveal-delay="1">
@@ -116,19 +264,19 @@
     <div class="container">
       <div class="stats-grid">
         <div data-reveal>
-          <div class="stat-num">0</div>
+          <div class="stat-num" data-count-to="0">0</div>
           <div class="stat-label">Pay-to-play rankings</div>
         </div>
         <div data-reveal data-reveal-delay="1">
-          <div class="stat-num">5</div>
+          <div class="stat-num" data-count-to="5">0</div>
           <div class="stat-label">Content areas covered</div>
         </div>
         <div data-reveal data-reveal-delay="2">
-          <div class="stat-num">100%</div>
+          <div class="stat-num" data-count-to="100" data-count-suffix="%">0%</div>
           <div class="stat-label">Editorially independent</div>
         </div>
         <div data-reveal data-reveal-delay="3">
-          <div class="stat-num">UK</div>
+          <div class="stat-num" data-count-text="UK">UK</div>
           <div class="stat-label">GBP pricing & compliance</div>
         </div>
       </div>
@@ -310,15 +458,17 @@
       <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-reveal data-reveal-delay="3">
         <input type="hidden" name="form-name" value="newsletter">
         <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
-        <input type="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
+        <input type="email" autocomplete="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
         <button type="submit" class="btn" style="background:#fff;color:var(--brand);border-color:#fff;font-weight:700;">Subscribe Free</button>
       </form>
-      <p class="newsletter-success">You're on the list — thanks for subscribing.</p>
+      <p class="newsletter-success">Done. New reviews and guides straight to your inbox when they're published.</p>
       <p style="font-size:.775rem;color:rgba(255,255,255,.35);margin-top:.75rem;">For UK operations managers. No spam. Unsubscribe any time.</p>
     </div>
   </div>
 
   <!-- FOOTER -->
+</main>
+
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -367,5 +517,7 @@
   </footer>
 
   <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/hero-animation.js" defer></script>
+  <script src="/assets/js/page-animation.js" defer></script>
 </body>
 </html>
