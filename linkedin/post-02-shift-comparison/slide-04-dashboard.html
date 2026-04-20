@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../_shared/slide-styles.css">
+<link rel="stylesheet" href="../_shared/dashboard-styles.css">
+</head>
+<body>
+<div class="slide dashboard">
+  <div class="slide-topbar">
+    <span class="slide-badge">The Data</span>
+    <span class="slide-number">4 / 5</span>
+  </div>
+  <div class="slide-content">
+    <p class="dashboard-title">Shift Performance — <span>LPH Comparison Dashboard</span></p>
+
+    <!-- KPI Row -->
+    <div class="kpi-row">
+      <div class="kpi-card">
+        <span class="kpi-label">Early Shift Avg LPH</span>
+        <span class="kpi-value" style="color:#B0BEC5;">Lower</span>
+        <span class="kpi-sub">lines per hour</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">Late Shift Avg LPH</span>
+        <span class="kpi-value">Higher</span>
+        <span class="kpi-sub">lines per hour</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">Performance Gap</span>
+        <span class="kpi-value large">~10<span style="font-size:28px;font-weight:700;">%</span></span>
+        <span class="kpi-delta">↑ Late shift advantage</span>
+      </div>
+    </div>
+
+    <!-- Bar Chart -->
+    <div class="line-chart-wrap" style="flex:1; margin-bottom:14px; display:flex; flex-direction:column; justify-content:center;">
+      <p class="chart-title">Contributing Factors — Late Shift Advantage</p>
+      <div class="bar-chart" style="padding: 12px 0;">
+        <div class="bar-row">
+          <span class="bar-row-label">Station consistency</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:88%;"></div>
+          </div>
+          <span class="bar-val" style="color:#F4A024;">High</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row-label">Peer accountability</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:82%;"></div>
+          </div>
+          <span class="bar-val" style="color:#F4A024;">High</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row-label">Interruptions</span>
+          <div class="bar-track">
+            <div class="bar-fill teal" style="width:22%;"></div>
+          </div>
+          <span class="bar-val" style="color:#2EC4B6;">Low</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row-label" style="color:#607080;">Early shift</span>
+          <div class="bar-track">
+            <div class="bar-fill dim" style="width:55%;"></div>
+          </div>
+          <span class="bar-val" style="color:#C4781A;">Early LPH</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row-label">Late shift</span>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:72%;"></div>
+          </div>
+          <span class="bar-val">Late LPH</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-bottom:8px;">
+      <strong>The conditions drove the performance — not the individuals.</strong>
+      We applied the late shift conditions to the early shift. The gap closed within weeks.
+    </div>
+  </div>
+  <div class="slide-brand">
+    <span class="brand-name">Paulo Gomes &nbsp;·&nbsp; <span>Operations</span>Edge</span>
+    <span class="brand-url">OperationsEdge.co.uk</span>
+  </div>
+</div>
+</body>
+</html>

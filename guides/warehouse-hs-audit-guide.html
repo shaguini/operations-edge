@@ -34,8 +34,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
 
   <style>
@@ -125,7 +125,6 @@
     .frequency-item {
       background: var(--bg-alt);
       border: 1px solid var(--border);
-      border-left: 4px solid var(--brand);
       border-radius: var(--radius);
       padding: 1rem 1.1rem;
     }
@@ -150,7 +149,6 @@
     .warning-box {
       background: #fff7ed;
       border: 1px solid #fdba74;
-      border-left: 4px solid #ea580c;
       border-radius: var(--radius);
       padding: 1.1rem 1.25rem;
       margin: 1.5rem 0;
@@ -198,6 +196,10 @@
       justify-content: center;
       margin-top: .1rem;
     }
+    @media (prefers-color-scheme: dark) {
+      .warning-box { background: oklch(0.22 0.05 50); border-color: oklch(0.40 0.11 50); }
+      .warning-box strong { color: oklch(0.78 0.14 45); }
+    }
   </style>
   <!-- Privacy-friendly analytics by Plausible -->
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
@@ -222,7 +224,7 @@
     </div>
   </header>
 
-  <div class="page-hero" style="background-image: linear-gradient(rgba(9,19,31,0.78) 0%, rgba(9,19,31,0.88) 100%), url('/assets/images/hero-graphic.png'); background-size: cover; background-position: center center;">
+  <div class="page-hero">
     <div class="container">
       <div class="breadcrumb">
         <a href="/">Home</a>
@@ -465,7 +467,8 @@
           <h2 id="paper-vs-digital">Paper vs digital: why it matters more than you think</h2>
           <p>Paper-based audit processes are still the norm in many UK warehouses. They work — up to a point. The limitations become serious the moment you need to do anything beyond recording a snapshot.</p>
 
-          <table class="comparison-table">
+          <div class="table-scroll">
+<table class="comparison-table">
             <thead>
               <tr>
                 <th>Capability</th>
@@ -511,6 +514,7 @@
               </tr>
             </tbody>
           </table>
+</div>
 
           <p>The key difference is not just convenience — it's the quality of the audit trail. If the HSE investigates an incident and asks to see your audit history, a folder of handwritten forms is far less defensible than a timestamped, geotagged, photo-evidenced digital record. Courts and regulators are increasingly familiar with what good looks like.</p>
 
@@ -603,7 +607,9 @@
   <!-- Author bio -->
   <div class="container" style="padding-top:0;padding-bottom:2rem;">
     <div class="author-bio">
-      <img
+      <picture>
+        <source srcset="/assets/images/paulo-gomes-avatar.webp" type="image/webp">
+        <img
         src="/assets/images/paulo-gomes-avatar.jpg"
         alt="Paulo Gomes warehouse manager and operations specialist"
         class="author-bio-avatar"
@@ -611,6 +617,7 @@
         width="64"
         height="64"
       >
+        </picture>
       <div class="author-bio-text">
         <strong><a href="/about/">Paulo Gomes</a></strong>
         <p>Warehouse manager with over 10 years of experience in UK logistics and pharmaceutical operations, specialising in warehouse efficiency, picking accuracy, and process improvement.</p>

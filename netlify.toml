@@ -60,6 +60,11 @@
   to   = "/about/"
   status = 301
 
+[[redirects]]
+  from = "/media-kit"
+  to   = "/media-kit/"
+  status = 301
+
 # Redirects for /posts/ → /from-the-floor/ (section rename)
 [[redirects]]
   from = "/from-the-floor/how-we-onboarded-10-agency-staff-in-24-hours.html"

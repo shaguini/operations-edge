@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../_shared/slide-styles.css">
+<link rel="stylesheet" href="../_shared/dashboard-styles.css">
+</head>
+<body>
+<div class="slide dashboard">
+  <div class="slide-topbar">
+    <span class="slide-badge">The Finding</span>
+    <span class="slide-number">4 / 5</span>
+  </div>
+  <div class="slide-content">
+    <p class="dashboard-title">Capacity Misalignment — <span>System vs Physical Reality</span></p>
+
+    <!-- KPI Row -->
+    <div class="kpi-row">
+      <div class="kpi-card">
+        <span class="kpi-label">WMS Capacity (system)</span>
+        <span class="kpi-value" style="color:#E05252; font-size:24px;">System<br>figure</span>
+        <span class="kpi-sub">what the system believed</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">Physical Capacity (actual)</span>
+        <span class="kpi-value" style="color:#4CAF82; font-size:24px;">Physical<br>reality</span>
+        <span class="kpi-sub">what the shelf actually held</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">Result</span>
+        <span class="kpi-value" style="color:#E05252; font-size:22px; line-height:1.2;">Systematic<br>overfill</span>
+        <span class="kpi-delta down">↑ every replenishment cycle</span>
+      </div>
+    </div>
+
+    <!-- Impact breakdown -->
+    <div class="line-chart-wrap" style="flex:1; margin-bottom:14px; display:flex; flex-direction:column; justify-content:center;">
+      <p class="chart-title">Consequences of System–Physical Mismatch</p>
+      <div style="display:flex; flex-direction:column; gap:12px; padding:10px 0;">
+        <div class="callout">
+          <strong>Pick face overcrowding → visual confusion → wrong-item picks</strong>
+          Products too close together at the pick face. Operator error that wasn't operator error.
+        </div>
+        <div class="callout">
+          <strong>Replenishment inconsistency → empty locations mid-pick</strong>
+          When overfill caused product damage, effective capacity dropped further. Unplanned empty slots.
+        </div>
+        <div class="callout" style="border-left-color:#4CAF82;">
+          <strong>Fix: physical audit → WMS update → fill limit standardisation → quarterly review</strong>
+          Error rate at affected locations dropped within 2 weeks of correction.
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="border-left-color:#F4A024; margin-bottom:8px;">
+      <strong>The WMS was set at go-live and never reviewed. That was the real gap.</strong>
+    </div>
+  </div>
+  <div class="slide-brand">
+    <span class="brand-name">Paulo Gomes &nbsp;·&nbsp; <span>Operations</span>Edge</span>
+    <span class="brand-url">OperationsEdge.co.uk</span>
+  </div>
+</div>
+</body>
+</html>

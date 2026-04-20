@@ -1,0 +1,13 @@
+We had a location generating repeated wrong-item picks. We'd looked at it, coached the operators on it, watched it happen again.
+
+Then we ran the 5 Whys properly.
+
+The WMS said one thing about shelf capacity. The physical shelf said another. Replenishment was filling beyond what the shelf could hold every cycle. The pick face was permanently overcrowded. Products were crammed together. Of course operators were making errors.
+
+It wasn't an operator problem. It was a system that hadn't been checked since go-live.
+
+We ran a physical capacity audit across the affected locations, updated the WMS, standardised the fill limits, and built in a quarterly review. Error rate at those locations dropped within two weeks.
+
+The system said one thing. The warehouse said another. Nobody had checked which one was right.
+
+When did you last audit whether your WMS capacity figures reflect your current physical setup?

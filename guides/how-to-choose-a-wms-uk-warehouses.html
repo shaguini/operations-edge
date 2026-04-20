@@ -35,14 +35,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
     .warning-box {
       background: #fff8ed;
       border: 1px solid #f4a41b;
-      border-left: 4px solid #f4a41b;
       border-radius: 0 var(--radius) var(--radius) 0;
       padding: 1.25rem 1.5rem;
       margin: 2rem 0;
@@ -78,6 +77,10 @@
     .phase-card h4 { font-size:.875rem; margin-bottom:.4rem; color:var(--brand); font-weight:700; }
     .phase-card p { font-size:.85rem; color:var(--text-muted); margin:0; line-height:1.6; }
     @media (max-width:640px) { .phase-grid { grid-template-columns:1fr; } }
+    @media (prefers-color-scheme: dark) {
+      .warning-box { background: oklch(0.22 0.05 70); border-color: oklch(0.40 0.11 70); }
+      .warning-box strong { color: oklch(0.78 0.12 60); }
+    }
   </style>
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
   <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
@@ -101,7 +104,7 @@
     </div>
   </header>
 
-  <div class="page-hero" style="background-image: linear-gradient(rgba(9,19,31,0.78) 0%, rgba(9,19,31,0.88) 100%), url('/assets/images/hero-graphic.png'); background-size: cover; background-position: center center;">
+  <div class="page-hero">
     <div class="container">
       <div class="breadcrumb">
         <a href="/">Home</a>
@@ -261,7 +264,8 @@
 
           <h2>The shortlist for UK mid-size warehouses (5–50 staff)</h2>
 
-          <table class="comparison-table">
+          <div class="table-scroll">
+<table class="comparison-table">
             <thead>
               <tr>
                 <th>System</th>
@@ -309,6 +313,7 @@
               </tr>
             </tbody>
           </table>
+</div>
 
           <p>This isn't a ranked list — the right system depends entirely on your operation type, order profile, and existing tech stack. It's a starting point for a shortlist, not a verdict.</p>
 
@@ -402,10 +407,10 @@
       <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="newsletter">
         <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
-        <input type="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
+        <input type="email" autocomplete="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
         <button type="submit" class="btn" style="background:#fff;color:var(--brand);border-color:#fff;font-weight:700;">Subscribe Free</button>
       </form>
-      <p class="newsletter-success">You're on the list — thanks for subscribing.</p>
+      <p class="newsletter-success">Done. New reviews and guides straight to your inbox when they're published.</p>
     </div>
   </div>
 

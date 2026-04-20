@@ -1,0 +1,2 @@
+Full case study — the root cause analysis process and every fix we made:
+https://www.operationsedge.co.uk/from-the-floor/how-we-reduced-picking-errors-without-technology

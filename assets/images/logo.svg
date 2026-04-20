@@ -1,5 +1,13 @@
 <svg width="280" height="80" viewBox="0 0 280 80" xmlns="http://www.w3.org/2000/svg">
-  <!-- Icon Mark — shifted down 6px so peak dot stays inside viewBox -->
+  <style>
+    .wm { fill: #0d1b2a; }
+    .tl { fill: #6b7f91; }
+    @media (prefers-color-scheme: dark) {
+      .wm { fill: #ffffff; }
+      .tl { fill: #a8bfcc; }
+    }
+  </style>
+  <!-- Icon Mark -->
   <rect x="0" y="30" width="8" height="18" rx="2" fill="#1B609D" opacity="0.35"/>
   <rect x="12" y="22" width="8" height="26" rx="2" fill="#1B609D" opacity="0.55"/>
   <rect x="24" y="12" width="8" height="36" rx="2" fill="#1B609D" opacity="0.75"/>
@@ -9,10 +17,10 @@
   <!-- Peak dot -->
   <circle cx="40" cy="8" r="3.5" fill="#f0a500"/>
   <!-- Wordmark -->
-  <text x="58" y="28" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="#0d1b2a">Operations</text>
-  <text x="58" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="#0d1b2a">Edge</text>
+  <text x="58" y="28" class="wm" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" letter-spacing="-0.5">Operations</text>
+  <text x="58" y="52" class="wm" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" letter-spacing="-0.5">Edge</text>
   <!-- Gold accent underline -->
   <rect x="58" y="57" width="54" height="3" rx="1.5" fill="#f0a500"/>
   <!-- Tagline -->
-  <text x="58" y="74" font-family="'Courier New', Courier, monospace" font-size="8" letter-spacing="2" fill="#6b7f91">OPERATIONSEDGE.CO.UK</text>
+  <text x="58" y="74" class="tl" font-family="'Courier New', Courier, monospace" font-size="8" letter-spacing="2">OPERATIONSEDGE.CO.UK</text>
 </svg>

@@ -158,11 +158,115 @@
     els.forEach(function (el) { io.observe(el); });
   }
 
+  /* --------------------------------------------------
+     6. READING PROGRESS BAR
+     Injected on article pages only (.article-layout).
+     Thin brand-coloured line at top of viewport.
+  -------------------------------------------------- */
+  function initReadingProgress() {
+    if (!document.querySelector('.article-layout, .article-content')) return;
+
+    var bar = document.createElement('div');
+    bar.className = 'reading-progress';
+    bar.setAttribute('aria-hidden', 'true');
+    document.body.insertBefore(bar, document.body.firstChild);
+
+    function update() {
+      var scrolled = window.scrollY;
+      var total = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (total > 0 ? (scrolled / total) * 100 : 0) + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+  }
+
+  /* --------------------------------------------------
+     7. TOC ACTIVE SECTION HIGHLIGHT
+     Uses IntersectionObserver to track which heading
+     is currently in view and highlights its TOC link.
+  -------------------------------------------------- */
+  function initTocHighlight() {
+    var toc = document.querySelector('.toc-list');
+    if (!toc) return;
+
+    var headings = document.querySelectorAll('.article-content h2[id], .article-content h3[id]');
+    if (!headings.length) return;
+
+    var linkMap = {};
+    toc.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      linkMap[a.getAttribute('href').slice(1)] = a;
+    });
+
+    var activeLink = null;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          if (activeLink) activeLink.classList.remove('toc-active');
+          activeLink = linkMap[entry.target.id] || null;
+          if (activeLink) activeLink.classList.add('toc-active');
+        }
+      });
+    }, { rootMargin: '-5% 0% -70% 0%' });
+
+    headings.forEach(function (h) { io.observe(h); });
+  }
+
+  /* --------------------------------------------------
+     8. SCROLL-AWARE HEADER
+     Adds .scrolled to the header when page is scrolled
+     > 80px, letting CSS deepen the shadow so the frosted
+     glass separates from lighter page sections.
+  -------------------------------------------------- */
+  function initScrollHeader() {
+    var header = document.querySelector('.site-header');
+    if (!header) return;
+    function tick() {
+      header.classList.toggle('scrolled', window.scrollY > 80);
+    }
+    window.addEventListener('scroll', tick, { passive: true });
+    tick();
+  }
+
+  /* --------------------------------------------------
+     9. HERO PARALLAX
+     Subtle background-position shift as the user scrolls
+     away from the hero — adds depth to the cinematic image.
+     Only runs on pages with a .hero section and respects
+     prefers-reduced-motion.
+  -------------------------------------------------- */
+  function initHeroParallax() {
+    var hero = document.querySelector('.hero');
+    if (!hero) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var heroH = hero.offsetHeight;
+    function tick() {
+      if (window.scrollY < heroH) {
+        var offset = (window.scrollY * 0.28).toFixed(1);
+        hero.style.backgroundPositionY = 'calc(center + ' + offset + 'px)';
+      }
+    }
+    window.addEventListener('scroll', tick, { passive: true });
+  }
+
   /* ---- Init ---- */
   initNav();
   initNewsletterForms();
   initReviewFilters();
   initFocusVisible();
   initScrollReveal();
+  initReadingProgress();
+  initTocHighlight();
+  initScrollHeader();
+  initHeroParallax();
+
+  /* Developer note — for anyone curious enough to look */
+  if (window.console && window.console.log) {
+    console.log(
+      '\n%cOperationsEdge\n',
+      'color:#1B609D;font-size:20px;font-weight:800;font-family:sans-serif;'
+    );
+    console.log('Built by a warehouse manager, for warehouse managers.');
+    console.log('No shortcuts, no pay-to-play rankings, no fluff.');
+    console.log('Spotted something off? → hello@operationsedge.co.uk\n');
+  }
 
 }());

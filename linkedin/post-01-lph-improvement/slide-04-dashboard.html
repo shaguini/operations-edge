@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../_shared/slide-styles.css">
+<link rel="stylesheet" href="../_shared/dashboard-styles.css">
+<style>
+  .gauge-svg { display: block; }
+
+  /* inline axis labels for line chart */
+  .axis-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #607080;
+    padding: 4px 4px 0;
+    font-family: var(--font);
+  }
+</style>
+</head>
+<body>
+<div class="slide dashboard">
+  <div class="slide-topbar">
+    <span class="slide-badge">The Result</span>
+    <span class="slide-number">4 / 5</span>
+  </div>
+
+  <div class="slide-content">
+    <p class="dashboard-title">Picking Efficiency — <span>12-Month Performance Dashboard</span></p>
+
+    <!-- KPI Row -->
+    <div class="kpi-row">
+      <div class="kpi-card">
+        <span class="kpi-label">Baseline LPH</span>
+        <span class="kpi-value">Below avg</span>
+        <span class="kpi-sub">lines per hour — Month 1</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">Peak LPH</span>
+        <span class="kpi-value" style="color:#2EC4B6;">Above avg</span>
+        <span class="kpi-sub">lines per hour — Month 12</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">Improvement</span>
+        <span class="kpi-value large">21<span style="font-size:28px;font-weight:700;">%</span></span>
+        <span class="kpi-delta">↑ Year-on-year LPH gain</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">Hours Saved</span>
+        <span class="kpi-value" style="font-size:26px;">Hundreds</span>
+        <span class="kpi-sub">productive hours recovered</span>
+      </div>
+    </div>
+
+    <!-- Line Chart -->
+    <div class="line-chart-wrap" style="flex:1; margin-bottom:14px;">
+      <p class="chart-title">LPH Trend — Month by Month</p>
+      <svg class="gauge-svg" width="100%" height="200" viewBox="0 0 940 200" preserveAspectRatio="none" style="display:block;">
+        <defs>
+          <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#F4A024" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#F4A024" stop-opacity="0.02"/>
+          </linearGradient>
+        </defs>
+        <!-- Grid lines -->
+        <line x1="0" y1="0"   x2="940" y2="0"   stroke="#1A3048" stroke-width="1"/>
+        <line x1="0" y1="50"  x2="940" y2="50"  stroke="#1A3048" stroke-width="1"/>
+        <line x1="0" y1="100" x2="940" y2="100" stroke="#1A3048" stroke-width="1"/>
+        <line x1="0" y1="150" x2="940" y2="150" stroke="#1A3048" stroke-width="1"/>
+        <line x1="0" y1="200" x2="940" y2="200" stroke="#1A3048" stroke-width="1"/>
+
+        <!-- Y-axis labels -->
+        <text x="940" y="4"   font-size="10" fill="#607080" text-anchor="end" font-family="Inter,sans-serif">High</text>
+        <text x="940" y="54"  font-size="10" fill="#607080" text-anchor="end" font-family="Inter,sans-serif">Peak</text>
+        <text x="940" y="104" font-size="10" fill="#607080" text-anchor="end" font-family="Inter,sans-serif">Mid</text>
+        <text x="940" y="154" font-size="10" fill="#607080" text-anchor="end" font-family="Inter,sans-serif">Low</text>
+        <text x="940" y="200" font-size="10" fill="#607080" text-anchor="end" font-family="Inter,sans-serif">Start</text>
+
+        <!-- x positions: 0,85,170,255,340,425,510,595,680,765,850,935 -->
+
+        <!-- Fill area -->
+        <polygon
+          points="0,200 85,183 170,160 255,130 340,100 425,77 510,70 595,63 680,57 765,57 850,50 935,50 935,200"
+          fill="url(#lineGrad)"/>
+
+        <!-- Line -->
+        <polyline
+          points="0,200 85,183 170,160 255,130 340,100 425,77 510,70 595,63 680,57 765,57 850,50 935,50"
+          fill="none" stroke="#F4A024" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+
+        <!-- Data points -->
+        <circle cx="0"   cy="200" r="5" fill="#F4A024"/>
+        <circle cx="85"  cy="183" r="5" fill="#F4A024"/>
+        <circle cx="170" cy="160" r="5" fill="#F4A024"/>
+        <circle cx="255" cy="130" r="5" fill="#F4A024"/>
+        <circle cx="340" cy="100" r="5" fill="#F4A024"/>
+        <circle cx="425" cy="77"  r="5" fill="#F4A024"/>
+        <circle cx="510" cy="70"  r="5" fill="#F4A024"/>
+        <circle cx="595" cy="63"  r="5" fill="#F4A024"/>
+        <circle cx="680" cy="57"  r="5" fill="#F4A024"/>
+        <circle cx="765" cy="57"  r="5" fill="#F4A024"/>
+        <circle cx="850" cy="50"  r="5" fill="#2EC4B6"/>
+        <circle cx="935" cy="50"  r="5" fill="#2EC4B6"/>
+
+        <!-- Annotation -->
+        <text x="200" y="148" font-size="11" fill="#F4A024" font-family="Inter,sans-serif" font-weight="700">Sharp gains</text>
+        <text x="680" y="44"  font-size="11" fill="#2EC4B6" font-family="Inter,sans-serif" font-weight="700">Stable at peak</text>
+      </svg>
+      <div class="axis-labels">
+        <span>M1</span><span>M2</span><span>M3</span><span>M4</span><span>M5</span>
+        <span>M6</span><span>M7</span><span>M8</span><span>M9</span><span>M10</span>
+        <span>M11</span><span>M12</span>
+      </div>
+    </div>
+
+    <!-- Callout -->
+    <div class="callout" style="margin-bottom:8px;">
+      <strong>No new technology. No capital spend.</strong>
+      Measurement + visibility + top performer replication. That's what moved the number.
+    </div>
+  </div>
+
+  <div class="slide-brand">
+    <span class="brand-name">Paulo Gomes &nbsp;·&nbsp; <span>Operations</span>Edge</span>
+    <span class="brand-url">OperationsEdge.co.uk</span>
+  </div>
+</div>
+</body>
+</html>

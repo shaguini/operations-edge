@@ -36,8 +36,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
     .methodology-step {
@@ -109,7 +109,7 @@
     </div>
   </header>
 
-  <div class="page-hero" style="background-image: linear-gradient(rgba(9,19,31,0.78) 0%, rgba(9,19,31,0.88) 100%), url('/assets/images/hero-graphic.png'); background-size: cover; background-position: center center;">
+  <div class="page-hero">
     <div class="container">
       <div class="breadcrumb">
         <a href="/">Home</a>
@@ -130,14 +130,17 @@
 
           <!-- Author profile -->
           <div class="author-profile">
-            <img
-              src="/assets/images/paulo-gomes.jpg"
-              alt="Paulo Gomes warehouse manager and operations specialist"
-              class="author-profile-photo"
-              loading="lazy"
-              width="140"
-              height="140"
-            >
+            <picture>
+              <source srcset="/assets/images/paulo-gomes.webp" type="image/webp">
+              <img
+                src="/assets/images/paulo-gomes.jpg"
+                alt="Paulo Gomes warehouse manager and operations specialist"
+                class="author-profile-photo"
+                loading="lazy"
+                width="140"
+                height="140"
+              >
+            </picture>
             <div class="author-profile-text">
               <h3>Paulo Gomes</h3>
               <p class="author-title">Warehouse Manager &amp; Operations Specialist</p>
@@ -260,12 +263,17 @@
 
         <aside class="article-sidebar">
           <div class="sidebar-card" style="text-align:center;padding:1.5rem 1.25rem;">
-            <img
-              src="/assets/images/paulo-gomes.jpg"
-              alt="Paulo Gomes"
-              style="width:80px;height:80px;border-radius:50%;object-fit:cover;object-position:center top;margin:0 auto .75rem;border:2px solid var(--border);"
-              loading="lazy"
-            >
+            <picture>
+              <source srcset="/assets/images/paulo-gomes.webp" type="image/webp">
+              <img
+                src="/assets/images/paulo-gomes.jpg"
+                alt="Paulo Gomes"
+                style="width:80px;height:80px;border-radius:50%;object-fit:cover;object-position:center top;margin:0 auto .75rem;border:2px solid var(--border);"
+                loading="lazy"
+                width="80"
+                height="80"
+              >
+            </picture>
             <p style="margin:0 0 .25rem;font-weight:700;font-size:.95rem;">Paulo Gomes</p>
             <p style="margin:0;font-size:.8rem;color:var(--text-muted);line-height:1.5;">Warehouse Manager &amp; Operations Specialist</p>
           </div>

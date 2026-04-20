@@ -42,8 +42,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <!-- Privacy-friendly analytics by Plausible -->
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
@@ -69,7 +69,7 @@
   </header>
 
   <!-- ===== ARTICLE HERO ===== -->
-  <div class="page-hero" style="background-image: linear-gradient(rgba(9,19,31,0.78) 0%, rgba(9,19,31,0.88) 100%), url('/assets/images/hero-graphic.png'); background-size: cover; background-position: center center;">
+  <div class="page-hero">
     <div class="container">
       <div class="breadcrumb">
         <a href="/">Home</a>
@@ -215,7 +215,8 @@
 
           <h2 id="comparison-table">Side-by-side comparison</h2>
           <div style="overflow-x:auto;">
-            <table class="comparison-table">
+            <div class="table-scroll">
+<table class="comparison-table">
               <thead>
                 <tr>
                   <th>Feature</th>
@@ -275,6 +276,7 @@
                 </tr>
               </tbody>
             </table>
+</div>
           </div>
 
           <h2 id="how-to-choose">How to choose the right WMS for your warehouse</h2>
@@ -354,7 +356,9 @@
   <!-- Author bio -->
   <div class="container" style="padding-top:0;padding-bottom:0;">
     <div class="author-bio">
-      <img
+      <picture>
+        <source srcset="/assets/images/paulo-gomes-avatar.webp" type="image/webp">
+        <img
         src="/assets/images/paulo-gomes-avatar.jpg"
         alt="Paulo Gomes warehouse manager and operations specialist"
         class="author-bio-avatar"
@@ -362,6 +366,7 @@
         width="64"
         height="64"
       >
+        </picture>
       <div class="author-bio-text">
         <strong><a href="/about/">Paulo Gomes</a></strong>
         <p>Warehouse manager with over 10 years of experience in UK logistics and pharmaceutical operations, specialising in warehouse efficiency, picking accuracy, and process improvement.</p>
@@ -376,10 +381,10 @@
       <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="newsletter">
         <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
-        <input type="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
+        <input type="email" autocomplete="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
         <button type="submit" class="btn btn-brand">Subscribe Free</button>
       </form>
-      <p class="newsletter-success">You're on the list — thanks for subscribing.</p>
+      <p class="newsletter-success">Done. New reviews and guides straight to your inbox when they're published.</p>
     </div>
   </div>
 

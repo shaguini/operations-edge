@@ -15,8 +15,8 @@
   <meta property="og:url" content="https://www.operationsedge.co.uk/solutions/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
   <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
@@ -47,8 +47,9 @@
       </ul>
     </div>
   </header>
+<main>
 
-  <div class="page-hero" style="background-image: linear-gradient(rgba(9,19,31,0.78) 0%, rgba(9,19,31,0.88) 100%), url('/assets/images/hero-graphic.png'); background-size: cover; background-position: center center;">
+  <div class="page-hero">
     <div class="container">
       <div class="eyebrow">Solutions</div>
       <h1>Warehouse Solutions by Real Operational Challenges</h1>
@@ -60,21 +61,21 @@
     <div class="container">
       <div class="three-col-features">
         <div style="display:flex;gap:1rem;align-items:flex-start;">
-          <div style="background:var(--brand-light);color:var(--brand);width:40px;height:40px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">🏭</div>
+          <div class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg></div>
           <div>
             <strong style="display:block;margin-bottom:.25rem;">Problem-first, not product-first</strong>
             <span style="font-size:.875rem;color:var(--text-muted);">Every section starts with the operational challenge, not a software category.</span>
           </div>
         </div>
         <div style="display:flex;gap:1rem;align-items:flex-start;">
-          <div style="background:var(--brand-light);color:var(--brand);width:40px;height:40px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">📊</div>
+          <div class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></div>
           <div>
             <strong style="display:block;margin-bottom:.25rem;">Tools where relevant — not always</strong>
             <span style="font-size:.875rem;color:var(--text-muted);">Process improvements often deliver more than new software. We cover both.</span>
           </div>
         </div>
         <div style="display:flex;gap:1rem;align-items:flex-start;">
-          <div style="background:var(--brand-light);color:var(--brand);width:40px;height:40px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">🔧</div>
+          <div class="icon-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
           <div>
             <strong style="display:block;margin-bottom:.25rem;">Grounded in real UK operations</strong>
             <span style="font-size:.875rem;color:var(--text-muted);">Every recommendation is based on first-hand experience, not vendor documentation.</span>
@@ -87,7 +88,7 @@
   <section class="section">
     <div class="container">
 
-      <div class="section-header" data-reveal>
+      <div class="section-header section-header--left" data-reveal>
         <div class="eyebrow">Explore Solutions</div>
         <h2>Choose the challenge you're working on</h2>
         <p>Each section includes practical insight, real case studies where available, and an honest look at the tools that can help — alongside those that probably won't.</p>
@@ -96,7 +97,7 @@
       <div class="card-grid">
 
         <a href="/solutions/reduce-picking-errors/" class="card" style="text-decoration:none;color:inherit;" data-reveal>
-          <div style="font-size:2rem;margin-bottom:1rem;">🎯</div>
+          <div style="color:var(--brand);margin-bottom:1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg></div>
           <div class="card-label">Solution Area</div>
           <h3>Reduce Picking Errors</h3>
           <p>Wrong items, wrong quantities, mis-picks — picking errors are costly and often systemic. This section covers root cause analysis, process fixes, and tools that support accuracy at scale.</p>
@@ -107,7 +108,7 @@
         </a>
 
         <a href="/solutions/improve-warehouse-efficiency/" class="card" style="text-decoration:none;color:inherit;" data-reveal data-reveal-delay="1">
-          <div style="font-size:2rem;margin-bottom:1rem;">📈</div>
+          <div style="color:var(--brand);margin-bottom:1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
           <div class="card-label">Solution Area</div>
           <h3>Improve Warehouse Efficiency</h3>
           <p>Throughput, lines picked per hour, travel time — operational efficiency is measurable and improvable without capital investment. Here's how to approach it systematically.</p>
@@ -118,7 +119,7 @@
         </a>
 
         <a href="/solutions/warehouse-kpi-reporting/" class="card" style="text-decoration:none;color:inherit;" data-reveal data-reveal-delay="2">
-          <div style="font-size:2rem;margin-bottom:1rem;">📊</div>
+          <div style="color:var(--brand);margin-bottom:1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></div>
           <div class="card-label">Solution Area</div>
           <h3>Warehouse KPI &amp; Reporting</h3>
           <p>Most warehouses have data — few have reporting that people actually use. This section covers the metrics that matter, how to measure them, and the tools that make reporting sustainable.</p>
@@ -129,7 +130,7 @@
         </a>
 
         <a href="/solutions/team-performance-management/" class="card" style="text-decoration:none;color:inherit;" data-reveal data-reveal-delay="3">
-          <div style="font-size:2rem;margin-bottom:1rem;">👥</div>
+          <div style="color:var(--brand);margin-bottom:1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
           <div class="card-label">Solution Area</div>
           <h3>Team Performance &amp; Management</h3>
           <p>Shift scheduling, performance visibility, onboarding agency staff, and keeping shift-based teams engaged. Practical approaches and the scheduling tools that support them.</p>
@@ -140,7 +141,7 @@
         </a>
 
         <a href="/solutions/shift-schedule-planning/" class="card" style="text-decoration:none;color:inherit;" data-reveal data-reveal-delay="4">
-          <div style="font-size:2rem;margin-bottom:1rem;">🗓️</div>
+          <div style="color:var(--brand);margin-bottom:1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><circle cx="8" cy="15" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="15" r="1" fill="currentColor" stroke="none"/><circle cx="16" cy="15" r="1" fill="currentColor" stroke="none"/></svg></div>
           <div class="card-label">Solution Area</div>
           <h3>Shift Schedule Planning</h3>
           <p>How to build a shift schedule plan that covers your operation, complies with UK Working Time Regulations, and doesn't collapse when someone calls in sick. Step-by-step, from requirements to rota.</p>
@@ -163,12 +164,14 @@
       <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="newsletter">
         <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
-        <input type="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
+        <input type="email" autocomplete="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
         <button type="submit" class="btn" style="background:#fff;color:var(--brand);border-color:#fff;font-weight:700;">Subscribe Free</button>
       </form>
-      <p class="newsletter-success">You're on the list — thanks for subscribing.</p>
+      <p class="newsletter-success">Done. New reviews and guides straight to your inbox when they're published.</p>
     </div>
   </div>
+
+</main>
 
   <footer class="site-footer">
     <div class="container">

@@ -15,8 +15,8 @@
   <meta property="og:url" content="https://www.operationsedge.co.uk/resources/warehouse-hs-audit-checklist.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
     /* ---- Checklist-specific styles ---- */
@@ -199,8 +199,9 @@
       </ul>
     </div>
   </header>
+<main>
 
-  <div class="page-hero" style="background-image: linear-gradient(rgba(9,19,31,0.78) 0%, rgba(9,19,31,0.88) 100%), url('/assets/images/hero-graphic.png'); background-size: cover; background-position: center center;">
+  <div class="page-hero">
     <div class="container">
       <div class="breadcrumb">
         <a href="/">Home</a>
@@ -271,7 +272,7 @@
             <span id="score-pct">—</span>
           </div>
           <div style="background:var(--border);border-radius:100px;height:10px;">
-            <div id="score-bar" style="background:var(--success);border-radius:100px;height:10px;width:0%;transition:width .4s;"></div>
+            <div id="score-bar" style="background:var(--success);border-radius:100px;height:10px;transform:scaleX(0);transform-origin:left;transition:transform .4s ease;"></div>
           </div>
           <div style="font-size:.75rem;color:var(--text-muted);margin-top:.35rem;">(Pass ÷ Pass+Fail items with a response)</div>
         </div>
@@ -280,7 +281,7 @@
       <!-- ===== SECTION 1: FIRE SAFETY ===== -->
       <div class="checklist-section">
         <div class="checklist-section-title">
-          <span class="section-icon">🔥</span> Section 1 — Fire Safety
+          <span class="section-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3z"/></svg></span> Section 1 — Fire Safety
         </div>
         <table class="checklist-table">
           <thead><tr>
@@ -350,7 +351,7 @@
       <!-- ===== SECTION 2: MANUAL HANDLING ===== -->
       <div class="checklist-section">
         <div class="checklist-section-title">
-          <span class="section-icon">🏋️</span> Section 2 — Manual Handling
+          <span class="section-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="12" x2="18" y2="12"/><rect x="2" y="9" width="4" height="6" rx="1"/><rect x="18" y="9" width="4" height="6" rx="1"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/></svg></span> Section 2 — Manual Handling
         </div>
         <table class="checklist-table">
           <thead><tr>
@@ -402,7 +403,7 @@
       <!-- ===== SECTION 3: FORKLIFT & MHE ===== -->
       <div class="checklist-section">
         <div class="checklist-section-title">
-          <span class="section-icon">🚜</span> Section 3 — Forklift Trucks &amp; Materials Handling Equipment (MHE)
+          <span class="section-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span> Section 3 — Forklift Trucks &amp; Materials Handling Equipment (MHE)
         </div>
         <table class="checklist-table">
           <thead><tr>
@@ -463,7 +464,7 @@
       <!-- ===== SECTION 4: RACKING & STORAGE ===== -->
       <div class="checklist-section">
         <div class="checklist-section-title">
-          <span class="section-icon">🗄️</span> Section 4 — Racking &amp; Storage
+          <span class="section-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span> Section 4 — Racking &amp; Storage
         </div>
         <table class="checklist-table">
           <thead><tr>
@@ -515,7 +516,7 @@
       <!-- ===== SECTION 5: PPE ===== -->
       <div class="checklist-section">
         <div class="checklist-section-title">
-          <span class="section-icon">🦺</span> Section 5 — PPE &amp; Protective Clothing
+          <span class="section-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span> Section 5 — PPE &amp; Protective Clothing
         </div>
         <table class="checklist-table">
           <thead><tr>
@@ -567,7 +568,7 @@
       <!-- ===== SECTION 6: HOUSEKEEPING ===== -->
       <div class="checklist-section">
         <div class="checklist-section-title">
-          <span class="section-icon">🧹</span> Section 6 — Housekeeping &amp; Workplace Conditions
+          <span class="section-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-1 3-4 4-4 8a4 4 0 0 0 8 0c0-4-3-5-4-8z"/><line x1="12" y1="15" x2="12" y2="22"/><line x1="9" y1="19" x2="15" y2="19"/></svg></span> Section 6 — Housekeeping &amp; Workplace Conditions
         </div>
         <table class="checklist-table">
           <thead><tr>
@@ -628,7 +629,7 @@
       <!-- ===== SECTION 7: FIRST AID & INCIDENT REPORTING ===== -->
       <div class="checklist-section">
         <div class="checklist-section-title">
-          <span class="section-icon">🩺</span> Section 7 — First Aid &amp; Incident Reporting
+          <span class="section-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></span> Section 7 — First Aid &amp; Incident Reporting
         </div>
         <table class="checklist-table">
           <thead><tr>
@@ -680,7 +681,7 @@
       <!-- ===== SECTION 8: GENERAL COMPLIANCE ===== -->
       <div class="checklist-section">
         <div class="checklist-section-title">
-          <span class="section-icon">📋</span> Section 8 — General Compliance &amp; Documentation
+          <span class="section-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg></span> Section 8 — General Compliance &amp; Documentation
         </div>
         <table class="checklist-table">
           <thead><tr>
@@ -744,7 +745,7 @@
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;">
           <div class="audit-field">
             <label>Overall Assessment</label>
-            <select style="width:100%;padding:.55rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.9rem;outline:none;">
+            <select style="width:100%;padding:.55rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.9rem">
               <option value="">Select…</option>
               <option>Satisfactory — no immediate action required</option>
               <option>Satisfactory with observations — action within 30 days</option>
@@ -759,7 +760,7 @@
         </div>
         <div class="audit-field" style="margin-bottom:1rem;">
           <label>Summary / Key Findings</label>
-          <textarea style="width:100%;padding:.6rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.9rem;outline:none;resize:vertical;min-height:80px;" placeholder="Summarise the main findings and any priority actions…"></textarea>
+          <textarea style="width:100%;padding:.6rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.9rem;resize:vertical;min-height:80px" placeholder="Summarise the main findings and any priority actions…"></textarea>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
           <div class="audit-field">
@@ -780,6 +781,8 @@
 
     </div>
   </section>
+
+</main>
 
   <footer class="site-footer no-print">
     <div class="container">
@@ -843,12 +846,12 @@
       if(total > 0){
         const pct = Math.round((pass/total)*100);
         document.getElementById('score-pct').textContent = pct + '%';
-        document.getElementById('score-bar').style.width = pct + '%';
         const bar = document.getElementById('score-bar');
+        bar.style.transform = 'scaleX(' + (pct / 100) + ')';
         bar.style.background = pct>=80 ? '#16a34a' : pct>=60 ? '#eab308' : '#dc2626';
       } else {
         document.getElementById('score-pct').textContent = '—';
-        document.getElementById('score-bar').style.width = '0%';
+        document.getElementById('score-bar').style.transform = 'scaleX(0)';
       }
     }
   </script>

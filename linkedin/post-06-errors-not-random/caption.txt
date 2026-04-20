@@ -1,0 +1,13 @@
+Our picking errors weren't random. That turned out to be the most useful thing about them.
+
+When we pulled the WMS data and mapped errors by type, zone, and shift — two zones were generating over 60% of all errors. The rest of the warehouse was barely registering.
+
+That's not a people problem. That's a layout, slotting, or environment problem. And those have solutions.
+
+We ran structured observation sessions in those zones. One zone had visually similar products stored adjacently with no slotting review process. A second zone had lighting issues and label readability problems at the pick face.
+
+We fixed the structure. Not the people.
+
+Slide 4 shows the full breakdown — error types and zone concentration.
+
+When you look at your picking errors, are they spread across the operation or concentrated in specific areas?

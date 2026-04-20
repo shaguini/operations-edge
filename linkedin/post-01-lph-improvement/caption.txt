@@ -1,0 +1,13 @@
+I used to think fast pickers were just born that way.
+
+Then I spent 12 months tracking the data in a warehouse operation — and found out what was actually driving the gap.
+
+The answer wasn't skill. It was visibility.
+
+When we built daily LPH tracking and showed the team their own trend — not to manage them, but to inform them — the number started moving. A 21% improvement in lines per hour. Hundreds of productive hours recovered.
+
+No new technology. No capital spend. Just measurement, visibility, and replicating what the best operators were already doing.
+
+The dashboard in slide 4 tells the full story.
+
+What does your team's LPH baseline look like right now?

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../_shared/slide-styles.css">
+<link rel="stylesheet" href="../_shared/dashboard-styles.css">
+</head>
+<body>
+<div class="slide dashboard">
+  <div class="slide-topbar">
+    <span class="slide-badge">The Data</span>
+    <span class="slide-number">4 / 5</span>
+  </div>
+  <div class="slide-content">
+    <p class="dashboard-title">Picking Errors — <span>Concentration &amp; Type Analysis</span></p>
+
+    <!-- KPI Row -->
+    <div class="kpi-row">
+      <div class="kpi-card">
+        <span class="kpi-label">Error Types Tracked</span>
+        <span class="kpi-value">4</span>
+        <span class="kpi-sub">wrong item · qty · missed · location</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">High-Error Zones</span>
+        <span class="kpi-value">2</span>
+        <span class="kpi-sub">of all zones — 60%+ of all errors</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">Root Cause Level</span>
+        <span class="kpi-value" style="font-size:22px; line-height:1.2; color:#F4A024;">System<br>not operator</span>
+        <span class="kpi-sub">layout, slotting, environment</span>
+      </div>
+    </div>
+
+    <!-- Two column layout: donut + zone bars -->
+    <div style="display:flex; gap:16px; flex:1; margin-bottom:14px;">
+      <!-- Error type breakdown -->
+      <div class="line-chart-wrap" style="flex:1;">
+        <p class="chart-title">Error Type Breakdown</p>
+        <div class="donut-wrap" style="padding:10px 0; justify-content:center; height:calc(100% - 30px);">
+          <svg width="130" height="130" viewBox="0 0 42 42">
+            <!-- Wrong item 38% -->
+            <circle cx="21" cy="21" r="15.915" fill="transparent" stroke="#F4A024" stroke-width="6"
+              stroke-dasharray="38 62" stroke-dashoffset="25" transform="rotate(-90 21 21)"/>
+            <!-- Wrong qty 27% -->
+            <circle cx="21" cy="21" r="15.915" fill="transparent" stroke="#2EC4B6" stroke-width="6"
+              stroke-dasharray="27 73" stroke-dashoffset="-13" transform="rotate(-90 21 21)"/>
+            <!-- Missed item 22% -->
+            <circle cx="21" cy="21" r="15.915" fill="transparent" stroke="#C4781A" stroke-width="6"
+              stroke-dasharray="22 78" stroke-dashoffset="-40" transform="rotate(-90 21 21)"/>
+            <!-- Location 13% -->
+            <circle cx="21" cy="21" r="15.915" fill="transparent" stroke="#607080" stroke-width="6"
+              stroke-dasharray="13 87" stroke-dashoffset="-62" transform="rotate(-90 21 21)"/>
+          </svg>
+          <div class="donut-legend">
+            <div class="legend-item">
+              <span class="legend-dot" style="background:#F4A024;"></span>
+              Wrong item
+              <span class="legend-val">38%</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot" style="background:#2EC4B6;"></span>
+              Wrong quantity
+              <span class="legend-val">27%</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot" style="background:#C4781A;"></span>
+              Missed item
+              <span class="legend-val">22%</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot" style="background:#607080;"></span>
+              Location error
+              <span class="legend-val">13%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Zone concentration -->
+      <div class="line-chart-wrap" style="flex:1;">
+        <p class="chart-title">Error Rate by Zone (relative)</p>
+        <div class="bar-chart" style="padding:10px 0;">
+          <div class="bar-row">
+            <span class="bar-row-label" style="width:56px;">Zone A</span>
+            <div class="bar-track"><div class="bar-fill" style="width:95%;"></div></div>
+            <span class="bar-val" style="color:#E05252;">High</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-row-label" style="width:56px;">Zone B</span>
+            <div class="bar-track"><div class="bar-fill" style="width:80%;"></div></div>
+            <span class="bar-val" style="color:#E05252;">High</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-row-label" style="width:56px;">Zone C</span>
+            <div class="bar-track"><div class="bar-fill dim" style="width:28%;"></div></div>
+            <span class="bar-val">Low</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-row-label" style="width:56px;">Zone D</span>
+            <div class="bar-track"><div class="bar-fill dim" style="width:22%;"></div></div>
+            <span class="bar-val">Low</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-row-label" style="width:56px;">Zone E</span>
+            <div class="bar-track"><div class="bar-fill dim" style="width:18%;"></div></div>
+            <span class="bar-val">Low</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-bottom:8px;">
+      <strong>2 zones. 60%+ of all errors. Both had fixable layout and slotting issues.</strong>
+
+      Generic retraining would have addressed 0% of the actual cause.
+    </div>
+  </div>
+  <div class="slide-brand">
+    <span class="brand-name">Paulo Gomes &nbsp;·&nbsp; <span>Operations</span>Edge</span>
+    <span class="brand-url">OperationsEdge.co.uk</span>
+  </div>
+</div>
+</body>
+</html>

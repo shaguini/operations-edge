@@ -1,0 +1,15 @@
+When we started mapping picking errors with a fishbone diagram, something uncomfortable came out.
+
+People — operator behaviour, habits, training gaps — were a contributing factor in about 30% of errors.
+
+Process and Environment were contributing factors in over 70%.
+
+We were running an operation that was generating its own errors and calling them operator mistakes.
+
+The fishbone has five categories: People, Process, Equipment, Environment, Materials. The point is to map every recurring error across all five before deciding what to fix. Otherwise, you're guessing. And the guess is almost always "retrain the team."
+
+Retraining a team for errors caused by poor pick face lighting doesn't reduce errors. It just makes people feel blamed.
+
+Slide 4 shows what our category breakdown looked like.
+
+When you investigate picking errors in your operation, which category do you usually land on first?

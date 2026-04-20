@@ -15,8 +15,8 @@
   <meta property="og:url" content="https://www.operationsedge.co.uk/contact/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
     /* page-hero text fix */
@@ -62,8 +62,9 @@
       </ul>
     </div>
   </header>
+<main>
 
-  <div class="page-hero" style="background-image: linear-gradient(rgba(9,19,31,0.78) 0%, rgba(9,19,31,0.88) 100%), url('/assets/images/hero-graphic.png'); background-size: cover; background-position: center center;">
+  <div class="page-hero">
     <div class="container">
       <div class="eyebrow">Contact</div>
       <h1>Get in Touch</h1>
@@ -87,17 +88,17 @@
 
             <div class="form-group">
               <label for="name">Your name <span style="color:#dc2626;">*</span></label>
-              <input type="text" id="name" name="name" required placeholder="Jane Smith">
+              <input type="text" id="name" name="name" required placeholder="Jane Smith" maxlength="100" autocomplete="name">
             </div>
 
             <div class="form-group">
               <label for="email">Email address <span style="color:#dc2626;">*</span></label>
-              <input type="email" id="email" name="email" required placeholder="jane@yourcompany.co.uk">
+              <input type="email" id="email" name="email" required placeholder="jane@yourcompany.co.uk" maxlength="254" autocomplete="email">
             </div>
 
             <div class="form-group">
               <label for="company">Company / Organisation</label>
-              <input type="text" id="company" name="company" placeholder="Acme Logistics Ltd">
+              <input type="text" id="company" name="company" placeholder="Acme Logistics Ltd" maxlength="150" autocomplete="organization">
             </div>
 
             <div class="form-group">
@@ -114,7 +115,7 @@
 
             <div class="form-group">
               <label for="message">Your message <span style="color:#dc2626;">*</span></label>
-              <textarea id="message" name="message" required placeholder="Tell us what you'd like to know..."></textarea>
+              <textarea id="message" name="message" required placeholder="Tell us what you'd like to know..." maxlength="3000"></textarea>
             </div>
 
             <div class="form-group">
@@ -144,6 +145,7 @@
             <h4>Common enquiries</h4>
             <ul class="toc-list">
               <li><a href="/reviews/">Browse all tool reviews</a></li>
+              <li><a href="/media-kit/">Media kit</a></li>
               <li><a href="/comparisons/">View comparison guides</a></li>
               <li><a href="/affiliate-disclosure/">Disclosure</a></li>
               <li><a href="/guides/">Read practical guides</a></li>
@@ -159,6 +161,8 @@
       </div>
     </div>
   </section>
+
+</main>
 
   <footer class="site-footer">
     <div class="container">

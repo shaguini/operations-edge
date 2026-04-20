@@ -15,8 +15,8 @@
   <meta property="og:url" content="https://www.operationsedge.co.uk/resources/shift-scheduling-template.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
     /* ---- Tool chrome ---- */
@@ -34,7 +34,7 @@
     .tool-field { flex: 1; min-width: 160px; }
     .tool-field label {
       display: block;
-      font-size: .72rem;
+      font-size: var(--text-2xs);
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: .07em;
@@ -49,7 +49,8 @@
       font-family: var(--font);
       font-size: .9rem;
       outline: none;
-      background: #fff;
+      background: var(--bg);
+      color: var(--text);
       transition: border-color .2s;
     }
     .tool-field input:focus, .tool-field select:focus { border-color: var(--brand); }
@@ -222,13 +223,14 @@
       padding: .6rem .75rem;
       resize: vertical;
       outline: none;
-      background: #fff;
+      background: var(--bg);
+      color: var(--text);
     }
 
     /* ---- Info box ---- */
     .info-box {
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
+      background: light-dark(#eff6ff, oklch(0.22 0.05 243));
+      border: 1px solid light-dark(#bfdbfe, oklch(0.36 0.08 243));
       border-radius: var(--radius);
       padding: 1rem 1.25rem;
       font-size: .875rem;
@@ -245,6 +247,17 @@
       .rota-wrap { overflow: visible; }
       .rota-table { min-width: unset; font-size: .75rem; }
       .shift-input, .name-input { height: 26px; font-size: .75rem; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .rota-table td.weekend-cell { background: oklch(0.22 0.01 240); }
+      .rota-table tr.totals-row td { background: oklch(0.24 0.01 240); }
+      .shift-input:focus { background: oklch(0.24 0.05 243); }
+      .sw-E, .shift-E { background: oklch(0.28 0.06 245) !important; color: oklch(0.78 0.10 240) !important; }
+      .sw-L, .shift-L { background: oklch(0.28 0.06 90) !important; color: oklch(0.82 0.12 85) !important; }
+      .sw-N, .shift-N { background: oklch(0.28 0.07 300) !important; color: oklch(0.80 0.12 295) !important; }
+      .sw-D, .shift-D { background: oklch(0.28 0.07 148) !important; color: oklch(0.78 0.14 148) !important; }
+      .sw-X, .shift-X { background: oklch(0.24 0.01 240) !important; color: oklch(0.60 0.01 240) !important; }
+      .sw-H, .shift-H { background: oklch(0.28 0.07 60) !important; color: oklch(0.80 0.12 60) !important; }
     }
   </style>
   <!-- Privacy-friendly analytics by Plausible -->
@@ -269,8 +282,9 @@
       </ul>
     </div>
   </header>
+<main>
 
-  <div class="page-hero" style="background-image: linear-gradient(rgba(9,19,31,0.78) 0%, rgba(9,19,31,0.88) 100%), url('/assets/images/hero-graphic.png'); background-size: cover; background-position: center center;">
+  <div class="page-hero">
     <div class="container">
       <div class="breadcrumb">
         <a href="/">Home</a>
@@ -382,6 +396,8 @@
 
     </div>
   </section>
+
+</main>
 
   <footer class="site-footer">
     <div class="container">

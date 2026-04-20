@@ -15,8 +15,8 @@
   <meta property="og:url" content="https://www.operationsedge.co.uk/resources/saas-procurement-checklist.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
     /* ---- Header bar ---- */
@@ -32,7 +32,7 @@
     }
     .tool-field label {
       display: block;
-      font-size: .72rem;
+      font-size: var(--text-2xs);
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: .07em;
@@ -47,7 +47,8 @@
       font-family: var(--font);
       font-size: .9rem;
       outline: none;
-      background: #fff;
+      background: var(--bg);
+      color: var(--text);
       transition: border-color .2s;
     }
     .tool-field input:focus { border-color: var(--brand); }
@@ -74,7 +75,9 @@
       height: 100%;
       background: var(--brand);
       border-radius: 99px;
-      transition: width .3s;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .3s ease;
     }
     .progress-label {
       font-size: .85rem;
@@ -148,7 +151,8 @@
       font-family: var(--font);
       font-size: .8rem;
       outline: none;
-      background: #fff;
+      background: var(--bg);
+      color: var(--text);
       cursor: pointer;
       transition: border-color .2s;
     }
@@ -157,6 +161,12 @@
     .status-select.s-outstanding { background: #fefce8; border-color: #fde047; color: #854d0e; font-weight: 600; }
     .status-select.s-na { background: #f8fafc; border-color: #cbd5e1; color: #94a3b8; }
     .status-select.s-concern { background: #fef2f2; border-color: #fca5a5; color: #991b1b; font-weight: 600; }
+    @media (prefers-color-scheme: dark) {
+      .status-select.s-confirmed  { background: oklch(0.24 0.07 148); border-color: oklch(0.40 0.14 148); color: oklch(0.78 0.18 148); }
+      .status-select.s-outstanding{ background: oklch(0.24 0.07  80); border-color: oklch(0.40 0.12  80); color: oklch(0.80 0.14  75); }
+      .status-select.s-na         { background: var(--bg-alt); border-color: var(--border); color: var(--text-muted); }
+      .status-select.s-concern    { background: oklch(0.22 0.07  20); border-color: oklch(0.36 0.12  20); color: oklch(0.75 0.18  20); }
+    }
 
     .notes-input {
       width: 100%;
@@ -168,6 +178,8 @@
       outline: none;
       resize: vertical;
       min-height: 34px;
+      background: var(--bg);
+      color: var(--text);
       transition: border-color .2s;
     }
     .notes-input:focus { border-color: var(--brand); }
@@ -228,6 +240,11 @@
       .site-header, .site-footer, .tool-controls, .no-print, nav, .page-hero { display: none !important; }
       .status-select, .notes-input { border: 1px solid #ccc !important; background: #fff !important; }
     }
+    @media (prefers-color-scheme: dark) {
+      .cl-table th { background: oklch(0.22 0.01 240); }
+      .cl-table tr:nth-child(even) td { background: oklch(0.20 0.01 240); }
+      .info-box { background: oklch(0.22 0.05 243); border-color: oklch(0.36 0.08 243); }
+    }
   </style>
   <!-- Privacy-friendly analytics by Plausible -->
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
@@ -251,8 +268,9 @@
       </ul>
     </div>
   </header>
+<main>
 
-  <div class="page-hero" style="background-image: linear-gradient(rgba(9,19,31,0.78) 0%, rgba(9,19,31,0.88) 100%), url('/assets/images/hero-graphic.png'); background-size: cover; background-position: center center;">
+  <div class="page-hero">
     <div class="container">
       <div class="breadcrumb">
         <a href="/">Home</a>
@@ -288,7 +306,7 @@
 
       <!-- Progress -->
       <div class="progress-bar-wrap no-print">
-        <div class="progress-bar-track"><div class="progress-bar-fill" id="progress-fill" style="width:0%"></div></div>
+        <div class="progress-bar-track"><div class="progress-bar-fill" id="progress-fill"></div></div>
         <div class="progress-label" id="progress-label">0 / 0 done</div>
       </div>
 
@@ -570,6 +588,8 @@
     </div>
   </section>
 
+</main>
+
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -631,7 +651,7 @@
       const done = [...all].filter(s => s.value !== '').length;
       const total = all.length;
       const pct = total ? Math.round(done / total * 100) : 0;
-      document.getElementById('progress-fill').style.width = pct + '%';
+      document.getElementById('progress-fill').style.transform = 'scaleX(' + (pct / 100) + ')';
       document.getElementById('progress-label').textContent = done + ' / ' + total + ' done';
 
       // Summary counts

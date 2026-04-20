@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../_shared/slide-styles.css">
+<link rel="stylesheet" href="../_shared/dashboard-styles.css">
+</head>
+<body>
+<div class="slide dashboard">
+  <div class="slide-topbar">
+    <span class="slide-badge">The Findings</span>
+    <span class="slide-number">4 / 5</span>
+  </div>
+  <div class="slide-content">
+    <p class="dashboard-title">Fishbone Analysis — <span>Root Cause Category Breakdown</span></p>
+
+    <!-- KPI Row -->
+    <div class="kpi-row">
+      <div class="kpi-card">
+        <span class="kpi-label">Recurring Errors Analysed</span>
+        <span class="kpi-value">100<span style="font-size:20px;">%</span></span>
+        <span class="kpi-sub">every one, not a sample</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">Top Root Cause Category</span>
+        <span class="kpi-value" style="font-size:26px; line-height:1.2;">Process &amp;<br>Environment</span>
+        <span class="kpi-sub">not People</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">New Tech Required</span>
+        <span class="kpi-value" style="color:#4CAF82;">None</span>
+        <span class="kpi-sub">all fixes were process-driven</span>
+      </div>
+    </div>
+
+    <!-- Category bar chart -->
+    <div class="line-chart-wrap" style="flex:1; margin-bottom:14px; display:flex; flex-direction:column; justify-content:center;">
+      <p class="chart-title">Root Cause Tally — % of Errors with Contributing Factor in Each Category</p>
+      <div class="bar-chart" style="padding:10px 0;">
+        <div class="bar-row">
+          <span class="bar-row-label">Process</span>
+          <div class="bar-track"><div class="bar-fill" style="width:85%;"></div></div>
+          <span class="bar-val">85%</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row-label">Environment</span>
+          <div class="bar-track"><div class="bar-fill" style="width:72%;"></div></div>
+          <span class="bar-val">72%</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row-label">Materials</span>
+          <div class="bar-track"><div class="bar-fill teal" style="width:55%;"></div></div>
+          <span class="bar-val">55%</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row-label">Equipment</span>
+          <div class="bar-track"><div class="bar-fill teal" style="width:38%;"></div></div>
+          <span class="bar-val">38%</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-row-label">People</span>
+          <div class="bar-track"><div class="bar-fill dim" style="width:30%;"></div></div>
+          <span class="bar-val">30%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-bottom:8px;">
+      <strong>People were a contributing factor in 30% of errors. Process and Environment: over 70%.</strong>
+      The operation was generating errors — not the operators.
+    </div>
+  </div>
+  <div class="slide-brand">
+    <span class="brand-name">Paulo Gomes &nbsp;·&nbsp; <span>Operations</span>Edge</span>
+    <span class="brand-url">OperationsEdge.co.uk</span>
+  </div>
+</div>
+</body>
+</html>
