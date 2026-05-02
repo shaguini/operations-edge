@@ -1,0 +1,21 @@
+Every warehouse has a return-to-work process.
+
+Most run it as a series of individual conversations — one absence at a time, one interview at a time.
+
+That's correct procedure. It's also blind to the shape of the problem.
+
+We added three things to what we already did:
+
+1. Monthly pattern review — instances by person, not just total days
+2. Day-of-week mapping — not as evidence, as a question
+3. Bradford Factor scores shared openly with the team
+
+The most useful thing wasn't any of these individually. It was seeing the data across the whole team, in one view, on a regular cadence.
+
+When we mapped absences by day of week, Monday and Friday accounted for 55% of all instances across the team.
+
+The conversation that followed wasn't about those days. It was about what sits either side of rest days — and whether shift allocation was contributing to the pattern.
+
+You can manage every absence and never manage absence.
+
+When did you last look at your absence data as a pattern rather than a case list?

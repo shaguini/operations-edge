@@ -1,0 +1,19 @@
+Every warehouse has a shift handover process.
+
+Most of them don't work.
+
+Not because people aren't filling them in — they are. The sheet gets written. The template gets used. And then the incoming shift manager spends the first hour firefighting things that were documented three hours ago.
+
+We fixed three things:
+
+1. Priority block at the top — one line per item, maximum three
+2. Status on every outstanding task — not started / in progress / needs day team
+3. A five-minute handover walk — both managers, same time, structured not conversational
+
+The firefighting didn't stop immediately.
+
+But we could see when it had — because first-hour escalations dropped, and "I didn't know about that" stopped being the most common phrase in the morning debrief.
+
+The document wasn't the problem. The design of the document was.
+
+What does your shift handover look like right now?

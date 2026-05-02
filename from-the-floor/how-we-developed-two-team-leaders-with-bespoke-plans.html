@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Developed Two Team Leaders With Completely Different Plans | OperationsEdge</title>
+  <meta name="description" content="Two team leaders, same KPI scorecard, completely different development needs. A UK warehouse case study on bespoke team leader development — directive coaching vs supportive mentoring, and why both worked.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operationsedge.co.uk/from-the-floor/how-we-developed-two-team-leaders-with-bespoke-plans.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How We Developed Two Team Leaders With Completely Different Plans">
+  <meta property="og:description" content="Two leaders, same scorecard, two completely different interventions. A case study on bespoke team leader development in UK warehouse operations.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.operationsedge.co.uk/from-the-floor/how-we-developed-two-team-leaders-with-bespoke-plans.html">
+  <meta property="og:site_name" content="OperationsEdge">
+  <meta property="article:published_time" content="2026-05-02">
+  <meta property="article:modified_time" content="2026-05-02">
+  <meta property="article:section" content="From the Floor">
+  <meta property="article:tag" content="Team Development, Coaching, Mentoring, People Management, Warehouse Leadership, GROW Model">
+
+  <!-- Schema.org Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How We Developed Two Team Leaders With Completely Different Plans",
+    "description": "Two team leaders, same KPI scorecard, completely different development needs. A UK warehouse case study on bespoke team leader development — directive coaching vs supportive mentoring, and why both worked.",
+    "datePublished": "2026-05-02",
+    "dateModified": "2026-05-02",
+    "author": {
+      "@type": "Person",
+      "name": "Paulo Gomes",
+      "url": "https://www.operationsedge.co.uk/about/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "OperationsEdge",
+      "url": "https://www.operationsedge.co.uk"
+    },
+    "mainEntityOfPage": "https://www.operationsedge.co.uk/from-the-floor/how-we-developed-two-team-leaders-with-bespoke-plans.html"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <style>
+    /* ── Key results box ── */
+    .key-results {
+      background: linear-gradient(135deg, #0f3d65, var(--brand));
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 2rem 2.5rem;
+      margin: 2rem 0;
+    }
+    .key-results h3 { color: #fff; margin-bottom: 1.25rem; font-size: 1rem; text-transform: uppercase; letter-spacing: .08em; }
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .result-item {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+    }
+    .result-number { font-size: 1.9rem; font-weight: 800; line-height: 1; margin-bottom: .25rem; color: #f4a41b; }
+    .result-label { font-size: .825rem; color: rgba(255,255,255,.85); }
+
+    /* ── Stats block ── */
+    .stats-block {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .stat-item {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1rem;
+    }
+    .stat-item .stat-num { font-size: 1.6rem; font-weight: 800; color: var(--brand); line-height: 1; margin-bottom: .35rem; }
+    .stat-item .stat-sub { font-size: .775rem; color: var(--text-muted); }
+
+    /* ── Two-leader comparison grid ── */
+    .two-leader-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin: 1.75rem 0;
+    }
+    .leader-card {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+    }
+    .leader-card-label {
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: .4rem;
+    }
+    .leader-card-title {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: .3rem;
+      color: var(--text);
+    }
+    .leader-card-gap {
+      font-size: .85rem;
+      color: var(--brand);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .leader-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+    }
+    .leader-card ul li {
+      font-size: .875rem;
+      color: var(--text-muted);
+      padding-left: 1.1rem;
+      position: relative;
+      line-height: 1.5;
+    }
+    .leader-card ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--brand);
+      font-size: .75rem;
+      top: .1rem;
+    }
+    .leader-card-style {
+      margin-top: 1rem;
+      padding-top: .75rem;
+      border-top: 1px solid var(--border);
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* ── Intervention box ── */
+    .intervention-box {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .intervention-box h4 {
+      font-size: 1rem;
+      margin-bottom: .75rem;
+      color: var(--text);
+    }
+    .intervention-type {
+      display: inline-block;
+      background: color-mix(in oklch, var(--brand) 12%, transparent);
+      color: var(--brand);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: .2rem .7rem;
+      border-radius: 20px;
+      margin-bottom: .75rem;
+    }
+
+    /* ── Tools list ── */
+    .tools-list { display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0; }
+    .tool-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+    }
+    .tool-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: .1rem; }
+    .tool-name { font-weight: 600; margin-bottom: .25rem; font-size: .95rem; }
+    .tool-desc { font-size: .875rem; color: var(--text-muted); }
+
+    /* ── Action steps ── */
+    .action-steps { counter-reset: steps; list-style: none; margin: 1.5rem 0; display: flex; flex-direction: column; gap: 1.25rem; padding: 0; }
+    .action-steps li {
+      counter-increment: steps;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .action-steps li::before {
+      content: counter(steps);
+      background: var(--brand);
+      color: #fff;
+      font-weight: 700;
+      font-size: .875rem;
+      min-width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: .1rem;
+    }
+    .action-step-title { font-weight: 600; margin-bottom: .3rem; }
+    .action-step-body { font-size: .9rem; color: var(--text-muted); }
+
+    /* ── Highlight callout ── */
+    .callout-insight {
+      background: color-mix(in oklch, var(--brand) 8%, transparent);
+      border: 1px solid color-mix(in oklch, var(--brand) 20%, transparent);
+      border-radius: var(--radius);
+      padding: 1.1rem 1.4rem;
+      margin: 1.75rem 0;
+      font-size: .95rem;
+      color: var(--text);
+      font-style: italic;
+      line-height: 1.65;
+    }
+
+    @media (max-width: 640px) {
+      .results-grid { grid-template-columns: 1fr; }
+      .stats-block { grid-template-columns: repeat(2, 1fr); }
+      .two-leader-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
+  <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="site-logo"><picture><source srcset="/assets/images/logo-dark.svg" media="(prefers-color-scheme: dark)"><img src="/assets/images/logo.svg" alt="OperationsEdge" style="display:block;height:52px;width:auto;max-height:52px;"></picture></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav">
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/solutions/">Solutions</a></li>
+        <li><a href="/guides/">Guides</a></li>
+        <li><a href="/from-the-floor/" class="active">From the Floor</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/contact/" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===== ARTICLE HERO ===== -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/from-the-floor/">From the Floor</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Bespoke Team Leader Development</span>
+      </div>
+      <div class="eyebrow">From the Floor · People Development · May 2026</div>
+      <h1>How We Developed Two Team Leaders With Completely Different Plans</h1>
+      <p>Two leaders flagged by the same KPI scorecard. Two completely different gaps. Two completely different interventions. A case study on why bespoke development is not a luxury — it is the difference between an intervention that works and one that doesn't.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-layout">
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main class="article-content">
+
+          <div class="article-meta">
+            <span>📅 May 2026</span>
+            <span>⏱ 9 min read</span>
+            <span>🏷 People Development</span>
+          </div>
+
+          <p>The instinct when you have two team leaders with a performance problem is to design one solution. Put them both through the same programme. Run the sessions together. Efficient, consistent, fair.</p>
+
+          <p>That instinct is wrong — and acting on it would have failed both of them.</p>
+
+          <p>This is a case study from a UK pharmaceutical logistics operation. Two team leaders, both flagged by the same weekly KPI scorecard, both underperforming in different ways. One needed high-direction coaching with structured challenge and deliberate behavioural correction. The other needed low-direction support with technical knowledge transfer and a safety net while confidence built.</p>
+
+          <p>Same role. Same expectations. Completely different development plans. Both improved. Here is how we got there.</p>
+
+          <!-- Key Results -->
+          <div class="key-results">
+            <h3>Key Outcomes</h3>
+            <div class="results-grid">
+              <div class="result-item">
+                <div class="result-number">~15 hrs</div>
+                <div class="result-label">Per week in rework time recovered once communication clarity improved and error rates stabilised</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">1 quarter</div>
+                <div class="result-label">For the new leader to move from technically uncertain to running complex shifts independently</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">100%</div>
+                <div class="result-label">People process compliance restored — return-to-work interviews and 1-2-1 reviews completed consistently</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">Highest</div>
+                <div class="result-label">Team people scores on the operation's scorecard for the new leader's shift within the measurement period</div>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="starting-point">The Starting Point: Using the Scorecard as a Diagnostic, Not a Verdict</h2>
+
+          <p>In the absence of a centralised learning and development framework, identifying development needs in this operation fell to the warehouse manager — accountable for reviewing performance data, interpreting what it showed, and translating that interpretation into action.</p>
+
+          <p>The primary tool was a weekly KPI scorecard covering productivity, accuracy, attendance, shift consistency, and people process compliance. The scorecard measured outcomes. The job was to use it as a diagnostic: not just to confirm whether targets were being hit, but to identify <em>why</em> they weren't — and what kind of intervention the data was actually pointing to.</p>
+
+          <p>This distinction matters. A scorecard used only to confirm pass or fail is a compliance instrument. A scorecard used to ask questions becomes a development tool. The data tells you where the gap is. It does not tell you what to do about it. That comes from the conversation, the observation, and the understanding of the person behind the metric.</p>
+
+          <p>What the Q4 scorecard showed for the two leaders in question:</p>
+
+          <div class="two-leader-grid">
+            <div class="leader-card">
+              <p class="leader-card-label">Experienced leader</p>
+              <p class="leader-card-title">Strong operationally. Struggling behaviourally.</p>
+              <p class="leader-card-gap">Gap: People process + communication</p>
+              <ul>
+                <li>Operational productivity KPIs consistently met</li>
+                <li>Return-to-work interviews and 1-2-1 reviews declining — from 100% to ~50% completion at the lowest point</li>
+                <li>Pick error rates spiking in the team's area despite high pick rates — correlation with unclear instructions</li>
+                <li>Peer feedback indicating friction: communication style perceived as dismissive under pressure</li>
+              </ul>
+              <p class="leader-card-style">Diagnosis: Behavioural — not capability</p>
+            </div>
+            <div class="leader-card">
+              <p class="leader-card-label">New leader</p>
+              <p class="leader-card-title">Strong interpersonally. Uncertain technically.</p>
+              <p class="leader-card-gap">Gap: Technical confidence in a specific area</p>
+              <ul>
+                <li>Team engagement and morale indicators strong</li>
+                <li>Communication style clear and empathetic — no issues with the people side of the role</li>
+                <li>Shift planning outcomes inconsistent in one technically complex part of the operation — a known learning curve for new leaders</li>
+                <li>Stress visible when asked about forward planning in that area</li>
+              </ul>
+              <p class="leader-card-style">Diagnosis: Confidence — not character</p>
+            </div>
+          </div>
+
+          <p>The temptation at this point is to skip ahead to the solution. Resist it. Understanding the gap is half the work. Understanding the <em>person behind the gap</em> is the other half — and it is what determines whether the intervention you design will actually land.</p>
+
+          <h2 id="reading-the-person">Reading the Person, Not Just the Metric</h2>
+
+          <p>Before either development plan was drafted, time was spent in observation and structured one-to-one conversation. Not performance management conversations — diagnostic ones. What are the motivational drivers at play? What conditions make this person more receptive, and what conditions make them defensive or disengaged?</p>
+
+          <p>For the experienced leader, the pattern that emerged was one of strong status identification with the technical role. Recognition as a subject-matter expert mattered significantly. But challenges to decisions — even legitimate ones — were frequently interpreted as threats to that status, resulting in defensive responses rather than open dialogue. Autonomy was a strong driver, but when unconstrained it was showing up as excessive control and limited delegation. The gap was not knowledge. It was self-awareness and behavioural habit.</p>
+
+          <p>For the new leader, the picture was simpler but required its own care. High autonomy drive, natural empathy, strong team relationships — all working well. The single stressor was the technical complexity of a specific operational area she hadn't been exposed to before. The risk in developing her was not finding the gap; it was inadvertently undermining what was already working by over-managing someone who didn't need it.</p>
+
+          <div class="callout-insight">
+            The KPI scorecard showed both leaders had a gap. The observation and conversation showed what kind of gap it was. You need both pieces of information before you can design anything useful.
+          </div>
+
+          <h2 id="two-interventions">Two Completely Different Interventions</h2>
+
+          <h3 id="directive-coaching">The Experienced Leader: Directive Coaching</h3>
+
+          <div class="intervention-box">
+            <span class="intervention-type">Directive coaching · High direction · High challenge</span>
+            <h4>GROW model + SBI feedback + proximity mentoring</h4>
+            <p style="font-size:.9rem;color:var(--text-muted);margin-bottom:0;">Structured to build self-awareness through reflection rather than instruction, with feedback tied to observable impact rather than intent or personality.</p>
+          </div>
+
+          <p>Given the status-sensitivity identified in the observation phase, development conversations were framed deliberately. Rather than positioning them as corrective — which would have triggered defensiveness and closed the conversation down — they were framed around leadership effectiveness and credibility at the senior level. The goal was to reduce the perceived threat and increase openness to feedback.</p>
+
+          <p>Coaching used the GROW framework as a structure: establishing a clear goal around communication tone and people process consistency, reviewing live interactions and their perceived impact, exploring alternative approaches to delegation and feedback, and agreeing specific actions for implementation. The emphasis was on <strong>reflection rather than instruction</strong> — encouraging the leader to arrive at the insights themselves rather than being told what to change. This distinction is not cosmetic. It is what determines whether the change sticks.</p>
+
+          <p>Feedback was structured using the Situation-Behaviour-Impact (SBI) model throughout. When a specific communication or action needed to be addressed, the feedback was always anchored to a specific situation, a specific observable behaviour, and its measurable impact on others — never on character, intent, or personality. This approach reduced emotional response and increased receptiveness to discussion. It also made the feedback harder to dismiss: specific, evidenced, and tied to observable outcomes rather than impressions.</p>
+
+          <p>Mentoring was delivered through proximity during live operational activity. This was the most impactful element. Rather than discussing issues in a structured 1-2-1 three days after they occurred, behaviours were addressed in context — immediately after a shift briefing, on the warehouse floor, in the moment the gap appeared. Issues caught in context cannot be argued about in the abstract. They happened, they were witnessed, and they can be discussed clearly.</p>
+
+          <p>Governance ran on a bi-weekly "gateway review" structure: the scorecard was reviewed together, and progression to the next development module was gated on specific metric improvement. If people process compliance or pick error trends had not moved, the conversation repeated before moving forward. This prevented the programme from becoming a series of sessions disconnected from operational reality.</p>
+
+          <h3 id="supportive-mentoring">The New Leader: Supportive Mentoring</h3>
+
+          <div class="intervention-box">
+            <span class="intervention-type">Supportive mentoring · Low direction · High support</span>
+            <h4>Enablement strategy — technical knowledge transfer without behavioural correction</h4>
+            <p style="font-size:.9rem;color:var(--text-muted);margin-bottom:0;">The goal was to build technical confidence without touching what was already working. No correction needed — just a structured safety net while competence developed.</p>
+          </div>
+
+          <p>The contrast with the experienced leader could not have been sharper. There was nothing to correct here. The communication style, the team relationships, the instinct for how to manage people — all of it was already at the level you'd want from a much more experienced leader. The only gap was technical confidence in one specific, genuinely complex area of the operation that she hadn't encountered before joining.</p>
+
+          <p>The intervention was designed around that constraint. <strong>Protect what's working. Transfer what's missing.</strong></p>
+
+          <p>Planning review sessions were established before each shift in the relevant area. Rather than telling her how to run it, coaching questions were used: <em>"Looking at tomorrow's volume, where do you see the pressure points?"</em> — <em>"How does this roster match the peak demand window?"</em> The goal was to build her own analytical framework for the problem, not to give her answers that would make her dependent on the conversation continuing.</p>
+
+          <p>Her autonomy was deliberately protected. Her communication style and approach to team management were not touched — not because they didn't matter, but because they were already excellent. Micromanaging what works is one of the most reliable ways to break it.</p>
+
+          <p>A safety net was maintained: the shift plan was reviewed together before execution, giving her confidence to run it alone. As competence grew over the following weeks, the review moved from a pre-shift check to a brief post-shift debrief. Then it stopped being necessary. The cadence matched her development, not a fixed schedule.</p>
+
+          <h2 id="the-outcomes">What Changed</h2>
+
+          <div class="stats-block">
+            <div class="stat-item">
+              <div class="stat-num">~15 hrs</div>
+              <div class="stat-sub">Per week in rework recovered as pick errors stabilised</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">100%</div>
+              <div class="stat-sub">People process compliance restored after declining to ~50%</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">&lt; 1 qtr</div>
+              <div class="stat-sub">From technically uncertain to running complex shifts independently</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">Top</div>
+              <div class="stat-sub">People scores in the operation for the new leader's shift</div>
+            </div>
+          </div>
+
+          <p><strong>For the experienced leader:</strong> progress was gradual, which reinforced the need for sustained coaching rather than a one-off intervention. Early indicators were improved communication clarity in briefings — operatives reported clearer understanding of what was expected, and the pick error rate in the team's area began to stabilise. As instructions became more precise, the error rate dropped below tolerance, recovering approximately 15 hours per week that had previously been spent on rework and reprocessing. People process compliance was restored to 100% and maintained. The defensiveness under challenge reduced — not eliminated, but measurably more manageable.</p>
+
+          <p>A critical moment in the process: addressing issues in the moment through proximity coaching broke the leader's initial limited self-awareness. When a behaviour is pointed out immediately after it happens — in context, with specific evidence — it cannot be reframed or argued away. That immediacy was what moved the needle when structured coaching sessions alone had not been sufficient.</p>
+
+          <p><strong>For the new leader:</strong> the trajectory was faster. Within one quarter, she was planning and executing complex shifts independently, without the pre-shift review. The team people scores for her shift were consistently the highest in the operation — a reflection of a communication style that had been protected rather than managed. She moved from new starter to high-potential leader in a period where many new leaders would still be finding their feet.</p>
+
+          <h2 id="the-lesson">The Lesson: Fairness Is Not the Same as Uniformity</h2>
+
+          <p>This experience reinforced something worth stating plainly, because it runs against a common management instinct.</p>
+
+          <p><strong>Fairness in development does not mean treating everyone the same. It means giving everyone what they actually need.</strong></p>
+
+          <p>The experienced leader needed directive leadership — high direction, high challenge — because the behavioural gap represented a real risk to team performance and was not going to change through positive encouragement alone. Applying supportive mentoring to this situation would have produced no change: the habit was too ingrained, the self-awareness too limited, for a low-challenge intervention to create movement.</p>
+
+          <p>The new leader needed supportive leadership — low direction, high support — because the gap was one of technical confidence in a new environment, not attitude, behaviour, or character. Applying directive coaching to this situation would have undermined her natural strengths and created the very anxiety it was trying to resolve.</p>
+
+          <p>Running the same programme for both, at the same time, in the same sessions, would have been efficient for the manager. It would have been ineffective for both leaders — and the operational consequences of two leaders not developing would have been significantly more expensive than the additional planning time required to design two different approaches.</p>
+
+          <div class="callout-insight">
+            The scorecard identified the gap. The conversation identified the person. The development plan had to come from both. Neither piece of information alone was sufficient.
+          </div>
+
+          <p>There is also a secondary lesson here about the dynamic nature of motivation and development need. The experienced leader's SCARF drivers — status, certainty, autonomy, relatedness, fairness — were not fixed. As his communication improved and his team responded differently, his relatedness driver strengthened. As his compliance metrics recovered, his status concern reduced. The development plan that was right at the start of the programme was not identical to what was needed at month three. This is not a problem — it is how development is supposed to work. Treat it as a dynamic, not a static, diagnosis.</p>
+
+          <h2 id="tools">What Helped — and What Didn't</h2>
+
+          <p>Being honest about what was genuinely useful in this process:</p>
+
+          <div class="tools-list">
+            <div class="tool-item">
+              <div class="tool-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:24px;height:24px;"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <div>
+                <div class="tool-name">The KPI scorecard — used as a diagnostic</div>
+                <div class="tool-desc">The most important tool in the entire process. Not because it contained the answer, but because it contained the questions. Any WMS that exports daily performance data to Excel or CSV gives you the raw material for this kind of analysis. The value is in what you ask of the data, not in the sophistication of the tool generating it.</div>
+              </div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:24px;height:24px;"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              </div>
+              <div>
+                <div class="tool-name">GROW model (Goal · Reality · Options · Will)</div>
+                <div class="tool-desc">A public-domain coaching framework, widely documented and genuinely useful for structuring development conversations. The value is not in the acronym but in the discipline it creates: starting with a clear goal rather than jumping to solutions, reviewing reality with evidence rather than impression, exploring options collaboratively rather than instructing. The structured reflection it creates is what builds self-awareness — which is the actual target of any behavioural coaching programme.</div>
+              </div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:24px;height:24px;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <div class="tool-name">SBI feedback model (Situation · Behaviour · Impact)</div>
+                <div class="tool-desc">Again, free and well-documented. Its value in this specific context was significant: it gave a consistent structure for addressing difficult feedback with the experienced leader in a way that reduced the emotional response and increased the likelihood of productive dialogue. Feedback tied to a specific situation and a specific observable behaviour is much harder to dismiss than feedback tied to an impression or a personality attribution. If you do nothing else from this article, adopt this model for difficult feedback conversations.</div>
+              </div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:24px;height:24px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <div class="tool-name"><a href="https://lattice.com" rel="noopener noreferrer">Lattice</a> — performance management and development tracking</div>
+                <div class="tool-desc">Where this operation relied on manual coaching logs and spreadsheet tracking, a platform like Lattice would have provided a cleaner infrastructure for documentation — tracking development plans, recording 1-2-1 notes, and maintaining a structured record of coaching sessions and outcomes. The governance (bi-weekly gateway reviews, metric-gated progression) was manual here; Lattice-style tooling would make that structure easier to sustain at scale or across multiple team leaders simultaneously.</div>
+              </div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:24px;height:24px;"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div>
+                <div class="tool-name"><a href="https://www.15five.com" rel="noopener noreferrer">15Five</a> — continuous feedback and 1-2-1 structure</div>
+                <div class="tool-desc">Particularly relevant for the check-in cadence with the new leader. The shift from weekly pre-shift reviews to bi-weekly post-shift check-ins to no formal check-in needed to be tracked and managed deliberately. A tool like 15Five that structures recurring check-ins and makes it easy to adjust cadence as confidence builds would have made this simpler to manage — and the check-in content easier to use as longitudinal evidence of development.</div>
+              </div>
+            </div>
+          </div>
+
+          <p>What did not help: a one-size approach at the start. Before the diagnostic work was done, the initial instinct was to enrol both leaders in a shared module on "people management and communication." That would have been the wrong intervention for one leader and an unnecessary one for the other. The diagnostic phase — slower, less efficient, more conversational — was not optional overhead. It was the work.</p>
+
+          <h2 id="action-steps">Three Things to Do This Week</h2>
+
+          <ol class="action-steps">
+            <li>
+              <div>
+                <div class="action-step-title">Review your team leader performance data for signals, not just verdicts</div>
+                <div class="action-step-body">Look at your scorecard with one question: what does this data not explain? A leader hitting productivity KPIs while missing people process compliance is telling you something specific about prioritisation. A leader with high team engagement but inconsistent operational outcomes is telling you something different. The metric is the question. You still need to find the answer.</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="action-step-title">Before you design any development plan, diagnose the gap correctly</div>
+                <div class="action-step-body">Ask yourself: is this a capability gap, a behavioural gap, or a confidence gap? Capability responds to training. Behaviour responds to coaching — specifically to structured reflection and evidence-based feedback, not to instruction. Confidence responds to a safety net and increasing autonomy as competence builds. Applying the wrong approach to the wrong gap wastes time and can make things worse.</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="action-step-title">If you are running two separate development plans — do not conflate them</div>
+                <div class="action-step-body">The efficiency of a joint session is smaller than it appears. Two leaders sitting through material that is calibrated for one of them, and not for the other, will each get a fraction of the value. The time investment in two well-designed separate plans is not double the work — and the return is significantly higher. Resist the instinct to conflate for ease of delivery.</div>
+              </div>
+            </li>
+          </ol>
+
+          <h2 id="closing">On Bespoke Development in an Operation With No L&D Framework</h2>
+
+          <p>This case study comes from an operation without a formal learning and development infrastructure — no centralised training team, no off-the-shelf leadership programme, no dedicated budget for external coaching. The development described here was designed and delivered within normal operational management activity, using public-domain frameworks and a structured coaching approach that any manager can learn and apply.</p>
+
+          <p>The constraint is not resources. It is the discipline to do the diagnostic work before jumping to a solution — and the willingness to accept that two people with similar job titles and similar gap descriptions might need entirely different things.</p>
+
+          <p>Fairness in development is not about giving everyone the same. It is about giving everyone what they need. The experienced leader needed direction and challenge. The new leader needed support and space. Recognising that difference — and acting on it precisely — is what made both interventions work.</p>
+
+          <p>That is a management skill, not a training budget.</p>
+
+          <!-- Author bio -->
+          <div style="background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;margin-top:2.5rem;display:flex;gap:1.25rem;align-items:flex-start;">
+            <div style="background:var(--brand);color:#fff;font-weight:800;font-size:1.1rem;min-width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">OE</div>
+            <div>
+              <div style="font-weight:600;margin-bottom:.3rem;">OperationsEdge</div>
+              <p style="font-size:.875rem;color:var(--text-muted);margin-bottom:0;">This case study is based on real operational experience managing a UK logistics operation. All individuals are anonymised. The author holds a Level 5 Operations Management qualification and has 10+ years of experience in warehouse and logistics management.</p>
+            </div>
+          </div>
+
+        </main>
+
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar">
+
+          <div class="sidebar-box">
+            <h4>Table of Contents</h4>
+            <ul class="toc-list">
+              <li><a href="#starting-point">Using the scorecard as a diagnostic</a></li>
+              <li><a href="#reading-the-person">Reading the person, not the metric</a></li>
+              <li><a href="#two-interventions">Two completely different interventions</a></li>
+              <li><a href="#directive-coaching">Directive coaching: experienced leader</a></li>
+              <li><a href="#supportive-mentoring">Supportive mentoring: new leader</a></li>
+              <li><a href="#the-outcomes">What changed</a></li>
+              <li><a href="#the-lesson">Fairness is not uniformity</a></li>
+              <li><a href="#tools">What helped</a></li>
+              <li><a href="#action-steps">Three things to do this week</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box" style="background:var(--brand-light);border-color:#c5ddf0;">
+            <h4 style="color:var(--brand);">The key lesson</h4>
+            <p style="font-size:.9rem;font-weight:600;color:var(--brand);line-height:1.4;margin:.5rem 0 .5rem;">Fairness doesn't mean the same plan. It means the right plan.</p>
+            <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:0;">Two leaders, two gaps, two completely different interventions — both worked because the diagnosis came first.</p>
+          </div>
+
+          <div class="sidebar-box">
+            <h4>Related articles</h4>
+            <ul class="toc-list">
+              <li><a href="/from-the-floor/how-we-fixed-warehouse-absence-culture.html">How We Fixed a Broken Absence Culture</a></li>
+              <li><a href="/from-the-floor/how-we-planned-peak-labour-and-onboarded-10-agency-staff.html">Peak Labour Planning and Agency Onboarding</a></li>
+              <li><a href="/from-the-floor/how-we-improved-picking-efficiency.html">Picking Efficiency: A 21% Improvement Case Study</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box" style="text-align:center;">
+            <h4 style="margin-bottom:.5rem;">Found this useful?</h4>
+            <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:1rem;">Get new case studies and ops guides in your inbox.</p>
+            <form method="POST" data-netlify="true" netlify-honeypot="bot-field" style="display:flex;flex-direction:column;gap:.5rem;">
+              <input type="hidden" name="form-name" value="newsletter">
+              <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
+              <input type="email" autocomplete="email" placeholder="your@email.co.uk" style="padding:.6rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--font);font-size:.875rem;width:100%" name="email" required aria-label="Email address">
+              <button type="submit" class="btn btn-brand" style="width:100%;justify-content:center;font-size:.875rem;">Subscribe</button>
+            </form>
+            <p class="newsletter-success">Done. New reviews and guides straight to your inbox when they're published.</p>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Author bio -->
+  <div class="container" style="padding-top:0;padding-bottom:0;">
+    <div class="author-bio">
+      <picture>
+        <source srcset="/assets/images/paulo-gomes-avatar.webp" type="image/webp">
+        <img
+          src="/assets/images/paulo-gomes-avatar.jpg"
+          alt="Paulo Gomes warehouse and operations manager"
+          class="author-bio-avatar"
+          loading="lazy"
+          width="64"
+          height="64"
+        >
+      </picture>
+      <div class="author-bio-text">
+        <strong><a href="/about/">Paulo Gomes</a></strong>
+        <p>Warehouse and operations manager with over 10 years of experience in UK logistics. Specialising in team development, operational performance, and process improvement in high-volume distribution environments.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="newsletter-section">
+    <div class="container">
+      <div class="eyebrow">More like this</div>
+      <h2>Practical ops content, straight to your inbox</h2>
+      <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="newsletter">
+        <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
+        <input type="email" autocomplete="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
+        <button type="submit" class="btn btn-brand">Subscribe Free</button>
+      </form>
+      <p class="newsletter-success">Done. New reviews and guides straight to your inbox when they're published.</p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Operations<span>Edge</span></div>
+          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
+          <p class="text-sm" style="color:rgba(255,255,255,.4);margin-top:.5rem;">Content is based on personal experience and anonymised operational data. Views expressed are solely those of the author.</p>
+        </div>
+        <div>
+          <h4>Content</h4>
+          <ul class="footer-links">
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/solutions/">Solutions</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/from-the-floor/">From the Floor</a></li>
+            <li><a href="/resources/">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+            <li><a href="/cookies/">Cookie Policy</a></li>
+            <li><a href="/affiliate-disclosure/">Disclosure</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="/contact/">Get in Touch</a></li>
+            <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OperationsEdge. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="/cookies/">Cookies</a>
+          <a href="/affiliate-disclosure/">Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
