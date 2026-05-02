@@ -6,16 +6,15 @@
   <link rel="alternate icon" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Paulo Gomes | OperationsEdge</title>
-  <meta name="description" content="OperationsEdge is written by Paulo Gomes, a warehouse manager with over 10 years of experience in UK logistics and pharmaceutical operations. Learn about the editorial methodology and approach behind the site.">
+  <meta name="description" content="Paulo Gomes is an operations manager with 10+ years in GDP-regulated pharmaceutical distribution. OperationsEdge is where he shares real cases, real data, and honest accounts of what works in UK warehouse and logistics operations.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.operationsedge.co.uk/about/">
-  <meta property="og:title" content="About Paulo Gomes — OperationsEdge">
-  <meta property="og:description" content="OperationsEdge is written by Paulo Gomes, a warehouse manager with over 10 years of experience in UK logistics and pharmaceutical operations.">
+  <meta property="og:title" content="About Paulo Gomes | OperationsEdge">
+  <meta property="og:description" content="Operations manager with 10+ years in GDP-regulated pharmaceutical distribution. Real cases, real data, shared openly.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.operationsedge.co.uk/about/">
   <meta property="og:image" content="https://www.operationsedge.co.uk/assets/images/paulo-gomes.jpg">
 
-  <!-- Schema.org Person -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -23,14 +22,10 @@
     "name": "Paulo Gomes",
     "url": "https://www.operationsedge.co.uk/about/",
     "image": "https://www.operationsedge.co.uk/assets/images/paulo-gomes.jpg",
-    "jobTitle": "Warehouse Manager & Operations Specialist",
-    "description": "Warehouse manager with over 10 years of experience in UK logistics and pharmaceutical operations, specialising in warehouse efficiency, picking accuracy, and process improvement.",
-    "knowsAbout": ["Warehouse Management", "Logistics Operations", "Pharmaceutical Distribution", "Warehouse Efficiency", "Picking Accuracy", "Process Improvement", "UK Compliance"],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "OperationsEdge",
-      "url": "https://www.operationsedge.co.uk"
-    }
+    "jobTitle": "Operations Manager",
+    "description": "Operations manager with 10+ years in GDP-regulated pharmaceutical distribution, specialising in people leadership, process improvement, and data-led operational decision-making.",
+    "sameAs": ["https://www.linkedin.com/in/paulogomes3"],
+    "knowsAbout": ["Warehouse Operations", "Pharmaceutical Distribution", "GDP Compliance", "People Leadership", "Process Improvement", "Lean Six Sigma", "KPI Management", "Labour Planning"]
   }
   </script>
 
@@ -40,132 +35,140 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
-    /* Hero text — CSS-driven reveal (no IO needed for above-fold content) */
-    .page-hero [data-reveal] {
-      animation: heroReveal .7s cubic-bezier(.22,1,.36,1) forwards;
-    }
+    .page-hero [data-reveal] { animation: heroReveal .7s cubic-bezier(.22,1,.36,1) forwards; }
     .page-hero [data-reveal-delay="1"] { animation-delay: .15s; opacity: 0; }
     .page-hero [data-reveal-delay="2"] { animation-delay: .30s; opacity: 0; }
-    @keyframes heroReveal {
-      from { opacity: 0; transform: translateY(14px); }
-      to   { opacity: 1; transform: none; }
-    }
-
-    /* Snappier reveal for rest of page */
-    [data-reveal] {
-      opacity: 0;
-      transform: translateY(14px);
-      transition: opacity .55s cubic-bezier(.22,1,.36,1), transform .55s cubic-bezier(.22,1,.36,1);
-    }
+    @keyframes heroReveal { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    [data-reveal] { opacity: 0; transform: translateY(14px); transition: opacity .55s cubic-bezier(.22,1,.36,1), transform .55s cubic-bezier(.22,1,.36,1); }
     [data-reveal].visible { opacity: 1; transform: none; }
     [data-reveal-delay="1"] { transition-delay: .08s; }
     [data-reveal-delay="2"] { transition-delay: .16s; }
 
-    /* Author profile card — radial brand highlight */
     .author-profile {
-      position: relative;
-      overflow: hidden;
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
     }
-    .author-profile::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 10% 20%, color-mix(in oklch, var(--brand) 8%, transparent), transparent 40%);
-      pointer-events: none;
+    .author-profile-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 2px solid var(--border);
+      flex-shrink: 0;
     }
+    .author-profile-text { flex: 1; }
+    .author-name { font-size: 1.5rem; font-weight: 800; margin: 0 0 .2rem; line-height: 1.1; font-family: var(--font-display), sans-serif; }
+    .author-role { font-size: .875rem; color: var(--text-muted); margin: 0 0 .9rem; letter-spacing: .02em; }
 
-    /* Credential tags — mono font, card style, lift on hover */
     .credential-tag {
       font-family: 'JetBrains Mono', 'Courier New', monospace;
-      font-size: .72rem;
+      font-size: .7rem;
       font-weight: 500;
       letter-spacing: .02em;
       background: var(--bg);
       border: 1px solid var(--border);
       border-radius: 99px;
       padding: .25rem .7rem;
-      color: var(--text);
+      color: var(--text-muted);
       display: inline-block;
-      transition: transform .25s cubic-bezier(.22,1,.36,1), border-color .25s, color .25s;
+      margin: .2rem .15rem .2rem 0;
+      transition: border-color .25s, color .25s;
     }
-    .credential-tag:hover {
-      transform: translateY(-2px);
-      border-color: var(--brand);
+    .credential-tag:hover { border-color: var(--brand); color: var(--brand); }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .stat-cell {
+      background: var(--bg-alt);
+      padding: 1rem 1.1rem;
+      text-align: center;
+    }
+    .stat-cell-num {
+      font-size: 1.5rem;
+      font-weight: 800;
       color: var(--brand);
+      line-height: 1;
+      font-family: var(--font-display), sans-serif;
+      display: block;
+    }
+    .stat-cell-label {
+      font-size: .72rem;
+      color: var(--text-muted);
+      margin-top: .3rem;
+      line-height: 1.3;
+      display: block;
     }
 
-    /* Methodology steps — grid layout + pulsing ring on number */
-    .methodology-step {
-      display: grid;
-      grid-template-columns: 48px 1fr;
-      gap: 1.25rem;
-      padding: 1.5rem 0;
-      border-bottom: 1px solid var(--border);
-      align-items: start;
-      margin-bottom: 0;
-    }
-    .methodology-step:last-of-type { border-bottom: none; }
-    .methodology-step-num {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: color-mix(in oklch, var(--brand) 12%, var(--bg));
-      color: var(--brand);
-      font-family: 'JetBrains Mono', 'Courier New', monospace;
-      font-weight: 700;
-      font-size: .9rem;
+    .linkedin-cta {
       display: flex;
       align-items: center;
-      justify-content: center;
-      position: relative;
-      flex-shrink: 0;
-      margin-top: 0;
-    }
-    .methodology-step-num::after {
-      content: '';
-      position: absolute;
-      inset: -4px;
-      border-radius: 50%;
-      border: 1px solid color-mix(in oklch, var(--brand) 30%, transparent);
-      animation: pulseRing calc(2.4s / var(--ops-speed, 1)) ease-out infinite;
-    }
-    @keyframes pulseRing {
-      0%   { transform: scale(1);   opacity: .7; }
-      100% { transform: scale(1.6); opacity: 0;  }
-    }
-    .methodology-step-body h4 { margin: 0 0 .4rem; font-size: 1rem; }
-    .methodology-step-body p  { margin: 0; font-size: .9rem; color: var(--text-muted); line-height: 1.6; }
-
-    /* Principle cards — left-border reveal on hover */
-    .principle-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.25rem;
-      margin: 1.5rem 0 2rem;
-    }
-    .principle-card {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.5rem;
-      position: relative;
-      overflow: hidden;
-      transition: transform .4s cubic-bezier(.22,1,.36,1), border-color .3s;
-    }
-    .principle-card::before {
-      content: '';
-      position: absolute;
-      left: 0; top: 0; bottom: 0;
-      width: 3px;
+      gap: .6rem;
       background: var(--brand);
-      transform: scaleY(0);
-      transform-origin: top;
-      transition: transform .45s cubic-bezier(.22,1,.36,1);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: .75rem 1.1rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: .875rem;
+      transition: opacity .2s;
+      margin-top: 1rem;
+      justify-content: center;
     }
-    .principle-card:hover { transform: translateY(-3px); border-color: color-mix(in oklch, var(--brand) 35%, transparent); }
-    .principle-card:hover::before { transform: scaleY(1); }
-    .principle-card h4 { margin: 0 0 .5rem; font-size: .95rem; color: var(--brand); }
-    .principle-card p  { margin: 0; font-size: .85rem; color: var(--text-muted); line-height: 1.55; }
+    .linkedin-cta:hover { opacity: .88; color: #fff; }
+    .linkedin-cta svg { flex-shrink: 0; }
+
+    .career-timeline {
+      margin: 1.75rem 0 2rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+    .career-timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 6px;
+      bottom: 6px;
+      width: 2px;
+      background: var(--border);
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 1.4rem;
+      padding-left: 1.25rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.5rem;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brand);
+      border: 2px solid var(--bg-alt);
+      outline: 1px solid var(--brand);
+    }
+    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-role { font-weight: 700; font-size: .95rem; margin: 0 0 .15rem; }
+    .timeline-period { font-size: .78rem; color: var(--brand); font-family: 'JetBrains Mono', monospace; font-weight: 500; margin: 0 0 .3rem; }
+    .timeline-desc { font-size: .875rem; color: var(--text-muted); margin: 0; line-height: 1.55; }
+
+    @media (max-width: 600px) {
+      .author-profile { flex-direction: column; gap: 1.25rem; }
+      .author-profile-photo { width: 80px; height: 80px; }
+    }
   </style>
   <!-- Privacy-friendly analytics by Plausible -->
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
@@ -197,9 +200,9 @@
         <span class="breadcrumb-sep">›</span>
         <span>About</span>
       </div>
-      <div class="eyebrow" data-reveal>About OperationsEdge</div>
-      <h1 data-reveal data-reveal-delay="1">Written from the Floor Up</h1>
-      <p data-reveal data-reveal-delay="2">OperationsEdge is written by a working warehouse manager — not a tech journalist. Here's who's behind the content and how the site works.</p>
+      <div class="eyebrow" data-reveal>About</div>
+      <h1 data-reveal data-reveal-delay="1">Paulo Gomes</h1>
+      <p data-reveal data-reveal-delay="2">Ten years in GDP-regulated pharmaceutical distribution — from warehouse operative to managing a 150-person operation dispatching 300,000+ packs a day. This site is how I share what I've learned doing it.</p>
     </div>
   </div>
 
@@ -209,183 +212,157 @@
 
         <main class="article-content">
 
-          <!-- Author profile -->
+          <!-- Profile block -->
           <div class="author-profile" data-reveal>
             <picture>
               <source srcset="/assets/images/paulo-gomes.webp" type="image/webp">
-              <img
-                src="/assets/images/paulo-gomes.jpg"
-                alt="Paulo Gomes warehouse manager and operations specialist"
-                class="author-profile-photo"
-                loading="lazy"
-                width="140"
-                height="140"
-              >
+              <img src="/assets/images/paulo-gomes.jpg" alt="Paulo Gomes, Operations Manager" class="author-profile-photo" loading="eager" width="120" height="120">
             </picture>
             <div class="author-profile-text">
-              <h3>Paulo Gomes</h3>
-              <p class="author-title">Warehouse Manager &amp; Operations Specialist</p>
-              <p>I've spent over 10 years managing warehouse and logistics operations in the UK, with a focus on pharmaceutical distribution and healthcare supply chains. My background is in warehouse efficiency, picking accuracy, inventory control, and the kind of process improvement work that doesn't make headlines but does stop your pick error rate from creeping up every quarter.</p>
-              <p>I started OperationsEdge because the software review landscape for operations professionals is full of content written by people who have never run a warehouse. Most reviews are written by tech generalists or marketing teams — they miss the things that actually matter when you're trying to get a tool to work in a live operation.</p>
-              <div class="credential-tags">
-                <span class="credential-tag">10+ years operations</span>
-                <span class="credential-tag">Pharmaceutical logistics</span>
-                <span class="credential-tag">UK warehouse management</span>
-                <span class="credential-tag">Process improvement</span>
-                <span class="credential-tag">Picking accuracy</span>
+              <p class="author-name">Paulo Gomes</p>
+              <p class="author-role">Operations Manager · GDP-Regulated Pharmaceutical Distribution · London</p>
+              <div>
+                <span class="credential-tag">GDP & MHRA compliance</span>
+                <span class="credential-tag">150-person multi-shift operation</span>
+                <span class="credential-tag">Lean Six Sigma Yellow Belt</span>
+                <span class="credential-tag">People leadership & coaching</span>
+                <span class="credential-tag">Level 5 Operations Manager</span>
               </div>
             </div>
           </div>
 
-          <h2 id="what-i-cover" data-reveal>What this site covers</h2>
-          <p>OperationsEdge is an independent review and resource site for UK operations managers, warehouse managers, and logistics professionals. I cover the SaaS tools that operations teams actually use — warehouse management systems, workforce scheduling platforms, H&amp;S audit tools, project management software, and more.</p>
+          <!-- Career arc -->
+          <h2 id="career" data-reveal>How I got here</h2>
+          <p>I started in a warehouse in 2015. Picking and packing pharmaceutical stock, learning GDP requirements, getting a feel for how a distribution operation actually runs when you're inside it. Not as a management trainee — as an operative, on the floor, doing the job.</p>
 
-          <p>I write five types of content:</p>
+          <p>The progression from there wasn't planned in a straight line, but in retrospect it makes sense. Each step meant a different kind of complexity: more people, wider scope, tighter regulatory exposure, broader commercial impact.</p>
+
+          <div class="career-timeline" data-reveal>
+            <div class="timeline-item">
+              <p class="timeline-period">2015 – 2016</p>
+              <p class="timeline-role">Warehouse Operative</p>
+              <p class="timeline-desc">Picking, packing, and replenishing stock in a high-volume pharmaceutical distribution environment under GDP controls. Where the understanding of what good operations actually looks like was built from the ground up.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-period">2016 – 2019</p>
+              <p class="timeline-role">Warehouse Team Leader</p>
+              <p class="timeline-desc">Led a 40+ person multi-shift team across picking, packing, and dispatch. Owned daily KPI reviews and shift planning. Conducted GDP compliance audits. Trained and mentored new hires. First experience of what it means to be accountable for an operation rather than just part of it.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-period">2019 – 2021</p>
+              <p class="timeline-role">Warehouse Manager — Wholesale</p>
+              <p class="timeline-desc">Led a 40-person team managing UK and international export operations — including Controlled Drugs, cold chain, and ambient lines — under MHRA and Home Office controls. Coordinated daily with customer service and transport. Redesigned warehouse layout to improve accuracy and flow.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-period">2021 – Present</p>
+              <p class="timeline-role">Warehouse Manager — Regulated Distribution Operations</p>
+              <p class="timeline-desc">Directs a 150-person, multi-shift operation dispatching 300,000+ pharmaceutical packs daily to 750 pharmacies across the UK, under full GDP and MHRA compliance. Scaled from 100 to 150 FTE. Led operational workstream for automated pack-to-patient system go-live. Drove H&S audit score from 67% to 85% in 12 months.</p>
+            </div>
+          </div>
+
+          <!-- Approach -->
+          <h2 id="approach" data-reveal>How I approach the work</h2>
+          <p>I try to look at everything logically and trace problems back to their underlying cause rather than fixing the most visible symptom. An absence pattern, a pick error rate climbing, a team leader's KPIs slipping — the data tells you something is wrong. The conversation tells you why. The intervention has to come from both.</p>
+
+          <p>Most operational problems that look like process failures are actually people or system failures in disguise. Embedding root cause analysis — Fishbone, 5 Whys — into how the team reviews problems, rather than just using it as a post-incident tool, changes what the data can tell you over time.</p>
+
+          <p>I invest heavily in the people around me. Coaching and mentoring isn't separate from the job — it <em>is</em> the job at this level. I've put six colleagues through Team Leader promotions via structured, bespoke development plans. Not because it's the right thing to say, but because a stronger team is a more resilient operation. The two things compound.</p>
+
+          <p>The goal I work toward is an operation that doesn't need me present on a normal day to function well. That sounds counterintuitive, but it's deliberate. If the team can run the floor independently, I can spend my time on what matters next — continuous improvement, strategic planning, reducing friction in how the work gets done. That's how you scale operational leadership without being everywhere at once.</p>
+
+          <!-- Why this site -->
+          <h2 id="this-site" data-reveal>Why this site</h2>
+          <p>OperationsEdge started as something else. It's evolved into what it is now: a place to document and share real operational experience, organised by the competency areas that operations management actually breaks into — people and performance, process improvement, labour planning, data and reporting.</p>
+
+          <p>There's a lot of operations content online. Most of it is written by people who haven't managed a warehouse. The cases on here are from situations I've actually worked through. The numbers are real — before and after, with the timeline in between. I write about what worked and what didn't because that version is the one that's useful to someone dealing with the same thing.</p>
+
+          <p>If something here is useful to a fellow ops manager, that's the point. If it gives a recruiter a more honest picture of how I work than a CV ever could, that's a useful side effect.</p>
+
+          <!-- Credentials -->
+          <h2 id="credentials" data-reveal>Development & training</h2>
+          <p>Alongside operational experience, I've pursued formal development in the areas I think matter most at senior level — structured improvement methodology, commercial awareness, and people management practice.</p>
+
           <ul>
-            <li><strong>Reviews</strong> — detailed, scored assessments of individual tools</li>
-            <li><strong>Comparisons</strong> — head-to-head evaluations of two tools for a specific use case</li>
-            <li><strong>Guides</strong> — practical buyer's guides and how-to content for operations professionals</li>
-            <li><strong>From the Floor</strong> — first-person case studies from my own experience in UK warehouses</li>
-            <li><strong>Resources</strong> — free templates, checklists, and reference tools</li>
+            <li><strong>Level 5 Operations Manager Apprenticeship</strong> — in progress, EPA early 2027. Covers operational strategy, finance, project management, and leading change.</li>
+            <li><strong>Lean Six Sigma Yellow Belt</strong></li>
+            <li><strong>World Class Manager Programme</strong></li>
+            <li><strong>Finance for Non-Financial Managers</strong> — Royal Institution of Chartered Surveyors (RICS)</li>
+            <li><strong>Recruitment & Disciplinary Training</strong> — ACAS</li>
           </ul>
 
-          <p>I focus specifically on the UK operations context — which means UK pricing in GBP, UK compliance obligations (HMRC, HSE, UK GDPR, WTR), UK support hours, and UK-specific integrations. A tool that works well for US logistics teams but falls short on UK payroll integration or RIDDOR reporting isn't a good tool for my readers.</p>
-
-          <h2 id="experience" data-reveal>Background and experience</h2>
-          <p>My career has been in operational roles — I've managed teams, pick operations, inbound and outbound flows, and shift patterns across high-volume warehouse environments. The bulk of my operational experience is in pharmaceutical and healthcare distribution, where accuracy, compliance, and chain-of-custody requirements are non-negotiable.</p>
-
-          <p>That background shapes how I review tools. I'm not benchmarking a WMS against a theoretical ideal — I'm asking whether it would actually work in a busy pick-face, whether the mobile app survives shift-level use, and whether the reporting gives you anything useful when something goes wrong at 3am.</p>
-
-          <p>The case studies and "From the Floor" pieces are drawn from real operational situations I've worked through — anonymised where appropriate, but grounded in things that actually happened. I'm not writing thought leadership. I'm writing about what worked, what didn't, and why.</p>
-
-          <h2 id="editorial-methodology" data-reveal>How I review tools</h2>
-
-          <div class="methodology-step">
-            <div class="methodology-step-num">1</div>
-            <div class="methodology-step-body">
-              <h4>Tool selection</h4>
-              <p>I choose tools to review based on relevance to UK operations teams, search volume (what professionals are actually trying to find), and reader requests. The site currently has no active affiliate arrangements — tools are selected purely on editorial merit. When affiliate programmes are in place in the future, that will be disclosed openly in the <a href="/affiliate-disclosure/">disclosure policy</a>, and affiliate status won't determine which tools I recommend.</p>
-            </div>
-          </div>
-
-          <div class="methodology-step">
-            <div class="methodology-step-num">2</div>
-            <div class="methodology-step-body">
-              <h4>Hands-on evaluation</h4>
-              <p>I sign up for free trials and, where possible, use the tool in real operational contexts. I use the mobile app, try to build automations, test integrations, and go through the support process. Where I haven't personally used a tool end-to-end, I draw on my experience with comparable systems and am transparent about the basis of the assessment.</p>
-            </div>
-          </div>
-
-          <div class="methodology-step">
-            <div class="methodology-step-num">3</div>
-            <div class="methodology-step-body">
-              <h4>Structured scoring</h4>
-              <p>Every scored review uses the same criteria framework, tailored to the tool category. For workforce scheduling tools, I score ease of use, shift pattern support, WTR compliance features, mobile experience, and value for money. For H&amp;S platforms, I score audit features, action management, mobile usability, reporting, and cost. Category-specific criteria are stated in each review.</p>
-            </div>
-          </div>
-
-          <div class="methodology-step">
-            <div class="methodology-step-num">4</div>
-            <div class="methodology-step-body">
-              <h4>Pricing verification</h4>
-              <p>I verify pricing at the time of publication and flag the verification date in article metadata. SaaS pricing changes frequently. If you find pricing that differs from what's in a review, please <a href="/contact/">let me know</a> and I'll update it.</p>
-            </div>
-          </div>
-
-          <div class="methodology-step">
-            <div class="methodology-step-num">5</div>
-            <div class="methodology-step-body">
-              <h4>Publishing and updating</h4>
-              <p>Reviews are published with a date and updated when pricing, features, or my assessment changes materially. I don't quietly update content without flagging it — the "Updated" date in the article metadata reflects when a meaningful change was made.</p>
-            </div>
-          </div>
-
-          <h2 id="editorial-independence" data-reveal>Editorial independence</h2>
-          <p>My editorial opinions aren't for sale. Vendors cannot pay to receive a positive review, a higher score, or a "Best Pick" designation. I have never published a paid review and won't do so.</p>
-
-          <p>This site currently has no active affiliate arrangements. All vendor links are standard editorial links — I don't earn commission when you click them. I intend to apply to affiliate programmes in the future; when that happens, it will be disclosed in the relevant articles before any affiliate links go live, and I maintain an <a href="/affiliate-disclosure/">affiliate disclosure page</a> that will be kept current.</p>
-
-          <p>Where a tool doesn't have an affiliate programme, I'll still review it if it's relevant and worth covering. Affiliate status won't determine what I recommend. Where I have concerns about a tool — cost, missing features, poor UK support — I'll say so plainly.</p>
-
-          <h2 id="our-principles" data-reveal>Editorial principles</h2>
-
-          <div class="principle-grid">
-            <div class="principle-card">
-              <h4>Honest over positive</h4>
-              <p>I'd rather flag a genuine weakness than protect a vendor relationship. Every review includes a "Where it falls short" section because no tool is perfect for every operation.</p>
-            </div>
-            <div class="principle-card">
-              <h4>UK-specific over generic</h4>
-              <p>UK pricing, UK compliance, UK support hours, UK payroll integration. I flag when a tool is US-built and the UK experience is secondary.</p>
-            </div>
-            <div class="principle-card">
-              <h4>Practical over theoretical</h4>
-              <p>I focus on what a tool is actually like to use in a real warehouse or logistics operation, not what the product page says it can do.</p>
-            </div>
-            <div class="principle-card">
-              <h4>Transparent about relationships</h4>
-              <p>There are currently no commercial relationships on this site. Any future affiliate arrangements will be disclosed clearly before they go live.</p>
-            </div>
-            <div class="principle-card">
-              <h4>Current, not historical</h4>
-              <p>Pricing and features change. I maintain reviews over time and flag when information is out of date. If something has changed, <a href="/contact/">tell me</a>.</p>
-            </div>
-            <div class="principle-card">
-              <h4>Ops experience, not tech journalism</h4>
-              <p>I've managed warehouse and logistics operations. I write from that perspective, not from a generic software-evaluation one.</p>
-            </div>
-          </div>
-
-          <h2 id="contact">Get in touch</h2>
-          <p>If you have a question about a review, want to flag out-of-date information, or think there's a tool worth covering that I haven't looked at yet, I'd like to hear from you.</p>
-          <p>You can reach me at <a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a> or via the <a href="/contact/">contact page</a>.</p>
+          <!-- Connect -->
+          <h2 id="connect" data-reveal>Get in touch</h2>
+          <p>If you're working through something similar and want to compare notes, or if you have a question about anything on the site, I'm on LinkedIn.</p>
+          <a href="https://www.linkedin.com/in/paulogomes3" class="linkedin-cta" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            Connect on LinkedIn
+          </a>
 
         </main>
 
         <aside class="article-sidebar">
-          <div class="sidebar-card" style="text-align:center;padding:1.5rem 1.25rem;">
+
+          <!-- Photo + name -->
+          <div class="sidebar-card" style="text-align:center;padding:1.5rem 1.25rem;" data-reveal>
             <picture>
               <source srcset="/assets/images/paulo-gomes.webp" type="image/webp">
-              <img
-                src="/assets/images/paulo-gomes.jpg"
-                alt="Paulo Gomes"
-                style="width:80px;height:80px;border-radius:50%;object-fit:cover;object-position:center top;margin:0 auto .75rem;border:2px solid var(--border);"
-                loading="lazy"
-                width="80"
-                height="80"
-              >
+              <img src="/assets/images/paulo-gomes.jpg" alt="Paulo Gomes" style="width:80px;height:80px;border-radius:50%;object-fit:cover;object-position:center top;margin:0 auto .75rem;border:2px solid var(--border);display:block;" loading="lazy" width="80" height="80">
             </picture>
-            <p style="margin:0 0 .25rem;font-weight:700;font-size:.95rem;">Paulo Gomes</p>
-            <p style="margin:0;font-size:.8rem;color:var(--text-muted);line-height:1.5;">Warehouse Manager &amp; Operations Specialist</p>
+            <p style="margin:0 0 .2rem;font-weight:700;font-size:.95rem;">Paulo Gomes</p>
+            <p style="margin:0 0 .75rem;font-size:.78rem;color:var(--text-muted);line-height:1.4;">Operations Manager<br>GDP-Regulated Distribution</p>
+            <a href="https://www.linkedin.com/in/paulogomes3" target="_blank" rel="noopener noreferrer" class="linkedin-cta" style="font-size:.8rem;padding:.6rem .9rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
           </div>
 
-          <div class="sidebar-card" style="margin-top:1rem;">
-            <h4>In this page</h4>
+          <!-- Stats -->
+          <div class="sidebar-card" style="margin-top:1rem;" data-reveal data-reveal-delay="1">
+            <p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);font-weight:700;margin:0 0 .75rem;font-family:'JetBrains Mono',monospace;">At a glance</p>
+            <div class="stat-grid">
+              <div class="stat-cell">
+                <span class="stat-cell-num">150</span>
+                <span class="stat-cell-label">team members managed</span>
+              </div>
+              <div class="stat-cell">
+                <span class="stat-cell-num">300k+</span>
+                <span class="stat-cell-label">packs dispatched daily</span>
+              </div>
+              <div class="stat-cell">
+                <span class="stat-cell-num">10+</span>
+                <span class="stat-cell-label">years in sector</span>
+              </div>
+              <div class="stat-cell">
+                <span class="stat-cell-num">6</span>
+                <span class="stat-cell-label">colleagues promoted</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ToC -->
+          <div class="sidebar-card" style="margin-top:1rem;" data-reveal data-reveal-delay="2">
+            <h4>On this page</h4>
             <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;line-height:2;">
-              <li><a href="#what-i-cover">What I cover</a></li>
-              <li><a href="#experience">Background</a></li>
-              <li><a href="#editorial-methodology">Review methodology</a></li>
-              <li><a href="#editorial-independence">Editorial independence</a></li>
-              <li><a href="#our-principles">Principles</a></li>
-              <li><a href="#contact">Get in touch</a></li>
+              <li><a href="#career">How I got here</a></li>
+              <li><a href="#approach">How I approach the work</a></li>
+              <li><a href="#this-site">Why this site</a></li>
+              <li><a href="#credentials">Development & training</a></li>
+              <li><a href="#connect">Get in touch</a></li>
             </ul>
           </div>
 
-          <div class="sidebar-card" style="margin-top:1.5rem;">
-            <h4>Related</h4>
-            <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;line-height:1.9;">
-              <li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
-              <li><a href="/disclaimer/">Disclaimer</a></li>
-              <li><a href="/privacy-policy/">Privacy Policy</a></li>
-              <li><a href="/contact/">Contact</a></li>
+          <!-- Work areas -->
+          <div class="sidebar-card" style="margin-top:1rem;background:var(--brand-light);" data-reveal data-reveal-delay="3">
+            <h4>The work</h4>
+            <p style="font-size:.85rem;color:var(--text-muted);margin:.5rem 0 1rem;line-height:1.5;">Real cases from 10 years managing UK warehouse and logistics operations.</p>
+            <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;line-height:2;">
+              <li><a href="/from-the-floor/">People &amp; Performance</a></li>
+              <li><a href="/from-the-floor/">Process Improvement</a></li>
+              <li><a href="/from-the-floor/">Labour &amp; Planning</a></li>
+              <li><a href="/from-the-floor/">Data &amp; Reporting</a></li>
             </ul>
           </div>
 
-          <div class="sidebar-card" style="margin-top:1.5rem;background:var(--brand-light);">
-            <h4>Suggest a review</h4>
-            <p style="font-size:.85rem;color:var(--text-muted);margin:.5rem 0 1rem;line-height:1.5;">Is there a tool I haven't covered that you'd like to see reviewed? Let me know.</p>
-            <a href="/contact/" class="btn btn-brand" style="display:block;text-align:center;width:100%;font-size:.875rem;">Get in Touch</a>
-          </div>
         </aside>
 
       </div>
@@ -397,17 +374,16 @@
       <div class="footer-grid">
         <div>
           <div class="footer-brand">Operations<span>Edge</span></div>
-          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
+          <p class="footer-tagline">Operations management in practice — real cases, real data, shared openly by a working UK operations manager.</p>
           <p class="text-sm" style="color:rgba(255,255,255,.4);margin-top:.5rem;">Content is based on personal experience and anonymised operational data. Views expressed are solely those of the author.</p>
         </div>
         <div>
           <h4>Content</h4>
           <ul class="footer-links">
-            <li><a href="/reviews/">Reviews</a></li>
-            <li><a href="/solutions/">Solutions</a></li>
-            <li><a href="/guides/">Guides</a></li>
-            <li><a href="/from-the-floor/">From the Floor</a></li>
-            <li><a href="/resources/">Resources</a></li>
+            <li><a href="/from-the-floor/">People &amp; Performance</a></li>
+            <li><a href="/from-the-floor/">Process Improvement</a></li>
+            <li><a href="/from-the-floor/">Labour &amp; Planning</a></li>
+            <li><a href="/from-the-floor/">Data &amp; Reporting</a></li>
           </ul>
         </div>
         <div>
@@ -420,10 +396,11 @@
           </ul>
         </div>
         <div>
-          <h4>Contact</h4>
+          <h4>Connect</h4>
           <ul class="footer-links">
             <li><a href="/contact/">Get in Touch</a></li>
             <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+            <li><a href="https://www.linkedin.com/in/paulogomes3" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -441,13 +418,5 @@
 
   <script src="/assets/js/site.js" defer></script>
   <script src="/assets/js/page-hero-animation.js" defer></script>
-  <script>
-    /* Sync --ops-speed CSS var so pulseRing animation tracks speed changes */
-    (function () {
-      function sync() { document.documentElement.style.setProperty('--ops-speed', window.__opsSpeed || 1); }
-      sync();
-      setInterval(sync, 400);
-    }());
-  </script>
 </body>
 </html>
