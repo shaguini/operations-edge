@@ -1,0 +1,6664 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Software Reviews & Comparisons",
+      "x": 0,
+      "y": 0,
+      "width": 1760,
+      "height": 2220,
+      "color": "1"
+    },
+    {
+      "id": "n_notfound_404",
+      "type": "file",
+      "file": "404 Page Not Found.md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comparisons_index",
+      "type": "file",
+      "file": "Comparisons Index \u2014 Head-to-Head Tool Comparisons.md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comparisons_redirect_notice",
+      "type": "file",
+      "file": "Comparisons Section Moved to solutions Notice.md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comp_connecteam_product",
+      "type": "file",
+      "file": "Connecteam Product \u2014 Workforce Management Platform.md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comp_connecteam_vs_rotacloud",
+      "type": "file",
+      "file": "Connecteam vs Rotacloud (2026) UK Warehouse Shift Scheduling Comparison.md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comp_connecteam_verdict",
+      "type": "file",
+      "file": "Connecteam \u2014 Best All-in-One Platform Verdict.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comp_deputy_mentioned",
+      "type": "file",
+      "file": "Deputy \u2014 Mentioned as Alternative Scheduling Tool.md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_hs_safetyculture_cta",
+      "type": "file",
+      "file": "H&S Checklist CTA \u2014 SafetyCulture Review Coming Soon.md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_hs_fire_safety",
+      "type": "file",
+      "file": "H&S Checklist Section \u2014 Fire Safety (RRFSO 2005).md",
+      "x": 420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_hs_forklift_mhe",
+      "type": "file",
+      "file": "H&S Checklist Section \u2014 Forklift Trucks & MHE (PUWER, LOLER).md",
+      "x": 20,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_hs_hse_alignment",
+      "type": "file",
+      "file": "H&S Checklist \u2014 Aligned with HSE Guidance and HSWA 1974.md",
+      "x": 220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_hs_riddor",
+      "type": "file",
+      "file": "H&S Checklist \u2014 RIDDOR 2013 Incident Reporting.md",
+      "x": 420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_hs_category",
+      "type": "file",
+      "file": "Health Safety & Compliance Category.md",
+      "x": 20,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_bento_categories",
+      "type": "file",
+      "file": "Homepage Category Bento Grid.md",
+      "x": 220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post_picking_efficiency",
+      "type": "file",
+      "file": "How We Improved Picking Efficiency by 21% in 12 Months.md",
+      "x": 420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post_picking_lph_metric",
+      "type": "file",
+      "file": "Lines Picked Per Hour (LPH) as Core Warehouse Metric.md",
+      "x": 20,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_make",
+      "type": "file",
+      "file": "Make \u2014 Process Automation Tool (Mentioned).md",
+      "x": 220,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comp_monday_product",
+      "type": "file",
+      "file": "Monday.com Product \u2014 Work OS Platform.md",
+      "x": 420,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comp_monday_vs_smartsheet",
+      "type": "file",
+      "file": "Monday.com vs Smartsheet (2026) UK Operations Comparison.md",
+      "x": 20,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comp_monday_verdict",
+      "type": "file",
+      "file": "Monday.com \u2014 Best Overall Pick for UK Ops Teams Verdict.md",
+      "x": 220,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post_picking_monday_tool",
+      "type": "file",
+      "file": "Monday.com \u2014 Tool Used for Improvement Project Management.md",
+      "x": 420,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_author_paulo_gomes",
+      "type": "file",
+      "file": "Paulo Gomes \u2014 Author, Warehouse Manager 10+ yrs UK.md",
+      "x": 20,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post_picking_pharma_context",
+      "type": "file",
+      "file": "Pharmaceutical Logistics Operations Context.md",
+      "x": 220,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_posts_index",
+      "type": "file",
+      "file": "Posts Index \u2014 Operations Guides & Case Studies Listing.md",
+      "x": 420,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_automation_category",
+      "type": "file",
+      "file": "Process Automation Category.md",
+      "x": 20,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resources_index",
+      "type": "file",
+      "file": "Resources Index \u2014 Free Templates & Checklists.md",
+      "x": 220,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comp_rotacloud_product",
+      "type": "file",
+      "file": "Rotacloud Product \u2014 UK-Native Shift Scheduling.md",
+      "x": 420,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comp_rotacloud_verdict",
+      "type": "file",
+      "file": "Rotacloud \u2014 Best UK-Native Scheduling Verdict.md",
+      "x": 20,
+      "y": 800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_saas_data_security_gdpr",
+      "type": "file",
+      "file": "SaaS Checklist Section \u2014 Data Security & UK GDPR.md",
+      "x": 220,
+      "y": 800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_saas_exit_offboarding",
+      "type": "file",
+      "file": "SaaS Checklist Section \u2014 Exit & Offboarding Clauses.md",
+      "x": 420,
+      "y": 800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_saas_pricing_contracts",
+      "type": "file",
+      "file": "SaaS Checklist Section \u2014 Pricing & Contracts.md",
+      "x": 20,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_saas_procurement_checklist",
+      "type": "file",
+      "file": "SaaS Procurement Checklist for Operations Teams (Free UK).md",
+      "x": 220,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post_picking_safetyculture_tool",
+      "type": "file",
+      "file": "SafetyCulture (iAuditor) \u2014 Tool Used for Coaching Observation.md",
+      "x": 420,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post_picking_shift_analysis",
+      "type": "file",
+      "file": "Shift Performance Analysis \u2014 Late vs Early Shift Productivity.md",
+      "x": 20,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_workforce_category",
+      "type": "file",
+      "file": "Shift Scheduling Workforce Category.md",
+      "x": 220,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_shift_default_roles",
+      "type": "file",
+      "file": "Shift Template Default Roles \u2014 PickerPacker, Team Leader, Forklift Operator, Goods In, Despatch.md",
+      "x": 420,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_shift_wtr_overtime",
+      "type": "file",
+      "file": "Shift Template \u2014 UK WTR Overtime Threshold (48hrs).md",
+      "x": 20,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comp_smartsheet_product",
+      "type": "file",
+      "file": "Smartsheet Product \u2014 Spreadsheet-First Work Management.md",
+      "x": 220,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comp_smartsheet_verdict",
+      "type": "file",
+      "file": "Smartsheet \u2014 Best for Complex Data-Heavy Operations Verdict.md",
+      "x": 420,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post_picking_smartsheet_tool",
+      "type": "file",
+      "file": "Smartsheet \u2014 Tool Used for LPH Data Aggregation.md",
+      "x": 20,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_solutions_improve_efficiency",
+      "type": "file",
+      "file": "Solution Area \u2014 Improve Warehouse Efficiency (LPH, Throughput, Slotting).md",
+      "x": 220,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_solutions_reduce_picking_errors",
+      "type": "file",
+      "file": "Solution Area \u2014 Reduce Picking Errors.md",
+      "x": 420,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_solutions_shift_planning",
+      "type": "file",
+      "file": "Solution Area \u2014 Shift Schedule Planning (WTR Compliance).md",
+      "x": 20,
+      "y": 1200,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_solutions_team_performance",
+      "type": "file",
+      "file": "Solution Area \u2014 Team Performance & Management.md",
+      "x": 220,
+      "y": 1200,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_solutions_kpi_reporting",
+      "type": "file",
+      "file": "Solution Area \u2014 Warehouse KPI & Reporting.md",
+      "x": 420,
+      "y": 1200,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_solutions_index",
+      "type": "file",
+      "file": "Solutions Index \u2014 Warehouse Solutions by Operational Challenge.md",
+      "x": 20,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_solutions_problem_first_rationale",
+      "type": "file",
+      "file": "Solutions Rationale \u2014 Problem-First Not Product-First Approach.md",
+      "x": 220,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_solutions_category",
+      "type": "file",
+      "file": "Solutions by Challenge Category.md",
+      "x": 420,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_tms_category",
+      "type": "file",
+      "file": "TMS & Fleet Category.md",
+      "x": 20,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post_picking_top_performers",
+      "type": "file",
+      "file": "Top Performer Behaviour Replication Strategy.md",
+      "x": 220,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comp_wtr_compliance",
+      "type": "file",
+      "file": "UK Working Time Regulations Compliance Feature.md",
+      "x": 420,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_wms_category",
+      "type": "file",
+      "file": "WMS & Inventory Software Category.md",
+      "x": 20,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_wms_example_vendors",
+      "type": "file",
+      "file": "WMS Example Vendors \u2014 Linnworks, Mintsoft, Peoplevox.md",
+      "x": 220,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post_picking_wms_reporting",
+      "type": "file",
+      "file": "WMS Reporting Exports \u2014 Raw Data Source for LPH Analysis.md",
+      "x": 420,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_wms_scorecard_sections",
+      "type": "file",
+      "file": "WMS Scorecard Sections \u2014 Core Features, Integrations, Usability, Support, Cost.md",
+      "x": 20,
+      "y": 1520,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_wms_uk_couriers",
+      "type": "file",
+      "file": "WMS Scorecard \u2014 UK Courier Integrations (Royal Mail, DPD, Evri, DHL).md",
+      "x": 220,
+      "y": 1520,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_wms_scorecard",
+      "type": "file",
+      "file": "WMS Vendor Evaluation Scorecard (Free Template).md",
+      "x": 420,
+      "y": 1520,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_warehouse_hs_checklist",
+      "type": "file",
+      "file": "Warehouse H&S Digital Audit Checklist (Free UK Template).md",
+      "x": 20,
+      "y": 1600,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_shift_template",
+      "type": "file",
+      "file": "Weekly Shift Schedule Template (Free UK Warehouse Tool).md",
+      "x": 220,
+      "y": 1600,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_robots_txt",
+      "type": "file",
+      "file": "robots.txt Crawl Directives.md",
+      "x": 420,
+      "y": 1600,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_robots_disallow_comparisons",
+      "type": "file",
+      "file": "robots.txt Disallow comparisons (deprecated, moved to solutions).md",
+      "x": 20,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "From The Floor Case Studies",
+      "x": 1840,
+      "y": 0,
+      "width": 1760,
+      "height": 2020,
+      "color": "2"
+    },
+    {
+      "id": "n_page_about",
+      "type": "file",
+      "file": "About Page.md",
+      "x": 1860,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_absence_management",
+      "type": "file",
+      "file": "Absence Management.md",
+      "x": 2060,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_guide_automating_zapier",
+      "type": "file",
+      "file": "Automating Your Operations Stack with Zapier.md",
+      "x": 2260,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_guide_best_shift_scheduling",
+      "type": "file",
+      "file": "Best Shift Scheduling Software for Logistics Teams.md",
+      "x": 1860,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_review_wms",
+      "type": "file",
+      "file": "Best WMS Software for UK Warehouses 2026.md",
+      "x": 2060,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_bradford_factor",
+      "type": "file",
+      "file": "Bradford Factor.md",
+      "x": 2260,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_cin7",
+      "type": "file",
+      "file": "Cin7  DEAR.md",
+      "x": 1860,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_connecteam",
+      "type": "file",
+      "file": "Connecteam.md",
+      "x": 2060,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_review_connecteam",
+      "type": "file",
+      "file": "Connecteam Review.md",
+      "x": 2260,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_cookie_policy",
+      "type": "file",
+      "file": "Cookie Policy.md",
+      "x": 1860,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_deputy",
+      "type": "file",
+      "file": "Deputy.md",
+      "x": 2060,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_review_deputy",
+      "type": "file",
+      "file": "Deputy Review.md",
+      "x": 2260,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_descartes_peoplevox",
+      "type": "file",
+      "file": "Descartes Peoplevox.md",
+      "x": 1860,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_digital_induction",
+      "type": "file",
+      "file": "Digital Induction Records.md",
+      "x": 2060,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_from_the_floor_index",
+      "type": "file",
+      "file": "From the Floor Index.md",
+      "x": 2260,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_guides_index",
+      "type": "file",
+      "file": "Guides Index.md",
+      "x": 1860,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_casestudy_absence_culture",
+      "type": "file",
+      "file": "How We Fixed a Broken Absence Culture.md",
+      "x": 2060,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_casestudy_picking_efficiency",
+      "type": "file",
+      "file": "How We Improved Warehouse Picking Efficiency by 21%.md",
+      "x": 2260,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_casestudy_peak_labour",
+      "type": "file",
+      "file": "How We Planned Peak Labour and Onboarded 10 Agency Staff.md",
+      "x": 1860,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_casestudy_rca_picking_errors",
+      "type": "file",
+      "file": "How We Reduced Picking Errors Without Technology.md",
+      "x": 2060,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_guide_how_to_choose_wms",
+      "type": "file",
+      "file": "How to Choose a WMS Buyer's Guide for UK Operations.md",
+      "x": 2260,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_guide_warehouse_hs_audit",
+      "type": "file",
+      "file": "How to Run a Warehouse H&S Audit.md",
+      "x": 1860,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_improve_warehouse_efficiency",
+      "type": "file",
+      "file": "Improve Warehouse Efficiency Solution.md",
+      "x": 2060,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_lph",
+      "type": "file",
+      "file": "Lines Picked Per Hour (LPH).md",
+      "x": 2260,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_linnworks",
+      "type": "file",
+      "file": "Linnworks.md",
+      "x": 1860,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_make_com",
+      "type": "file",
+      "file": "Make.com.md",
+      "x": 2060,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_mintsoft",
+      "type": "file",
+      "file": "Mintsoft.md",
+      "x": 2260,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_monday_com",
+      "type": "file",
+      "file": "Monday.com.md",
+      "x": 1860,
+      "y": 800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_review_monday_com",
+      "type": "file",
+      "file": "Monday.com for Warehouse Management Review.md",
+      "x": 2060,
+      "y": 800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_netsuite_wms",
+      "type": "file",
+      "file": "NetSuite WMS.md",
+      "x": 2260,
+      "y": 800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_person_paulo_gomes",
+      "type": "file",
+      "file": "Paulo Gomes.md",
+      "x": 1860,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_picking_accuracy",
+      "type": "file",
+      "file": "Pick Accuracy  Order Accuracy.md",
+      "x": 2060,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_plausible_analytics",
+      "type": "file",
+      "file": "Plausible Analytics.md",
+      "x": 2260,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_reduce_picking_errors",
+      "type": "file",
+      "file": "Reduce Picking Errors Solution.md",
+      "x": 1860,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_reviews_index",
+      "type": "file",
+      "file": "Reviews Index.md",
+      "x": 2060,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_rca",
+      "type": "file",
+      "file": "Root Cause Analysis (RCA).md",
+      "x": 2260,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_rotacloud",
+      "type": "file",
+      "file": "Rotacloud.md",
+      "x": 1860,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_saas_checklist",
+      "type": "file",
+      "file": "SaaS Evaluation Checklist.md",
+      "x": 2060,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_review_safetyculture",
+      "type": "file",
+      "file": "SafetyCulture (iAuditor) Review.md",
+      "x": 2260,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_safetyculture",
+      "type": "file",
+      "file": "SafetyCulture \u2014 H&S and Audit Platform (Mentioned).md",
+      "x": 1860,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_shift_patterns",
+      "type": "file",
+      "file": "Shift Patterns.md",
+      "x": 2060,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_shift_schedule_planning",
+      "type": "file",
+      "file": "Shift Schedule Planning Solution.md",
+      "x": 2260,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_shift_scheduling_template",
+      "type": "file",
+      "file": "Shift Scheduling Template.md",
+      "x": 1860,
+      "y": 1200,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_slotting_optimization",
+      "type": "file",
+      "file": "Slotting Optimization.md",
+      "x": 2060,
+      "y": 1200,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_smartsheet",
+      "type": "file",
+      "file": "Smartsheet.md",
+      "x": 2260,
+      "y": 1200,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_review_smartsheet",
+      "type": "file",
+      "file": "Smartsheet for Operations Teams Review.md",
+      "x": 1860,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_team_performance_management",
+      "type": "file",
+      "file": "Team Performance Management Solution.md",
+      "x": 2060,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_uk_gdpr_pecr",
+      "type": "file",
+      "file": "UK GDPR  PECR Compliance.md",
+      "x": 2260,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_wtr_compliance",
+      "type": "file",
+      "file": "UK Working Time Regulations (WTR 1998).md",
+      "x": 1860,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_hs_audit_checklist",
+      "type": "file",
+      "file": "Warehouse H&S Audit Checklist.md",
+      "x": 2060,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_warehouse_kpi_reporting",
+      "type": "file",
+      "file": "Warehouse KPI Reporting Solution.md",
+      "x": 2260,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_warehouse_kpis",
+      "type": "file",
+      "file": "Warehouse KPIs.md",
+      "x": 1860,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_review_zapier",
+      "type": "file",
+      "file": "Zapier Review.md",
+      "x": 2060,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_zapier",
+      "type": "file",
+      "file": "Zapier \u2014 Process Automation Tool (Mentioned).md",
+      "x": 2260,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tool_inflow_inventory",
+      "type": "file",
+      "file": "inFlow Inventory.md",
+      "x": 1860,
+      "y": 1520,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Warehouse Improvement Concepts",
+      "x": 3680,
+      "y": 0,
+      "width": 1760,
+      "height": 2020,
+      "color": "3"
+    },
+    {
+      "id": "n_concept_five_whys",
+      "type": "file",
+      "file": "5 Whys Root Cause Analysis.md",
+      "x": 3700,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_article_picking_efficiency",
+      "type": "file",
+      "file": "Case Study \u2014 How We Improved Picking Efficiency.md",
+      "x": 3900,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_scanner_rhythm",
+      "type": "file",
+      "file": "Controlled Scanner Rhythm \u2014 Deliberate Scan Pace.md",
+      "x": 4100,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_management_interruptions",
+      "type": "file",
+      "file": "Fewer Management Interruptions During Pick Windows.md",
+      "x": 3700,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_five_nonnegotiables",
+      "type": "file",
+      "file": "Five Non-Negotiable Induction Items for Agency Starters.md",
+      "x": 3900,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_metric_lph",
+      "type": "file",
+      "file": "LPH \u2014 Lines Per Hour.md",
+      "x": 4100,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_shift_comparison_carousel",
+      "type": "file",
+      "file": "LinkedIn Carousel Shift Comparison (Post 02).md",
+      "x": 3700,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_shift_comparison",
+      "type": "file",
+      "file": "LinkedIn Post 02 \u2014 Shift Comparison.md",
+      "x": 3900,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_top_performer",
+      "type": "file",
+      "file": "LinkedIn Post 03 \u2014 Top Performer Analysis.md",
+      "x": 4100,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_capacity",
+      "type": "file",
+      "file": "LinkedIn Post 08 \u2014 Shelf Capacity Misalignment.md",
+      "x": 3700,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_peer_accountability",
+      "type": "file",
+      "file": "Peer Accountability \u2014 Team Culture.md",
+      "x": 3900,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_physical_capacity_audit",
+      "type": "file",
+      "file": "Physical Capacity Audit Process.md",
+      "x": 4100,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_shelf_overcrowding",
+      "type": "file",
+      "file": "Pick Face Overcrowding  Shelf Overfill.md",
+      "x": 3700,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_pick_path_discipline",
+      "type": "file",
+      "file": "Pick Path Discipline \u2014 Fixed Route Adherence.md",
+      "x": 3900,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_error_concentration_analysis",
+      "type": "file",
+      "file": "Picking Error Concentration Analysis (ZoneSKUShift).md",
+      "x": 4100,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_picking_error_types",
+      "type": "file",
+      "file": "Picking Error Types (Wrong Item, Wrong Qty, Missed, Location).md",
+      "x": 3700,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_caption",
+      "type": "file",
+      "file": "Post 02 Caption \u2014 Shift Comparison LinkedIn Caption.md",
+      "x": 3900,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_comment",
+      "type": "file",
+      "file": "Post 02 Comment \u2014 Link to Picking Efficiency Case Study.md",
+      "x": 4100,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_slide02_context",
+      "type": "file",
+      "file": "Post 02 Slide 02 \u2014 Situation Context.md",
+      "x": 3700,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_slide03_work",
+      "type": "file",
+      "file": "Post 02 Slide 03 \u2014 Three Conditions Found.md",
+      "x": 3900,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_slide04_dashboard",
+      "type": "file",
+      "file": "Post 02 Slide 04 \u2014 LPH Comparison Dashboard.md",
+      "x": 4100,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_caption",
+      "type": "file",
+      "file": "Post 03 Caption \u2014 Top Performer LinkedIn Caption.md",
+      "x": 3700,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_comment",
+      "type": "file",
+      "file": "Post 03 Comment \u2014 Link to Picking Efficiency Case Study.md",
+      "x": 3900,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_slide01_hook",
+      "type": "file",
+      "file": "Post 03 Slide 01 \u2014 Hook One Operator Above Average.md",
+      "x": 4100,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_slide02_context",
+      "type": "file",
+      "file": "Post 03 Slide 02 \u2014 Performance Distribution Context.md",
+      "x": 3700,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_slide03_work",
+      "type": "file",
+      "file": "Post 03 Slide 03 \u2014 Three Replicable Behaviours.md",
+      "x": 3900,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_slide04_dashboard",
+      "type": "file",
+      "file": "Post 03 Slide 04 \u2014 LPH Distribution and Behaviour Analysis Dashboard.md",
+      "x": 4100,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_slide05_takeaway",
+      "type": "file",
+      "file": "Post 03 Slide 05 \u2014 Takeaway Replicate, Don't Just Celebrate.md",
+      "x": 3700,
+      "y": 800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_slide04_dashboard",
+      "type": "file",
+      "file": "Post 05 Slide 04 \u2014 Day-One Induction Checklist Dashboard.md",
+      "x": 3900,
+      "y": 800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_slide02_context",
+      "type": "file",
+      "file": "Post 06 Slide 2 \u2014 Context Error Concentration Analysis.md",
+      "x": 4100,
+      "y": 800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_slide03_work",
+      "type": "file",
+      "file": "Post 06 Slide 3 \u2014 What We Did Error Categorisation and Observation.md",
+      "x": 3700,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_slide04_dashboard",
+      "type": "file",
+      "file": "Post 06 Slide 4 \u2014 Dashboard Error Type and Zone Concentration.md",
+      "x": 3900,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_slide05_takeaway",
+      "type": "file",
+      "file": "Post 06 Slide 5 \u2014 Takeaway Consistent Errors Point to Solvable Root Causes.md",
+      "x": 4100,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_slide01_hook",
+      "type": "file",
+      "file": "Post 08 Slide 01 \u2014 Hook WMS vs Shelf Discrepancy.md",
+      "x": 3700,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_slide05_takeaway",
+      "type": "file",
+      "file": "Post 08 Slide 05 \u2014 Takeaway Structural Misalignments Look Like Operator Errors.md",
+      "x": 3900,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_slide02_context",
+      "type": "file",
+      "file": "Post 08 Slide 2 \u2014 Context WMS Capacity vs Physical Reality.md",
+      "x": 4100,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_slide03_work",
+      "type": "file",
+      "file": "Post 08 Slide 3 \u2014 5 Whys Root Cause Analysis Process.md",
+      "x": 3700,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_slide04_dashboard",
+      "type": "file",
+      "file": "Post 08 Slide 4 \u2014 Dashboard Capacity Misalignment Finding.md",
+      "x": 3900,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_caption",
+      "type": "file",
+      "file": "Post 08 \u2014 Caption Text.md",
+      "x": 4100,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_capacity_carousel",
+      "type": "file",
+      "file": "Post 08 \u2014 Shelf Capacity Carousel (PDF).md",
+      "x": 3700,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_replenishment_timing",
+      "type": "file",
+      "file": "Proactive Replenishment Timing \u2014 Flag Before Empty.md",
+      "x": 3900,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_replenishment_fill_limits",
+      "type": "file",
+      "file": "Replenishment Fill Limit Standardisation.md",
+      "x": 4100,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_safetyculture_checklists",
+      "type": "file",
+      "file": "SafetyCulture Checklists for Structured Observation.md",
+      "x": 3700,
+      "y": 1200,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_shared_style_dashboard_styles_css",
+      "type": "file",
+      "file": "Shared Stylesheet \u2014 dashboard-styles.css.md",
+      "x": 3900,
+      "y": 1200,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_shared_style_slide_styles_css",
+      "type": "file",
+      "file": "Shared Stylesheet \u2014 slide-styles.css.md",
+      "x": 4100,
+      "y": 1200,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_shift_slide05",
+      "type": "file",
+      "file": "Shift Comparison Carousel \u2013 Slide 5 Takeaway (Shift Culture Outweighs Individual Skill).md",
+      "x": 3700,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_shift_culture",
+      "type": "file",
+      "file": "Shift Culture and Peer Accountability in Warehouse Operations.md",
+      "x": 3900,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_slotting_review",
+      "type": "file",
+      "file": "Slotting Review Process.md",
+      "x": 4100,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_station_consistency",
+      "type": "file",
+      "file": "Station Consistency \u2014 Consistent Zone Allocation.md",
+      "x": 3700,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_structural_vs_operator_error",
+      "type": "file",
+      "file": "Structural Error vs Operator Error Distinction.md",
+      "x": 3900,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_structural_error_vs_operator_error",
+      "type": "file",
+      "file": "Structural Errors Misattributed as Operator Mistakes.md",
+      "x": 4100,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_top_performer_replication",
+      "type": "file",
+      "file": "Top Performer Behaviour Replication \u2014 Treat as Process Not Personality.md",
+      "x": 3700,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_wms_capacity_misalignment",
+      "type": "file",
+      "file": "WMS Capacity Misalignment \u2014 System vs Shelf Discrepancy.md",
+      "x": 3900,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_wms_data_analysis",
+      "type": "file",
+      "file": "WMS Data Pull and Error Mapping (Excel by shiftzoneSKU).md",
+      "x": 4100,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_shift_conditions",
+      "type": "file",
+      "file": "Working Conditions Drive Shift Performance (Not Staff Quality).md",
+      "x": 3700,
+      "y": 1520,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Site Policy & Brand Voice",
+      "x": 5520,
+      "y": 0,
+      "width": 1320,
+      "height": 1120,
+      "color": "4"
+    },
+    {
+      "id": "n_affiliate_disclosure_page",
+      "type": "file",
+      "file": "Affiliate & Commercial Disclosure Page.md",
+      "x": 5540,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_mediakit_brand_color_blue",
+      "type": "file",
+      "file": "Brand Blue Colour 1B609D.md",
+      "x": 5740,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_claude_md_brand_personality",
+      "type": "file",
+      "file": "Brand Personality \u2014 Direct, Grounded, Credible.md",
+      "x": 5940,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_claude_md_project_instructions",
+      "type": "file",
+      "file": "CLAUDE.md Project Instructions.md",
+      "x": 5540,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_contact_email_address",
+      "type": "file",
+      "file": "Contact Email \u2014 hello@operationsedge.co.uk.md",
+      "x": 5740,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_contact_netlify_form",
+      "type": "file",
+      "file": "Contact Netlify Form.md",
+      "x": 5940,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_contact_page",
+      "type": "file",
+      "file": "Contact Page.md",
+      "x": 5540,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_claude_md_deploy_instructions",
+      "type": "file",
+      "file": "Deploy Instructions \u2014 netlify deploy --prod --dir ..md",
+      "x": 5740,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_claude_md_design_principles",
+      "type": "file",
+      "file": "Design Principles \u2014 Information Before Impression.md",
+      "x": 5940,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_disclaimer_page",
+      "type": "file",
+      "file": "Disclaimer Page.md",
+      "x": 5540,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_disclaimer_editorial_basis",
+      "type": "file",
+      "file": "Disclaimer \u2014 Basis of Content (10+ yrs personal experience).md",
+      "x": 5740,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_disclaimer_no_affiliate",
+      "type": "file",
+      "file": "Disclaimer \u2014 No Active Affiliate Relationships (April 2026).md",
+      "x": 5940,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_affiliate_no_active_arrangements",
+      "type": "file",
+      "file": "Disclosure \u2014 No Active Affiliate Arrangements (April 2026).md",
+      "x": 5540,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_affiliate_independence_policy",
+      "type": "file",
+      "file": "Editorial Independence Policy \u2014 No Pay-for-Review.md",
+      "x": 5740,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_hero_section",
+      "type": "file",
+      "file": "Homepage Hero \u2014 Real-world Insights for Warehouse Decisions.md",
+      "x": 5940,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_newsletter_section",
+      "type": "file",
+      "file": "Homepage Newsletter Signup.md",
+      "x": 5540,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_stats_bar",
+      "type": "file",
+      "file": "Homepage Stats Bar \u2014 Editorial Independence Claims.md",
+      "x": 5740,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_privacy_ico_regulator",
+      "type": "file",
+      "file": "ICO \u2014 Information Commissioner's Office UK Regulator.md",
+      "x": 5940,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_mediakit_page",
+      "type": "file",
+      "file": "Media Kit Page.md",
+      "x": 5540,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_mediakit_audience_profile",
+      "type": "file",
+      "file": "Media Kit \u2014 Audience Profile (UK B2B Ops Professionals).md",
+      "x": 5740,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_mediakit_brand_assets",
+      "type": "file",
+      "file": "Media Kit \u2014 Brand Assets (Logos, Colours).md",
+      "x": 5940,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_mediakit_editorial_standards",
+      "type": "file",
+      "file": "Media Kit \u2014 Editorial Standards (Independence, Transparency).md",
+      "x": 5540,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_privacy_netlify_processor",
+      "type": "file",
+      "file": "Netlify as Data Processor for Form Submissions.md",
+      "x": 5740,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_homepage",
+      "type": "file",
+      "file": "OperationsEdge Homepage.md",
+      "x": 5940,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_plausible_analytics",
+      "type": "file",
+      "file": "Plausible Analytics Integration.md",
+      "x": 5540,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_privacy_policy_page",
+      "type": "file",
+      "file": "Privacy Policy Page.md",
+      "x": 5740,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_claude_md_target_audience",
+      "type": "file",
+      "file": "Target Audience \u2014 UK Ops Professionals (WarehouseLogistics).md",
+      "x": 5940,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_affiliate_uk_regs",
+      "type": "file",
+      "file": "UK Disclosure Compliance \u2014 CPR 2008, ASA, CMA Guidelines.md",
+      "x": 5540,
+      "y": 800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_privacy_uk_gdpr",
+      "type": "file",
+      "file": "UK GDPR & Data Protection Act 2018 Compliance.md",
+      "x": 5740,
+      "y": 800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_why_operationsedge",
+      "type": "file",
+      "file": "Why OperationsEdge \u2014 Editorial Rationale Section.md",
+      "x": 5940,
+      "y": 800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Picking Efficiency & RCA Articles",
+      "x": 6920,
+      "y": 0,
+      "width": 1320,
+      "height": 1020,
+      "color": "5"
+    },
+    {
+      "id": "n_concept_fishbone_rca",
+      "type": "file",
+      "file": "Fishbone Diagram  Root Cause Analysis (Ishikawa).md",
+      "x": 6940,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_slide01",
+      "type": "file",
+      "file": "Fishbone Framework Hook Slide \u2014 We Ran a Fishbone on Every Recurring Error.md",
+      "x": 7140,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_article_improve_picking_efficiency",
+      "type": "file",
+      "file": "From the Floor How We Improved Picking Efficiency (12-Month Case Study).md",
+      "x": 7340,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_article_reduce_picking_errors",
+      "type": "file",
+      "file": "From the Floor How We Reduced Picking Errors Without Technology.md",
+      "x": 6940,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_lph_tracking",
+      "type": "file",
+      "file": "Lines Per Hour (LPH) Tracking and Picking Efficiency.md",
+      "x": 7140,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_carousel",
+      "type": "file",
+      "file": "LinkedIn Carousel Post 07 \u2014 Fishbone Root Cause Analysis.md",
+      "x": 7340,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post01_lph",
+      "type": "file",
+      "file": "LinkedIn Post 01 LPH Improvement \u2013 12-Month Picking Efficiency Study (5-slide carousel).md",
+      "x": 6940,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post02_shift",
+      "type": "file",
+      "file": "LinkedIn Post 02 Shift Comparison \u2013 Late Shift Outperformance.md",
+      "x": 7140,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post07_fishbone",
+      "type": "file",
+      "file": "LinkedIn Post 07 Fishbone Root Cause Analysis (5-slide carousel).md",
+      "x": 7340,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_picking_errors",
+      "type": "file",
+      "file": "Picking Error Reduction in Warehouse Operations.md",
+      "x": 6940,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post01_comment",
+      "type": "file",
+      "file": "Post 01 Comment Link to Full LPH Improvement Case Study.md",
+      "x": 7140,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post01_slide01",
+      "type": "file",
+      "file": "Post 01 Slide 1 Hook \u2013 Fast Pickers Aren't Born That Way.md",
+      "x": 7340,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post01_slide02",
+      "type": "file",
+      "file": "Post 01 Slide 2 Context \u2013 Inconsistent LPH Across Operators.md",
+      "x": 6940,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post01_slide03",
+      "type": "file",
+      "file": "Post 01 Slide 3 What We Did \u2013 Four Changes, No New Technology.md",
+      "x": 7140,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post01_slide04",
+      "type": "file",
+      "file": "Post 01 Slide 4 Dashboard \u2013 12-Month LPH Performance.md",
+      "x": 7340,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post01_slide05",
+      "type": "file",
+      "file": "Post 01 Slide 5 Takeaway \u2013 Measurement Changes Behaviour Faster Than Training.md",
+      "x": 6940,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post02_slide01",
+      "type": "file",
+      "file": "Post 02 Slide 1 Hook \u2013 Late Shift Beat Early Shift Every Week.md",
+      "x": 7140,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post02_slide05",
+      "type": "file",
+      "file": "Post 02 Slide 5 Takeaway \u2013 Shift Culture Outweighs Individual Skill.md",
+      "x": 7340,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post07_comment",
+      "type": "file",
+      "file": "Post 07 Comment Link to Full RCA Case Study.md",
+      "x": 6940,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post07_slide01",
+      "type": "file",
+      "file": "Post 07 Slide 1 Hook \u2013 Fishbone on Every Recurring Error.md",
+      "x": 7140,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post07_slide02",
+      "type": "file",
+      "file": "Post 07 Slide 2 Context \u2013 Why Standard Retraining Fails.md",
+      "x": 7340,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post07_slide03",
+      "type": "file",
+      "file": "Post 07 Slide 3 The 5 Fishbone Categories (People, Process, Equipment, Environment, Materials).md",
+      "x": 6940,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post07_slide04",
+      "type": "file",
+      "file": "Post 07 Slide 4 Dashboard \u2013 Root Cause Category Breakdown.md",
+      "x": 7140,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linkedin_post07_slide05",
+      "type": "file",
+      "file": "Post 07 Slide 5 Takeaway \u2013 Most Errors Live in Process and Environment.md",
+      "x": 7340,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_process_improvement_no_tech",
+      "type": "file",
+      "file": "Process Improvement Without New Technology.md",
+      "x": 6940,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_system_vs_people_blame",
+      "type": "file",
+      "file": "System Failure vs People Blame \u2014 Ops Insight.md",
+      "x": 7140,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_warehouse_picking_errors",
+      "type": "file",
+      "file": "Warehouse Picking Errors.md",
+      "x": 7340,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Operations Content Strategy",
+      "x": 8320,
+      "y": 0,
+      "width": 1100,
+      "height": 1020,
+      "color": "6"
+    },
+    {
+      "id": "n_concept_agency_onboarding",
+      "type": "file",
+      "file": "Agency Staff Onboarding Structure.md",
+      "x": 8340,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_article_peak_labour_agency",
+      "type": "file",
+      "file": "Article How We Planned Peak Labour and Onboarded 10 Agency Staff.md",
+      "x": 8540,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_article_picking_errors_no_tech",
+      "type": "file",
+      "file": "Article How We Reduced Picking Errors Without Technology.md",
+      "x": 8740,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_dark_icon_mark",
+      "type": "file",
+      "file": "Bar Chart Icon Mark (Dark Logo).md",
+      "x": 8340,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_buddy_operator_system",
+      "type": "file",
+      "file": "Buddy Operator System (Pre-assigned Named Pairs).md",
+      "x": 8540,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_dark_trend_line",
+      "type": "file",
+      "file": "Gold Trend Line Overlay (Dark Logo).md",
+      "x": 8740,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_labour_gap_forecasting",
+      "type": "file",
+      "file": "Labour Gap Forecasting.md",
+      "x": 8340,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_dark_tagline",
+      "type": "file",
+      "file": "OPERATIONSEDGE.CO.UK Tagline (Dark Logo).md",
+      "x": 8540,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_brand_operationsedge",
+      "type": "file",
+      "file": "OperationsEdge Brand  Paulo Gomes.md",
+      "x": 8740,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_dark_svg",
+      "type": "file",
+      "file": "OperationsEdge Dark Logo (SVG).md",
+      "x": 8340,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_dark_wordmark",
+      "type": "file",
+      "file": "OperationsEdge Wordmark (Dark Logo).md",
+      "x": 8540,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_peak_labour_planning",
+      "type": "file",
+      "file": "Peak Labour Planning for Warehouse Operations.md",
+      "x": 8740,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_slide01_hook",
+      "type": "file",
+      "file": "Post 04 Slide 1 \u2014 Hook Peak Labour Planning  Agency Starters.md",
+      "x": 8340,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_slide02_context",
+      "type": "file",
+      "file": "Post 04 Slide 2 \u2014 Context Labour Gap Forecasting.md",
+      "x": 8540,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_slide03_work",
+      "type": "file",
+      "file": "Post 04 Slide 3 \u2014 Planning Chain 4 Steps Before Day One.md",
+      "x": 8740,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_slide04_dashboard",
+      "type": "file",
+      "file": "Post 04 Slide 4 \u2014 Dashboard Agency Onboarding Starter Planning.md",
+      "x": 8340,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_slide05_takeaway",
+      "type": "file",
+      "file": "Post 04 Slide 5 \u2014 Takeaway Solve the Onboarding Problem.md",
+      "x": 8540,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_agency_onboarding_carousel",
+      "type": "file",
+      "file": "Post 04 \u2014 Agency Onboarding Carousel (PDF).md",
+      "x": 8740,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_caption",
+      "type": "file",
+      "file": "Post 04 \u2014 Caption Text.md",
+      "x": 8340,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_comment",
+      "type": "file",
+      "file": "Post 04 \u2014 Comment (Link to Full Case Study).md",
+      "x": 8540,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_slide01_hook",
+      "type": "file",
+      "file": "Post 06 Slide 1 \u2014 Hook Picking Errors Not Random.md",
+      "x": 8740,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_comment",
+      "type": "file",
+      "file": "Post 06 \u2014 Comment (Link to Full Case Study).md",
+      "x": 8340,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_not_random_post",
+      "type": "file",
+      "file": "Post 06 \u2014 Picking Errors Not Random (Post Set).md",
+      "x": 8540,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_comment",
+      "type": "file",
+      "file": "Post 08 \u2014 Comment (Link to Full Case Study).md",
+      "x": 8740,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_starter_rampup",
+      "type": "file",
+      "file": "Structured Starter Ramp-Up Progression.md",
+      "x": 8340,
+      "y": 720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "UK Ops Software Coverage",
+      "x": 9500,
+      "y": 0,
+      "width": 1100,
+      "height": 920,
+      "color": "1"
+    },
+    {
+      "id": "n_guide_shift_scheduling",
+      "type": "file",
+      "file": "Best Shift Scheduling Software for Logistics Teams (Guide).md",
+      "x": 9520,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_best_wms_uk_review",
+      "type": "file",
+      "file": "Best WMS Software for Mid-Size UK Warehouses 2026.md",
+      "x": 9720,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_connecteam_tool",
+      "type": "file",
+      "file": "Connecteam (Workforce Management Software).md",
+      "x": 9920,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_connecteam_review",
+      "type": "file",
+      "file": "Connecteam Review 2026 Workforce Management for UK Shift-Based Ops.md",
+      "x": 9520,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comparison_connecteam_vs_rotacloud",
+      "type": "file",
+      "file": "Connecteam vs Rotacloud UK Shift Scheduling (Comparison).md",
+      "x": 9720,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_deputy_tool",
+      "type": "file",
+      "file": "Deputy (Workforce Scheduling Software).md",
+      "x": 9920,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_hs_audit",
+      "type": "file",
+      "file": "H&S Audit and Inspection Management.md",
+      "x": 9520,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linnworks_tool",
+      "type": "file",
+      "file": "Linnworks (UK WMS for Multi-Channel E-Commerce).md",
+      "x": 9720,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_mintsoft_tool",
+      "type": "file",
+      "file": "Mintsoft (UK WMS for 3PLs and Fulfilment Houses).md",
+      "x": 9920,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_mondaycom_tool",
+      "type": "file",
+      "file": "Monday.com (Work Management Platform).md",
+      "x": 9520,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_mondaycom_review",
+      "type": "file",
+      "file": "Monday.com for Warehouse Management Honest Review (2026).md",
+      "x": 9720,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_comparison_mondaycom_vs_smartsheet",
+      "type": "file",
+      "file": "Monday.com vs Smartsheet UK Operations (Comparison).md",
+      "x": 9920,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_peoplevox_tool",
+      "type": "file",
+      "file": "Peoplevox (WMS for DTC Brands, K\u00f6rber Supply Chain).md",
+      "x": 9520,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_project_management_ops",
+      "type": "file",
+      "file": "Project and Programme Management for Operations Teams.md",
+      "x": 9720,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_rotacloud_tool",
+      "type": "file",
+      "file": "Rotacloud (UK-Native Shift Scheduling).md",
+      "x": 9920,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_resource_saas_procurement",
+      "type": "file",
+      "file": "SaaS Procurement Checklist (Resource).md",
+      "x": 9520,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_safetyculture_review",
+      "type": "file",
+      "file": "SafetyCulture (iAuditor) Review 2026 UK Warehouse H&S.md",
+      "x": 9720,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_safetyculture_tool",
+      "type": "file",
+      "file": "SafetyCulture iAuditor (H&S Audit Platform).md",
+      "x": 9920,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_shift_scheduling",
+      "type": "file",
+      "file": "Shift Scheduling and Rota Management.md",
+      "x": 9520,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_smartsheet_tool",
+      "type": "file",
+      "file": "Smartsheet (Work Management Platform).md",
+      "x": 9720,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_smartsheet_review",
+      "type": "file",
+      "file": "Smartsheet for Operations Teams Honest Review (2026).md",
+      "x": 9920,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_uk_compliance",
+      "type": "file",
+      "file": "UK Compliance (WTR, GDPR, HMRC, HSE).md",
+      "x": 9520,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_wms",
+      "type": "file",
+      "file": "Warehouse Management System (WMS).md",
+      "x": 9720,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_workforce_management",
+      "type": "file",
+      "file": "Workforce Management for DesklessShift-Based Teams.md",
+      "x": 9920,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "Hero Animation Code",
+      "x": 10680,
+      "y": 0,
+      "width": 1100,
+      "height": 820,
+      "color": "2"
+    },
+    {
+      "id": "n_page_hero_animation_easeoutcubic",
+      "type": "file",
+      "file": "easeOutCubic().md",
+      "x": 10700,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_hero_animation_easeoutquart",
+      "type": "file",
+      "file": "easeOutQuart().md",
+      "x": 10900,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_hero_animation_el",
+      "type": "file",
+      "file": "el().md",
+      "x": 11100,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hero_animation_el",
+      "type": "file",
+      "file": "el()_1.md",
+      "x": 10700,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hero_animation_js",
+      "type": "file",
+      "file": "hero-animation.js.md",
+      "x": 10900,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_hero_animation_js",
+      "type": "file",
+      "file": "page-hero-animation.js.md",
+      "x": 11100,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hero_animation_playbuildin",
+      "type": "file",
+      "file": "playBuildIn().md",
+      "x": 10700,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hero_animation_rand",
+      "type": "file",
+      "file": "rand().md",
+      "x": 10900,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_hero_animation_renderbars",
+      "type": "file",
+      "file": "renderBars().md",
+      "x": 11100,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_hero_animation_renderconstellation",
+      "type": "file",
+      "file": "renderConstellation().md",
+      "x": 10700,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_hero_animation_renderflow",
+      "type": "file",
+      "file": "renderFlow().md",
+      "x": 10900,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_hero_animation_rendergrid",
+      "type": "file",
+      "file": "renderGrid().md",
+      "x": 11100,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_hero_animation_startambient",
+      "type": "file",
+      "file": "startAmbient().md",
+      "x": 10700,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hero_animation_startambient",
+      "type": "file",
+      "file": "startAmbient()_1.md",
+      "x": 10900,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_hero_animation_stopambient",
+      "type": "file",
+      "file": "stopAmbient().md",
+      "x": 11100,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hero_animation_stopambient",
+      "type": "file",
+      "file": "stopAmbient()_1.md",
+      "x": 10700,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_hero_animation_tosmoothpath",
+      "type": "file",
+      "file": "toSmoothPath().md",
+      "x": 10900,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hero_animation_tosmoothpath",
+      "type": "file",
+      "file": "toSmoothPath()_1.md",
+      "x": 11100,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_hero_animation_tween",
+      "type": "file",
+      "file": "tween().md",
+      "x": 10700,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hero_animation_tween",
+      "type": "file",
+      "file": "tween()_1.md",
+      "x": 10900,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hero_animation_wait",
+      "type": "file",
+      "file": "wait().md",
+      "x": 11100,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "Agency Induction Framework",
+      "x": 0,
+      "y": 2300,
+      "width": 880,
+      "height": 620,
+      "color": "3"
+    },
+    {
+      "id": "n_article_peak_labour_onboarding",
+      "type": "file",
+      "file": "Case Study \u2014 How We Planned Peak Labour and Onboarded 10 Agency Staff.md",
+      "x": 20,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_emergency_exit_walk",
+      "type": "file",
+      "file": "Emergency Exit Walk \u2014 Physical Route Not Just Verbal.md",
+      "x": 220,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_induction_operational_prep",
+      "type": "file",
+      "file": "Induction as Operational Preparation (Not Paperwork).md",
+      "x": 420,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction",
+      "type": "file",
+      "file": "LinkedIn Post 05 \u2014 Warehouse Induction Non-Negotiables.md",
+      "x": 20,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_manual_handling_signoff",
+      "type": "file",
+      "file": "Manual Handling Sign-off \u2014 Dated and Witnessed.md",
+      "x": 220,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_named_reporting_line",
+      "type": "file",
+      "file": "Named Reporting Line \u2014 A Name Not a Title.md",
+      "x": 420,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_ppe_confirmation",
+      "type": "file",
+      "file": "PPE Confirmation \u2014 Correct, Fits, Being Worn.md",
+      "x": 20,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_caption",
+      "type": "file",
+      "file": "Post 05 Caption \u2014 Induction LinkedIn Caption.md",
+      "x": 220,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_comment",
+      "type": "file",
+      "file": "Post 05 Comment \u2014 Link to Peak Labour Case Study.md",
+      "x": 420,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_slide01_hook",
+      "type": "file",
+      "file": "Post 05 Slide 01 \u2014 Hook Induction Protects the Operation.md",
+      "x": 20,
+      "y": 2620,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_slide02_context",
+      "type": "file",
+      "file": "Post 05 Slide 02 \u2014 Problem Induction as Paperwork.md",
+      "x": 220,
+      "y": 2620,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_slide03_work",
+      "type": "file",
+      "file": "Post 05 Slide 03 \u2014 Five Non-Negotiables.md",
+      "x": 420,
+      "y": 2620,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_slide05_takeaway",
+      "type": "file",
+      "file": "Post 05 Slide 05 \u2014 Takeaway Induction is Operational Preparation.md",
+      "x": 20,
+      "y": 2700,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_site_rules_acknowledgement",
+      "type": "file",
+      "file": "Site Rules Acknowledgement \u2014 Written Confirmation.md",
+      "x": 220,
+      "y": 2700,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "Data Visibility Brand Concept",
+      "x": 1840,
+      "y": 2300,
+      "width": 880,
+      "height": 620,
+      "color": "4"
+    },
+    {
+      "id": "n_brand_color_steel_blue",
+      "type": "file",
+      "file": "Brand Color \u2013 Steel Blue (1B609D) Palette.md",
+      "x": 1860,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_logistics_data_visibility",
+      "type": "file",
+      "file": "Concept \u2013 Logistics and Warehouse Data Visibility.md",
+      "x": 2060,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_operational_performance_improvement",
+      "type": "file",
+      "file": "Concept \u2013 Operational Performance Improvement Over Time.md",
+      "x": 2260,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_visual_theme_dark_analytics",
+      "type": "file",
+      "file": "Dark Navy Analytics Dashboard Visual Theme.md",
+      "x": 1860,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_element_bar_chart",
+      "type": "file",
+      "file": "Design Element \u2013 Bar Chart Showing Performance Metrics.md",
+      "x": 2060,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_element_upward_line_chart",
+      "type": "file",
+      "file": "Design Element \u2013 Upward-Trending Line Chart with Data Points.md",
+      "x": 2260,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_element_warehouse_grid",
+      "type": "file",
+      "file": "Design Element \u2013 Warehouse Bay Grid Matrix.md",
+      "x": 1860,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hero_graphic_dashboard_visualization",
+      "type": "file",
+      "file": "Hero Graphic \u2013 Operational Dashboard Visualization.md",
+      "x": 2060,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hero_graphic_operations_dashboard",
+      "type": "file",
+      "file": "Hero Graphic \u2014 Operations Dashboard Data Visualisation.md",
+      "x": 2260,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_brand_context_operations_edge",
+      "type": "file",
+      "file": "OperationsEdge \u2014 UK Operations and Logistics Site.md",
+      "x": 1860,
+      "y": 2620,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_element_trend_line",
+      "type": "file",
+      "file": "Rising Trend Line Chart with Node Markers.md",
+      "x": 2060,
+      "y": 2620,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_design_element_grid_panels",
+      "type": "file",
+      "file": "Semi-transparent Grid Panel Overlay.md",
+      "x": 2260,
+      "y": 2620,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_visual_theme_dark_navy_analytics",
+      "type": "file",
+      "file": "Visual Theme \u2013 Dark Navy Analytics Aesthetic.md",
+      "x": 1860,
+      "y": 2700,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "Site JavaScript Utilities",
+      "x": 3680,
+      "y": 2300,
+      "width": 880,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "n_count_up_js",
+      "type": "file",
+      "file": "count-up.js.md",
+      "x": 3700,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_site_initfocusvisible",
+      "type": "file",
+      "file": "initFocusVisible().md",
+      "x": 3900,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_site_initheroparallax",
+      "type": "file",
+      "file": "initHeroParallax().md",
+      "x": 4100,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_site_initnav",
+      "type": "file",
+      "file": "initNav().md",
+      "x": 3700,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_site_initnewsletterforms",
+      "type": "file",
+      "file": "initNewsletterForms().md",
+      "x": 3900,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_site_initreadingprogress",
+      "type": "file",
+      "file": "initReadingProgress().md",
+      "x": 4100,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_site_initreviewfilters",
+      "type": "file",
+      "file": "initReviewFilters().md",
+      "x": 3700,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_site_initscrollheader",
+      "type": "file",
+      "file": "initScrollHeader().md",
+      "x": 3900,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_site_initscrollreveal",
+      "type": "file",
+      "file": "initScrollReveal().md",
+      "x": 4100,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_site_inittochighlight",
+      "type": "file",
+      "file": "initTocHighlight().md",
+      "x": 3700,
+      "y": 2620,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_site_js",
+      "type": "file",
+      "file": "site.js.md",
+      "x": 3900,
+      "y": 2620,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_count_up_tick",
+      "type": "file",
+      "file": "tick().md",
+      "x": 4100,
+      "y": 2620,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g11",
+      "type": "group",
+      "label": "Day-One Induction Checklist",
+      "x": 5520,
+      "y": 2300,
+      "width": 880,
+      "height": 520,
+      "color": "6"
+    },
+    {
+      "id": "n_post05_induction_metric_can_be_skipped",
+      "type": "file",
+      "file": "Can Be Skipped 0 (non-negotiable = non-negotiable).md",
+      "x": 5540,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_checklist_emergency_exits",
+      "type": "file",
+      "file": "Checklist Item Emergency Exits & Muster Point \u2014 Walked, Not Pointed.md",
+      "x": 5740,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_checklist_manual_handling",
+      "type": "file",
+      "file": "Checklist Item Manual Handling Sign-Off \u2014 Dated & Witnessed.md",
+      "x": 5940,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_checklist_ppe",
+      "type": "file",
+      "file": "Checklist Item PPE Confirmed \u2014 Correct, Fits, Being Worn.md",
+      "x": 5540,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_checklist_reporting_line",
+      "type": "file",
+      "file": "Checklist Item Reporting Line Given \u2014 A Name, Not a Title.md",
+      "x": 5740,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_checklist_site_rules",
+      "type": "file",
+      "file": "Checklist Item Site Rules Acknowledged \u2014 Phones, Restricted Areas, Breaks.md",
+      "x": 5940,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_concept_day_one_compliance",
+      "type": "file",
+      "file": "Concept Day-One Compliance & Accountability.md",
+      "x": 5540,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_concept_non_negotiable",
+      "type": "file",
+      "file": "Concept Non-Negotiable Induction Standards.md",
+      "x": 5740,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_slide04",
+      "type": "file",
+      "file": "Day-One Induction \u2014 5 Non-Negotiables Tracker (Dashboard).md",
+      "x": 5940,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_metric_induction_lead",
+      "type": "file",
+      "file": "Induction Lead Named Person (not 'whoever's free').md",
+      "x": 5540,
+      "y": 2620,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_metric_items_required",
+      "type": "file",
+      "file": "Items Required 5 (per starter, every time).md",
+      "x": 5740,
+      "y": 2620,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g12",
+      "type": "group",
+      "label": "Peak Labour Planning Dashboard",
+      "x": 6920,
+      "y": 2300,
+      "width": 880,
+      "height": 520,
+      "color": "1"
+    },
+    {
+      "id": "n_post04_metric_agencies_compared",
+      "type": "file",
+      "file": "Agencies Compared \u2014 Multiple (Rate, Availability, Profile).md",
+      "x": 6940,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_agency_slide04",
+      "type": "file",
+      "file": "Agency Onboarding \u2014 Starter Planning Dashboard.md",
+      "x": 7140,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_metric_buddy_operators",
+      "type": "file",
+      "file": "Buddy Operators \u2014 Named Pairs (Pre-Assigned Before Arrival).md",
+      "x": 7340,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_insight_training_plan_quote",
+      "type": "file",
+      "file": "Insight Paying for Headcount Without a Training Plan Is Paying for Noise.md",
+      "x": 6940,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_metric_planning_window",
+      "type": "file",
+      "file": "Planning Window \u2014 Short Window (Forecast to Floor-Ready).md",
+      "x": 7140,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_rampup_stage_buddy_tasks",
+      "type": "file",
+      "file": "Ramp-Up Stage Controlled Tasks with Buddy (Days 1\u20133).md",
+      "x": 7340,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_rampup_stage_full_allocation",
+      "type": "file",
+      "file": "Ramp-Up Stage Full Allocation (End of Week 1+).md",
+      "x": 6940,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_rampup_stage_induction",
+      "type": "file",
+      "file": "Ramp-Up Stage Induction and H&S Sign-Off (Day 1).md",
+      "x": 7140,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_rampup_stage_supervised",
+      "type": "file",
+      "file": "Ramp-Up Stage Supervised Independence (Days 3\u20135).md",
+      "x": 7340,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_rampup_chart",
+      "type": "file",
+      "file": "Starter Ramp-Up Progression \u2014 Days to Contribution Level.md",
+      "x": 6940,
+      "y": 2620,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_metric_starters_required",
+      "type": "file",
+      "file": "Starters Required \u2014 Group Intake (Peak Period).md",
+      "x": 7140,
+      "y": 2620,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g13",
+      "type": "group",
+      "label": "Behaviour Replication Results",
+      "x": 8320,
+      "y": 2300,
+      "width": 880,
+      "height": 520,
+      "color": "2"
+    },
+    {
+      "id": "n_post03_behaviour_replication_chart",
+      "type": "file",
+      "file": "Behaviour Replication \u2014 Team LPH Impact After Rollout (bar chart).md",
+      "x": 8340,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_insight_behaviour_replication",
+      "type": "file",
+      "file": "Insight Replicating documented behaviours \u2014 not retraining \u2014 closed most of the gap.md",
+      "x": 8540,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_kpi_performance_gap",
+      "type": "file",
+      "file": "KPI Performance Gap (significant, above team average).md",
+      "x": 8740,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_kpi_team_average_lph",
+      "type": "file",
+      "file": "KPI Team Average LPH (baseline measurement).md",
+      "x": 8340,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_kpi_top_performer_lph",
+      "type": "file",
+      "file": "KPI Top Performer LPH (significantly above, same operation same tools).md",
+      "x": 8540,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_metric_combined_effect",
+      "type": "file",
+      "file": "Metric Combined Effect (+19 LPH).md",
+      "x": 8740,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_metric_pick_path_discipline",
+      "type": "file",
+      "file": "Metric Pick Path Discipline (+8 LPH).md",
+      "x": 8340,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_metric_replenishment_timing",
+      "type": "file",
+      "file": "Metric Replenishment Timing (+5 LPH).md",
+      "x": 8540,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_metric_scanner_rhythm",
+      "type": "file",
+      "file": "Metric Scanner Rhythm (+6 LPH).md",
+      "x": 8740,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_top_performer_slide04",
+      "type": "file",
+      "file": "Top Performer \u2014 LPH Distribution & Behaviour Analysis Dashboard.md",
+      "x": 8340,
+      "y": 2620,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g14",
+      "type": "group",
+      "label": "LPH Improvement Metrics",
+      "x": 9500,
+      "y": 2300,
+      "width": 660,
+      "height": 420,
+      "color": "3"
+    },
+    {
+      "id": "n_post01_lph_metric_baseline_lph",
+      "type": "file",
+      "file": "Baseline LPH \u2014 Below Average (Month 1).md",
+      "x": 9520,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post01_lph_metric_hours_saved",
+      "type": "file",
+      "file": "Hours Saved \u2014 Hundreds of Productive Hours Recovered.md",
+      "x": 9720,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post01_lph_insight_no_capex",
+      "type": "file",
+      "file": "Key Insight \u2014 No New Technology, No Capital Spend.md",
+      "x": 9920,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post01_lph_metric_improvement_21pct",
+      "type": "file",
+      "file": "LPH Improvement \u2014 21% Year-on-Year Gain.md",
+      "x": 9520,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post01_lph_trend_chart",
+      "type": "file",
+      "file": "LPH Trend Chart \u2014 Month by Month (M1\u2013M12).md",
+      "x": 9720,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post01_lph_method_measurement_visibility",
+      "type": "file",
+      "file": "Method \u2014 Measurement, Visibility, Top Performer Replication.md",
+      "x": 9920,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post01_lph_metric_peak_lph",
+      "type": "file",
+      "file": "Peak LPH \u2014 Above Average (Month 12).md",
+      "x": 9520,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post01_lph_slide04",
+      "type": "file",
+      "file": "Picking Efficiency \u2014 12-Month Performance Dashboard.md",
+      "x": 9720,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g15",
+      "type": "group",
+      "label": "Shift Performance Conditions",
+      "x": 10680,
+      "y": 2300,
+      "width": 660,
+      "height": 420,
+      "color": "4"
+    },
+    {
+      "id": "n_post02_factor_interruptions",
+      "type": "file",
+      "file": "Contributing Factor Interruptions \u2014 Low.md",
+      "x": 10700,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_factor_peer_accountability",
+      "type": "file",
+      "file": "Contributing Factor Peer Accountability \u2014 High.md",
+      "x": 10900,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_factor_station_consistency",
+      "type": "file",
+      "file": "Contributing Factor Station Consistency \u2014 High.md",
+      "x": 11100,
+      "y": 2380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_kpi_early_shift_lph",
+      "type": "file",
+      "file": "Early Shift Avg LPH \u2014 Lower.md",
+      "x": 10700,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_insight_conditions_not_individuals",
+      "type": "file",
+      "file": "Insight Conditions drove performance, not individuals.md",
+      "x": 10900,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_kpi_late_shift_lph",
+      "type": "file",
+      "file": "Late Shift Avg LPH \u2014 Higher.md",
+      "x": 11100,
+      "y": 2460,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_kpi_performance_gap",
+      "type": "file",
+      "file": "Performance Gap ~10% \u2014 Late Shift Advantage.md",
+      "x": 10700,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_shift_slide04",
+      "type": "file",
+      "file": "Shift Performance \u2014 LPH Comparison Dashboard (Slide 4).md",
+      "x": 10900,
+      "y": 2540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g16",
+      "type": "group",
+      "label": "WMS Capacity Mismatch Fix",
+      "x": 0,
+      "y": 3000,
+      "width": 660,
+      "height": 420,
+      "color": "5"
+    },
+    {
+      "id": "n_post08_shelf_fix_physical_audit_wms_update",
+      "type": "file",
+      "file": "Fix Physical Audit \u2014 WMS Update \u2014 Fill Limit Standardisation \u2014 Quarterly Review.md",
+      "x": 20,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_concept_physical_capacity",
+      "type": "file",
+      "file": "Physical Capacity (Actual \u2014 What the Shelf Actually Held).md",
+      "x": 220,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_consequence_pick_face_overcrowding",
+      "type": "file",
+      "file": "Pick Face Overcrowding \u2014 Visual Confusion \u2014 Wrong-Item Picks.md",
+      "x": 420,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_consequence_replenishment_inconsistency",
+      "type": "file",
+      "file": "Replenishment Inconsistency \u2014 Empty Locations Mid-Pick.md",
+      "x": 20,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_insight_wms_never_reviewed",
+      "type": "file",
+      "file": "Root Cause Insight WMS Set at Go-Live and Never Reviewed.md",
+      "x": 220,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_concept_systematic_overfill",
+      "type": "file",
+      "file": "Systematic Overfill \u2014 Every Replenishment Cycle.md",
+      "x": 420,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_concept_wms_capacity",
+      "type": "file",
+      "file": "WMS Capacity (System Figure).md",
+      "x": 20,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_slide04",
+      "type": "file",
+      "file": "WMS Shelf Capacity \u2014 Slide 4 Capacity Misalignment Dashboard.md",
+      "x": 220,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g17",
+      "type": "group",
+      "label": "Error Concentration Dashboard",
+      "x": 1840,
+      "y": 3000,
+      "width": 660,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "n_post06_errors_slide04_chart_error_rate_by_zone",
+      "type": "file",
+      "file": "Error Rate by Zone (Relative) Zone A High, Zone B High, Zone C Low, Zone D Low, Zone E Low.md",
+      "x": 1860,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_slide04_chart_error_type_breakdown",
+      "type": "file",
+      "file": "Error Type Breakdown Donut Chart Wrong item 38%, Wrong quantity 27%, Missed item 22%, Location error 13%.md",
+      "x": 2060,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_slide04_metric_error_types_tracked",
+      "type": "file",
+      "file": "Error Types Tracked 4 (wrong item, qty, missed, location).md",
+      "x": 2260,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_slide04_metric_high_error_zones",
+      "type": "file",
+      "file": "High-Error Zones 2 of all zones \u2014 60%+ of all errors.md",
+      "x": 1860,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_slide04_insight_zones_layout",
+      "type": "file",
+      "file": "Key Insight 2 zones, 60%+ of all errors \u2014 both had fixable layout and slotting issues; generic retraining would have addressed 0% of the actual cause.md",
+      "x": 2060,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_not_random_carousel",
+      "type": "file",
+      "file": "LinkedIn Carousel Errors Are Not Random.md",
+      "x": 2260,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_slide04_dashboard",
+      "type": "file",
+      "file": "Picking Errors \u2014 Concentration & Type Analysis Dashboard.md",
+      "x": 1860,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_slide04_metric_root_cause_level",
+      "type": "file",
+      "file": "Root Cause Level System not operator (layout, slotting, environment).md",
+      "x": 2060,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g18",
+      "type": "group",
+      "label": "Fishbone RCA Category Results",
+      "x": 3680,
+      "y": 3000,
+      "width": 660,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_post07_fishbone_root_cause_environment",
+      "type": "file",
+      "file": "Environment \u2014 Root Cause Category (72%).md",
+      "x": 3700,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_root_cause_equipment",
+      "type": "file",
+      "file": "Equipment \u2014 Root Cause Category (38%).md",
+      "x": 3900,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_slide04",
+      "type": "file",
+      "file": "Fishbone Analysis \u2013 Root Cause Category Breakdown Dashboard (Slide 4).md",
+      "x": 4100,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_insight_operation_not_operators",
+      "type": "file",
+      "file": "Key Insight The Operation Was Generating Errors, Not the Operators.md",
+      "x": 3700,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_root_cause_materials",
+      "type": "file",
+      "file": "Materials \u2014 Root Cause Category (55%).md",
+      "x": 3900,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_root_cause_people",
+      "type": "file",
+      "file": "People \u2014 Root Cause Category (30%).md",
+      "x": 4100,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_root_cause_process",
+      "type": "file",
+      "file": "Process \u2014 Top Root Cause Category (85%).md",
+      "x": 3700,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g19",
+      "type": "group",
+      "label": "PPEEM Error Framework",
+      "x": 5520,
+      "y": 3000,
+      "width": 660,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_post07_fishbone_category_environment",
+      "type": "file",
+      "file": "Fishbone Category \u2014 Environment (lighting, signage, aisle layout, overcrowding).md",
+      "x": 5540,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_category_equipment",
+      "type": "file",
+      "file": "Fishbone Category \u2014 Equipment (scanner reliability, label readability, hardware condition).md",
+      "x": 5740,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_category_materials",
+      "type": "file",
+      "file": "Fishbone Category \u2014 Materials (packaging similarity, barcode placement, product presentation).md",
+      "x": 5940,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_category_people",
+      "type": "file",
+      "file": "Fishbone Category \u2014 People (behaviour, habits, training gaps, fatigue).md",
+      "x": 5540,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_category_process",
+      "type": "file",
+      "file": "Fishbone Category \u2014 Process (confirmation steps, scan rhythm, pick path design).md",
+      "x": 5740,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_slide03",
+      "type": "file",
+      "file": "Fishbone RCA \u2014 The 5 Categories (Slide 3).md",
+      "x": 5940,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_ppeem_framework",
+      "type": "file",
+      "file": "PPEEM Framework \u2014 People, Process, Equipment, Environment, Materials.md",
+      "x": 5540,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g20",
+      "type": "group",
+      "label": "5-Step Induction Process",
+      "x": 6920,
+      "y": 3000,
+      "width": 660,
+      "height": 420,
+      "color": "3"
+    },
+    {
+      "id": "n_post05_induction_process_five_nonnegotiables",
+      "type": "file",
+      "file": "5-Step Induction Non-Negotiables Process.md",
+      "x": 6940,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_slide03",
+      "type": "file",
+      "file": "Slide 3 \u2013 The 5 Non-Negotiables (Five Things Every Starter).md",
+      "x": 7140,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_step1_emergency_exit",
+      "type": "file",
+      "file": "Step 1 \u2013 Emergency Exit Locations and Muster Point (Walk Them There).md",
+      "x": 7340,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_step2_manual_handling_signoff",
+      "type": "file",
+      "file": "Step 2 \u2013 Manual Handling Sign-Off (Dated, Witnessed, Filed).md",
+      "x": 6940,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_step3_ppe_confirmation",
+      "type": "file",
+      "file": "Step 3 \u2013 PPE Confirmation (Have It, Fits, Wearing It).md",
+      "x": 7140,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_step4_site_rules_acknowledgement",
+      "type": "file",
+      "file": "Step 4 \u2013 Site Rules Acknowledgement (Phones, Restricted Areas, Break Protocol).md",
+      "x": 7340,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_step5_reporting_line",
+      "type": "file",
+      "file": "Step 5 \u2013 Reporting Line (A Name, Not a Job Title).md",
+      "x": 6940,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g21",
+      "type": "group",
+      "label": "5 Whys WMS Analysis",
+      "x": 8320,
+      "y": 3000,
+      "width": 660,
+      "height": 420,
+      "color": "4"
+    },
+    {
+      "id": "n_post08_shelf_slide03_five_whys_analysis",
+      "type": "file",
+      "file": "5 Whys Root Cause Analysis \u2014 WMS Shelf Capacity Mismatch.md",
+      "x": 8340,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_slide03_fix_methodology",
+      "type": "file",
+      "file": "Fix Methodology Physical Audit \u2192 Update WMS \u2192 Standardise Fill Limits \u2192 Schedule Reviews.md",
+      "x": 8540,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_slide03_root_cause_no_slotting_review",
+      "type": "file",
+      "file": "Root Cause No SlottingCapacity Review Process Existed.md",
+      "x": 8740,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_slide03_why1_wrong_item_picked",
+      "type": "file",
+      "file": "Why 1 Wrong Item Picked \u2014 Poor Visual Separation on Overcrowded Pick Face.md",
+      "x": 8340,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_slide03_why2_pick_face_overcrowded",
+      "type": "file",
+      "file": "Why 2 Pick Face Overcrowded \u2014 Replenishment Filling to System-Defined Capacity.md",
+      "x": 8540,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_slide03_why3_system_exceeds_physical",
+      "type": "file",
+      "file": "Why 3 WMS Capacity Exceeded Physical Capacity \u2014 Difference Never Flagged.md",
+      "x": 8740,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_slide03_why4_no_audit_process",
+      "type": "file",
+      "file": "Why 4 No Process to Audit System vs Physical Capacity \u2014 Set at Go-Live, Never Reviewed.md",
+      "x": 8340,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g22",
+      "type": "group",
+      "label": "Logo & Brand Assets",
+      "x": 9500,
+      "y": 3000,
+      "width": 660,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_logo_svg_colour_gold",
+      "type": "file",
+      "file": "Brand Colour \u2014 Amber Gold f0a500.md",
+      "x": 9520,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_svg_colour_steel_blue",
+      "type": "file",
+      "file": "Brand Colour \u2014 Steel Blue 1B609D_1.md",
+      "x": 9720,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_svg_icon_mark",
+      "type": "file",
+      "file": "Logo Icon Mark \u2014 Rising Bar Chart with Trend Line.md",
+      "x": 9920,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_svg_tagline",
+      "type": "file",
+      "file": "Logo Tagline \u2014 'OPERATIONSEDGE.CO.UK' in Courier Monospace.md",
+      "x": 9520,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_svg_wordmark",
+      "type": "file",
+      "file": "Logo Wordmark \u2014 'Operations Edge' in Georgia Serif.md",
+      "x": 9720,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_svg_brand_identity",
+      "type": "file",
+      "file": "OperationsEdge Site Logo.md",
+      "x": 9920,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g23",
+      "type": "group",
+      "label": "Agency Pre-Day-One Steps",
+      "x": 10680,
+      "y": 3000,
+      "width": 660,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_post04_agency_onboarding_process",
+      "type": "file",
+      "file": "Agency Onboarding Pre-Day-One Process (4-Step).md",
+      "x": 10700,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_agency_slide03",
+      "type": "file",
+      "file": "Agency Onboarding \u2014 Four Things to Get Right Before Day One.md",
+      "x": 10900,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_step1_contact_agencies",
+      "type": "file",
+      "file": "Step 1 Contact Multiple Agencies \u2014 Compare Rates, Availability, Operator Profile.md",
+      "x": 11100,
+      "y": 3080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_step2_compare_cost_risk",
+      "type": "file",
+      "file": "Step 2 Compare Agency Cost Against Budget AND Risk of Under-Resourcing.md",
+      "x": 10700,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_step3_assign_buddy_operators",
+      "type": "file",
+      "file": "Step 3 Assign Buddy Operators Before Starters Arrive.md",
+      "x": 10900,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_step4_structured_rampup",
+      "type": "file",
+      "file": "Step 4 Define Structured Ramp-Up \u2014 Controlled Tasks to Independence to Full Allocation.md",
+      "x": 11100,
+      "y": 3160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g24",
+      "type": "group",
+      "label": "Favicon & Brand Motifs",
+      "x": 0,
+      "y": 3500,
+      "width": 660,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_favicon_accent_color_gold",
+      "type": "file",
+      "file": "Accent Colour \u2014 Gold f0a500.md",
+      "x": 20,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_favicon_brand_color_steel_blue",
+      "type": "file",
+      "file": "Brand Colour \u2014 Steel Blue 1B609D.md",
+      "x": 220,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_favicon_icon",
+      "type": "file",
+      "file": "OperationsEdge Favicon \u2014 Bar Chart with Trend Line.md",
+      "x": 420,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_favicon_motif_bar_chart",
+      "type": "file",
+      "file": "Visual Motif \u2014 Ascending Bar Chart.md",
+      "x": 20,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_favicon_motif_trend_line",
+      "type": "file",
+      "file": "Visual Motif \u2014 Upward Trend Line with Peak Dot.md",
+      "x": 220,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g25",
+      "type": "group",
+      "label": "Brand Icon Design",
+      "x": 1840,
+      "y": 3500,
+      "width": 660,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_amber_accent",
+      "type": "file",
+      "file": "Amber  Orange Accent Dot \u2014 Edge Highlight.md",
+      "x": 1860,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_bar_chart_growth",
+      "type": "file",
+      "file": "Ascending Bar Chart \u2014 Growth  Performance Visual.md",
+      "x": 2060,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ops_edge_icon_hd",
+      "type": "file",
+      "file": "OperationsEdge Brand Icon (HD).md",
+      "x": 2260,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ops_edge_brand",
+      "type": "file",
+      "file": "OperationsEdge Brand Identity.md",
+      "x": 1860,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_steel_blue_palette",
+      "type": "file",
+      "file": "Steel Blue Brand Colour (1B609D).md",
+      "x": 2060,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g26",
+      "type": "group",
+      "label": "Retrain vs Root Cause",
+      "x": 3680,
+      "y": 3500,
+      "width": 660,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_post07_fishbone_slide02",
+      "type": "file",
+      "file": "Fishbone Post \u2013 Slide 02 Why Standard Error Reduction Fails.md",
+      "x": 3700,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_concept_five_categories",
+      "type": "file",
+      "file": "Five Contributing Categories \u2013 Process, Environment, Materials.md",
+      "x": 3900,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_concept_fix_vs_guess",
+      "type": "file",
+      "file": "Fix vs Guess \u2013 Fishbone Forces Mapping Before Deciding.md",
+      "x": 4100,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_concept_symptom_vs_cause",
+      "type": "file",
+      "file": "Symptom vs Cause \u2013 Generic Retraining Addresses Symptom Not Cause.md",
+      "x": 3700,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_concept_retrain_everyone",
+      "type": "file",
+      "file": "The Problem With Retrain Everyone.md",
+      "x": 3900,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g27",
+      "type": "group",
+      "label": "LPH Measurement Principle",
+      "x": 5520,
+      "y": 3500,
+      "width": 660,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_concept_performance_visibility",
+      "type": "file",
+      "file": "Individual Performance Visibility.md",
+      "x": 5540,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post01_lph_slide05",
+      "type": "file",
+      "file": "LPH Improvement Carousel \u2014 Slide 5 The Takeaway.md",
+      "x": 5740,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post01_lph_carousel",
+      "type": "file",
+      "file": "LPH Improvement LinkedIn Carousel (Post 01).md",
+      "x": 5940,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_lph_metric",
+      "type": "file",
+      "file": "Lines Per Hour (LPH).md",
+      "x": 5540,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_measurement_drives_behaviour",
+      "type": "file",
+      "file": "Measurement Drives Behaviour Change.md",
+      "x": 5740,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g28",
+      "type": "group",
+      "label": "LPH Four Changes Method",
+      "x": 6920,
+      "y": 3500,
+      "width": 660,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_post01_lph_slide03",
+      "type": "file",
+      "file": "LPH Improvement \u2014 What We Did (Four Changes, No New Technology).md",
+      "x": 6940,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post01_lph_step1_daily_tracking",
+      "type": "file",
+      "file": "Step 1 \u2014 Built Daily LPH Tracking by Operator, Shift, and Station.md",
+      "x": 7140,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post01_lph_step2_late_shift_study",
+      "type": "file",
+      "file": "Step 2 \u2014 Studied the Late Shift Separately.md",
+      "x": 7340,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post01_lph_step3_top_performer_behaviours",
+      "type": "file",
+      "file": "Step 3 \u2014 Documented Top Performer Behaviours.md",
+      "x": 6940,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post01_lph_step4_performance_board",
+      "type": "file",
+      "file": "Step 4 \u2014 Put Up a Daily Performance Board.md",
+      "x": 7140,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g29",
+      "type": "group",
+      "label": "Shift Comparison Analysis",
+      "x": 8320,
+      "y": 3500,
+      "width": 660,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_post02_shift_slide02_late_shift_outperformance",
+      "type": "file",
+      "file": "Late Shift Outperformed Early Shift Consistently.md",
+      "x": 8340,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_shift_slide02_lph_analysis",
+      "type": "file",
+      "file": "Lines Per Hour (LPH) Shift Analysis.md",
+      "x": 8540,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_shift_slide02_problem_framing",
+      "type": "file",
+      "file": "Problem Framing Same Team Different Results.md",
+      "x": 8740,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_shift_slide02_context",
+      "type": "file",
+      "file": "Shift Comparison \u2014 The Situation (Slide 2 Context).md",
+      "x": 8340,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_shift_slide02_working_conditions",
+      "type": "file",
+      "file": "Working Conditions as Root Cause (Not Staff Quality).md",
+      "x": 8540,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g30",
+      "type": "group",
+      "label": "WMS Shelf Mismatch Context",
+      "x": 9500,
+      "y": 3500,
+      "width": 660,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_post08_overcrowded_shelf",
+      "type": "file",
+      "file": "Overcrowded Shelf Causing Pick Errors.md",
+      "x": 9520,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_root_cause_analysis",
+      "type": "file",
+      "file": "Root Cause Analysis \u2014 5 Whys on Wrong-Item Picks.md",
+      "x": 9720,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_capacity_problem",
+      "type": "file",
+      "file": "WMS Capacity vs Physical Reality Problem.md",
+      "x": 9920,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_wms_data_mismatch",
+      "type": "file",
+      "file": "WMS Data Never Updated to Reflect Physical Reality.md",
+      "x": 9520,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_slide02",
+      "type": "file",
+      "file": "WMS Shelf Capacity Mismatch \u2014 The Situation (Slide 2).md",
+      "x": 9720,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g31",
+      "type": "group",
+      "label": "Error Analysis Process",
+      "x": 10680,
+      "y": 3500,
+      "width": 660,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_post06_errors_error_concentration_analysis",
+      "type": "file",
+      "file": "Error Concentration Analysis \u2014 Zone-Level Pattern Recognition.md",
+      "x": 10700,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_slide03",
+      "type": "file",
+      "file": "Errors Are Not Random \u2014 Slide 3 What We Did (Error Analysis Process).md",
+      "x": 10900,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_verified_fixes",
+      "type": "file",
+      "file": "Fixes Applied to Verified Causes \u2014 Zone Lighting, Label Clarity, SKU Slotting, Replenishment Sequencing.md",
+      "x": 11100,
+      "y": 3580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_structured_observation",
+      "type": "file",
+      "file": "Structured Observation Sessions on High-Error Zones (SafetyCulture).md",
+      "x": 10700,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_wms_data_pull",
+      "type": "file",
+      "file": "WMS Error Data Pull and Categorisation by Type.md",
+      "x": 10900,
+      "y": 3660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g32",
+      "type": "group",
+      "label": "Fishbone RCA Takeaway",
+      "x": 0,
+      "y": 3980,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_post07_fishbone_cta_save_framework",
+      "type": "file",
+      "file": "Call to Action Save This Framework for Your Next Error Review.md",
+      "x": 20,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_claim_retraining_30pct",
+      "type": "file",
+      "file": "Claim Jumping Straight to Retraining Only Addresses 30% of the Cause.md",
+      "x": 220,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_principle_process_environment",
+      "type": "file",
+      "file": "Core Principle Most Picking Errors Live in Process and Environment.md",
+      "x": 420,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post07_fishbone_slide05",
+      "type": "file",
+      "file": "Fishbone Carousel \u2013 Slide 5 The Takeaway.md",
+      "x": 20,
+      "y": 4140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g33",
+      "type": "group",
+      "label": "Three Shift Performance Factors",
+      "x": 1840,
+      "y": 3980,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_post02_condition_station_allocation",
+      "type": "file",
+      "file": "Consistent Station Allocation \u2013 Late Shift Familiarity Reducing Errors.md",
+      "x": 1860,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_condition_management_interruptions",
+      "type": "file",
+      "file": "Fewer Management Interruptions During Peak Pick Windows \u2013 Flow State Enabler.md",
+      "x": 2060,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_shift_slide03",
+      "type": "file",
+      "file": "Shift Comparison Slide 3 \u2013 Three Conditions That Explained the Gap.md",
+      "x": 2260,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_condition_peer_accountability",
+      "type": "file",
+      "file": "Stronger Peer Accountability \u2013 Tighter Team Culture on Late Shift.md",
+      "x": 1860,
+      "y": 4140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g34",
+      "type": "group",
+      "label": "Top Performer Distribution",
+      "x": 3680,
+      "y": 3980,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_post03_top_performer_concept_lph_distribution",
+      "type": "file",
+      "file": "Concept LPH (Lines Per Hour) Distribution Mapping by Operator.md",
+      "x": 3700,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_top_performer_concept_performance_gap",
+      "type": "file",
+      "file": "Concept Performance Gap Too Wide to Be Talent Alone.md",
+      "x": 3900,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_top_performer_concept_document_the_process",
+      "type": "file",
+      "file": "Concept Treat Top Performer as a Process to Document.md",
+      "x": 4100,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_top_performer_slide02",
+      "type": "file",
+      "file": "Top Performer Post \u2013 Slide 02 The Situation (Performance Distribution Context).md",
+      "x": 3700,
+      "y": 4140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g35",
+      "type": "group",
+      "label": "Top Picker Behaviours",
+      "x": 5520,
+      "y": 3980,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_post03_behaviour_controlled_scanner_rhythm",
+      "type": "file",
+      "file": "Controlled Scanner Rhythm.md",
+      "x": 5540,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_behaviour_pick_path_discipline",
+      "type": "file",
+      "file": "Pick Path Discipline.md",
+      "x": 5740,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_behaviour_proactive_replenishment_timing",
+      "type": "file",
+      "file": "Proactive Replenishment Timing.md",
+      "x": 5940,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post03_top_performer_slide03",
+      "type": "file",
+      "file": "Top Performer \u2014 Three Replicable Behaviours (Slide 3 of 5).md",
+      "x": 5540,
+      "y": 4140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g36",
+      "type": "group",
+      "label": "Induction Hook Slide",
+      "x": 6920,
+      "y": 3980,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_post05_induction_hook_claim",
+      "type": "file",
+      "file": "Hook Claim Most Induction Checklists Protect the Company \u2014 This One Protected the Operation.md",
+      "x": 6940,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_series",
+      "type": "file",
+      "file": "LinkedIn Carousel Post 05 \u2014 Warehouse Induction.md",
+      "x": 7140,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_topic_agency_starters",
+      "type": "file",
+      "file": "Topic 5 Things Every Agency Starter Must Know Before Touching the First Pick.md",
+      "x": 7340,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_slide01",
+      "type": "file",
+      "file": "Warehouse Induction Non-Negotiables \u2014 Hook Slide.md",
+      "x": 6940,
+      "y": 4140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g37",
+      "type": "group",
+      "label": "Error Clustering Insight",
+      "x": 8320,
+      "y": 3980,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_post06_errors_problem_framing",
+      "type": "file",
+      "file": "Acceptable Error Rates Still Worth Investigating \u2014 Problem Framing.md",
+      "x": 8340,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_slide02",
+      "type": "file",
+      "file": "Errors Are Not Random \u2014 Slide 2 The Situation (Error Clustering Context).md",
+      "x": 8540,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_cluster_insight",
+      "type": "file",
+      "file": "Errors Cluster Like Signal, Not Noise \u2014 Core Insight.md",
+      "x": 8740,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_wms_data",
+      "type": "file",
+      "file": "WMS Data Analysis Reveals Picking Error Patterns.md",
+      "x": 8340,
+      "y": 4140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g38",
+      "type": "group",
+      "label": "Terms of Use",
+      "x": 9500,
+      "y": 3980,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_terms_page",
+      "type": "file",
+      "file": "Terms of Use Page.md",
+      "x": 9520,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_terms_governing_law",
+      "type": "file",
+      "file": "Terms \u2014 Governing Law England & Wales.md",
+      "x": 9720,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_terms_ip_clause",
+      "type": "file",
+      "file": "Terms \u2014 Intellectual Property & Usage Rights.md",
+      "x": 9920,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g39",
+      "type": "group",
+      "label": "Author Portrait",
+      "x": 10680,
+      "y": 3980,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_paulo_gomes_headshot",
+      "type": "file",
+      "file": "Paulo Gomes \u2014 Author Headshot.md",
+      "x": 10700,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_paulo_gomes_author",
+      "type": "file",
+      "file": "Paulo Gomes \u2014 Site Author.md",
+      "x": 10900,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_operations_facility_context",
+      "type": "file",
+      "file": "Warehouse  Distribution Facility Environment.md",
+      "x": 11100,
+      "y": 4060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g40",
+      "type": "group",
+      "label": "Author Avatar",
+      "x": 0,
+      "y": 4460,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_operations_edge_site",
+      "type": "file",
+      "file": "OperationsEdge Website.md",
+      "x": 20,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_paulo_gomes_person",
+      "type": "file",
+      "file": "Paulo Gomes_1.md",
+      "x": 220,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_paulo_gomes_avatar",
+      "type": "file",
+      "file": "Paulo Gomes Avatar.md",
+      "x": 420,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g41",
+      "type": "group",
+      "label": "Shift Comparison Hook",
+      "x": 1840,
+      "y": 4460,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_post02_shift_hook_claim",
+      "type": "file",
+      "file": "Hook Claim Late Shift Beat Early Shift Every Week.md",
+      "x": 1860,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_shift_slide01",
+      "type": "file",
+      "file": "Shift Comparison Carousel \u2014 Slide 1 Hook.md",
+      "x": 2060,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post02_shift_topic",
+      "type": "file",
+      "file": "Shift Performance \u2014 Warehouse Operation.md",
+      "x": 2260,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g42",
+      "type": "group",
+      "label": "Induction Problem Statement",
+      "x": 3680,
+      "y": 4460,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_post05_induction_slide02",
+      "type": "file",
+      "file": "Agency Induction \u2014 Where It Goes Wrong (The Problem).md",
+      "x": 3700,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_key_insight",
+      "type": "file",
+      "file": "Forms Don't Prevent Incidents \u2014 Understanding Does.md",
+      "x": 3900,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post05_induction_problem_framing",
+      "type": "file",
+      "file": "Induction Treated as Paperwork Problem Statement.md",
+      "x": 4100,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g43",
+      "type": "group",
+      "label": "WMS Structural Error Insight",
+      "x": 5520,
+      "y": 4460,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_post08_shelf_carousel",
+      "type": "file",
+      "file": "LinkedIn Carousel Post 08 \u2014 WMS Shelf Capacity Mismatch.md",
+      "x": 5540,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_wms_capacity_mismatch",
+      "type": "file",
+      "file": "WMS Shelf Capacity Mismatch \u2014 Structural vs Operator Error.md",
+      "x": 5740,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post08_shelf_slide05_takeaway",
+      "type": "file",
+      "file": "WMS Shelf Capacity \u2014 Slide 5 The Takeaway (Structural Misalignments Create Operator Errors).md",
+      "x": 5940,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g44",
+      "type": "group",
+      "label": "Onboarding vs Recruitment",
+      "x": 6920,
+      "y": 4460,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_post04_agency_slide05_takeaway",
+      "type": "file",
+      "file": "Agency Onboarding Takeaway \u2014 Solve the Onboarding Problem, Not Just the Recruitment One.md",
+      "x": 6940,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_agency_slide05_message",
+      "type": "file",
+      "file": "Build the ramp-up plan before calling the agency \u2014 getting agency staff contributing without overloading the permanent team is the real challenge.md",
+      "x": 7140,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post04_agency_slide05_principle",
+      "type": "file",
+      "file": "The Principle Solve the onboarding problem, not just the recruitment one.md",
+      "x": 7340,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g45",
+      "type": "group",
+      "label": "Error Root Cause Takeaway",
+      "x": 8320,
+      "y": 4460,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_post06_errors_slide05",
+      "type": "file",
+      "file": "Errors Are Not Random \u2014 Slide 5 The Takeaway (Consistent errors point to solvable root causes).md",
+      "x": 8340,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_message_fix_structure",
+      "type": "file",
+      "file": "Message Before retraining, categorise error sources \u2014 if concentrated, the problem is structural, not behavioural; fix the structure.md",
+      "x": 8540,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_post06_errors_principle_solvable_roots",
+      "type": "file",
+      "file": "Principle Consistent errors point to solvable root causes.md",
+      "x": 8740,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g46",
+      "type": "group",
+      "label": "Page Animation Code",
+      "x": 9500,
+      "y": 4460,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_page_animation_animatecount",
+      "type": "file",
+      "file": "animateCount().md",
+      "x": 9520,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_page_animation_js",
+      "type": "file",
+      "file": "page-animation.js.md",
+      "x": 9720,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g47",
+      "type": "group",
+      "label": "LPH Hook Slide",
+      "x": 10680,
+      "y": 4460,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_post01_lph_slide01",
+      "type": "file",
+      "file": "LPH Improvement Carousel \u2014 Slide 1 Hook.md",
+      "x": 10700,
+      "y": 4540,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g48",
+      "type": "group",
+      "label": "LPH Situation Slide",
+      "x": 0,
+      "y": 4940,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_post01_lph_slide02",
+      "type": "file",
+      "file": "LPH Improvement \u2013 Slide 2 The Situation (Context).md",
+      "x": 20,
+      "y": 5020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g49",
+      "type": "group",
+      "label": "Top Performer Takeaway",
+      "x": 1840,
+      "y": 4940,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_post03_top_performer_slide05",
+      "type": "file",
+      "file": "Top Performer Management \u2014 Slide 5 The Takeaway (Replicate What Top Performers Do).md",
+      "x": 1860,
+      "y": 5020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g50",
+      "type": "group",
+      "label": "Top Performer Hook",
+      "x": 3680,
+      "y": 4940,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_post03_top_performer_slide01",
+      "type": "file",
+      "file": "Top Performer Analysis \u2013 Hook Slide (Slide 1 of 5).md",
+      "x": 3700,
+      "y": 5020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g51",
+      "type": "group",
+      "label": "Induction Preparation Takeaway",
+      "x": 5520,
+      "y": 4940,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_post05_induction_slide05",
+      "type": "file",
+      "file": "Induction Is Operational Preparation \u2014 The Takeaway (Slide 5 of 5).md",
+      "x": 5540,
+      "y": 5020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g52",
+      "type": "group",
+      "label": "WMS Mismatch Hook",
+      "x": 6920,
+      "y": 4940,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_post08_shelf_slide01",
+      "type": "file",
+      "file": "WMS Shelf Capacity Mismatch \u2014 Hook Slide.md",
+      "x": 6940,
+      "y": 5020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g53",
+      "type": "group",
+      "label": "Agency Onboarding Hook",
+      "x": 8320,
+      "y": 4940,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_post04_agency_slide01",
+      "type": "file",
+      "file": "Agency Onboarding Post \u2013 Slide 1 Hook.md",
+      "x": 8340,
+      "y": 5020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g54",
+      "type": "group",
+      "label": "Agency Labour Gap Context",
+      "x": 9500,
+      "y": 4940,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_post04_agency_slide02",
+      "type": "file",
+      "file": "Agency Onboarding \u2014 The Situation Labour Gap Context.md",
+      "x": 9520,
+      "y": 5020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g55",
+      "type": "group",
+      "label": "Errors Not Random Hook",
+      "x": 10680,
+      "y": 4940,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_post06_errors_slide01",
+      "type": "file",
+      "file": "Errors Are Not Random \u2014 Slide 1 Hook.md",
+      "x": 10700,
+      "y": 5020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g56",
+      "type": "group",
+      "label": "Hero Design Philosophy",
+      "x": 0,
+      "y": 5420,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_asset_hero_philosophy",
+      "type": "file",
+      "file": "Hero Image Design Philosophy.md",
+      "x": 20,
+      "y": 5500,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g57",
+      "type": "group",
+      "label": "Error Post Caption",
+      "x": 1840,
+      "y": 5420,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_post06_caption",
+      "type": "file",
+      "file": "Post 06 \u2014 Caption Text.md",
+      "x": 1860,
+      "y": 5500,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_page_animation_js_page_animation_animatecount",
+      "fromNode": "n_page_animation_js",
+      "toNode": "n_page_animation_animatecount",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_js_page_hero_animation_el",
+      "fromNode": "n_page_hero_animation_js",
+      "toNode": "n_page_hero_animation_el",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_js_page_hero_animation_tosmoothpath",
+      "fromNode": "n_page_hero_animation_js",
+      "toNode": "n_page_hero_animation_tosmoothpath",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_js_page_hero_animation_easeoutcubic",
+      "fromNode": "n_page_hero_animation_js",
+      "toNode": "n_page_hero_animation_easeoutcubic",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_js_page_hero_animation_easeoutquart",
+      "fromNode": "n_page_hero_animation_js",
+      "toNode": "n_page_hero_animation_easeoutquart",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_js_page_hero_animation_tween",
+      "fromNode": "n_page_hero_animation_js",
+      "toNode": "n_page_hero_animation_tween",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_js_page_hero_animation_startambient",
+      "fromNode": "n_page_hero_animation_js",
+      "toNode": "n_page_hero_animation_startambient",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_js_page_hero_animation_stopambient",
+      "fromNode": "n_page_hero_animation_js",
+      "toNode": "n_page_hero_animation_stopambient",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_js_page_hero_animation_renderflow",
+      "fromNode": "n_page_hero_animation_js",
+      "toNode": "n_page_hero_animation_renderflow",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_js_page_hero_animation_rendergrid",
+      "fromNode": "n_page_hero_animation_js",
+      "toNode": "n_page_hero_animation_rendergrid",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_js_page_hero_animation_renderbars",
+      "fromNode": "n_page_hero_animation_js",
+      "toNode": "n_page_hero_animation_renderbars",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_js_page_hero_animation_renderconstellation",
+      "fromNode": "n_page_hero_animation_js",
+      "toNode": "n_page_hero_animation_renderconstellation",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_el_page_hero_animation_renderflow",
+      "fromNode": "n_page_hero_animation_el",
+      "toNode": "n_page_hero_animation_renderflow",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_el_page_hero_animation_rendergrid",
+      "fromNode": "n_page_hero_animation_el",
+      "toNode": "n_page_hero_animation_rendergrid",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_el_page_hero_animation_renderbars",
+      "fromNode": "n_page_hero_animation_el",
+      "toNode": "n_page_hero_animation_renderbars",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_el_page_hero_animation_renderconstellation",
+      "fromNode": "n_page_hero_animation_el",
+      "toNode": "n_page_hero_animation_renderconstellation",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_tosmoothpath_page_hero_animation_renderflow",
+      "fromNode": "n_page_hero_animation_tosmoothpath",
+      "toNode": "n_page_hero_animation_renderflow",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_tosmoothpath_page_hero_animation_renderbars",
+      "fromNode": "n_page_hero_animation_tosmoothpath",
+      "toNode": "n_page_hero_animation_renderbars",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_tween_page_hero_animation_renderflow",
+      "fromNode": "n_page_hero_animation_tween",
+      "toNode": "n_page_hero_animation_renderflow",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_tween_page_hero_animation_rendergrid",
+      "fromNode": "n_page_hero_animation_tween",
+      "toNode": "n_page_hero_animation_rendergrid",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_tween_page_hero_animation_renderbars",
+      "fromNode": "n_page_hero_animation_tween",
+      "toNode": "n_page_hero_animation_renderbars",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_tween_page_hero_animation_renderconstellation",
+      "fromNode": "n_page_hero_animation_tween",
+      "toNode": "n_page_hero_animation_renderconstellation",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_page_hero_animation_renderflow_hero_animation_rand",
+      "fromNode": "n_page_hero_animation_renderflow",
+      "toNode": "n_hero_animation_rand",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_page_hero_animation_renderbars_hero_animation_rand",
+      "fromNode": "n_page_hero_animation_renderbars",
+      "toNode": "n_hero_animation_rand",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_page_hero_animation_renderconstellation_hero_animation_rand",
+      "fromNode": "n_page_hero_animation_renderconstellation",
+      "toNode": "n_hero_animation_rand",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_site_js_site_initnav",
+      "fromNode": "n_site_js",
+      "toNode": "n_site_initnav",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_site_js_site_initnewsletterforms",
+      "fromNode": "n_site_js",
+      "toNode": "n_site_initnewsletterforms",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_site_js_site_initreviewfilters",
+      "fromNode": "n_site_js",
+      "toNode": "n_site_initreviewfilters",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_site_js_site_initfocusvisible",
+      "fromNode": "n_site_js",
+      "toNode": "n_site_initfocusvisible",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_site_js_site_initscrollreveal",
+      "fromNode": "n_site_js",
+      "toNode": "n_site_initscrollreveal",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_site_js_site_initreadingprogress",
+      "fromNode": "n_site_js",
+      "toNode": "n_site_initreadingprogress",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_site_js_site_inittochighlight",
+      "fromNode": "n_site_js",
+      "toNode": "n_site_inittochighlight",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_site_js_site_initscrollheader",
+      "fromNode": "n_site_js",
+      "toNode": "n_site_initscrollheader",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_site_js_site_initheroparallax",
+      "fromNode": "n_site_js",
+      "toNode": "n_site_initheroparallax",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_site_initscrollheader_count_up_tick",
+      "fromNode": "n_site_initscrollheader",
+      "toNode": "n_count_up_tick",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_count_up_js_count_up_tick",
+      "fromNode": "n_count_up_js",
+      "toNode": "n_count_up_tick",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_hero_animation_js_hero_animation_el",
+      "fromNode": "n_hero_animation_js",
+      "toNode": "n_hero_animation_el",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_hero_animation_js_hero_animation_tosmoothpath",
+      "fromNode": "n_hero_animation_js",
+      "toNode": "n_hero_animation_tosmoothpath",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_hero_animation_js_hero_animation_rand",
+      "fromNode": "n_hero_animation_js",
+      "toNode": "n_hero_animation_rand",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_hero_animation_js_hero_animation_tween",
+      "fromNode": "n_hero_animation_js",
+      "toNode": "n_hero_animation_tween",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_hero_animation_js_hero_animation_wait",
+      "fromNode": "n_hero_animation_js",
+      "toNode": "n_hero_animation_wait",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_hero_animation_js_hero_animation_playbuildin",
+      "fromNode": "n_hero_animation_js",
+      "toNode": "n_hero_animation_playbuildin",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_hero_animation_js_hero_animation_stopambient",
+      "fromNode": "n_hero_animation_js",
+      "toNode": "n_hero_animation_stopambient",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_hero_animation_js_hero_animation_startambient",
+      "fromNode": "n_hero_animation_js",
+      "toNode": "n_hero_animation_startambient",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_hero_animation_tween_hero_animation_playbuildin",
+      "fromNode": "n_hero_animation_tween",
+      "toNode": "n_hero_animation_playbuildin",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_hero_animation_wait_hero_animation_playbuildin",
+      "fromNode": "n_hero_animation_wait",
+      "toNode": "n_hero_animation_playbuildin",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_hero_animation_playbuildin_hero_animation_stopambient",
+      "fromNode": "n_hero_animation_playbuildin",
+      "toNode": "n_hero_animation_stopambient",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_hero_animation_playbuildin_hero_animation_startambient",
+      "fromNode": "n_hero_animation_playbuildin",
+      "toNode": "n_hero_animation_startambient",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_hero_animation_stopambient_hero_animation_startambient",
+      "fromNode": "n_hero_animation_stopambient",
+      "toNode": "n_hero_animation_startambient",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_index_homepage_index_hero_section",
+      "fromNode": "n_index_homepage",
+      "toNode": "n_index_hero_section",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_homepage_index_stats_bar",
+      "fromNode": "n_index_homepage",
+      "toNode": "n_index_stats_bar",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_homepage_index_bento_categories",
+      "fromNode": "n_index_homepage",
+      "toNode": "n_index_bento_categories",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_homepage_index_why_operationsedge",
+      "fromNode": "n_index_homepage",
+      "toNode": "n_index_why_operationsedge",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_homepage_index_newsletter_section",
+      "fromNode": "n_index_homepage",
+      "toNode": "n_index_newsletter_section",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_homepage_index_plausible_analytics",
+      "fromNode": "n_index_homepage",
+      "toNode": "n_index_plausible_analytics",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_homepage_solutions_index",
+      "fromNode": "n_index_homepage",
+      "toNode": "n_solutions_index",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_index_homepage_resources_index",
+      "fromNode": "n_index_homepage",
+      "toNode": "n_resources_index",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_index_homepage_contact_page",
+      "fromNode": "n_index_homepage",
+      "toNode": "n_contact_page",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_index_homepage_privacy_policy_page",
+      "fromNode": "n_index_homepage",
+      "toNode": "n_privacy_policy_page",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_index_homepage_disclaimer_page",
+      "fromNode": "n_index_homepage",
+      "toNode": "n_disclaimer_page",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_index_homepage_affiliate_disclosure_page",
+      "fromNode": "n_index_homepage",
+      "toNode": "n_affiliate_disclosure_page",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_index_homepage_notfound_404",
+      "fromNode": "n_index_homepage",
+      "toNode": "n_notfound_404",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_index_bento_categories_index_wms_category",
+      "fromNode": "n_index_bento_categories",
+      "toNode": "n_index_wms_category",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_bento_categories_index_hs_category",
+      "fromNode": "n_index_bento_categories",
+      "toNode": "n_index_hs_category",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_bento_categories_index_workforce_category",
+      "fromNode": "n_index_bento_categories",
+      "toNode": "n_index_workforce_category",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_bento_categories_index_automation_category",
+      "fromNode": "n_index_bento_categories",
+      "toNode": "n_index_automation_category",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_bento_categories_index_tms_category",
+      "fromNode": "n_index_bento_categories",
+      "toNode": "n_index_tms_category",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_bento_categories_index_solutions_category",
+      "fromNode": "n_index_bento_categories",
+      "toNode": "n_index_solutions_category",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_hs_category_tool_safetyculture",
+      "fromNode": "n_index_hs_category",
+      "toNode": "n_tool_safetyculture",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_automation_category_tool_zapier",
+      "fromNode": "n_index_automation_category",
+      "toNode": "n_tool_zapier",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_automation_category_tool_make",
+      "fromNode": "n_index_automation_category",
+      "toNode": "n_tool_make",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_solutions_category_solutions_index",
+      "fromNode": "n_index_solutions_category",
+      "toNode": "n_solutions_index",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_notfound_404_resources_index",
+      "fromNode": "n_notfound_404",
+      "toNode": "n_resources_index",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_robots_txt_robots_disallow_comparisons",
+      "fromNode": "n_robots_txt",
+      "toNode": "n_robots_disallow_comparisons",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_robots_disallow_comparisons_solutions_index",
+      "fromNode": "n_robots_disallow_comparisons",
+      "toNode": "n_solutions_index",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_claude_md_project_instructions_claude_md_deploy_instructions",
+      "fromNode": "n_claude_md_project_instructions",
+      "toNode": "n_claude_md_deploy_instructions",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_claude_md_project_instructions_claude_md_brand_personality",
+      "fromNode": "n_claude_md_project_instructions",
+      "toNode": "n_claude_md_brand_personality",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_claude_md_project_instructions_claude_md_design_principles",
+      "fromNode": "n_claude_md_project_instructions",
+      "toNode": "n_claude_md_design_principles",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_claude_md_project_instructions_claude_md_target_audience",
+      "fromNode": "n_claude_md_project_instructions",
+      "toNode": "n_claude_md_target_audience",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_contact_page_contact_netlify_form",
+      "fromNode": "n_contact_page",
+      "toNode": "n_contact_netlify_form",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_contact_page_contact_email_address",
+      "fromNode": "n_contact_page",
+      "toNode": "n_contact_email_address",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_contact_page_privacy_policy_page",
+      "fromNode": "n_contact_page",
+      "toNode": "n_privacy_policy_page",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_contact_page_mediakit_page",
+      "fromNode": "n_contact_page",
+      "toNode": "n_mediakit_page",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_contact_page_affiliate_disclosure_page",
+      "fromNode": "n_contact_page",
+      "toNode": "n_affiliate_disclosure_page",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_mediakit_page_mediakit_audience_profile",
+      "fromNode": "n_mediakit_page",
+      "toNode": "n_mediakit_audience_profile",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_mediakit_page_mediakit_editorial_standards",
+      "fromNode": "n_mediakit_page",
+      "toNode": "n_mediakit_editorial_standards",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_mediakit_page_mediakit_brand_assets",
+      "fromNode": "n_mediakit_page",
+      "toNode": "n_mediakit_brand_assets",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_mediakit_brand_assets_mediakit_brand_color_blue",
+      "fromNode": "n_mediakit_brand_assets",
+      "toNode": "n_mediakit_brand_color_blue",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_posts_index_post_picking_efficiency",
+      "fromNode": "n_posts_index",
+      "toNode": "n_post_picking_efficiency",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_post_picking_efficiency_post_picking_lph_metric",
+      "fromNode": "n_post_picking_efficiency",
+      "toNode": "n_post_picking_lph_metric",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_post_picking_efficiency_post_picking_shift_analysis",
+      "fromNode": "n_post_picking_efficiency",
+      "toNode": "n_post_picking_shift_analysis",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_post_picking_efficiency_post_picking_top_performers",
+      "fromNode": "n_post_picking_efficiency",
+      "toNode": "n_post_picking_top_performers",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_post_picking_efficiency_post_picking_smartsheet_tool",
+      "fromNode": "n_post_picking_efficiency",
+      "toNode": "n_post_picking_smartsheet_tool",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_post_picking_efficiency_post_picking_safetyculture_tool",
+      "fromNode": "n_post_picking_efficiency",
+      "toNode": "n_post_picking_safetyculture_tool",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_post_picking_efficiency_post_picking_monday_tool",
+      "fromNode": "n_post_picking_efficiency",
+      "toNode": "n_post_picking_monday_tool",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_post_picking_efficiency_post_picking_wms_reporting",
+      "fromNode": "n_post_picking_efficiency",
+      "toNode": "n_post_picking_wms_reporting",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_post_picking_efficiency_post_picking_pharma_context",
+      "fromNode": "n_post_picking_efficiency",
+      "toNode": "n_post_picking_pharma_context",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_post_picking_efficiency_author_paulo_gomes",
+      "fromNode": "n_post_picking_efficiency",
+      "toNode": "n_author_paulo_gomes",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comparisons_index_comp_connecteam_vs_rotacloud",
+      "fromNode": "n_comparisons_index",
+      "toNode": "n_comp_connecteam_vs_rotacloud",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_comparisons_index_comp_monday_vs_smartsheet",
+      "fromNode": "n_comparisons_index",
+      "toNode": "n_comp_monday_vs_smartsheet",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_comparisons_index_resource_saas_procurement_checklist",
+      "fromNode": "n_comparisons_index",
+      "toNode": "n_resource_saas_procurement_checklist",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_comparisons_redirect_notice_solutions_index",
+      "fromNode": "n_comparisons_redirect_notice",
+      "toNode": "n_solutions_index",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_monday_vs_smartsheet_comp_monday_product",
+      "fromNode": "n_comp_monday_vs_smartsheet",
+      "toNode": "n_comp_monday_product",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_monday_vs_smartsheet_comp_smartsheet_product",
+      "fromNode": "n_comp_monday_vs_smartsheet",
+      "toNode": "n_comp_smartsheet_product",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_monday_vs_smartsheet_comp_monday_verdict",
+      "fromNode": "n_comp_monday_vs_smartsheet",
+      "toNode": "n_comp_monday_verdict",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_monday_vs_smartsheet_comp_smartsheet_verdict",
+      "fromNode": "n_comp_monday_vs_smartsheet",
+      "toNode": "n_comp_smartsheet_verdict",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_monday_vs_smartsheet_author_paulo_gomes",
+      "fromNode": "n_comp_monday_vs_smartsheet",
+      "toNode": "n_author_paulo_gomes",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_monday_vs_smartsheet_affiliate_disclosure_page",
+      "fromNode": "n_comp_monday_vs_smartsheet",
+      "toNode": "n_affiliate_disclosure_page",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_monday_product_tool_zapier",
+      "fromNode": "n_comp_monday_product",
+      "toNode": "n_tool_zapier",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_monday_product_tool_make",
+      "fromNode": "n_comp_monday_product",
+      "toNode": "n_tool_make",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_connecteam_vs_rotacloud_comp_connecteam_product",
+      "fromNode": "n_comp_connecteam_vs_rotacloud",
+      "toNode": "n_comp_connecteam_product",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_connecteam_vs_rotacloud_comp_rotacloud_product",
+      "fromNode": "n_comp_connecteam_vs_rotacloud",
+      "toNode": "n_comp_rotacloud_product",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_connecteam_vs_rotacloud_comp_connecteam_verdict",
+      "fromNode": "n_comp_connecteam_vs_rotacloud",
+      "toNode": "n_comp_connecteam_verdict",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_connecteam_vs_rotacloud_comp_rotacloud_verdict",
+      "fromNode": "n_comp_connecteam_vs_rotacloud",
+      "toNode": "n_comp_rotacloud_verdict",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_connecteam_vs_rotacloud_comp_deputy_mentioned",
+      "fromNode": "n_comp_connecteam_vs_rotacloud",
+      "toNode": "n_comp_deputy_mentioned",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_connecteam_vs_rotacloud_comp_wtr_compliance",
+      "fromNode": "n_comp_connecteam_vs_rotacloud",
+      "toNode": "n_comp_wtr_compliance",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_connecteam_vs_rotacloud_author_paulo_gomes",
+      "fromNode": "n_comp_connecteam_vs_rotacloud",
+      "toNode": "n_author_paulo_gomes",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_connecteam_vs_rotacloud_resource_shift_template",
+      "fromNode": "n_comp_connecteam_vs_rotacloud",
+      "toNode": "n_resource_shift_template",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_comp_connecteam_vs_rotacloud_resource_wms_scorecard",
+      "fromNode": "n_comp_connecteam_vs_rotacloud",
+      "toNode": "n_resource_wms_scorecard",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_disclaimer_page_disclaimer_no_affiliate",
+      "fromNode": "n_disclaimer_page",
+      "toNode": "n_disclaimer_no_affiliate",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_disclaimer_page_disclaimer_editorial_basis",
+      "fromNode": "n_disclaimer_page",
+      "toNode": "n_disclaimer_editorial_basis",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_disclaimer_page_affiliate_disclosure_page",
+      "fromNode": "n_disclaimer_page",
+      "toNode": "n_affiliate_disclosure_page",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_privacy_policy_page_privacy_uk_gdpr",
+      "fromNode": "n_privacy_policy_page",
+      "toNode": "n_privacy_uk_gdpr",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_privacy_policy_page_privacy_netlify_processor",
+      "fromNode": "n_privacy_policy_page",
+      "toNode": "n_privacy_netlify_processor",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_privacy_policy_page_privacy_ico_regulator",
+      "fromNode": "n_privacy_policy_page",
+      "toNode": "n_privacy_ico_regulator",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_affiliate_disclosure_page_affiliate_no_active_arrangements",
+      "fromNode": "n_affiliate_disclosure_page",
+      "toNode": "n_affiliate_no_active_arrangements",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_affiliate_disclosure_page_affiliate_independence_policy",
+      "fromNode": "n_affiliate_disclosure_page",
+      "toNode": "n_affiliate_independence_policy",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_affiliate_disclosure_page_affiliate_uk_regs",
+      "fromNode": "n_affiliate_disclosure_page",
+      "toNode": "n_affiliate_uk_regs",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_resources_index_resource_wms_scorecard",
+      "fromNode": "n_resources_index",
+      "toNode": "n_resource_wms_scorecard",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_resources_index_resource_warehouse_hs_checklist",
+      "fromNode": "n_resources_index",
+      "toNode": "n_resource_warehouse_hs_checklist",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_resources_index_resource_shift_template",
+      "fromNode": "n_resources_index",
+      "toNode": "n_resource_shift_template",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_resources_index_resource_saas_procurement_checklist",
+      "fromNode": "n_resources_index",
+      "toNode": "n_resource_saas_procurement_checklist",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_warehouse_hs_checklist_resource_hs_hse_alignment",
+      "fromNode": "n_resource_warehouse_hs_checklist",
+      "toNode": "n_resource_hs_hse_alignment",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_warehouse_hs_checklist_resource_hs_riddor",
+      "fromNode": "n_resource_warehouse_hs_checklist",
+      "toNode": "n_resource_hs_riddor",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_warehouse_hs_checklist_resource_hs_fire_safety",
+      "fromNode": "n_resource_warehouse_hs_checklist",
+      "toNode": "n_resource_hs_fire_safety",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_warehouse_hs_checklist_resource_hs_forklift_mhe",
+      "fromNode": "n_resource_warehouse_hs_checklist",
+      "toNode": "n_resource_hs_forklift_mhe",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_warehouse_hs_checklist_resource_hs_safetyculture_cta",
+      "fromNode": "n_resource_warehouse_hs_checklist",
+      "toNode": "n_resource_hs_safetyculture_cta",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_warehouse_hs_checklist_safetyculture_review",
+      "fromNode": "n_resource_warehouse_hs_checklist",
+      "toNode": "n_safetyculture_review",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_saas_procurement_checklist_resource_saas_pricing_contracts",
+      "fromNode": "n_resource_saas_procurement_checklist",
+      "toNode": "n_resource_saas_pricing_contracts",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_saas_procurement_checklist_resource_saas_data_security_gdpr",
+      "fromNode": "n_resource_saas_procurement_checklist",
+      "toNode": "n_resource_saas_data_security_gdpr",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_saas_procurement_checklist_resource_saas_exit_offboarding",
+      "fromNode": "n_resource_saas_procurement_checklist",
+      "toNode": "n_resource_saas_exit_offboarding",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_wms_scorecard_resource_wms_scorecard_sections",
+      "fromNode": "n_resource_wms_scorecard",
+      "toNode": "n_resource_wms_scorecard_sections",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_wms_scorecard_resource_wms_example_vendors",
+      "fromNode": "n_resource_wms_scorecard",
+      "toNode": "n_resource_wms_example_vendors",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_wms_scorecard_resource_wms_uk_couriers",
+      "fromNode": "n_resource_wms_scorecard",
+      "toNode": "n_resource_wms_uk_couriers",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_wms_scorecard_guide_how_to_choose_wms",
+      "fromNode": "n_resource_wms_scorecard",
+      "toNode": "n_guide_how_to_choose_wms",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_resource_shift_template_resource_shift_wtr_overtime",
+      "fromNode": "n_resource_shift_template",
+      "toNode": "n_resource_shift_wtr_overtime",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_shift_template_resource_shift_default_roles",
+      "fromNode": "n_resource_shift_template",
+      "toNode": "n_resource_shift_default_roles",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_resource_shift_template_connecteam_review",
+      "fromNode": "n_resource_shift_template",
+      "toNode": "n_connecteam_review",
+      "label": "links_to [EXTRACTED]"
+    },
+    {
+      "id": "e_terms_page_terms_governing_law",
+      "fromNode": "n_terms_page",
+      "toNode": "n_terms_governing_law",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_terms_page_terms_ip_clause",
+      "fromNode": "n_terms_page",
+      "toNode": "n_terms_ip_clause",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_solutions_index_solutions_reduce_picking_errors",
+      "fromNode": "n_solutions_index",
+      "toNode": "n_solutions_reduce_picking_errors",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_solutions_index_solutions_improve_efficiency",
+      "fromNode": "n_solutions_index",
+      "toNode": "n_solutions_improve_efficiency",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_solutions_index_solutions_kpi_reporting",
+      "fromNode": "n_solutions_index",
+      "toNode": "n_solutions_kpi_reporting",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_solutions_index_solutions_team_performance",
+      "fromNode": "n_solutions_index",
+      "toNode": "n_solutions_team_performance",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_solutions_index_solutions_shift_planning",
+      "fromNode": "n_solutions_index",
+      "toNode": "n_solutions_shift_planning",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_solutions_index_solutions_problem_first_rationale",
+      "fromNode": "n_solutions_index",
+      "toNode": "n_solutions_problem_first_rationale",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_tool_zapier_guide_automating_zapier",
+      "fromNode": "n_tool_zapier",
+      "toNode": "n_guide_automating_zapier",
+      "label": "reviews []"
+    },
+    {
+      "id": "e_tool_zapier_tool_make_com",
+      "fromNode": "n_tool_zapier",
+      "toNode": "n_tool_make_com",
+      "label": "semantically_similar_to []"
+    },
+    {
+      "id": "e_tool_zapier_review_zapier",
+      "fromNode": "n_tool_zapier",
+      "toNode": "n_review_zapier",
+      "label": "reviews []"
+    },
+    {
+      "id": "e_tool_safetyculture_page_reduce_picking_errors",
+      "fromNode": "n_tool_safetyculture",
+      "toNode": "n_page_reduce_picking_errors",
+      "label": "mentions []"
+    },
+    {
+      "id": "e_tool_safetyculture_casestudy_rca_picking_errors",
+      "fromNode": "n_tool_safetyculture",
+      "toNode": "n_casestudy_rca_picking_errors",
+      "label": "mentions []"
+    },
+    {
+      "id": "e_tool_safetyculture_casestudy_picking_efficiency",
+      "fromNode": "n_tool_safetyculture",
+      "toNode": "n_casestudy_picking_efficiency",
+      "label": "mentions []"
+    },
+    {
+      "id": "e_tool_safetyculture_casestudy_peak_labour",
+      "fromNode": "n_tool_safetyculture",
+      "toNode": "n_casestudy_peak_labour",
+      "label": "mentions []"
+    },
+    {
+      "id": "e_tool_safetyculture_guide_warehouse_hs_audit",
+      "fromNode": "n_tool_safetyculture",
+      "toNode": "n_guide_warehouse_hs_audit",
+      "label": "recommends []"
+    },
+    {
+      "id": "e_tool_safetyculture_review_safetyculture",
+      "fromNode": "n_tool_safetyculture",
+      "toNode": "n_review_safetyculture",
+      "label": "reviews []"
+    },
+    {
+      "id": "e_page_shift_schedule_planning_guide_best_shift_scheduling",
+      "fromNode": "n_page_shift_schedule_planning",
+      "toNode": "n_guide_best_shift_scheduling",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_shift_schedule_planning_page_team_performance_management",
+      "fromNode": "n_page_shift_schedule_planning",
+      "toNode": "n_page_team_performance_management",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_shift_schedule_planning_page_warehouse_kpi_reporting",
+      "fromNode": "n_page_shift_schedule_planning",
+      "toNode": "n_page_warehouse_kpi_reporting",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_shift_schedule_planning_resource_shift_scheduling_template",
+      "fromNode": "n_page_shift_schedule_planning",
+      "toNode": "n_resource_shift_scheduling_template",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_shift_schedule_planning_tool_connecteam",
+      "fromNode": "n_page_shift_schedule_planning",
+      "toNode": "n_tool_connecteam",
+      "label": "mentions []"
+    },
+    {
+      "id": "e_page_shift_schedule_planning_tool_rotacloud",
+      "fromNode": "n_page_shift_schedule_planning",
+      "toNode": "n_tool_rotacloud",
+      "label": "mentions []"
+    },
+    {
+      "id": "e_page_shift_schedule_planning_tool_deputy",
+      "fromNode": "n_page_shift_schedule_planning",
+      "toNode": "n_tool_deputy",
+      "label": "mentions []"
+    },
+    {
+      "id": "e_page_shift_schedule_planning_concept_wtr_compliance",
+      "fromNode": "n_page_shift_schedule_planning",
+      "toNode": "n_concept_wtr_compliance",
+      "label": "covers []"
+    },
+    {
+      "id": "e_page_shift_schedule_planning_concept_shift_patterns",
+      "fromNode": "n_page_shift_schedule_planning",
+      "toNode": "n_concept_shift_patterns",
+      "label": "covers []"
+    },
+    {
+      "id": "e_page_shift_schedule_planning_person_paulo_gomes",
+      "fromNode": "n_page_shift_schedule_planning",
+      "toNode": "n_person_paulo_gomes",
+      "label": "authored_by []"
+    },
+    {
+      "id": "e_page_shift_schedule_planning_casestudy_peak_labour",
+      "fromNode": "n_page_shift_schedule_planning",
+      "toNode": "n_casestudy_peak_labour",
+      "label": "rationale_for []"
+    },
+    {
+      "id": "e_page_reduce_picking_errors_casestudy_rca_picking_errors",
+      "fromNode": "n_page_reduce_picking_errors",
+      "toNode": "n_casestudy_rca_picking_errors",
+      "label": "rationale_for []"
+    },
+    {
+      "id": "e_page_reduce_picking_errors_casestudy_picking_efficiency",
+      "fromNode": "n_page_reduce_picking_errors",
+      "toNode": "n_casestudy_picking_efficiency",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_reduce_picking_errors_review_wms",
+      "fromNode": "n_page_reduce_picking_errors",
+      "toNode": "n_review_wms",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_reduce_picking_errors_review_safetyculture",
+      "fromNode": "n_page_reduce_picking_errors",
+      "toNode": "n_review_safetyculture",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_reduce_picking_errors_page_improve_warehouse_efficiency",
+      "fromNode": "n_page_reduce_picking_errors",
+      "toNode": "n_page_improve_warehouse_efficiency",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_reduce_picking_errors_concept_rca",
+      "fromNode": "n_page_reduce_picking_errors",
+      "toNode": "n_concept_rca",
+      "label": "covers []"
+    },
+    {
+      "id": "e_page_reduce_picking_errors_concept_slotting_optimization",
+      "fromNode": "n_page_reduce_picking_errors",
+      "toNode": "n_concept_slotting_optimization",
+      "label": "covers []"
+    },
+    {
+      "id": "e_page_reduce_picking_errors_concept_picking_accuracy",
+      "fromNode": "n_page_reduce_picking_errors",
+      "toNode": "n_concept_picking_accuracy",
+      "label": "covers []"
+    },
+    {
+      "id": "e_page_reduce_picking_errors_tool_monday_com",
+      "fromNode": "n_page_reduce_picking_errors",
+      "toNode": "n_tool_monday_com",
+      "label": "mentions []"
+    },
+    {
+      "id": "e_page_reduce_picking_errors_tool_smartsheet",
+      "fromNode": "n_page_reduce_picking_errors",
+      "toNode": "n_tool_smartsheet",
+      "label": "mentions []"
+    },
+    {
+      "id": "e_page_reduce_picking_errors_person_paulo_gomes",
+      "fromNode": "n_page_reduce_picking_errors",
+      "toNode": "n_person_paulo_gomes",
+      "label": "authored_by []"
+    },
+    {
+      "id": "e_page_reduce_picking_errors_page_warehouse_kpi_reporting",
+      "fromNode": "n_page_reduce_picking_errors",
+      "toNode": "n_page_warehouse_kpi_reporting",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_reduce_picking_errors_guide_how_to_choose_wms",
+      "fromNode": "n_page_reduce_picking_errors",
+      "toNode": "n_guide_how_to_choose_wms",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_team_performance_management_guide_best_shift_scheduling",
+      "fromNode": "n_page_team_performance_management",
+      "toNode": "n_guide_best_shift_scheduling",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_team_performance_management_page_warehouse_kpi_reporting",
+      "fromNode": "n_page_team_performance_management",
+      "toNode": "n_page_warehouse_kpi_reporting",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_team_performance_management_page_improve_warehouse_efficiency",
+      "fromNode": "n_page_team_performance_management",
+      "toNode": "n_page_improve_warehouse_efficiency",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_team_performance_management_resource_shift_scheduling_template",
+      "fromNode": "n_page_team_performance_management",
+      "toNode": "n_resource_shift_scheduling_template",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_team_performance_management_tool_connecteam",
+      "fromNode": "n_page_team_performance_management",
+      "toNode": "n_tool_connecteam",
+      "label": "mentions []"
+    },
+    {
+      "id": "e_page_team_performance_management_tool_rotacloud",
+      "fromNode": "n_page_team_performance_management",
+      "toNode": "n_tool_rotacloud",
+      "label": "mentions []"
+    },
+    {
+      "id": "e_page_team_performance_management_person_paulo_gomes",
+      "fromNode": "n_page_team_performance_management",
+      "toNode": "n_person_paulo_gomes",
+      "label": "authored_by []"
+    },
+    {
+      "id": "e_page_team_performance_management_casestudy_peak_labour",
+      "fromNode": "n_page_team_performance_management",
+      "toNode": "n_casestudy_peak_labour",
+      "label": "links_to []"
+    },
+    {
+      "id": "e_page_team_performance_management_casestudy_absence_culture",
+      "fromNode": "n_page_team_performance_management",
+      "toNode": "n_casestudy_absence_culture",
+      "label": "rationale_for []"
+    },
+    {
+      "id": "e_page_warehouse_kpi_reporting_casestudy_picking_efficiency",
+      "fromNode": "n_page_warehouse_kpi_reporting",
+      "toNode": "n_casestudy_picking_efficiency",
+      "label": "rationale_for []"
+    },
+    {
+      "id": "e_page_warehouse_kpi_reporting_review_monday_com",
+      "fromNode": "n_page_warehouse_kpi_reporting",
+      "toNode": "n_review_monday_com",
+      "label": "links_to []"
+    }
+  ]
+}

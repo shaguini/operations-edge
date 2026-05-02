@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data & Reporting — Operational KPIs & Warehouse Metrics | OperationsEdge</title>
+  <meta name="description" content="Real case studies on operational data and reporting in UK warehouse and logistics operations — KPI frameworks, measurement design, scorecards and data-led decision making.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.operationsedge.co.uk/data-reporting/">
+  <meta property="og:title" content="Data & Reporting | OperationsEdge">
+  <meta property="og:description" content="Real cases on KPI frameworks, measurement design and data-led decision making from 10 years of UK warehouse operations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.operationsedge.co.uk/data-reporting/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .page-hero [data-reveal] { animation: heroReveal .7s cubic-bezier(.22,1,.36,1) forwards; }
+    .page-hero [data-reveal-delay="1"] { animation-delay: .15s; opacity: 0; }
+    .page-hero [data-reveal-delay="2"] { animation-delay: .30s; opacity: 0; }
+    @keyframes heroReveal { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    [data-reveal] { opacity: 0; transform: translateY(14px); transition: opacity .55s cubic-bezier(.22,1,.36,1), transform .55s cubic-bezier(.22,1,.36,1); }
+    [data-reveal].visible { opacity: 1; transform: none; }
+    [data-reveal-delay="1"] { transition-delay: .08s; }
+    [data-reveal-delay="2"] { transition-delay: .16s; }
+    .featured-article-grid { transition: transform .45s cubic-bezier(.22,1,.36,1), box-shadow .45s cubic-bezier(.22,1,.36,1), border-color .3s !important; position: relative; overflow: hidden; }
+    .featured-article-grid::after { content: ''; position: absolute; top: 0; left: -120%; width: 60%; height: 100%; background: linear-gradient(100deg, transparent 35%, color-mix(in oklch, var(--brand) 20%, transparent) 50%, transparent 65%); transition: left .9s cubic-bezier(.22,1,.36,1); pointer-events: none; }
+    .featured-article-grid:hover::after { left: 130%; }
+    .featured-article-grid:hover { transform: translateY(-4px) !important; border-color: color-mix(in oklch, var(--brand) 35%, transparent) !important; }
+    .featured-article-stat { transition: transform .4s; }
+    .featured-article-grid:hover .featured-article-stat { transform: scale(1.08); }
+    .intro-panel { background: var(--bg-alt); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2rem 2.5rem; margin-bottom: 3rem; }
+    .intro-panel blockquote { margin: 0; font-size: 1.05rem; font-style: italic; color: var(--text); line-height: 1.7; }
+    .intro-panel blockquote + p { margin-top: 1rem; font-size: .9rem; color: var(--text-muted); }
+    .coming-soon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-bottom: 3rem; }
+    .coming-soon-card { background: var(--bg-alt); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; opacity: .6; }
+    .coming-soon-card .card-label { font-family: 'JetBrains Mono', monospace; font-size: .7rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); margin-bottom: .75rem; display: block; }
+    .coming-soon-card h3 { font-size: 1rem; margin: 0 0 .5rem; }
+    .coming-soon-card p { font-size: .875rem; color: var(--text-muted); margin: 0; line-height: 1.55; }
+  </style>
+  <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
+  <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="site-logo"><picture><source srcset="/assets/images/logo-dark.svg" media="(prefers-color-scheme: dark)"><img src="/assets/images/logo.svg" alt="OperationsEdge" style="display:block;height:52px;width:auto;max-height:52px;"></picture></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav">
+        <li><a href="/people-performance/">People &amp; Performance</a></li>
+        <li><a href="/process-improvement/">Process Improvement</a></li>
+        <li><a href="/labour-planning/">Labour &amp; Planning</a></li>
+        <li><a href="/data-reporting/" class="active">Data &amp; Reporting</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-hero" data-hero-variant="constellation">
+    <div class="container">
+      <div class="eyebrow" data-reveal>Data &amp; Reporting</div>
+      <h1 data-reveal data-reveal-delay="1">The Data Tells You Where. The Conversation Tells You Why.</h1>
+      <p data-reveal data-reveal-delay="2">Operational data only works when it's tied to a decision. The right KPI framework doesn't just report what happened — it shows you where to look next and creates the basis for conversations that actually change something.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="intro-panel" data-reveal>
+        <blockquote>"I've built reporting from scratch in environments where the data existed but nobody was looking at it in a way that drove action. The metric isn't the point — what you do with it is."</blockquote>
+        <p>I use data to diagnose, prioritise and track — not to report for its own sake. KPI scorecards, trend analysis, and shift-level performance tracking are tools for having better conversations with the team, not substitutes for them.</p>
+      </div>
+
+      <div class="eyebrow" style="margin-bottom:1rem;" data-reveal>In Practice</div>
+
+      <div class="featured-article-grid" data-reveal style="background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-lg);padding:2rem 2.5rem;margin-bottom:2.5rem;">
+        <div>
+          <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.75rem;">
+            <span class="tag">Case Study</span>
+            <span style="font-size:.8rem;color:var(--text-muted);">April 2026 · 8 min read</span>
+          </div>
+          <h2 style="margin-bottom:.75rem;"><a href="/from-the-floor/how-we-improved-picking-efficiency.html" style="color:inherit;">How We Improved Warehouse Picking Efficiency by 21% in 12 Months</a></h2>
+          <p style="color:var(--text-muted);margin-bottom:1.25rem;">The measurement framework, reporting tools and process changes that drove a 21% year-on-year improvement in lines picked per hour — built from scratch on a site with no existing baseline tracking.</p>
+          <div style="display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.875rem;color:var(--text-muted);margin-bottom:1.5rem;">
+            <span>103 → 125 LPH</span>
+            <span>499 hours saved annually</span>
+            <span>KPI baseline · scorecard design</span>
+          </div>
+          <a href="/from-the-floor/how-we-improved-picking-efficiency.html" class="btn btn-brand">Read Case Study →</a>
+        </div>
+        <div class="featured-article-stat">
+          <div style="font-size:3rem;font-weight:800;color:var(--brand);line-height:1;">21%</div>
+          <div style="font-size:.8rem;color:var(--text-muted);margin-top:.25rem;">LPH improvement, year on year</div>
+        </div>
+      </div>
+
+      <div class="eyebrow" style="margin-bottom:1rem;" data-reveal>More coming</div>
+      <div class="coming-soon-grid">
+        <div class="coming-soon-card" data-reveal>
+          <span class="card-label">Coming Soon</span>
+          <h3>Building a KPI Scorecard Your Team Leader Can Actually Use</h3>
+          <p>Designing KPI frameworks that drive floor-level decision-making — not management reports nobody reads.</p>
+        </div>
+        <div class="coming-soon-card" data-reveal>
+          <span class="card-label">Coming Soon</span>
+          <h3>Using Absence Data to Find Patterns, Not Just Manage Instances</h3>
+          <p>When individual absence management isn't working, the data often shows a pattern that points to something structural.</p>
+        </div>
+      </div>
+
+      <div style="background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-lg);padding:2rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;" data-reveal>
+        <div>
+          <p style="margin:0 0 .25rem;font-weight:700;">About these cases</p>
+          <p style="margin:0;font-size:.875rem;color:var(--text-muted);max-width:520px;">All cases are from real operational situations, anonymised where appropriate. Numbers are real. Paulo Gomes has built operational reporting and KPI frameworks in regulated pharmaceutical distribution for 10 years.</p>
+        </div>
+        <a href="/about/" class="btn btn-outline" style="padding:.6rem 1.5rem;font-size:.875rem;white-space:nowrap;">About Paulo →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Operations<span>Edge</span></div>
+          <p class="footer-tagline">Operations management in practice — real cases, real data, shared openly by a working UK operations manager.</p>
+          <p class="text-sm" style="color:rgba(255,255,255,.4);margin-top:.5rem;">Content is based on personal experience and anonymised operational data. Views expressed are solely those of the author.</p>
+        </div>
+        <div>
+          <h4>Work</h4>
+          <ul class="footer-links">
+            <li><a href="/people-performance/">People &amp; Performance</a></li>
+            <li><a href="/process-improvement/">Process Improvement</a></li>
+            <li><a href="/labour-planning/">Labour &amp; Planning</a></li>
+            <li><a href="/data-reporting/">Data &amp; Reporting</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+            <li><a href="/cookies/">Cookie Policy</a></li>
+            <li><a href="/affiliate-disclosure/">Disclosure</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="/about/">About Paulo</a></li>
+            <li><a href="/contact/">Get in Touch</a></li>
+            <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+            <li><a href="https://www.linkedin.com/in/paulogomes3" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OperationsEdge. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="/cookies/">Cookies</a>
+          <a href="/affiliate-disclosure/">Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/page-hero-animation.js" defer></script>
+</body>
+</html>

@@ -27,3 +27,13 @@ Straight-talking peer. The voice of an experienced colleague who's been on the f
 3. **No-fluff layout** — if a section, element, or decoration doesn't help the user decide, remove it. No hero stat grids, no icon-above-every-heading templates.
 4. **Operational precision** — consistent spacing scales, tight grids, purposeful use of white space. The interface should feel like it was built by someone who understands that ops people use systems, not just look at them.
 5. **Context-aware** — comfortable on mobile in portrait during a break; equally readable on a wide desktop monitor. Adapts rather than shrinks.
+
+## graphify
+
+This project has a graphify knowledge graph at graphify-out/.
+
+Rules:
+- Before answering architecture or codebase questions, read graphify-out/GRAPH_REPORT.md for god nodes and community structure
+- If graphify-out/wiki/index.md exists, navigate it instead of reading raw files
+- For cross-module "how does X relate to Y" questions, prefer `graphify query "<question>"`, `graphify path "<A>" "<B>"`, or `graphify explain "<concept>"` over grep — these traverse the graph's EXTRACTED + INFERRED edges instead of scanning files
+- After modifying code files in this session, run `graphify update .` to keep the graph current (AST-only, no API cost)

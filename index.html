@@ -5,12 +5,12 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OperationsEdge — For UK Operations & Warehouse Managers</title>
-  <meta name="description" content="Independent reviews and comparisons of SaaS tools for UK operations managers, warehouse managers and logistics professionals. Find the right software for your team.">
+  <title>OperationsEdge — Operations Management in Practice by Paulo Gomes</title>
+  <meta name="description" content="Real case studies from 10 years of UK warehouse and logistics management — people and performance, process improvement, labour planning, and data and reporting. By Paulo Gomes, Operations Manager.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.operationsedge.co.uk/">
-  <meta property="og:title" content="OperationsEdge | Tools, Reviews & Guides for UK Operations & Warehouse Managers">
-  <meta property="og:description" content="Independent reviews and comparisons of SaaS tools for UK operations managers, warehouse managers and logistics professionals.">
+  <meta property="og:title" content="OperationsEdge — Operations Management in Practice">
+  <meta property="og:description" content="Real case studies from 10 years of UK warehouse and logistics management, by Paulo Gomes.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.operationsedge.co.uk/">
   <meta property="og:site_name" content="OperationsEdge">
@@ -20,8 +20,8 @@
     "@type": "WebSite",
     "name": "OperationsEdge",
     "url": "https://www.operationsedge.co.uk",
-    "description": "Independent SaaS tool reviews for UK operations and warehouse managers",
-    "publisher": { "@type": "Organization", "name": "OperationsEdge", "url": "https://www.operationsedge.co.uk" }
+    "description": "Real case studies from UK warehouse and logistics management by Paulo Gomes",
+    "author": { "@type": "Person", "name": "Paulo Gomes", "url": "https://www.operationsedge.co.uk/about/" }
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,175 +30,81 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
-    /* ===========================================================
-       Hero — live SVG "Floor Intelligence" replaces the .webp
-       background. Text layers on top, flipped to white.
-       =========================================================== */
-    .hero {
-      background: var(--dark-deep);
-      background-image: none;
-      overflow: hidden;
-    }
+    .hero { background: var(--dark-deep); background-image: none; overflow: hidden; }
     .hero::before { opacity: 0; }
     .hero h1 { color: #fff; }
     .hero p { color: rgba(255,255,255,.72); }
     .hero-eyebrow { color: rgba(255,255,255,.55); }
-
-    .hero-stage {
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      pointer-events: none;
-    }
+    .hero-stage { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
     .hero-stage svg { width: 100%; height: 100%; display: block; }
     .hero .container { position: relative; z-index: 2; }
-
-    /* Vignette so the type reads against the live graphic */
-    .hero-vignette {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      pointer-events: none;
-      background:
-        radial-gradient(ellipse 60% 70% at 50% 55%,
-          color-mix(in oklch, var(--dark-deep) 55%, transparent) 0%,
-          transparent 75%);
-    }
-
-    /* Snappier reveal cascade — overrides the slower default */
-    [data-reveal] {
-      transform: translateY(14px);
-      transition:
-        opacity .55s cubic-bezier(.22,1,.36,1),
-        transform .55s cubic-bezier(.22,1,.36,1);
-    }
+    .hero-vignette { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: radial-gradient(ellipse 60% 70% at 50% 55%, color-mix(in oklch, var(--dark-deep) 55%, transparent) 0%, transparent 75%); }
+    [data-reveal] { transform: translateY(14px); transition: opacity .55s cubic-bezier(.22,1,.36,1), transform .55s cubic-bezier(.22,1,.36,1); }
     [data-reveal-delay="1"] { transition-delay: .08s; }
     [data-reveal-delay="2"] { transition-delay: .16s; }
     [data-reveal-delay="3"] { transition-delay: .24s; }
     [data-reveal-delay="4"] { transition-delay: .32s; }
-    [data-reveal-delay="5"] { transition-delay: .40s; }
 
-    /* Stats — count-up numerals */
-    .stat-num {
-      color: var(--brand);
-      font-variant-numeric: tabular-nums;
-      display: inline-block;
-      transform-origin: 50% 100%;
-    }
+    /* Stats bar */
+    .stat-num { color: var(--brand); font-variant-numeric: tabular-nums; display: inline-block; transform-origin: 50% 100%; }
     .stats-bar { border-top: 1px solid color-mix(in oklch, var(--brand) 25%, transparent); background: var(--dark-deep); }
     .stat-label { color: rgba(255,255,255,.62); letter-spacing: .14em; }
-    .section-categories { background: var(--dark-deep); }
+
+    /* Competency tiles */
     .section-dark { background: var(--dark-deep) !important; }
-
-    /* ===========================================================
-       Bento — richer hover (cursor-anchored grid + sweep)
-       =========================================================== */
-    /* Bento category glyph */
-    .bento-glyph {
-      width: 56px;
-      height: 56px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: var(--radius-sm, 6px);
-      background: color-mix(in oklch, var(--brand) 14%, transparent);
-      border: 1px solid color-mix(in oklch, var(--brand) 35%, transparent);
-      color: var(--brand);
-      align-self: flex-start;
-      margin-bottom: auto;
+    .comp-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: color-mix(in oklch, var(--brand) 22%, transparent); border-radius: var(--radius-lg); overflow: hidden; }
+    @media (max-width: 640px) { .comp-grid { grid-template-columns: 1fr; } }
+    .comp-tile {
+      background: #0B1C2C;
+      padding: 2rem 2.25rem;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
       position: relative;
       overflow: hidden;
-      transition: background .4s cubic-bezier(.22,1,.36,1), border-color .4s, transform .5s cubic-bezier(.22,1,.36,1);
+      transition: background .35s cubic-bezier(.22,1,.36,1);
     }
-    .bento-glyph svg { width: 30px; height: 30px; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; fill: none; overflow: visible; }
-    .bento-glyph svg * { transition: transform .55s cubic-bezier(.34,1.56,.64,1), opacity .4s, stroke-dashoffset .7s cubic-bezier(.22,1,.36,1); transform-origin: 50% 50%; transform-box: fill-box; }
-    .bento-tile:hover .bento-glyph { background: color-mix(in oklch, var(--brand) 28%, transparent); border-color: color-mix(in oklch, var(--brand) 70%, transparent); transform: rotate(-3deg) scale(1.04); }
-    /* Per-category hover micro-animations */
-    .bento-tile:hover .g-wms [data-box="top"] { transform: translateY(-3px); }
-    .bento-tile:hover .g-wms [data-pulse] { stroke-dasharray: 4 2; animation: gDash .9s linear infinite; }
-    .bento-tile:hover .g-sol [data-ring] { transform: scale(1.12); }
-    .bento-tile:hover .g-sol [data-dot] { transform: scale(1.35); }
-    .bento-tile:hover .g-hs [data-tick] { stroke-dashoffset: 0; }
-    .g-hs [data-tick] { stroke-dasharray: 18; stroke-dashoffset: 18; }
-    .bento-tile:hover .g-wfm [data-hand] { transform: rotate(60deg); }
-    .bento-tile:hover .g-aut [data-link] { stroke-dasharray: 4 3; animation: gDash .8s linear infinite; }
-    .bento-tile:hover .g-aut [data-node="a"] { transform: translateX(-1px); }
-    .bento-tile:hover .g-aut [data-node="b"] { transform: translateX(1px); }
-    .bento-tile:hover .g-tms [data-wheel] { animation: gSpin 1.2s linear infinite; }
-    @keyframes gDash { to { stroke-dashoffset: -12; } }
-    @keyframes gSpin { to { transform: rotate(360deg); } }
-    @media (prefers-reduced-motion: reduce) { .bento-glyph, .bento-glyph svg * { transition: none !important; animation: none !important; transform: none !important; } }
-    .bento-tile {
-      background: #0B1C2C !important;
-      border: 1px solid color-mix(in oklch, var(--brand) 22%, transparent) !important;
-      position: relative;
-      overflow: hidden;
-      transition:
-        transform .45s cubic-bezier(.22,1,.36,1),
-        border-color .45s cubic-bezier(.22,1,.36,1),
-        box-shadow .45s cubic-bezier(.22,1,.36,1) !important;
-    }
-    .bento-tile .bento-cat { color: rgba(255,255,255,.38) !important; }
-    .bento-tile h3 { color: #fff !important; transition: transform .45s cubic-bezier(.22,1,.36,1); }
-    .bento-tile p { color: rgba(255,255,255,.55) !important; transition: color .3s; }
-    .bento-tile:hover {
-      border-color: color-mix(in oklch, var(--brand) 70%, transparent) !important;
-      box-shadow: 0 10px 40px color-mix(in oklch, var(--brand) 25%, transparent);
-      transform: translateY(-4px);
-    }
-    .bento-tile:hover p { color: rgba(255,255,255,.75) !important; }
-    .bento-tile:hover h3 { transform: translateX(3px); }
-
-    /* Faint grid print revealed at cursor on hover */
-    .bento-tile::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(to right, color-mix(in oklch, var(--brand) 18%, transparent) 1px, transparent 1px),
-        linear-gradient(to bottom, color-mix(in oklch, var(--brand) 18%, transparent) 1px, transparent 1px);
-      background-size: 28px 28px;
-      opacity: 0;
-      transition: opacity .45s cubic-bezier(.22,1,.36,1);
-      mask-image: radial-gradient(ellipse at var(--mx,50%) var(--my,50%),
-        black 0%, transparent 60%);
-      -webkit-mask-image: radial-gradient(ellipse at var(--mx,50%) var(--my,50%),
-        black 0%, transparent 60%);
-      pointer-events: none;
-    }
-    .bento-tile:hover::before { opacity: .8; }
-
-    /* Sweep highlight that crosses the tile on hover */
-    .bento-tile::after {
+    .comp-tile::after {
       content: '';
       position: absolute;
       top: 0; left: -120%;
       width: 60%; height: 100%;
-      background: linear-gradient(100deg, transparent 35%,
-        color-mix(in oklch, var(--brand) 35%, transparent) 50%, transparent 65%);
+      background: linear-gradient(100deg, transparent 35%, color-mix(in oklch, var(--brand) 30%, transparent) 50%, transparent 65%);
       transition: left .9s cubic-bezier(.22,1,.36,1);
       pointer-events: none;
     }
-    .bento-tile:hover::after { left: 130%; }
+    .comp-tile:hover::after { left: 130%; }
+    .comp-tile:hover { background: color-mix(in oklch, var(--brand) 10%, #0B1C2C); }
+    .comp-tile-icon { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm, 6px); background: color-mix(in oklch, var(--brand) 14%, transparent); border: 1px solid color-mix(in oklch, var(--brand) 35%, transparent); color: var(--brand); }
+    .comp-tile-icon svg { width: 24px; height: 24px; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+    .comp-tile h3 { color: #fff; font-size: 1.1rem; margin: 0; line-height: 1.25; }
+    .comp-tile p { color: rgba(255,255,255,.55); font-size: .875rem; margin: 0; line-height: 1.55; flex: 1; }
+    .comp-tile-cta { font-size: .8rem; font-weight: 700; color: var(--brand); letter-spacing: .04em; }
 
-    /* Editorial card hovers — snappier lift */
-    .editorial-feature,
-    .editorial-card {
-      transition: transform .45s cubic-bezier(.22,1,.36,1),
-                  background .3s, border-color .3s, box-shadow .45s cubic-bezier(.22,1,.36,1);
+    /* Editorial article cards */
+    .editorial-feature, .editorial-card {
+      transition: transform .45s cubic-bezier(.22,1,.36,1), background .3s, border-color .3s;
     }
-    .editorial-feature:hover,
-    .editorial-card:hover {
+    .editorial-feature:hover, .editorial-card:hover {
       transform: translateY(-3px);
       border-color: color-mix(in oklch, var(--brand) 35%, rgba(255,255,255,.08));
     }
+
+    /* About section */
+    .about-strip { background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .about-strip-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    @media (max-width: 768px) { .about-strip-inner { grid-template-columns: 1fr; gap: 2rem; } }
+    .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border-radius: var(--radius); overflow: hidden; }
+    .about-stat { background: var(--bg); padding: 1.25rem; text-align: center; }
+    .about-stat-num { font-size: 2rem; font-weight: 800; color: var(--brand); font-family: var(--font-display), sans-serif; line-height: 1; display: block; }
+    .about-stat-label { font-size: .72rem; color: var(--text-muted); margin-top: .25rem; display: block; }
   </style>
   <script async src="https://plausible.io/js/pa-5rJbq1HeDq2Us0ivii3DW.js"></script>
   <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
 </head>
 <body>
 
-  <!-- NAV -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="site-logo"><picture><source srcset="/assets/images/logo-dark.svg" media="(prefers-color-scheme: dark)"><img src="/assets/images/logo.svg" alt="OperationsEdge" style="display:block;height:44px;width:auto;"></picture></a>
@@ -206,18 +112,19 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="site-nav">
-        <li><a href="/reviews/">Reviews</a></li>
-        <li><a href="/solutions/">Solutions</a></li>
-        <li><a href="/guides/">Guides</a></li>
-        <li><a href="/from-the-floor/">From the Floor</a></li>
-        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/people-performance/">People &amp; Performance</a></li>
+        <li><a href="/process-improvement/">Process Improvement</a></li>
+        <li><a href="/labour-planning/">Labour &amp; Planning</a></li>
+        <li><a href="/data-reporting/">Data &amp; Reporting</a></li>
+        <li><a href="/about/">About</a></li>
         <li><a href="/contact/" class="nav-cta">Contact</a></li>
       </ul>
     </div>
   </header>
+
 <main>
 
-  <!-- HERO — full viewport, live SVG "Floor Intelligence" -->
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-stage" aria-hidden="true">
       <svg id="heroSvg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
@@ -243,226 +150,203 @@
             <rect x="0" y="0" width="1920" height="1080"/>
           </clipPath>
         </defs>
-
         <rect width="1920" height="1080" fill="#050E18"/>
         <g id="fineGrid" opacity="0"></g>
         <g id="bayGrid" transform="translate(40, 80)"></g>
         <g id="flowPath"></g>
         <g id="barChart" transform="translate(1200, 0)"></g>
         <g id="notation" fill="#4A9BD4" opacity="0" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="1.2">
-          <text x="30" y="28" opacity="0.55">S // OE / F.01 — SECTOR A</text>
-          <text x="1890" y="28" text-anchor="end" opacity="0.55">R / V.4 / 2026.Q2</text>
-          <text x="30" y="1065" opacity="0.55">ROTATION · B02 · INTEL/FLOOR · LAYER 04</text>
-          <text x="1890" y="1065" text-anchor="end" opacity="0.55">PEAK 00:07:14.92</text>
+          <text x="30" y="28" opacity="0.55">PAULO GOMES // OE / F.01 — PEOPLE · PROCESS · PLANNING · DATA</text>
+          <text x="1890" y="28" text-anchor="end" opacity="0.55">10 YRS / UK / GDP</text>
+          <text x="30" y="1065" opacity="0.55">150 FTE · 300K+ PACKS/DAY · 750 PHARMACIES</text>
+          <text x="1890" y="1065" text-anchor="end" opacity="0.55">REGULATED DISTRIBUTION · LONDON</text>
         </g>
         <g id="scanLine" clip-path="url(#heroClip)" opacity="0">
-          <rect id="scanLineRect" x="0" y="0" width="1920" height="2"
-            fill="url(#flowGrad)" opacity="0.35"/>
+          <rect id="scanLineRect" x="0" y="0" width="1920" height="2" fill="url(#flowGrad)" opacity="0.35"/>
         </g>
         <g id="flowPulses"></g>
       </svg>
     </div>
     <div class="hero-vignette" aria-hidden="true"></div>
-
     <div class="container">
-      <p class="hero-eyebrow" data-reveal>Independent · Operator-led · UK-focused</p>
+      <p class="hero-eyebrow" data-reveal>Paulo Gomes · UK Operations Management · GDP-Regulated Distribution</p>
       <h1 data-reveal data-reveal-delay="1">
-        Real-world insights for<br>better warehouse<br>decisions.
+        Ten years on the floor.<br>This is what it looks like.
       </h1>
-      <p data-reveal data-reveal-delay="2">Practical guides, case studies, and tool reviews to help warehouse managers improve efficiency, reduce errors, and choose the right solutions with confidence.</p>
+      <p data-reveal data-reveal-delay="2">Real case studies from managing warehouse and logistics operations in the UK — people and performance, process improvement, labour planning, and data and reporting. Organised by competency. Numbers are real.</p>
       <div class="hero-actions" data-reveal data-reveal-delay="3">
-        <a href="/from-the-floor/" class="btn btn-brand" style="padding:.9rem 2.25rem;font-size:1rem;">Explore Case Studies</a>
-        <a href="/reviews/" class="btn btn-outline" style="padding:.9rem 2.25rem;font-size:1rem;">Browse Tools &amp; Reviews</a>
+        <a href="#competencies" class="btn btn-brand" style="padding:.9rem 2.25rem;font-size:1rem;">See the Work</a>
+        <a href="/about/" class="btn btn-outline" style="padding:.9rem 2.25rem;font-size:1rem;">About Paulo</a>
       </div>
     </div>
   </section>
 
-  <!-- STATS — dark, large numerals -->
+  <!-- STATS BAR -->
   <div class="stats-bar">
     <div class="container">
       <div class="stats-grid">
         <div data-reveal>
-          <div class="stat-num" data-count-to="0">0</div>
-          <div class="stat-label">Pay-to-play rankings</div>
+          <div class="stat-num" data-count-to="150">0</div>
+          <div class="stat-label">Team members managed</div>
         </div>
         <div data-reveal data-reveal-delay="1">
-          <div class="stat-num" data-count-to="5">0</div>
-          <div class="stat-label">Content areas covered</div>
+          <div class="stat-num" data-count-to="300" data-count-suffix="k+">0</div>
+          <div class="stat-label">Packs dispatched daily</div>
         </div>
         <div data-reveal data-reveal-delay="2">
-          <div class="stat-num" data-count-to="100" data-count-suffix="%">0%</div>
-          <div class="stat-label">Editorially independent</div>
+          <div class="stat-num" data-count-to="10" data-count-suffix="+">0</div>
+          <div class="stat-label">Years in sector</div>
         </div>
         <div data-reveal data-reveal-delay="3">
-          <div class="stat-num" data-count-text="UK">UK</div>
-          <div class="stat-label">GBP pricing & compliance</div>
+          <div class="stat-num" data-count-to="6">0</div>
+          <div class="stat-label">Colleagues promoted to TL</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- CATEGORIES — bento tile grid -->
-  <section class="section section-categories" id="categories">
+  <!-- COMPETENCY TILES -->
+  <section class="section section-dark" id="competencies">
     <div class="container">
       <div class="section-header section-header--dark" data-reveal>
-        <div class="eyebrow eyebrow-white">Browse by Category</div>
-        <h2 style="color:#fff;">Guides, case studies and tools for every part of your operation</h2>
+        <div class="eyebrow eyebrow-white">The Work</div>
+        <h2 style="color:#fff;">Operations management by competency</h2>
+        <p style="color:rgba(255,255,255,.6);">Ten years of case studies, organised by the areas that operational leadership actually breaks into.</p>
       </div>
 
-      <div class="bento-grid">
+      <div class="comp-grid" data-reveal data-reveal-delay="1">
 
-        <!-- Feature tile: WMS — dark, spans 2 rows -->
-        <a href="/reviews/?cat=wms" class="bento-tile bento-dark" data-reveal>
-          <span class="bento-glyph" aria-hidden="true"><svg class="g-wms" viewBox="0 0 32 32"><rect data-box="bot" x="4" y="20" width="10" height="8" rx="1"/><rect x="18" y="20" width="10" height="8" rx="1"/><rect data-box="top" x="11" y="10" width="10" height="8" rx="1"/><path data-pulse d="M16 6 L16 2"/></svg></span>
-          <div>
-            <p class="bento-cat">Warehouse</p>
-            <h3>WMS &amp; Inventory Software</h3>
-            <p>Warehouse management systems, stock control, and inventory tracking for growing UK warehouses.</p>
+        <a href="/people-performance/" class="comp-tile">
+          <div class="comp-tile-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/><circle cx="18" cy="8" r="2.5"/><path d="M21 21v-1.5A3.5 3.5 0 0018 16"/></svg>
           </div>
+          <div>
+            <h3>People &amp; Performance</h3>
+            <p>Team leader development, absence management, performance intervention, and coaching. The team is the operation — knowing what each person actually needs is the job before the intervention.</p>
+          </div>
+          <span class="comp-tile-cta">2 case studies →</span>
         </a>
 
-        <!-- Solutions — light -->
-        <a href="/solutions/" class="bento-tile bento-light" data-reveal data-reveal-delay="1">
-          <span class="bento-glyph" aria-hidden="true"><svg class="g-sol" viewBox="0 0 32 32"><circle data-ring cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="6"/><circle data-dot cx="16" cy="16" r="2" fill="currentColor" stroke="none"/><path d="M16 2 L16 6 M16 26 L16 30 M2 16 L6 16 M26 16 L30 16"/></svg></span>
-          <div>
-            <p class="bento-cat">Problem-based</p>
-            <h3>Solutions by Challenge</h3>
-            <p>Find tools and approaches based on the problem you're actually trying to solve.</p>
+        <a href="/process-improvement/" class="comp-tile">
+          <div class="comp-tile-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
           </div>
+          <div>
+            <h3>Process Improvement</h3>
+            <p>Root cause analysis, picking efficiency, error reduction, and continuous improvement. Fix the system, not the symptom — most process failures that look like operator error aren't.</p>
+          </div>
+          <span class="comp-tile-cta">2 case studies →</span>
         </a>
 
-        <!-- H&S — brand blue -->
-        <a href="/reviews/?cat=safety" class="bento-tile bento-blue" data-reveal data-reveal-delay="2">
-          <span class="bento-glyph" aria-hidden="true"><svg class="g-hs" viewBox="0 0 32 32"><path d="M16 3 L27 7 V17 C27 22 22 27 16 29 C10 27 5 22 5 17 V7 Z"/><path data-tick d="M11 16 L15 20 L22 12"/></svg></span>
-          <div>
-            <p class="bento-cat">Safety &amp; Compliance</p>
-            <h3>Health, Safety &amp; Compliance</h3>
-            <p>Digital checklists, audits, and incident reporting — including SafetyCulture.</p>
+        <a href="/labour-planning/" class="comp-tile">
+          <div class="comp-tile-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
           </div>
+          <div>
+            <h3>Labour &amp; Planning</h3>
+            <p>Workforce forecasting, peak planning, agency onboarding, and shift structure. Labour is the biggest variable cost — plan the structure before the work arrives.</p>
+          </div>
+          <span class="comp-tile-cta">1 case study →</span>
         </a>
 
-        <!-- Workforce — muted -->
-        <a href="/reviews/?cat=workforce" class="bento-tile bento-muted" data-reveal>
-          <span class="bento-glyph" aria-hidden="true"><svg class="g-wfm" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><g data-hand><path d="M16 16 L16 8"/></g><path d="M16 16 L22 19"/><circle cx="16" cy="16" r="1.6" fill="currentColor" stroke="none"/></svg></span>
-          <div>
-            <p class="bento-cat">Workforce</p>
-            <h3>Shift Scheduling</h3>
-            <p>Scheduling, time tracking, and team comms for shift-based logistics.</p>
+        <a href="/data-reporting/" class="comp-tile">
+          <div class="comp-tile-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
           </div>
-        </a>
-
-        <!-- Automation — dark -->
-        <a href="/reviews/?cat=automation" class="bento-tile bento-dark" data-reveal data-reveal-delay="1">
-          <span class="bento-glyph" aria-hidden="true"><svg class="g-aut" viewBox="0 0 32 32"><circle data-node="a" cx="7" cy="16" r="3"/><circle data-node="b" cx="25" cy="16" r="3"/><path data-link d="M10 16 L22 16"/><path d="M14 11 L18 16 L14 21"/></svg></span>
           <div>
-            <p class="bento-cat">Automation</p>
-            <h3>Process Automation</h3>
-            <p>Automate repetitive workflows with Zapier, Make, and more.</p>
+            <h3>Data &amp; Reporting</h3>
+            <p>KPI frameworks, measurement design, scorecard development, and data-led decision making. The data tells you where. The conversation tells you why. You need both.</p>
           </div>
-        </a>
-
-        <!-- Transport — accent -->
-        <a href="/reviews/?cat=transport" class="bento-tile bento-accent" data-reveal data-reveal-delay="2">
-          <span class="bento-glyph" aria-hidden="true"><svg class="g-tms" viewBox="0 0 32 32"><rect x="3" y="10" width="15" height="10" rx="1"/><path d="M18 13 H24 L28 17 V20 H18 Z"/><circle data-wheel cx="9" cy="22" r="2.5"/><circle data-wheel cx="22" cy="22" r="2.5"/></svg></span>
-          <div>
-            <p class="bento-cat">Transport &amp; Logistics</p>
-            <h3>TMS &amp; Fleet</h3>
-            <p>Route planning and fleet tracking for UK distribution teams.</p>
-          </div>
+          <span class="comp-tile-cta">1 case study →</span>
         </a>
 
       </div>
     </div>
   </section>
 
-  <!-- LATEST CONTENT — dark section, editorial grid -->
+  <!-- LATEST CASE STUDIES -->
   <section class="section section-dark">
     <div class="container">
-      <div class="section-header section-header--dark" style="margin-bottom:3rem;" data-reveal>
-        <div class="eyebrow eyebrow-white">Latest Reviews &amp; Guides</div>
-        <h2>Recent content for operations professionals</h2>
+      <div class="section-header section-header--dark" style="margin-bottom:2.5rem;" data-reveal>
+        <div class="eyebrow eyebrow-white">In Practice</div>
+        <h2 style="color:#fff;">Recent case studies</h2>
       </div>
 
       <div class="editorial-grid">
 
-        <!-- Feature article (spans 2 rows) -->
-        <a href="/reviews/best-wms-software-uk-warehouses-2026.html" class="editorial-feature" data-reveal>
-          <span class="editorial-label">WMS Review — April 2026</span>
+        <a href="/from-the-floor/how-we-developed-two-team-leaders-with-bespoke-plans.html" class="editorial-feature" data-reveal>
+          <span class="editorial-label">People &amp; Performance · May 2026</span>
           <div style="flex:1;display:flex;align-items:center;">
-            <div style="font-size:6rem;line-height:1;opacity:.15;font-weight:800;color:#fff;user-select:none;">WMS</div>
+            <div style="font-size:5rem;line-height:1;opacity:.12;font-weight:800;color:#fff;user-select:none;font-family:var(--font-display),sans-serif;">TL</div>
           </div>
-          <h3>Best WMS Software for Mid-Size UK Warehouses 2026</h3>
-          <p>A hands-on comparison of the top warehouse management systems for UK operations — covering cost, integrations and UK compliance for teams with 1–10 warehouse staff.</p>
-          <span style="font-size:.825rem;font-weight:600;color:var(--brand);letter-spacing:.02em;">Read Review →</span>
+          <h3>How We Developed Two Underperforming Team Leaders — With Completely Different Plans</h3>
+          <p>Same KPI scorecard. Same role. Completely different situations — and completely different interventions. What the data showed and why the conversation changed everything.</p>
+          <span style="font-size:.825rem;font-weight:600;color:var(--brand);letter-spacing:.02em;">Read Case Study →</span>
         </a>
 
-        <!-- Secondary articles -->
-        <a href="/reviews/monday-com-warehouse-management-review.html" class="editorial-card" data-reveal data-reveal-delay="1">
-          <span class="editorial-label">Honest Review</span>
-          <h3>Monday.com for Warehouse Management</h3>
-          <p>Can a project management tool handle warehouse ops? We put Monday.com through its paces in a real UK environment.</p>
+        <a href="/from-the-floor/how-we-fixed-warehouse-absence-culture.html" class="editorial-card" data-reveal data-reveal-delay="1">
+          <span class="editorial-label">People &amp; Performance · April 2026</span>
+          <h3>How We Fixed a Broken Absence Culture Without Making Half the Team Go Formal</h3>
+          <p>20% → under 3% in 8 months. No Bradford Factor, no mass formal proceedings, no lost trust.</p>
         </a>
 
-        <a href="/guides/best-shift-scheduling-software-logistics-teams.html" class="editorial-card" data-reveal data-reveal-delay="2">
-          <span class="editorial-label">Comparison Guide</span>
-          <h3>Best Shift Scheduling Software for Logistics Teams</h3>
-          <p>Connecteam, Rotacloud, Deputy and more — the right fit for UK logistics managers.</p>
+        <a href="/from-the-floor/how-we-planned-peak-labour-and-onboarded-10-agency-staff.html" class="editorial-card" data-reveal data-reveal-delay="2">
+          <span class="editorial-label">Labour &amp; Planning · April 2026</span>
+          <h3>How We Planned Peak Labour and Onboarded 10 Agency Staff Without Losing Control</h3>
+          <p>Forecast, budget decision, agency selection, and induction structure — end to end.</p>
+        </a>
+
+        <a href="/from-the-floor/how-we-reduced-picking-errors-without-technology.html" class="editorial-card" data-reveal>
+          <span class="editorial-label">Process Improvement · April 2026</span>
+          <h3>How to Reduce Picking Errors: A Root Cause Analysis Case Study</h3>
+          <p>Fishbone diagrams and 5 Whys — shifting from reactive error management to structured improvement.</p>
+        </a>
+
+        <a href="/from-the-floor/how-we-improved-picking-efficiency.html" class="editorial-card" data-reveal data-reveal-delay="1">
+          <span class="editorial-label">Data &amp; Reporting · April 2026</span>
+          <h3>How We Improved Warehouse Picking Efficiency by 21% in 12 Months</h3>
+          <p>103 → 125 lines picked per hour. The measurement framework that made the improvement visible.</p>
         </a>
 
       </div>
     </div>
   </section>
 
-  <!-- WHY OPERATIONSEDGE — white, 2-col -->
-  <section class="section" style="background:var(--bg);">
+  <!-- ABOUT PAULO -->
+  <section class="section about-strip">
     <div class="container">
-      <div class="two-col-content" style="max-width:1100px;margin:0 auto;">
-
+      <div class="about-strip-inner">
         <div data-reveal>
-          <div class="eyebrow">Why OperationsEdge?</div>
-          <h2 style="margin-bottom:1.25rem;">Built by someone who's actually managed operations</h2>
-          <p style="color:var(--text-muted);margin-bottom:2.25rem;font-size:1.05rem;line-height:1.75;">OperationsEdge is an independent resource hub written by a warehouse and logistics manager with over 10 years of UK operational experience. Everything here — guides, case studies, reviews — is grounded in what actually works on the floor, not theory or vendor marketing.</p>
-          <div style="display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2.75rem;">
-            <div style="display:flex;gap:1rem;align-items:flex-start;">
-              <span style="flex-shrink:0;width:24px;height:24px;background:var(--brand);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.7rem;font-weight:700;margin-top:.15rem;">✓</span>
-              <div><strong>No pay-to-play</strong> — rankings and verdicts are never influenced by commercial relationships</div>
-            </div>
-            <div style="display:flex;gap:1rem;align-items:flex-start;">
-              <span style="flex-shrink:0;width:24px;height:24px;background:var(--brand);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.7rem;font-weight:700;margin-top:.15rem;">✓</span>
-              <div><strong>UK operations context</strong> — GBP pricing, UK compliance, and the realities of UK warehouse management</div>
-            </div>
-            <div style="display:flex;gap:1rem;align-items:flex-start;">
-              <span style="flex-shrink:0;width:24px;height:24px;background:var(--brand);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.7rem;font-weight:700;margin-top:.15rem;">✓</span>
-              <div><strong>Broader than software</strong> — case studies, process guides, templates and checklists alongside tool reviews</div>
-            </div>
-            <div style="display:flex;gap:1rem;align-items:flex-start;">
-              <span style="flex-shrink:0;width:24px;height:24px;background:var(--brand);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.7rem;font-weight:700;margin-top:.15rem;">✓</span>
-              <div><strong>Honest about limitations</strong> — if something doesn't work well, we say so</div>
-            </div>
+          <div class="eyebrow">About</div>
+          <h2 style="margin-bottom:1rem;">Paulo Gomes</h2>
+          <p style="color:var(--text-muted);margin-bottom:1rem;font-size:1.05rem;line-height:1.75;">Operations manager with 10+ years in GDP-regulated pharmaceutical distribution. Started as a warehouse operative in 2015. Now directs a 150-person, multi-shift operation dispatching 300,000+ packs daily to 750 pharmacies across the UK.</p>
+          <p style="color:var(--text-muted);margin-bottom:2rem;line-height:1.7;">This site is how I share what I've learned doing it. The cases are real. The numbers are real. No theory, no vendor marketing — just what happened, what I did, and what I'd do differently.</p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="/about/" class="btn btn-brand">Read More →</a>
+            <a href="https://www.linkedin.com/in/paulogomes3" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn</a>
           </div>
-          <a href="/about/" class="btn btn-brand">About This Site</a>
         </div>
-
         <div data-reveal data-reveal-delay="2">
-          <div style="display:flex;flex-direction:column;gap:1rem;">
-            <div style="background:var(--bg-alt);border-radius:var(--radius-xl);padding:2rem;">
-              <div style="font-size:1.75rem;font-weight:700;letter-spacing:-0.04em;color:var(--brand);margin-bottom:.35rem;">01</div>
-              <strong style="display:block;font-size:1rem;margin-bottom:.4rem;">Real operational experience</strong>
-              <span style="font-size:.875rem;color:var(--text-muted);">10+ years managing UK warehouse and logistics operations</span>
+          <div class="about-stats">
+            <div class="about-stat">
+              <span class="about-stat-num">150</span>
+              <span class="about-stat-label">team members managed</span>
             </div>
-            <div style="background:var(--bg-alt);border-radius:var(--radius-xl);padding:2rem;">
-              <div style="font-size:1.75rem;font-weight:700;letter-spacing:-0.04em;color:var(--brand);margin-bottom:.35rem;">02</div>
-              <strong style="display:block;font-size:1rem;margin-bottom:.4rem;">Consistent, structured reviews</strong>
-              <span style="font-size:.875rem;color:var(--text-muted);">Every tool review uses the same criteria so you can compare fairly</span>
+            <div class="about-stat">
+              <span class="about-stat-num">300k+</span>
+              <span class="about-stat-label">packs dispatched daily</span>
             </div>
-            <div style="background:var(--bg-alt);border-radius:var(--radius-xl);padding:2rem;">
-              <div style="font-size:1.75rem;font-weight:700;letter-spacing:-0.04em;color:var(--brand);margin-bottom:.35rem;">03</div>
-              <strong style="display:block;font-size:1rem;margin-bottom:.4rem;">No pay-to-play rankings</strong>
-              <span style="font-size:.875rem;color:var(--text-muted);">Commercial relationships never dictate scores or verdicts</span>
+            <div class="about-stat">
+              <span class="about-stat-num">10+</span>
+              <span class="about-stat-label">years in sector</span>
+            </div>
+            <div class="about-stat">
+              <span class="about-stat-num">6</span>
+              <span class="about-stat-label">colleagues promoted to TL</span>
             </div>
           </div>
+          <p style="font-size:.8rem;color:var(--text-muted);margin-top:1rem;text-align:center;">GDP-regulated pharmaceutical distribution · London · Lean Six Sigma Yellow Belt</p>
         </div>
-
       </div>
     </div>
   </section>
@@ -470,21 +354,20 @@
   <!-- NEWSLETTER -->
   <div class="newsletter-section">
     <div class="container">
-      <div class="eyebrow eyebrow-white" data-reveal>Stay Sharp</div>
-      <h2 data-reveal data-reveal-delay="1">The Ops Edge Newsletter</h2>
-      <p style="color:rgba(255,255,255,.6);max-width:480px;margin:.65rem auto 0;line-height:1.7;font-size:1.05rem;" data-reveal data-reveal-delay="2">New tool reviews, comparison guides and practical ops advice — straight to your inbox.</p>
+      <div class="eyebrow eyebrow-white" data-reveal>Stay in the loop</div>
+      <h2 data-reveal data-reveal-delay="1">New case studies straight to your inbox</h2>
+      <p style="color:rgba(255,255,255,.6);max-width:480px;margin:.65rem auto 0;line-height:1.7;font-size:1.05rem;" data-reveal data-reveal-delay="2">Published when there's something worth sharing — no filler, no schedule for its own sake.</p>
       <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-reveal data-reveal-delay="3">
         <input type="hidden" name="form-name" value="newsletter">
         <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
         <input type="email" autocomplete="email" name="email" placeholder="your@email.co.uk" aria-label="Email address" required>
-        <button type="submit" class="btn" style="background:#fff;color:var(--brand);border-color:#fff;font-weight:700;">Subscribe Free</button>
+        <button type="submit" class="btn" style="background:#fff;color:var(--brand);border-color:#fff;font-weight:700;">Subscribe</button>
       </form>
-      <p class="newsletter-success">Done. New reviews and guides straight to your inbox when they're published.</p>
+      <p class="newsletter-success">Done. New case studies straight to your inbox when they're published.</p>
       <p style="font-size:.775rem;color:rgba(255,255,255,.35);margin-top:.75rem;">For UK operations managers. No spam. Unsubscribe any time.</p>
     </div>
   </div>
 
-  <!-- FOOTER -->
 </main>
 
   <footer class="site-footer">
@@ -492,17 +375,16 @@
       <div class="footer-grid">
         <div>
           <div class="footer-brand">Operations<span>Edge</span></div>
-          <p class="footer-tagline">Independent SaaS tool reviews for UK operations managers, warehouse managers and logistics professionals.</p>
-          <p class="text-sm" style="color:rgba(255,255,255,.25);margin-top:.5rem;line-height:1.6;">Content is based on personal experience and anonymised operational data. Views are solely those of the author.</p>
+          <p class="footer-tagline">Operations management in practice — real cases, real data, shared openly by a working UK operations manager.</p>
+          <p class="text-sm" style="color:rgba(255,255,255,.4);margin-top:.5rem;">Content is based on personal experience and anonymised operational data. Views expressed are solely those of the author.</p>
         </div>
         <div>
-          <h4>Content</h4>
+          <h4>Work</h4>
           <ul class="footer-links">
-            <li><a href="/reviews/">Reviews</a></li>
-            <li><a href="/solutions/">Solutions</a></li>
-            <li><a href="/guides/">Guides</a></li>
-            <li><a href="/from-the-floor/">From the Floor</a></li>
-            <li><a href="/resources/">Resources</a></li>
+            <li><a href="/people-performance/">People &amp; Performance</a></li>
+            <li><a href="/process-improvement/">Process Improvement</a></li>
+            <li><a href="/labour-planning/">Labour &amp; Planning</a></li>
+            <li><a href="/data-reporting/">Data &amp; Reporting</a></li>
           </ul>
         </div>
         <div>
@@ -515,10 +397,12 @@
           </ul>
         </div>
         <div>
-          <h4>Contact</h4>
+          <h4>Connect</h4>
           <ul class="footer-links">
+            <li><a href="/about/">About Paulo</a></li>
             <li><a href="/contact/">Get in Touch</a></li>
             <li><a href="mailto:hello@operationsedge.co.uk">hello@operationsedge.co.uk</a></li>
+            <li><a href="https://www.linkedin.com/in/paulogomes3" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -537,5 +421,6 @@
   <script src="/assets/js/site.js" defer></script>
   <script src="/assets/js/hero-animation.js" defer></script>
   <script src="/assets/js/page-animation.js" defer></script>
+  <script src="/assets/js/count-up.js" defer></script>
 </body>
 </html>

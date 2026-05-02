@@ -65,6 +65,58 @@
   to   = "/media-kit/"
   status = 301
 
+# Retired sections → redirect to homepage or nearest competency
+[[redirects]]
+  from = "/reviews/*"
+  to   = "/"
+  status = 301
+
+[[redirects]]
+  from = "/solutions/*"
+  to   = "/"
+  status = 301
+
+[[redirects]]
+  from = "/comparisons/*"
+  to   = "/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/*"
+  to   = "/"
+  status = 301
+
+[[redirects]]
+  from = "/from-the-floor/"
+  to   = "/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/"
+  to   = "/"
+  status = 301
+
+# Clean URL redirects for new competency sections
+[[redirects]]
+  from = "/people-performance"
+  to   = "/people-performance/"
+  status = 301
+
+[[redirects]]
+  from = "/process-improvement"
+  to   = "/process-improvement/"
+  status = 301
+
+[[redirects]]
+  from = "/labour-planning"
+  to   = "/labour-planning/"
+  status = 301
+
+[[redirects]]
+  from = "/data-reporting"
+  to   = "/data-reporting/"
+  status = 301
+
 # Redirects for /posts/ → /from-the-floor/ (section rename)
 [[redirects]]
   from = "/from-the-floor/how-we-onboarded-10-agency-staff-in-24-hours.html"

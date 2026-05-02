@@ -1,0 +1,160 @@
+/Users/paulogomes/Projects/operations-edge/assets/js/page-animation.js
+/Users/paulogomes/Projects/operations-edge/assets/js/page-hero-animation.js
+/Users/paulogomes/Projects/operations-edge/assets/js/site.js
+/Users/paulogomes/Projects/operations-edge/assets/js/count-up.js
+/Users/paulogomes/Projects/operations-edge/assets/js/hero-animation.js
+/Users/paulogomes/Projects/operations-edge/index.html
+/Users/paulogomes/Projects/operations-edge/404.html
+/Users/paulogomes/Projects/operations-edge/robots.txt
+/Users/paulogomes/Projects/operations-edge/CLAUDE.md
+/Users/paulogomes/Projects/operations-edge/contact/index.html
+/Users/paulogomes/Projects/operations-edge/media-kit/index.html
+/Users/paulogomes/Projects/operations-edge/posts/index.html
+/Users/paulogomes/Projects/operations-edge/posts/how-we-improved-picking-efficiency.html
+/Users/paulogomes/Projects/operations-edge/comparisons/index.html
+/Users/paulogomes/Projects/operations-edge/comparisons/monday-com-vs-smartsheet-uk-operations.html
+/Users/paulogomes/Projects/operations-edge/comparisons/connecteam-vs-rotacloud-uk-shift-scheduling.html
+/Users/paulogomes/Projects/operations-edge/disclaimer/index.html
+/Users/paulogomes/Projects/operations-edge/privacy-policy/index.html
+/Users/paulogomes/Projects/operations-edge/affiliate-disclosure/index.html
+/Users/paulogomes/Projects/operations-edge/resources/index.html
+/Users/paulogomes/Projects/operations-edge/resources/warehouse-hs-audit-checklist.html
+/Users/paulogomes/Projects/operations-edge/resources/saas-procurement-checklist.html
+/Users/paulogomes/Projects/operations-edge/resources/wms-vendor-evaluation-scorecard.html
+/Users/paulogomes/Projects/operations-edge/resources/shift-scheduling-template.html
+/Users/paulogomes/Projects/operations-edge/terms/index.html
+/Users/paulogomes/Projects/operations-edge/solutions/index.html
+/Users/paulogomes/Projects/operations-edge/solutions/shift-schedule-planning/index.html
+/Users/paulogomes/Projects/operations-edge/solutions/reduce-picking-errors/index.html
+/Users/paulogomes/Projects/operations-edge/solutions/team-performance-management/index.html
+/Users/paulogomes/Projects/operations-edge/solutions/warehouse-kpi-reporting/index.html
+/Users/paulogomes/Projects/operations-edge/solutions/improve-warehouse-efficiency/index.html
+/Users/paulogomes/Projects/operations-edge/about/index.html
+/Users/paulogomes/Projects/operations-edge/guides/index.html
+/Users/paulogomes/Projects/operations-edge/guides/best-shift-scheduling-software-logistics-teams.html
+/Users/paulogomes/Projects/operations-edge/guides/warehouse-hs-audit-guide.html
+/Users/paulogomes/Projects/operations-edge/guides/how-to-choose-a-wms-uk-warehouses.html
+/Users/paulogomes/Projects/operations-edge/guides/automating-operations-stack-zapier.html
+/Users/paulogomes/Projects/operations-edge/from-the-floor/how-we-reduced-picking-errors-without-technology.html
+/Users/paulogomes/Projects/operations-edge/from-the-floor/index.html
+/Users/paulogomes/Projects/operations-edge/from-the-floor/how-we-improved-picking-efficiency.html
+/Users/paulogomes/Projects/operations-edge/from-the-floor/how-we-planned-peak-labour-and-onboarded-10-agency-staff.html
+/Users/paulogomes/Projects/operations-edge/from-the-floor/how-we-fixed-warehouse-absence-culture.html
+/Users/paulogomes/Projects/operations-edge/assets/images/hero-philosophy.md
+/Users/paulogomes/Projects/operations-edge/cookies/index.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-07-fishbone/slide-01-hook.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-07-fishbone/slide-05-takeaway.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-07-fishbone/slide-02-context.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-07-fishbone/slide-04-dashboard.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-07-fishbone/caption.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-07-fishbone/slide-03-work.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-07-fishbone/comment.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-01-lph-improvement/slide-01-hook.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-01-lph-improvement/slide-05-takeaway.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-01-lph-improvement/slide-02-context.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-01-lph-improvement/slide-04-dashboard.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-01-lph-improvement/caption.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-01-lph-improvement/slide-03-work.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-01-lph-improvement/comment.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-02-shift-comparison/slide-01-hook.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-02-shift-comparison/slide-05-takeaway.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-02-shift-comparison/slide-02-context.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-02-shift-comparison/slide-04-dashboard.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-02-shift-comparison/caption.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-02-shift-comparison/slide-03-work.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-02-shift-comparison/comment.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-03-top-performer/slide-01-hook.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-03-top-performer/slide-05-takeaway.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-03-top-performer/slide-02-context.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-03-top-performer/slide-04-dashboard.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-03-top-performer/caption.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-03-top-performer/slide-03-work.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-03-top-performer/comment.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-05-induction/slide-01-hook.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-05-induction/slide-05-takeaway.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-05-induction/slide-02-context.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-05-induction/slide-04-dashboard.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-05-induction/caption.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-05-induction/slide-03-work.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-05-induction/comment.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-08-shelf-capacity/slide-01-hook.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-08-shelf-capacity/slide-05-takeaway.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-08-shelf-capacity/slide-02-context.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-08-shelf-capacity/slide-04-dashboard.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-08-shelf-capacity/caption.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-08-shelf-capacity/slide-03-work.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-08-shelf-capacity/comment.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-04-agency-onboarding/slide-01-hook.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-04-agency-onboarding/slide-05-takeaway.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-04-agency-onboarding/slide-02-context.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-04-agency-onboarding/slide-04-dashboard.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-04-agency-onboarding/caption.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-04-agency-onboarding/slide-03-work.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-04-agency-onboarding/comment.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-06-errors-not-random/slide-01-hook.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-06-errors-not-random/slide-05-takeaway.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-06-errors-not-random/slide-02-context.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-06-errors-not-random/slide-04-dashboard.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-06-errors-not-random/caption.txt
+/Users/paulogomes/Projects/operations-edge/linkedin/post-06-errors-not-random/slide-03-work.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-06-errors-not-random/comment.txt
+/Users/paulogomes/Projects/operations-edge/reviews/index.html
+/Users/paulogomes/Projects/operations-edge/reviews/deputy-review-warehouse-logistics-uk.html
+/Users/paulogomes/Projects/operations-edge/reviews/zapier-review-operations-automation.html
+/Users/paulogomes/Projects/operations-edge/reviews/connecteam-review-workforce-management-uk.html
+/Users/paulogomes/Projects/operations-edge/reviews/smartsheet-review-operations-teams-uk.html
+/Users/paulogomes/Projects/operations-edge/reviews/safetyculture-iauditor-review.html
+/Users/paulogomes/Projects/operations-edge/reviews/best-wms-software-uk-warehouses-2026.html
+/Users/paulogomes/Projects/operations-edge/reviews/monday-com-warehouse-management-review.html
+/Users/paulogomes/Projects/operations-edge/linkedin/post-08-shelf-capacity/post-08-shelf-capacity-carousel.pdf
+/Users/paulogomes/Projects/operations-edge/linkedin/post-04-agency-onboarding/post-04-agency-onboarding-carousel.pdf
+/Users/paulogomes/Projects/operations-edge/favicon.svg
+/Users/paulogomes/Projects/operations-edge/assets/images/ops-edge-icon-hd.jpg
+/Users/paulogomes/Projects/operations-edge/assets/images/paulo-gomes.webp
+/Users/paulogomes/Projects/operations-edge/assets/images/paulo-gomes-avatar.webp
+/Users/paulogomes/Projects/operations-edge/assets/images/logo-dark.svg
+/Users/paulogomes/Projects/operations-edge/assets/images/hero-graphic.webp
+/Users/paulogomes/Projects/operations-edge/assets/images/paulo-gomes-avatar.jpg
+/Users/paulogomes/Projects/operations-edge/assets/images/hero-graphic.png
+/Users/paulogomes/Projects/operations-edge/assets/images/logo.svg
+/Users/paulogomes/Projects/operations-edge/assets/images/paulo-gomes.jpg
+/Users/paulogomes/Projects/operations-edge/linkedin/post-07-fishbone/slide-05-takeaway (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-07-fishbone/slide-04-dashboard (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-07-fishbone/slide-01-hook (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-07-fishbone/slide-02-context (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-07-fishbone/slide-03-work (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-01-lph-improvement/slide-05-takeaway (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-01-lph-improvement/slide-04-dashboard (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-01-lph-improvement/slide-01-hook (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-01-lph-improvement/slide-02-context (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-01-lph-improvement/slide-03-work (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-02-shift-comparison/slide-05-takeaway (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-02-shift-comparison/slide-04-dashboard (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-02-shift-comparison/slide-01-hook (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-02-shift-comparison/slide-02-context (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-02-shift-comparison/slide-03-work (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-03-top-performer/slide-05-takeaway (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-03-top-performer/slide-04-dashboard (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-03-top-performer/slide-01-hook (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-03-top-performer/slide-02-context (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-03-top-performer/slide-03-work (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-05-induction/slide-05-takeaway (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-05-induction/slide-04-dashboard (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-05-induction/slide-01-hook (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-05-induction/slide-02-context (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-05-induction/slide-03-work (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-08-shelf-capacity/slide-05-takeaway (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-08-shelf-capacity/slide-04-dashboard (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-08-shelf-capacity/slide-01-hook (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-08-shelf-capacity/slide-02-context (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-08-shelf-capacity/slide-03-work (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-04-agency-onboarding/slide-05-takeaway (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-04-agency-onboarding/slide-04-dashboard (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-04-agency-onboarding/slide-01-hook (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-04-agency-onboarding/slide-02-context (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-04-agency-onboarding/slide-03-work (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-06-errors-not-random/slide-05-takeaway (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-06-errors-not-random/slide-04-dashboard (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-06-errors-not-random/slide-01-hook (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-06-errors-not-random/slide-02-context (1).png
+/Users/paulogomes/Projects/operations-edge/linkedin/post-06-errors-not-random/slide-03-work (1).png
